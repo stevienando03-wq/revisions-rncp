@@ -148,8 +148,8 @@ function render() {
   else if (s === 'recherche') { v.innerHTML = vRecherche(); bindRecherche(); }
   else if (s === 'cas' && !p[1]) { setTab('entrainement'); v.innerHTML = vCasList(); }
   else if (s === 'cas') { setTab('entrainement'); v.innerHTML = vCasDetail(p[1]); }
-  else if (s === 'bloc' && !p[1]) { setTab('cours'); v.innerHTML = vBlocList(); }
-  else if (s === 'bloc') { setTab('cours'); v.innerHTML = vBlocDetail(p[1]); }
+  else if (s === 'bloc' && !p[1]) { setTab('bloc'); v.innerHTML = vBlocList(); }
+  else if (s === 'bloc') { setTab('bloc'); v.innerHTML = vBlocDetail(p[1]); }
   else { v.innerHTML = vAccueil(); afterAccueil(); }
 }
 
