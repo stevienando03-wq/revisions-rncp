@@ -1,5 +1,5 @@
 /* Service worker — RNCP Révision. Offline-first après 1er chargement. */
-const CACHE = 'rncp-rev-v4';
+const CACHE = 'rncp-rev-v5';
 const CORE = [
   './',
   './index.html',

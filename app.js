@@ -148,6 +148,8 @@ function render() {
   else if (s === 'recherche') { v.innerHTML = vRecherche(); bindRecherche(); }
   else if (s === 'cas' && !p[1]) { setTab('entrainement'); v.innerHTML = vCasList(); }
   else if (s === 'cas') { setTab('entrainement'); v.innerHTML = vCasDetail(p[1]); }
+  else if (s === 'bloc' && !p[1]) { setTab('cours'); v.innerHTML = vBlocList(); }
+  else if (s === 'bloc') { setTab('cours'); v.innerHTML = vBlocDetail(p[1]); }
   else { v.innerHTML = vAccueil(); afterAccueil(); }
 }
 
@@ -194,6 +196,9 @@ function vAccueil() {
     <div class="stat"><div class="big">${S.daily.streak || 0} 🔥</div><div class="lbl">jours d'affilée${S.daily.best ? ' · record ' + S.daily.best : ''}</div></div>
     <div class="stat"><div class="ring" style="--p:${p}"><i>${done}/${goal}</i></div><div class="lbl">objectif du jour</div></div>
   </div>`;
+
+  // Réviser par bloc / par épreuve
+  html += `<div class="card tap" onclick="go('#/bloc')" style="border-color:var(--or)"><div class="serif" style="font-size:1.05rem">🎯 Réviser par bloc / par épreuve</div><p class="small muted" style="margin:4px 0 0">Pour chaque bloc (BC01→BC04) : quoi réviser, formules, plan du livrable, cas et jour de l'épreuve.</p></div>`;
 
   // erreurs dues
   const nbWrong = Object.keys(S.wrong).length;
@@ -383,6 +388,43 @@ function vEntrainement() {
   html += `<h3 class="sec">Drill par module</h3>`;
   C.modules.forEach(m => { const mc = masteryClass(m.id); html += `<a class="mod card tap" onclick="go('#/drill/${m.id}')"><div class="top"><div class="num">${m.num}</div><div class="nom">${esc(m.nom)}</div><span class="mastery ${mc}">${(QBYMOD[m.id] || []).length} Q</span></div></a>`; });
   html += `<div class="note" style="margin-top:6px">Banque : <b>${totalQ}</b> questions. À l'examen réel, elles changent : entraîne ta <b>compréhension</b>.</div>`;
+  return html;
+}
+
+/* ============================================================ PAR BLOC / PAR ÉPREUVE */
+function secList(titre, arr) {
+  if (!arr || !arr.length) return '';
+  return `<h3 class="sec">${esc(titre)}</h3><ul style="padding-left:1.1rem">${arr.map(x => '<li style="margin-bottom:5px;line-height:1.5">' + esc(x) + '</li>').join('')}</ul>`;
+}
+function vBlocList() {
+  const blocs = C.blocs || [];
+  let html = `<div class="qhead"><a onclick="go('#/accueil')">‹ Accueil</a><span class="mid">Par bloc</span><span></span></div><h2 class="page">🎯 Réviser par bloc</h2>`;
+  html += `<div class="note">Les 4 blocs = tes 4 épreuves. Pour chacun : quoi réviser, les formules, le plan du livrable, les pièges, et l'accès direct aux modules et aux cas.</div><div class="sp"></div>`;
+  blocs.forEach(b => {
+    html += `<a class="mod card tap" onclick="go('#/bloc/${b.id}')"><div class="top"><div class="num" style="font-size:.85rem;min-width:52px">${esc(b.code)}</div><div class="nom">${esc(b.titre)}</div><span class="mastery todo">${esc(b.edc)}</span></div><div class="small muted" style="margin-top:5px">🗓️ ${esc(b.jour)}</div></a>`;
+  });
+  return html;
+}
+function vBlocDetail(id) {
+  const b = (C.blocs || []).find(x => x.id === id);
+  if (!b) return `<div class="card">Bloc introuvable. <button class="btn" onclick="go('#/bloc')">Retour</button></div>`;
+  let html = `<div class="qhead"><a onclick="go('#/bloc')">‹ Blocs</a><span class="mid">${esc(b.code)}</span><span></span></div>`;
+  html += `<h2 class="page">${esc(b.titre)}</h2>`;
+  html += `<div class="bloc chiffres"><div class="h">🗓️ ÉPREUVE</div><div><b>${esc(b.edc)}</b> — ${esc(b.jour)}<br>${esc(b.type)}</div></div>`;
+  if (b.echeance) html += `<div class="bloc pieges"><div class="h">⏰ ÉCHÉANCE</div><div>${esc(b.echeance)}</div></div>`;
+  html += secList('Compétences évaluées', b.competences);
+  html += secList('Comment attaquer', b.methode);
+  if ((b.formules || []).length) html += `<h3 class="sec">Formules à connaître</h3><div class="bloc chiffres"><ul style="padding-left:1.1rem">${b.formules.map(f => '<li style="margin-bottom:5px">' + esc(f) + '</li>').join('')}</ul></div>`;
+  html += secList('Plan du livrable', b.plan);
+  if ((b.pieges || []).length) html += `<div class="bloc pieges"><div class="h">⚠️ PIÈGES</div><ul style="padding-left:1.1rem">${b.pieges.map(x => '<li style="margin-bottom:3px">' + esc(x) + '</li>').join('')}</ul></div>`;
+  html += `<h3 class="sec">📖 Réviser ces modules</h3><div class="btn-row">`;
+  (b.modules || []).forEach(mid => { if (typeof MOD !== 'undefined' && MOD[mid]) html += `<button class="btn sec sm" onclick="go('#/module/${mid}')">${esc(MOD[mid].nom)}</button>`; });
+  html += `</div>`;
+  if ((b.cas || []).length) {
+    html += `<h3 class="sec">📂 S'entraîner sur les cas</h3><div class="btn-row">`;
+    (b.cas || []).forEach(cid => { const c = (C.cas || []).find(x => x.id === cid); if (c) html += `<button class="btn sm" onclick="go('#/cas/${cid}')">${esc(c.edc)}</button>`; });
+    html += `</div>`;
+  }
   return html;
 }
 
