@@ -149,7 +149,7 @@ function render() {
   else if (s === 'cas' && !p[1]) { setTab('entrainement'); v.innerHTML = vCasList(); }
   else if (s === 'cas') { setTab('entrainement'); v.innerHTML = vCasDetail(p[1]); }
   else if (s === 'bloc' && !p[1]) { setTab('bloc'); v.innerHTML = vBlocList(); }
-  else if (s === 'bloc') { setTab('bloc'); v.innerHTML = vBlocDetail(p[1]); }
+  else if (s === 'bloc') { setTab('bloc'); v.innerHTML = vBlocDetail(p[1], p[2] || 'reviser'); }
   else { v.innerHTML = vAccueil(); afterAccueil(); }
 }
 
@@ -405,27 +405,75 @@ function vBlocList() {
   });
   return html;
 }
-function vBlocDetail(id) {
+function vBlocDetail(id, sub) {
   const b = (C.blocs || []).find(x => x.id === id);
   if (!b) return `<div class="card">Bloc introuvable. <button class="btn" onclick="go('#/bloc')">Retour</button></div>`;
+  sub = sub || 'reviser';
+  const nF = (b.flashcards || []).length, nQ = (b.questions_probables || []).length, nE = (b.exercices || []).length;
   let html = `<div class="qhead"><a onclick="go('#/bloc')">‹ Blocs</a><span class="mid">${esc(b.code)}</span><span></span></div>`;
   html += `<h2 class="page">${esc(b.titre)}</h2>`;
   html += `<div class="bloc chiffres"><div class="h">🗓️ ÉPREUVE</div><div><b>${esc(b.edc)}</b> — ${esc(b.jour)}<br>${esc(b.type)}</div></div>`;
   if (b.echeance) html += `<div class="bloc pieges"><div class="h">⏰ ÉCHÉANCE</div><div>${esc(b.echeance)}</div></div>`;
-  html += secList('Compétences évaluées', b.competences);
-  html += secList('Comment attaquer', b.methode);
-  if ((b.formules || []).length) html += `<h3 class="sec">Formules à connaître</h3><div class="bloc chiffres"><ul style="padding-left:1.1rem">${b.formules.map(f => '<li style="margin-bottom:5px">' + esc(f) + '</li>').join('')}</ul></div>`;
-  html += secList('Plan du livrable', b.plan);
-  if ((b.pieges || []).length) html += `<div class="bloc pieges"><div class="h">⚠️ PIÈGES</div><ul style="padding-left:1.1rem">${b.pieges.map(x => '<li style="margin-bottom:3px">' + esc(x) + '</li>').join('')}</ul></div>`;
-  html += `<h3 class="sec">📖 Réviser ces modules</h3><div class="btn-row">`;
-  (b.modules || []).forEach(mid => { if (typeof MOD !== 'undefined' && MOD[mid]) html += `<button class="btn sec sm" onclick="go('#/module/${mid}')">${esc(MOD[mid].nom)}</button>`; });
-  html += `</div>`;
-  if ((b.cas || []).length) {
-    html += `<h3 class="sec">📂 S'entraîner sur les cas</h3><div class="btn-row">`;
-    (b.cas || []).forEach(cid => { const c = (C.cas || []).find(x => x.id === cid); if (c) html += `<button class="btn sm" onclick="go('#/cas/${cid}')">${esc(c.edc)}</button>`; });
-    html += `</div>`;
-  }
+  html += `<div class="subtabs" style="flex-wrap:wrap">
+    <button class="${sub === 'reviser' ? 'on' : ''}" onclick="go('#/bloc/${b.id}/reviser')">📘 Réviser</button>
+    <button class="${sub === 'flash' ? 'on' : ''}" onclick="go('#/bloc/${b.id}/flash')">🃏 Flash${nF ? ' ' + nF : ''}</button>
+    <button class="${sub === 'questions' ? 'on' : ''}" onclick="go('#/bloc/${b.id}/questions')">❓ Questions${nQ ? ' ' + nQ : ''}</button>
+    <button class="${sub === 'exos' ? 'on' : ''}" onclick="go('#/bloc/${b.id}/exos')">🧮 Exos${nE ? ' ' + nE : ''}</button></div>`;
+  if (sub === 'flash') html += blocFlash(b);
+  else if (sub === 'questions') html += blocQuestions(b);
+  else if (sub === 'exos') html += blocExos(b);
+  else html += blocReviser(b);
   return html;
+}
+function blocReviser(b) {
+  let h = secList('Notions clés à maîtriser', b.notions);
+  h += secList('Comment attaquer', b.methode);
+  const fr = b.formulesR || null;
+  if (fr && fr.length) {
+    h += `<h3 class="sec">Formules à connaître</h3>`;
+    fr.forEach(f => { h += `<div class="bloc chiffres" style="margin:6px 0"><div style="font-weight:700">${esc(f.nom)}</div><div style="font-family:var(--serif);font-size:1.08rem;margin:2px 0">${esc(f.formule)}</div>${f.sens ? `<div class="small muted">${esc(f.sens)}</div>` : ''}</div>`; });
+  } else if ((b.formules || []).length) {
+    h += `<h3 class="sec">Formules à connaître</h3><div class="bloc chiffres"><ul style="padding-left:1.1rem">${b.formules.map(f => '<li style="margin-bottom:5px">' + esc(f) + '</li>').join('')}</ul></div>`;
+  }
+  h += secList('Plan du livrable', b.plan);
+  if ((b.pieges || []).length) h += `<div class="bloc pieges"><div class="h">⚠️ PIÈGES</div><ul style="padding-left:1.1rem">${b.pieges.map(x => '<li style="margin-bottom:3px">' + esc(x) + '</li>').join('')}</ul></div>`;
+  h += `<h3 class="sec">📖 Modules liés</h3><div class="btn-row">`;
+  (b.modules || []).forEach(mid => { if (typeof MOD !== 'undefined' && MOD[mid]) h += `<button class="btn sec sm" onclick="go('#/module/${mid}')">${esc(MOD[mid].nom)}</button>`; });
+  h += `</div>`;
+  if ((b.cas || []).length) {
+    h += `<h3 class="sec">📂 Cas d'entraînement</h3><div class="btn-row">`;
+    (b.cas || []).forEach(cid => { const c = (C.cas || []).find(x => x.id === cid); if (c) h += `<button class="btn sm" onclick="go('#/cas/${cid}')">${esc(c.edc)}</button>`; });
+    h += `</div>`;
+  }
+  return h;
+}
+function blocFlash(b) {
+  const fc = b.flashcards || [];
+  if (!fc.length) return `<div class="note">Flashcards en préparation.</div>`;
+  let h = `<div class="note">Touche une carte pour révéler la réponse.</div><div class="sp"></div>`;
+  fc.forEach(c => { h += `<div class="flash" data-cue="${esc(c.recto)}" data-full="${esc(c.verso)}" onclick="this.classList.toggle('open');var e=this.querySelector('.ct');e.textContent=this.classList.contains('open')?this.dataset.full:this.dataset.cue;this.querySelector('.side').textContent=this.classList.contains('open')?'réponse ✓':'touche pour révéler'"><span class="side">touche pour révéler</span><div class="ct">${esc(c.recto)}</div></div>`; });
+  return h;
+}
+function blocQuestions(b) {
+  const qs = b.questions_probables || [];
+  if (!qs.length) return `<div class="note">Questions en préparation.</div>`;
+  let h = `<div class="note">Questions susceptibles de tomber. Réponds dans ta tête, puis vérifie.</div><div class="sp"></div>`;
+  qs.forEach(qp => { h += `<div class="card" style="padding:13px"><div style="font-weight:600">❓ ${esc(qp.q)}</div><button class="btn ghost sm" style="margin-top:8px;width:auto" onclick="var e=this.nextElementSibling;e.style.display='block';this.style.display='none'">Voir la réponse</button><div style="display:none;margin-top:8px;line-height:1.55" class="small">${esc(qp.r)}</div></div>`; });
+  return h;
+}
+function blocExos(b) {
+  const ex = b.exercices || [];
+  if (!ex.length) return `<div class="note">Exercices en préparation.</div>`;
+  let h = `<div class="note">Traite l'exercice sur feuille ou Excel, PUIS révèle le corrigé.</div><div class="sp"></div>`;
+  ex.forEach((e, i) => {
+    h += `<div class="card"><div class="serif" style="font-size:1.02rem;font-weight:600">🧮 ${esc(e.titre)}</div>`;
+    (e.enonce || []).forEach(x => h += `<p style="margin:6px 0;line-height:1.5">${esc(x)}</p>`);
+    h += `<button class="btn or sm" style="width:auto" onclick="var c=document.getElementById('exo-${b.id}-${i}');c.style.display='block';this.style.display='none'">✅ Voir le corrigé</button>`;
+    h += `<div id="exo-${b.id}-${i}" style="display:none">`;
+    (e.corrige || []).forEach(x => h += `<div class="bloc" style="background:var(--vert-bg)"><div style="line-height:1.5">${esc(x)}</div></div>`);
+    h += `</div></div>`;
+  });
+  return h;
 }
 
 /* ============================================================ CAS D'ENTRAÎNEMENT */
