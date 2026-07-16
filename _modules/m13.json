@@ -1,0 +1,569 @@
+{
+ "id": "m13",
+ "num": 13,
+ "nom": "Nouvelles compétences (référentiel 2026)",
+ "essentiel": {
+  "a_retenir": [
+   "Veille financière = collecter + ANALYSER l'impact + diffuser (source toujours datée).",
+   "Croissance interne = organique ; croissance EXTERNE = acquisition/fusion (M&A).",
+   "Étapes M&A : cible → valorisation → due diligence → négociation/financement → closing → INTÉGRATION.",
+   "Goodwill = prix payé − actif net réévalué à la juste valeur.",
+   "Synergies M&A = de coûts (économies d'échelle) + de revenus (cross-selling).",
+   "Risque climatique PHYSIQUE (le climat abîme les actifs) vs risque de TRANSITION (réglementation/marché changent).",
+   "Stress test = scénario adverse EXTRÊME mais plausible → impact sur solvabilité/rentabilité/liquidité.",
+   "CSRD + taxonomie verte = cadre réglementaire ESG.",
+   "Audit interne = indépendant, évalue l'efficacité des processus de risque et de contrôle.",
+   "3 lignes de maîtrise : opérationnels / contrôle-conformité / audit interne.",
+   "KRI = alerte sur le risque ; KCI = efficacité des contrôles.",
+   "Vulgariser la finance = message-clé d'abord, visuels, relier le chiffre à la décision (le « so what »).",
+   "Piloter un projet : cadrage SMART → ressources/budget → Gantt/jalons → suivi écarts → RACI.",
+   "RACI = Responsable, Approbateur, Consulté, Informé (coordination des parties prenantes)."
+  ],
+  "chiffres": [
+   "Goodwill = prix − actif net à la juste valeur",
+   "Stress test = scénario extrême mais plausible",
+   "Suivi projet = écart prévu / réalisé (budget & délais)"
+  ],
+  "pieges": [
+   "Veille ≠ collecte brute : l'analyse d'impact est notée.",
+   "M&A : sur-payer ou rater l'intégration = destruction de valeur.",
+   "ESG n'est pas cosmétique : impact financier réel.",
+   "Audit interne ≠ commissaire aux comptes (externe).",
+   "Communication : ne pas noyer sous les chiffres, finir sur la décision."
+  ]
+ },
+ "sections": [
+  {
+   "id": "m13-s0",
+   "titre": "Veille financière (BC01) — technique, économique & réglementaire",
+   "points": [
+    "Veille = dispositif ORGANISÉ de collecte, d'analyse et de diffusion d'informations sur l'environnement (réglementaire, économique, technologique, concurrentiel) pour anticiper les évolutions du secteur et leur impact sur l'entreprise.",
+    "Types : veille RÉGLEMENTAIRE (normes comptables, fiscalité, AMF/ACPR), ÉCONOMIQUE (taux, inflation, conjoncture, marchés), TECHNOLOGIQUE (fintech, IA, blockchain), CONCURRENTIELLE et SECTORIELLE.",
+    "Sources fiables : institutions (AMF, ACPR, Banque de France, BCE, INSEE, OCDE), presse spécialisée (Les Échos, L'Agefi), bases de marché (Zonebourse, Bloomberg/Reuters), rapports sectoriels.",
+    "Outils modernes : alertes automatiques (Google Alerts), flux RSS/Feedly, newsletters, réseaux professionnels (LinkedIn) — l'objectif est d'AUTOMATISER la collecte.",
+    "Méthode : cibler des sources fiables et RÉCENTES → collecter (automatiser) → ANALYSER l'impact sur l'entreprise → diffuser une note de synthèse → actualiser régulièrement.",
+    "Livrable type : une note de veille = tendance identifiée + source DATÉE + analyse d'impact + recommandation."
+   ],
+   "chiffres": [
+    "Une info de veille = toujours source + DATE (une donnée non datée est inexploitable)"
+   ],
+   "pieges": [
+    "Veille ≠ simple collecte : ce qui est noté, c'est l'ANALYSE D'IMPACT sur l'entreprise.",
+    "Citer une source non datée ou non fiable fait perdre des points.",
+    "Ne pas confondre veille (anticiper l'environnement) et reporting (suivre l'interne)."
+   ]
+  },
+  {
+   "id": "m13-s1",
+   "titre": "Croissance externe & M&A (BC01) — stratégie de développement externe",
+   "points": [
+    "Croissance EXTERNE = se développer en ACQUÉRANT / fusionnant avec d'autres entreprises (≠ croissance INTERNE / organique, par ses propres moyens).",
+    "Objectifs : gagner des parts de marché, réaliser des SYNERGIES, se diversifier, intégration horizontale (concurrents) ou verticale (fournisseurs/clients).",
+    "Modalités : acquisition (achat de titres ou d'actifs), fusion, prise de participation, apport partiel d'actifs, OPA/OPE.",
+    "Étapes d'une opération M&A : (1) cible & rationnel stratégique → (2) VALORISATION (DCF, multiples, ANCC) → (3) DUE DILIGENCE (audit d'acquisition) → (4) négociation & structuration (prix, financement, éventuel LBO) → (5) closing → (6) INTÉGRATION (réalisation des synergies).",
+    "Financement : trésorerie, dette (LBO via holding, effet de levier), échange de titres (OPE), ou montage mixte.",
+    "Synergies : de COÛTS (économies d'échelle, mutualisation) et de REVENUS (cross-selling, nouveaux marchés).",
+    "Plan d'action à présenter aux dirigeants : rationnel stratégique + valorisation + financement + risques + plan d'intégration + impact sur la CRÉATION DE VALEUR."
+   ],
+   "chiffres": [
+    "Goodwill (survaleur) = prix payé − actif net réévalué à la JUSTE VALEUR",
+    "Une majorité des opérations M&A détruisent de la valeur si l'intégration échoue"
+   ],
+   "pieges": [
+    "SUR-PAYER détruit de la valeur : le prix ne doit pas dépasser la valeur + synergies attendues.",
+    "Le plus dur n'est pas l'achat mais l'INTÉGRATION post-acquisition.",
+    "Goodwill = prix − actif net à la JV (pas la valeur comptable)."
+   ]
+  },
+  {
+   "id": "m13-s2",
+   "titre": "Risques ESG, climat & stress tests (BC03) — impact financier",
+   "points": [
+    "Deux familles de risque climatique : risque PHYSIQUE (événements climatiques — inondations, sécheresses — qui abîment les actifs et la chaîne d'approvisionnement) et risque de TRANSITION (réglementation carbone, taxe, évolution de la demande, actifs échoués / « stranded assets »).",
+    "Cadre : taxonomie verte européenne, CSRD (reporting de durabilité obligatoire), notations extra-financières (agences ESG).",
+    "Évaluer l'IMPACT FINANCIER : construire des SCÉNARIOS DE STRESS (stress tests climatiques, ex. scénarios NGFS/BCE), des simulations et des analyses de sensibilité (ex. impact d'un prix du carbone sur les coûts, la marge, la valeur).",
+    "Un STRESS TEST = soumettre le modèle financier de l'entreprise à un scénario adverse EXTRÊME mais plausible (choc) et mesurer l'impact sur la solvabilité, la rentabilité et la liquidité.",
+    "Modèles quantitatifs (simulations, VaR climatique) ET qualitatifs (analyses ESG, cartographie).",
+    "Stratégies d'ATTÉNUATION : diversification, couverture, investissements de décarbonation, provisions, ajustement de la politique financière et des investissements."
+   ],
+   "chiffres": [
+    "Risque physique vs risque de transition = LA distinction à connaître",
+    "Un stress test = un scénario extrême MAIS plausible (pas moyen)"
+   ],
+   "pieges": [
+    "L'ESG n'est pas « de la com » : l'impact financier est RÉEL (coûts, valorisation, coût du capital).",
+    "Ne pas confondre risque PHYSIQUE (le climat abîme les actifs) et risque de TRANSITION (la réglementation/le marché changent).",
+    "Un stress test mesure un scénario adverse, pas la situation moyenne."
+   ]
+  },
+  {
+   "id": "m13-s3",
+   "titre": "Audit interne & évaluation des processus de risque (BC03)",
+   "points": [
+    "Audit interne = activité INDÉPENDANTE et OBJECTIVE qui évalue et améliore l'efficacité des processus de gestion des risques, de contrôle interne et de gouvernance (cadre IIA).",
+    "Modèle des 3 LIGNES DE MAÎTRISE : ligne 1 = les opérationnels (qui prennent le risque) ; ligne 2 = les fonctions de contrôle (risques, conformité) ; ligne 3 = l'AUDIT INTERNE (assurance indépendante).",
+    "Évaluer la performance d'un processus de risque : définir des VALEURS DE RÉFÉRENCE (situation de départ vs objectif) pour chaque indicateur → mesurer la progression (en %) → identifier les écarts → actions correctives (amélioration continue, roue de Deming PDCA).",
+    "KRI (Key Risk Indicators) = indicateurs d'ALERTE sur le niveau de risque ; KCI (Key Control Indicators) = indicateurs d'EFFICACITÉ des contrôles.",
+    "La démarche doit être conforme aux STANDARDS d'audit interne (méthode, déontologie, indépendance)."
+   ],
+   "chiffres": [
+    "Progression mesurée en % entre la valeur de départ et l'objectif, pour CHAQUE indicateur"
+   ],
+   "pieges": [
+    "Audit INTERNE (permanent, dans l'entreprise) ≠ audit EXTERNE / commissaire aux comptes (légal, indépendant externe).",
+    "L'auditeur interne ne doit pas contrôler ce qu'il gère lui-même (indépendance).",
+    "Un indicateur SANS valeur de référence ne permet pas de mesurer la progression."
+   ]
+  },
+  {
+   "id": "m13-s4",
+   "titre": "Communiquer les concepts financiers (BC04) — vulgarisation",
+   "points": [
+    "Objectif : rendre l'information financière COMPRÉHENSIBLE et ACTIONNABLE pour des non-financiers (opérationnels, direction générale, RH) afin de favoriser des décisions éclairées.",
+    "Adapter le discours à l'interlocuteur : simplifier le vocabulaire, ÉVITER le jargon, relier chaque chiffre à un ENJEU MÉTIER concret.",
+    "Supports : rapports simplifiés, tableaux de bord VISUELS (data visualization), présentations, « one-pager », formations internes.",
+    "Principes de vulgarisation : message-clé d'abord, GRAPHIQUES plutôt que tableaux denses, storytelling (du chiffre à la décision), exemples concrets.",
+    "Pédagogie : partir du BESOIN de l'interlocuteur, illustrer, puis VÉRIFIER la compréhension.",
+    "But final : une meilleure intégration des enjeux financiers dans les stratégies opérationnelles."
+   ],
+   "chiffres": [],
+   "pieges": [
+    "Noyer l'auditoire sous les chiffres = échec de communication.",
+    "Garder le jargon technique face à des non-financiers.",
+    "Oublier le « so what » : toujours conclure sur l'IMPLICATION pour la décision."
+   ]
+  },
+  {
+   "id": "m13-s5",
+   "titre": "Piloter un projet financier (BC04) — gestion de projet",
+   "points": [
+    "Piloter un projet financier = appliquer la GESTION DE PROJET à un sujet financier (ex. refonte du reporting, mise en place d'un ERP/BI, projet de financement, clôture accélérée).",
+    "CADRAGE : définir les objectifs (SMART), le périmètre, les livrables et les PARTIES PRENANTES.",
+    "RESSOURCES & BUDGET : allouer les ressources (humaines, financières), établir une planification BUDGÉTAIRE (budget prévisionnel).",
+    "PLANIFICATION : découper en tâches (WBS), poser un échéancier (diagramme de GANTT, jalons), repérer le chemin critique.",
+    "SUIVI : indicateurs de performance (avancement, respect du BUDGET et des DÉLAIS, écarts prévu/réalisé), reporting d'avancement, gestion des risques projet.",
+    "COORDINATION : matrice RACI (qui est Responsable/Approbateur/Consulté/Informé), comité de pilotage, communication régulière.",
+    "Finalité : optimiser les résultats financiers ET assurer la conformité réglementaire et stratégique."
+   ],
+   "chiffres": [
+    "Suivi = écart entre le PRÉVU et le RÉALISÉ (budget et délais)"
+   ],
+   "pieges": [
+    "Des objectifs non mesurables = projet impilotable (rester SMART).",
+    "Oublier les parties prenantes (matrice RACI) → blocages.",
+    "Pas de suivi budget/délais → dérive du projet non détectée."
+   ]
+  }
+ ],
+ "visuals": [
+  {
+   "ancre": "m13-s1",
+   "type": "compare",
+   "titre": "Croissance interne vs croissance externe",
+   "headers": [
+    "Croissance interne",
+    "Croissance externe"
+   ],
+   "rows": [
+    {
+     "cells": [
+      "Développement organique (par ses moyens)",
+      "Acquisition / fusion (M&A)"
+     ]
+    },
+    {
+     "cells": [
+      "Plus lente, risque maîtrisé",
+      "Plus rapide, risque d'intégration"
+     ]
+    },
+    {
+     "cells": [
+      "Autofinancement, investissements",
+      "Cash, dette (LBO), échange de titres"
+     ]
+    }
+   ]
+  },
+  {
+   "ancre": "m13-s2",
+   "type": "compare",
+   "titre": "Risque climatique : physique vs transition",
+   "headers": [
+    "Risque PHYSIQUE",
+    "Risque de TRANSITION"
+   ],
+   "rows": [
+    {
+     "cells": [
+      "Événements climatiques (inondations, sécheresses)",
+      "Réglementation carbone, taxe, marché bas-carbone"
+     ]
+    },
+    {
+     "cells": [
+      "Dégâts sur actifs, chaîne d'appro.",
+      "Actifs échoués (stranded assets), baisse de demande"
+     ]
+    }
+   ]
+  },
+  {
+   "ancre": "m13-s3",
+   "type": "pyramid",
+   "titre": "Les 3 lignes de maîtrise (contrôle du risque)",
+   "levels": [
+    {
+     "t": "Ligne 3 — Audit interne",
+     "d": "Assurance indépendante sur l'efficacité des dispositifs"
+    },
+    {
+     "t": "Ligne 2 — Contrôle & conformité",
+     "d": "Fonctions risques/conformité qui surveillent"
+    },
+    {
+     "t": "Ligne 1 — Opérationnels",
+     "d": "Ceux qui prennent et gèrent le risque au quotidien"
+    }
+   ]
+  }
+ ],
+ "qcm": [
+  {
+   "enonce": "Qu'est-ce qui distingue une vraie veille financière d'une simple collecte d'informations ?",
+   "ancre": "m13-s0",
+   "options": [
+    {
+     "texte": "L'ANALYSE de l'impact des tendances sur l'entreprise, puis leur diffusion",
+     "correcte": true,
+     "justif": "La veille ne se limite pas à collecter : elle analyse l'impact et le diffuse pour anticiper."
+    },
+    {
+     "texte": "Le fait de collecter le plus grand volume d'informations possible",
+     "correcte": false,
+     "justif": "Le volume n'est pas le but : c'est la pertinence et l'analyse d'impact qui comptent."
+    },
+    {
+     "texte": "Le fait d'utiliser uniquement des sources payantes",
+     "correcte": false,
+     "justif": "La fiabilité et la date de la source comptent, pas son caractère payant."
+    }
+   ]
+  },
+  {
+   "enonce": "Une note de veille bien construite comporte notamment :",
+   "ancre": "m13-s0",
+   "options": [
+    {
+     "texte": "Une tendance, sa SOURCE DATÉE, une analyse d'impact et une recommandation",
+     "correcte": true,
+     "justif": "La date et la source rendent l'information exploitable ; l'analyse et la reco lui donnent de la valeur."
+    },
+    {
+     "texte": "Uniquement le lien vers l'article, sans commentaire",
+     "correcte": false,
+     "justif": "Sans analyse d'impact, la veille perd son intérêt."
+    },
+    {
+     "texte": "Une opinion personnelle non sourcée",
+     "correcte": false,
+     "justif": "Une veille repose sur des sources fiables et datées, pas sur une opinion."
+    }
+   ]
+  },
+  {
+   "enonce": "Quelle est la différence entre croissance interne et croissance externe ?",
+   "ancre": "m13-s1",
+   "options": [
+    {
+     "texte": "La croissance externe se fait par ACQUISITION/fusion ; l'interne par ses propres moyens (organique)",
+     "correcte": true,
+     "justif": "Externe = M&A ; interne = développement organique."
+    },
+    {
+     "texte": "La croissance externe se fait à l'étranger, l'interne en France",
+     "correcte": false,
+     "justif": "Ce n'est pas une question de géographie mais de mode de développement."
+    },
+    {
+     "texte": "Il n'y a aucune différence, ce sont deux synonymes",
+     "correcte": false,
+     "justif": "Ce sont deux stratégies de développement distinctes."
+    }
+   ]
+  },
+  {
+   "enonce": "Dans une opération de M&A, qu'appelle-t-on la « due diligence » ?",
+   "ancre": "m13-s1",
+   "options": [
+    {
+     "texte": "L'audit d'acquisition qui vérifie la situation réelle de la cible avant l'achat",
+     "correcte": true,
+     "justif": "La due diligence sécurise la transaction en vérifiant comptes, risques et engagements de la cible."
+    },
+    {
+     "texte": "Le paiement du prix au vendeur",
+     "correcte": false,
+     "justif": "Le paiement intervient au closing, après la due diligence."
+    },
+    {
+     "texte": "La fusion juridique des deux sociétés",
+     "correcte": false,
+     "justif": "La fusion est l'aboutissement ; la due diligence est une étape d'analyse en amont."
+    }
+   ]
+  },
+  {
+   "enonce": "Le goodwill (survaleur) dégagé lors d'une acquisition se calcule comme :",
+   "ancre": "m13-s1",
+   "options": [
+    {
+     "texte": "Prix payé − actif net réévalué à la juste valeur",
+     "correcte": true,
+     "justif": "Le goodwill est le surplus payé au-delà de l'actif net réévalué (marque, clientèle, synergies)."
+    },
+    {
+     "texte": "Prix payé − actif net COMPTABLE (non réévalué)",
+     "correcte": false,
+     "justif": "Il faut d'abord réévaluer l'actif net à la juste valeur (IFRS 3)."
+    },
+    {
+     "texte": "Chiffre d'affaires × un multiple sectoriel",
+     "correcte": false,
+     "justif": "C'est une méthode de valorisation, pas le calcul du goodwill."
+    }
+   ]
+  },
+  {
+   "enonce": "Pourquoi de nombreuses opérations de croissance externe détruisent-elles de la valeur ?",
+   "ancre": "m13-s1",
+   "options": [
+    {
+     "texte": "Parce qu'on sur-paie et/ou qu'on rate l'INTÉGRATION post-acquisition",
+     "correcte": true,
+     "justif": "Un prix > valeur+synergies, ou une intégration ratée, détruisent la valeur attendue."
+    },
+    {
+     "texte": "Parce que la due diligence est interdite",
+     "correcte": false,
+     "justif": "La due diligence est au contraire recommandée pour limiter le risque."
+    },
+    {
+     "texte": "Parce que le goodwill est toujours nul",
+     "correcte": false,
+     "justif": "Le goodwill est souvent positif ; le problème vient du prix et de l'intégration."
+    }
+   ]
+  },
+  {
+   "enonce": "Quelle est la différence entre risque climatique PHYSIQUE et risque de TRANSITION ?",
+   "ancre": "m13-s2",
+   "options": [
+    {
+     "texte": "Physique = dégâts des événements climatiques sur les actifs ; transition = effets de la réglementation/du marché bas-carbone",
+     "correcte": true,
+     "justif": "Le physique frappe les actifs ; la transition vient du changement réglementaire et de demande."
+    },
+    {
+     "texte": "Physique = risque de change ; transition = risque de taux",
+     "correcte": false,
+     "justif": "Ce sont des risques financiers classiques, pas les risques climatiques."
+    },
+    {
+     "texte": "Ce sont deux noms pour le même risque",
+     "correcte": false,
+     "justif": "Ce sont deux canaux d'impact bien distincts."
+    }
+   ]
+  },
+  {
+   "enonce": "À quoi sert un « stress test » pour évaluer l'impact financier d'un risque ?",
+   "ancre": "m13-s2",
+   "options": [
+    {
+     "texte": "À mesurer l'impact d'un scénario adverse extrême mais plausible sur la solvabilité/rentabilité",
+     "correcte": true,
+     "justif": "Le stress test soumet le modèle à un choc pour révéler la vulnérabilité."
+    },
+    {
+     "texte": "À calculer le résultat dans le scénario le plus probable",
+     "correcte": false,
+     "justif": "Le stress test porte sur un scénario ADVERSE, pas central."
+    },
+    {
+     "texte": "À optimiser le taux d'imposition",
+     "correcte": false,
+     "justif": "Aucun rapport avec la fiscalité."
+    }
+   ]
+  },
+  {
+   "enonce": "L'intégration des risques ESG dans l'analyse financière :",
+   "ancre": "m13-s2",
+   "options": [
+    {
+     "texte": "A un impact financier réel (coûts, valorisation, coût du capital)",
+     "correcte": true,
+     "justif": "Les risques ESG affectent les flux, la valeur et l'accès au financement."
+    },
+    {
+     "texte": "Est purement cosmétique et sans effet sur les comptes",
+     "correcte": false,
+     "justif": "L'ESG a des conséquences financières concrètes (taxes carbone, actifs échoués…)."
+    },
+    {
+     "texte": "Concerne uniquement les ONG",
+     "correcte": false,
+     "justif": "C'est une exigence pour les entreprises (CSRD, taxonomie)."
+    }
+   ]
+  },
+  {
+   "enonce": "Dans le modèle des « 3 lignes de maîtrise », l'audit interne est :",
+   "ancre": "m13-s3",
+   "options": [
+    {
+     "texte": "La 3e ligne : une assurance INDÉPENDANTE sur l'efficacité des dispositifs",
+     "correcte": true,
+     "justif": "Ligne 1 = opérationnels, ligne 2 = contrôle/conformité, ligne 3 = audit interne indépendant."
+    },
+    {
+     "texte": "La 1re ligne : il prend les risques opérationnels",
+     "correcte": false,
+     "justif": "Les opérationnels sont la 1re ligne ; l'audit doit rester indépendant."
+    },
+    {
+     "texte": "Identique au commissaire aux comptes",
+     "correcte": false,
+     "justif": "Le CAC est un audit EXTERNE légal ; l'audit interne est interne et permanent."
+    }
+   ]
+  },
+  {
+   "enonce": "Pour évaluer la progression d'un processus de gestion des risques, il faut d'abord :",
+   "ancre": "m13-s3",
+   "options": [
+    {
+     "texte": "Définir des VALEURS DE RÉFÉRENCE (départ vs objectif) pour chaque indicateur",
+     "correcte": true,
+     "justif": "Sans point de départ ni cible, impossible de mesurer une progression en %."
+    },
+    {
+     "texte": "Supprimer tous les indicateurs existants",
+     "correcte": false,
+     "justif": "On s'appuie sur les indicateurs (KRI/KCI), on ne les supprime pas."
+    },
+    {
+     "texte": "Attendre le contrôle externe",
+     "correcte": false,
+     "justif": "L'évaluation interne est continue, elle n'attend pas l'audit externe."
+    }
+   ]
+  },
+  {
+   "enonce": "Que mesure un KRI (Key Risk Indicator) ?",
+   "ancre": "m13-s3",
+   "options": [
+    {
+     "texte": "Le niveau d'exposition/d'alerte sur un risque",
+     "correcte": true,
+     "justif": "Le KRI alerte sur l'évolution d'un risque ; le KCI mesure l'efficacité des contrôles."
+    },
+    {
+     "texte": "La rentabilité commerciale d'un produit",
+     "correcte": false,
+     "justif": "C'est un indicateur de performance, pas de risque."
+    },
+    {
+     "texte": "Le taux de TVA applicable",
+     "correcte": false,
+     "justif": "Aucun lien avec la mesure du risque."
+    }
+   ]
+  },
+  {
+   "enonce": "Comment bien communiquer un résultat financier à des opérationnels non-financiers ?",
+   "ancre": "m13-s4",
+   "options": [
+    {
+     "texte": "Message-clé d'abord, visuels simples, et relier le chiffre à une décision concrète",
+     "correcte": true,
+     "justif": "La vulgarisation part du besoin de l'interlocuteur et conclut sur le « so what »."
+    },
+    {
+     "texte": "Présenter le maximum de tableaux détaillés avec tout le jargon",
+     "correcte": false,
+     "justif": "On perd l'auditoire : il faut simplifier et visualiser."
+    },
+    {
+     "texte": "Ne donner aucun chiffre pour ne pas les perdre",
+     "correcte": false,
+     "justif": "On simplifie, mais on garde les chiffres clés reliés aux enjeux."
+    }
+   ]
+  },
+  {
+   "enonce": "Quel outil sert à clarifier « qui fait quoi » entre les parties prenantes d'un projet ?",
+   "ancre": "m13-s5",
+   "options": [
+    {
+     "texte": "La matrice RACI (Responsable, Approbateur, Consulté, Informé)",
+     "correcte": true,
+     "justif": "La RACI répartit clairement les rôles et évite les zones grises."
+    },
+    {
+     "texte": "Le diagramme de Gantt",
+     "correcte": false,
+     "justif": "Le Gantt planifie les tâches dans le temps, il ne répartit pas les rôles."
+    },
+    {
+     "texte": "Le seuil de rentabilité",
+     "correcte": false,
+     "justif": "C'est un indicateur de risque, pas un outil de projet."
+    }
+   ]
+  },
+  {
+   "enonce": "Le suivi d'un projet financier repose surtout sur :",
+   "ancre": "m13-s5",
+   "options": [
+    {
+     "texte": "Le suivi des ÉCARTS entre prévu et réalisé (budget et délais)",
+     "correcte": true,
+     "justif": "On pilote en comparant l'avancement/budget réel aux prévisions pour corriger à temps."
+    },
+    {
+     "texte": "L'attente de la fin du projet pour tout évaluer",
+     "correcte": false,
+     "justif": "Le suivi est CONTINU, sinon la dérive n'est pas détectée."
+    },
+    {
+     "texte": "Le seul respect du planning, sans regarder le budget",
+     "correcte": false,
+     "justif": "Il faut suivre à la fois les délais ET le budget."
+    }
+   ]
+  },
+  {
+   "enonce": "Un objectif de projet financier bien formulé doit être :",
+   "ancre": "m13-s5",
+   "options": [
+    {
+     "texte": "SMART (Spécifique, Mesurable, Atteignable, Réaliste, Temporel)",
+     "correcte": true,
+     "justif": "Sans objectif mesurable et daté, le projet est impilotable."
+    },
+    {
+     "texte": "Volontairement vague pour garder de la souplesse",
+     "correcte": false,
+     "justif": "Un objectif vague empêche tout pilotage et toute évaluation."
+    },
+    {
+     "texte": "Uniquement qualitatif, sans échéance",
+     "correcte": false,
+     "justif": "Il faut du mesurable et une échéance (le M et le T de SMART)."
+    }
+   ]
+  }
+ ]
+}
