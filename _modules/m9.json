@@ -1,0 +1,371 @@
+{
+  "id": "m9",
+  "num": 9,
+  "nom": "Évaluation & diagnostic financier",
+  "essentiel": {
+    "a_retenir": [
+      "Il existe TROIS familles de méthodes de valorisation : par les FLUX (DCF, Gordon-Shapiro), COMPARATIVES (multiples : PER, EV/EBITDA, EV/CA) et PATRIMONIALES (ANCC, goodwill). On choisit la méthode selon le contexte de l'opération.",
+      "Le DCF actualise les Free Cash Flows au CMPC : on obtient la valeur de l'actif économique (valeur d'entreprise), puis on ÔTE la dette nette et on AJOUTE les actifs hors exploitation pour obtenir la valeur des capitaux propres.",
+      "Le modèle de Gordon-Shapiro valorise un titre par ses dividendes croissants à l'infini : V = D1 / (i − g), valable uniquement si i > g (sinon la formule n'a pas de sens).",
+      "Les multiples se classent en deux groupes : ceux APRÈS frais financiers (PER) donnent directement la valeur des capitaux propres ; ceux AVANT frais financiers (EV/EBITDA, EV/EBIT, EV/CA) donnent la valeur d'entreprise, dont il faut retrancher la dette nette.",
+      "La méthode des multiples consiste à calculer un multiple moyen sur un échantillon de comparables du secteur, puis à l'appliquer à l'agrégat correspondant de la cible.",
+      "L'ANCC (Actif Net Comptable Corrigé) part de l'actif net comptable, retranche les actifs fictifs, réévalue les actifs à leur valeur économique et intègre la fiscalité différée.",
+      "Le goodwill (survaleur) est l'actualisation du SUPERPROFIT : la part de bénéfice qui dépasse la rémunération normale des actifs au taux sans risque. Valeur de l'entreprise = ANCC (hors fonds de commerce) + goodwill.",
+      "La valeur n'est jamais un chiffre unique : c'est une FOURCHETTE issue du croisement des méthodes ; le prix final résulte d'une négociation.",
+      "Le contexte commande la méthode : liquidation → patrimoniale ; augmentation de capital → comparative + flux ; IPO → comparative + DCF ; acquisition/LBO → DCF + multiples ; transmission familiale → ANCC + goodwill (mixte).",
+      "Le diagnostic financier d'un groupe (modèle LVMH / Phone Solving appliqué à Dassault Systèmes) suit un plan en 4 axes : profitabilité, rentabilité, équilibre financier, trésorerie. Toujours : calculs, PUIS commentaire, PUIS conclusion.",
+      "On distingue rentabilité ÉCONOMIQUE (résultat éco × (1−IS) / capitaux employés) et rentabilité FINANCIÈRE (ROE = RN / capitaux propres) : la première mesure l'outil, la seconde la rémunération de l'actionnaire.",
+      "Le diagnostic stratégique se lit aussi dans le PARCOURS BOURSIER : le passage d'une prime de croissance (PER élevé) à des doutes sur la trajectoire provoque un dégonflement de la valorisation (cas Dassault Systèmes 2025-2026).",
+      "Un examen open-book : la note se joue sur la MÉTHODE, l'INTERPRÉTATION des chiffres et la RECOMMANDATION finale, pas sur le par-cœur. Chaque calcul doit être suivi d'une phrase d'interprétation."
+    ],
+    "chiffres": [
+      "Dividendes constants (Irving Fisher) : V = D / i",
+      "Gordon-Shapiro (dividendes croissants) : V = D1 / (i − g), avec i > g",
+      "Free Cash Flow : FCF = REX × (1 − IS) + DAP − CAPEX − ΔBFR",
+      "DCF : valeur des CP = (FCF actualisés au CMPC + VT actualisée) − dette nette + actifs hors exploitation",
+      "Valeur terminale : VT = FCF(n+1) / (CMPC − g), puis actualisée au CMPC",
+      "CMPC = Kcp × CP/(CP+D) + Kd × (1−IS) × D/(CP+D)",
+      "Kcp (MEDAF) = Rf + β × (Rm − Rf)",
+      "PER = Cours / BPA = Capitalisation / Résultat net",
+      "EV/EBITDA, EV/EBIT, EV/CA : multiples AVANT frais financiers → donnent la valeur d'entreprise (VE)",
+      "ANCC = valeur économique des actifs réels − dettes réelles (actifs fictifs retranchés, réévaluation, fiscalité différée)",
+      "Valeur (méthode du goodwill) = ANCC (hors fonds de commerce) + Goodwill ; Goodwill = actualisation du superprofit",
+      "Superprofit = bénéfice − rémunération normale des actifs au taux sans risque",
+      "Taux de marge opérationnelle = REX / CA",
+      "Rentabilité économique = Résultat éco × (1 − IS) / Capitaux employés",
+      "Rentabilité financière : ROE = RN / Capitaux propres",
+      "Rendement de l'action = Dividende / Cours ; ANC par action = Capitaux propres / nombre d'actions"
+    ],
+    "pieges": [
+      "Oublier de retrancher la dette nette après un multiple AVANT frais financiers (EV/EBITDA, EV/CA) : on resterait sur la valeur d'entreprise au lieu de la valeur des capitaux propres.",
+      "Appliquer Gordon-Shapiro quand g ≥ i : la formule V = D1/(i−g) devient absurde (dénominateur nul ou négatif).",
+      "Confondre flux de trésorerie et résultat comptable dans le DCF : on actualise des FREE CASH FLOWS, pas le résultat net.",
+      "Oublier d'intégrer la fiscalité différée et de retrancher les actifs fictifs dans l'ANCC.",
+      "Présenter UN chiffre unique de valeur : la valeur est une fourchette, le prix se négocie.",
+      "Sélectionner des comparables hors secteur ou non homogènes : un multiple n'a de sens que sur un échantillon réellement comparable.",
+      "Donner un ratio ou un calcul sans interprétation ni recommandation : c'est l'interprétation qui rapporte les points au niveau 7."
+    ]
+  },
+  "sections": [
+    {
+      "id": "m9-s1",
+      "titre": "Les trois familles de méthodes et le choix selon le contexte",
+      "points": [
+        "Évaluer une entreprise, ce n'est pas appliquer une seule recette : c'est mobiliser TROIS familles de méthodes complémentaires. (1) Les méthodes par les FLUX valorisent l'entreprise par sa capacité future à générer des liquidités : modèle des dividendes (Fisher, Gordon-Shapiro) et DCF (Discounted Cash Flows). (2) Les méthodes COMPARATIVES (ou par les multiples) valorisent par référence au marché : on observe le prix payé pour des sociétés comparables et on applique le même multiple à la cible. (3) Les méthodes PATRIMONIALES valorisent les actifs détenus : ANCC et, en version mixte, ANCC + goodwill.",
+        "Le choix de la méthode dépend du CONTEXTE de l'opération. En liquidation, on retient une approche patrimoniale (ANCC liquidative), car l'entreprise n'a plus d'avenir en tant qu'exploitation : seuls ses actifs revendables comptent. Pour une augmentation de capital, on combine comparative et flux. Pour une introduction en Bourse (IPO), on privilégie les multiples (référence au marché) complétés par un DCF. Pour une acquisition ou un LBO, on associe DCF et multiples. Pour une transmission familiale, on retient la méthode mixte ANCC + goodwill, qui valorise à la fois le patrimoine et la rentabilité supérieure de l'affaire.",
+        "Conclusion centrale du cours : la valeur n'est PAS un chiffre unique mais une FOURCHETTE. Chaque méthode donne une estimation ; leur croisement borne une plage de valeur. Le prix final, lui, est le fruit d'une NÉGOCIATION entre vendeur et acheteur, qui dépend du rapport de force, des synergies attendues et du contexte du marché."
+      ],
+      "chiffres": [
+        "Liquidation → Patrimoniale (ANCC liquidative)",
+        "Augmentation de capital → Comparative + Flux",
+        "Introduction en Bourse → Comparative (multiples) + DCF",
+        "Acquisition / LBO → DCF + Multiples",
+        "Transmission familiale → ANCC + Goodwill (mixte)"
+      ],
+      "pieges": [
+        "Appliquer une seule méthode et en faire LA valeur : le jury attend un croisement de méthodes et une fourchette argumentée.",
+        "Choisir une méthode sans la justifier par le contexte de l'opération (vente, IPO, liquidation, transmission)."
+      ]
+    },
+    {
+      "id": "m9-s2",
+      "titre": "Méthodes par les flux : dividendes et Gordon-Shapiro",
+      "points": [
+        "La logique des méthodes par les flux : la valeur d'un actif est la somme actualisée des flux qu'il rapportera à son détenteur. Pour un actionnaire qui conserve son titre, ces flux sont les DIVIDENDES futurs. Si l'on suppose un dividende CONSTANT versé à l'infini (modèle d'Irving Fisher), la valeur du titre est V = D / i, où D est le dividende annuel et i le coût des fonds propres (taux de rentabilité exigé par l'actionnaire). C'est une rente perpétuelle.",
+        "Le modèle de Gordon-Shapiro affine cette idée en supposant que le dividende CROÎT à un taux constant g à l'infini. La valeur devient V = D1 / (i − g), où D1 est le PROCHAIN dividende (le dividende de l'année à venir, et non celui qui vient d'être versé), i le coût des fonds propres et g le taux de croissance perpétuelle des dividendes. La condition de validité est impérative : i > g. Si g était supérieur ou égal à i, le dénominateur serait nul ou négatif et la valeur n'aurait aucun sens économique (une croissance perpétuelle au-dessus du taux d'actualisation conduirait à une valeur infinie).",
+        "Ces modèles sont simples et parlants, mais sensibles aux hypothèses : une petite variation de i ou de g change fortement la valeur. Ils conviennent surtout aux sociétés matures, à dividende régulier et prévisible. Ils servent aussi de brique au DCF : la valeur terminale d'un DCF reprend exactement la logique de la rente croissante de Gordon-Shapiro."
+      ],
+      "chiffres": [
+        "Dividendes constants (Fisher) : V = D / i",
+        "Gordon-Shapiro : V = D1 / (i − g), avec i > g",
+        "D1 = prochain dividende ; i = coût des fonds propres ; g = croissance perpétuelle"
+      ],
+      "pieges": [
+        "Utiliser le dividende qui vient d'être versé (D0) au lieu du prochain (D1) au numérateur de Gordon-Shapiro.",
+        "Oublier la condition i > g : avec g ≥ i la formule explose et le résultat est faux."
+      ]
+    },
+    {
+      "id": "m9-s3",
+      "titre": "Le DCF : actualisation des Free Cash Flows au CMPC",
+      "points": [
+        "Le DCF (Discounted Cash Flows) est la méthode reine pour valoriser une entreprise par sa capacité à générer du cash. On part du Free Cash Flow (flux de trésorerie disponible) de chaque année prévisionnelle : FCF = REX × (1 − IS) + DAP − CAPEX − ΔBFR. On part du résultat d'exploitation net d'impôt (REX × (1−IS), aussi appelé NOPAT), on rajoute les dotations aux amortissements (DAP, charges non décaissées), on retranche les investissements (CAPEX) et la variation du besoin en fonds de roulement (ΔBFR, car une hausse de BFR consomme de la trésorerie).",
+        "On actualise ces FCF au CMPC (coût moyen pondéré du capital), car les FCF rémunèrent à la fois les actionnaires ET les créanciers : le taux d'actualisation doit donc refléter le coût de toutes les sources de financement. CMPC = Kcp × CP/(CP+D) + Kd × (1−IS) × D/(CP+D). Le coût des fonds propres Kcp se calcule par le MEDAF : Kcp = Rf + β × (Rm − Rf), où Rf est le taux sans risque, β la sensibilité de l'action au marché et (Rm − Rf) la prime de risque du marché. Le coût de la dette est pris APRÈS impôt, car les intérêts sont déductibles : Kd × (1 − IS).",
+        "Au-delà de l'horizon explicite de prévision, on calcule une VALEUR TERMINALE qui capture toute la valeur des flux futurs : VT = FCF(n+1) / (CMPC − g), où g est le taux de croissance à l'infini. Cette VT est ensuite actualisée au CMPC comme les autres flux. La somme des FCF actualisés et de la VT actualisée donne la VALEUR DE L'ACTIF ÉCONOMIQUE (valeur d'entreprise). Pour passer à la VALEUR DES CAPITAUX PROPRES, on applique le pont (bridge) : on ÔTE la dette nette et on AJOUTE les actifs hors exploitation.",
+        "Attention à ne pas confondre flux et résultat : le DCF actualise des FLUX DE TRÉSORERIE, pas le résultat comptable. C'est pour cela qu'on neutralise les charges non décaissées (on rajoute les DAP) et qu'on intègre les décaissements réels d'investissement et de BFR."
+      ],
+      "chiffres": [
+        "FCF = REX × (1 − IS) + DAP − CAPEX − ΔBFR",
+        "CMPC = Kcp × CP/(CP+D) + Kd × (1−IS) × D/(CP+D)",
+        "Kcp (MEDAF) = Rf + β × (Rm − Rf)",
+        "VT = FCF(n+1) / (CMPC − g), actualisée au CMPC",
+        "Valeur des CP = valeur d'entreprise − dette nette + actifs hors exploitation"
+      ],
+      "pieges": [
+        "Actualiser le résultat net au lieu des Free Cash Flows : le DCF raisonne en trésorerie.",
+        "Oublier de retrancher la dette nette pour passer de la valeur d'entreprise à la valeur des capitaux propres.",
+        "Prendre le coût de la dette avant impôt dans le CMPC : il faut Kd × (1 − IS)."
+      ]
+    },
+    {
+      "id": "m9-s4",
+      "titre": "Méthodes comparatives : PER, EV/EBITDA, EV/CA",
+      "points": [
+        "Les méthodes comparatives valorisent la cible par référence au marché. Le principe : on constitue un échantillon de sociétés COMPARABLES du même secteur, on calcule pour elles un multiple (rapport entre une valeur et un agrégat financier), on en tire un multiple moyen, puis on l'applique à l'agrégat correspondant de la cible. La pertinence dépend entièrement de l'homogénéité de l'échantillon : des comparables hors secteur ou de profil différent faussent l'évaluation.",
+        "Distinction CAPITALE entre deux types de multiples. Les multiples APRÈS frais financiers donnent DIRECTEMENT la valeur des capitaux propres : c'est le cas du PER (Price Earning Ratio) = Cours / BPA = Capitalisation / Résultat net. Comme le résultat net est calculé après les frais financiers, le PER intègre déjà la structure d'endettement et conduit à la valeur revenant aux actionnaires.",
+        "Les multiples AVANT frais financiers donnent la VALEUR D'ENTREPRISE (VE) et non la valeur des capitaux propres : EV/EBITDA, EV/EBIT et EV/CA. L'EBITDA, l'EBIT et le CA sont des agrégats calculés AVANT la charge d'intérêts ; le multiple porte donc sur la valeur de l'ensemble actionnaires + créanciers. Pour obtenir la valeur des capitaux propres, il faut RETRANCHER la dette nette de la valeur d'entreprise ainsi estimée. Oublier ce retraitement est l'erreur classique.",
+        "Le choix du multiple dépend du secteur et de la disponibilité des données : EV/EBITDA est très utilisé car il neutralise les politiques d'amortissement et la structure financière ; EV/CA convient quand les résultats sont peu significatifs (sociétés jeunes ou en perte) ; le PER reste la référence pour les sociétés cotées matures et rentables."
+      ],
+      "chiffres": [
+        "PER = Cours / BPA = Capitalisation / Résultat net (multiple APRÈS frais financiers → valeur des CP)",
+        "EV/EBITDA, EV/EBIT, EV/CA : multiples AVANT frais financiers → valeur d'entreprise",
+        "Valeur des CP = (multiple AVANT FF × agrégat) − dette nette"
+      ],
+      "pieges": [
+        "Oublier de retrancher la dette nette après un multiple EV/EBITDA, EV/EBIT ou EV/CA.",
+        "Croire que le PER donne la valeur d'entreprise : non, il donne directement la valeur des capitaux propres.",
+        "Bâtir l'échantillon avec des comparables non homogènes (secteur, taille, croissance différents)."
+      ]
+    },
+    {
+      "id": "m9-s5",
+      "titre": "Méthodes patrimoniales : ANCC et goodwill",
+      "points": [
+        "Les méthodes patrimoniales valorisent l'entreprise par ce qu'elle POSSÈDE. L'ANCC (Actif Net Comptable Corrigé) part de l'actif net comptable (capitaux propres) et le corrige pour passer d'une valeur comptable à une valeur ÉCONOMIQUE : on retranche les actifs FICTIFS (frais d'établissement, charges à répartir... qui n'ont pas de valeur de revente), on RÉÉVALUE les actifs réels à leur valeur de marché (immobilier, titres, etc.), et on intègre la FISCALITÉ DIFFÉRÉE (impôt latent sur les plus-values de réévaluation, subventions, provisions réglementées). L'ANCC = valeur économique des actifs réels − dettes réelles.",
+        "L'ANCC seul ignore un élément essentiel : la capacité de l'entreprise à dégager un bénéfice SUPÉRIEUR à ce que rapporteraient ses seuls actifs. C'est l'objet du GOODWILL (survaleur). Le goodwill est l'actualisation du SUPERPROFIT, c'est-à-dire la part de bénéfice qui dépasse la rémunération NORMALE des actifs au taux sans risque. Autrement dit : si les actifs investis devaient rapporter X au taux sans risque et que l'entreprise dégage davantage, ce surplus récurrent vaut quelque chose — c'est la valeur immatérielle (clientèle, savoir-faire, marque).",
+        "La méthode mixte combine les deux : Valeur de l'entreprise = ANCC (hors fonds de commerce) + Goodwill. On évite ainsi de compter deux fois les éléments incorporels : on prend la valeur patrimoniale des actifs tangibles (ANCC hors fonds de commerce) à laquelle on ajoute la survaleur économique (goodwill). Cette approche est privilégiée dans les TRANSMISSIONS FAMILIALES, où l'on veut à la fois valoriser le patrimoine accumulé et la rentabilité supérieure de l'affaire."
+      ],
+      "chiffres": [
+        "ANCC = valeur économique des actifs réels − dettes réelles",
+        "ANCC : retrancher les actifs fictifs + réévaluer + intégrer la fiscalité différée",
+        "Valeur = ANCC (hors fonds de commerce) + Goodwill",
+        "Goodwill = actualisation du superprofit",
+        "Superprofit = bénéfice − rémunération normale des actifs au taux sans risque"
+      ],
+      "pieges": [
+        "Conserver les actifs fictifs dans l'ANCC : ils n'ont aucune valeur de revente et doivent être retranchés.",
+        "Oublier la fiscalité différée sur les plus-values de réévaluation.",
+        "Compter deux fois les incorporels : on prend l'ANCC HORS fonds de commerce puis on ajoute le goodwill."
+      ]
+    },
+    {
+      "id": "m9-s6",
+      "titre": "Diagnostic financier d'un groupe en 4 axes (cas Dassault Systèmes)",
+      "points": [
+        "Le diagnostic financier d'un groupe se traite selon un plan en QUATRE AXES (modèle des cas LVMH / Phone Solving du cours, directement transposable à Dassault Systèmes). Axe 1 — PROFITABILITÉ : taux de marge brute, taux de marge opérationnelle = REX / CA. Axe 2 — RENTABILITÉ : économique (Résultat éco × (1−IS) / Capitaux employés) et financière (ROE = RN / Capitaux propres). Axe 3 — ÉQUILIBRE FINANCIER : niveau et structure de l'endettement, autonomie. Axe 4 — TRÉSORERIE : flux d'exploitation, d'investissement et de financement. Règle de rédaction : pour chaque axe, d'abord les calculs SÉPARÉS, puis le commentaire, puis la conclusion.",
+        "Au diagnostic financier s'ajoute un diagnostic STRATÉGIQUE et une lecture du PARCOURS BOURSIER. Pour Dassault Systèmes (données 2025-2026, à actualiser le jour J) : leader mondial du PLM et de la plateforme 3DEXPERIENCE, modèle récurrent par souscriptions/abonnements, marge opérationnelle solide d'environ 30 %, R&D élevée. MAIS la croissance comparable n'a été que d'environ +1 % en 2025, très en deçà des attentes, à cause du ralentissement dans les Sciences de la Vie (Medidata) et de la faiblesse du secteur automobile en Europe ; les prévisions ont été abaissées (CA 2026 attendu à +3-5 % à change constant).",
+        "Le parcours boursier illustre un mécanisme de marché fondamental : le passage d'une PRIME DE CROISSANCE (PER élevé justifié par une croissance forte attendue) à des DOUTES sur la trajectoire provoque un dégonflement de la valorisation. L'action Dassault Systèmes a chuté d'environ 19-21 % le jour des résultats (11 février 2026) — pire séance depuis l'introduction de 1996 — et a perdu environ 27 % sur 2025, l'une des pires performances du CAC 40 alors que l'indice gagnait plus de +10 %. Lecture : un titre de qualité peut décrocher quand le marché ne paie plus la croissance promise.",
+        "Le diagnostic débouche sur un REPORTING (tableau de bord). Pour un éditeur de logiciel comme Dassault Systèmes, les indicateurs FINANCIERS pertinents : CA et croissance organique à taux constants, marge opérationnelle, BPA, FCF, taux de récurrence des revenus (souscriptions), R&D/CA, trésorerie nette. Les indicateurs EXTRA-FINANCIERS : effectifs R&D, satisfaction/rétention clients, part des revenus cloud, indicateurs RSE (empreinte, mixité). Chaque indicateur : valeur + tendance + cible + code couleur, en croisant des sources fiabilisées (comptes audités) et le consensus d'analystes."
+      ],
+      "chiffres": [
+        "Taux de marge opérationnelle = REX / CA",
+        "Rentabilité économique = Résultat éco × (1−IS) / Capitaux employés",
+        "ROE = RN / Capitaux propres",
+        "Dassault Systèmes 2025 : croissance comparable ~+1 %, marge opérationnelle ~30 %",
+        "Action : ~ −19 à −21 % le 11/02/2026 (pire séance depuis 1996), ~ −27 % sur 2025"
+      ],
+      "pieges": [
+        "Mélanger les axes : il faut traiter profitabilité, rentabilité, équilibre et trésorerie séparément.",
+        "Donner les ratios sans commentaire ni conclusion (la règle est : calculs PUIS commentaire PUIS conclusion).",
+        "Choisir des KPI génériques non reliés au modèle SaaS/récurrent de l'éditeur (oublier ARR, R&D/CA, récurrence)."
+      ]
+    }
+  ],
+  "visuals": [
+    {
+      "type": "compare",
+      "titre": "Multiples : avant ou après frais financiers ?",
+      "intro": "Le sort de la dette nette dépend du type de multiple. Un multiple après frais financiers (PER) donne directement la valeur des capitaux propres ; un multiple avant frais financiers donne la valeur d'entreprise, dont il faut retrancher la dette nette.",
+      "ancre": "m9-s4",
+      "headers": ["Critère", "PER (après FF)", "EV/EBITDA, EV/EBIT, EV/CA (avant FF)"],
+      "rows": [
+        {"cells": ["Agrégat utilisé", "Résultat net (après intérêts)", "EBITDA / EBIT / CA (avant intérêts)"]},
+        {"cells": ["Valeur obtenue", "Valeur des capitaux propres (directe)", "Valeur d'entreprise (VE)"]},
+        {"cells": ["Retraitement de la dette nette", "Aucun (déjà intégrée)", "Retrancher la dette nette pour avoir les CP"]},
+        {"cells": ["Cas d'usage typique", "Société cotée mature et rentable", "Neutraliser amortissements/structure ; sociétés en perte (EV/CA)"]}
+      ]
+    },
+    {
+      "type": "flow",
+      "titre": "Du Free Cash Flow à la valeur des capitaux propres (DCF)",
+      "intro": "Le chemin du DCF : on construit les FCF, on les actualise au CMPC avec la valeur terminale, on obtient la valeur d'entreprise, puis on applique le pont vers les capitaux propres.",
+      "ancre": "m9-s3",
+      "steps": [
+        {"t": "1. Construire les FCF", "d": "FCF = REX × (1−IS) + DAP − CAPEX − ΔBFR pour chaque année prévisionnelle."},
+        {"t": "2. Valeur terminale", "d": "VT = FCF(n+1) / (CMPC − g) pour capter les flux au-delà de l'horizon."},
+        {"t": "3. Actualiser au CMPC", "d": "Actualiser FCF et VT au CMPC = Kcp×CP/(CP+D) + Kd(1−IS)×D/(CP+D)."},
+        {"t": "4. Valeur d'entreprise", "d": "Somme des FCF actualisés + VT actualisée = valeur de l'actif économique."},
+        {"t": "5. Pont vers les CP", "d": "− dette nette + actifs hors exploitation = valeur des capitaux propres."}
+      ]
+    },
+    {
+      "type": "compare",
+      "titre": "Quelle méthode pour quel contexte ?",
+      "intro": "Le contexte de l'opération commande la ou les méthodes à mobiliser. La valeur finale reste une fourchette issue de leur croisement.",
+      "ancre": "m9-s1",
+      "headers": ["Contexte", "Méthode(s) préférée(s)"],
+      "rows": [
+        {"cells": ["Liquidation", "Patrimoniale (ANCC liquidative)"]},
+        {"cells": ["Augmentation de capital", "Comparative + Flux"]},
+        {"cells": ["Introduction en Bourse (IPO)", "Comparative (multiples) + DCF"]},
+        {"cells": ["Acquisition / LBO", "DCF + Multiples"]},
+        {"cells": ["Transmission familiale", "ANCC + Goodwill (mixte)"]}
+      ]
+    }
+  ],
+  "qcm": [
+    {
+      "enonce": "Une entreprise familiale rentable et bien implantée doit être transmise. Quelle méthode de valorisation est la plus adaptée à ce contexte ?",
+      "ancre": "m9-s1",
+      "options": [
+        {"texte": "La méthode mixte ANCC + goodwill", "correcte": true, "justif": "La transmission familiale appelle une approche mixte : on valorise à la fois le patrimoine (ANCC) et la rentabilité supérieure récurrente (goodwill)."},
+        {"texte": "L'ANCC liquidative seule", "correcte": false, "justif": "L'ANCC liquidative est réservée au contexte de liquidation, où l'entreprise n'a plus d'avenir en exploitation ; ici l'affaire est rentable et continue."},
+        {"texte": "Le seul multiple EV/CA", "correcte": false, "justif": "EV/CA est un multiple comparatif utile pour des sociétés jeunes ou en perte ; il ne capture ni le patrimoine ni la survaleur d'une affaire familiale rentable."}
+      ]
+    },
+    {
+      "enonce": "Dans un DCF, on a actualisé les FCF et la valeur terminale au CMPC et obtenu 800 M€. Que faut-il faire pour passer à la valeur des capitaux propres ?",
+      "ancre": "m9-s3",
+      "options": [
+        {"texte": "Ôter la dette nette et ajouter les actifs hors exploitation", "correcte": true, "justif": "Le DCF donne la valeur de l'actif économique (valeur d'entreprise) ; le pont vers les CP consiste à retrancher la dette nette et ajouter les actifs hors exploitation."},
+        {"texte": "Ajouter la dette nette et retrancher les actifs hors exploitation", "correcte": false, "justif": "C'est l'inverse : la dette nette se RETRANCHE (elle revient aux créanciers) et les actifs hors exploitation s'AJOUTENT."},
+        {"texte": "Multiplier par le PER du secteur", "correcte": false, "justif": "Mélanger DCF et multiples ainsi n'a pas de sens ; le passage VE → CP est un simple pont par la dette nette, pas une application de multiple."}
+      ]
+    },
+    {
+      "enonce": "Le modèle de Gordon-Shapiro s'écrit V = D1/(i − g). Quelle condition doit impérativement être respectée ?",
+      "ancre": "m9-s2",
+      "options": [
+        {"texte": "i > g (le coût des fonds propres supérieur à la croissance des dividendes)", "correcte": true, "justif": "Si i ≤ g, le dénominateur est nul ou négatif et la valeur devient infinie ou négative, ce qui n'a aucun sens économique."},
+        {"texte": "g > i", "correcte": false, "justif": "Avec g > i, le dénominateur (i − g) est négatif : la formule renvoie une valeur négative, absurde."},
+        {"texte": "i = g", "correcte": false, "justif": "Avec i = g, le dénominateur est nul : la division est impossible (valeur infinie)."}
+      ]
+    },
+    {
+      "enonce": "On applique un multiple EV/EBITDA du secteur à l'EBITDA de la cible et on obtient 1 200 M€. Que représente ce montant ?",
+      "ancre": "m9-s4",
+      "options": [
+        {"texte": "La valeur d'entreprise, dont il faut retrancher la dette nette pour avoir la valeur des CP", "correcte": true, "justif": "L'EBITDA est un agrégat avant frais financiers : le multiple donne la valeur d'entreprise (actionnaires + créanciers), il faut donc retrancher la dette nette."},
+        {"texte": "Directement la valeur des capitaux propres", "correcte": false, "justif": "Seuls les multiples APRÈS frais financiers (comme le PER) donnent directement la valeur des CP ; EV/EBITDA donne la VE."},
+        {"texte": "La valeur de liquidation des actifs", "correcte": false, "justif": "La valeur de liquidation relève de l'approche patrimoniale (ANCC liquidative), pas d'un multiple de marché."}
+      ]
+    },
+    {
+      "enonce": "Quelle formule du Free Cash Flow est correcte pour un DCF ?",
+      "ancre": "m9-s3",
+      "options": [
+        {"texte": "FCF = REX × (1 − IS) + DAP − CAPEX − ΔBFR", "correcte": true, "justif": "On part du résultat d'exploitation net d'impôt, on rajoute les DAP (non décaissées), on retranche les investissements et la variation de BFR (qui consomme du cash)."},
+        {"texte": "FCF = Résultat net − DAP + CAPEX + ΔBFR", "correcte": false, "justif": "On part du REX net d'impôt (pas du RN), on AJOUTE les DAP et on RETRANCHE CAPEX et ΔBFR : tous les signes sont inversés ici."},
+        {"texte": "FCF = REX × (1 − IS) − DAP + CAPEX + ΔBFR", "correcte": false, "justif": "Les DAP doivent être ajoutées (charges non décaissées) et CAPEX et ΔBFR retranchés ; cette version inverse ces trois termes."}
+      ]
+    },
+    {
+      "enonce": "Pourquoi le coût de la dette entre-t-il dans le CMPC sous la forme Kd × (1 − IS) ?",
+      "ancre": "m9-s3",
+      "options": [
+        {"texte": "Parce que les intérêts de la dette sont déductibles fiscalement (économie d'impôt)", "correcte": true, "justif": "La déductibilité des charges financières réduit l'impôt : le coût réel de la dette pour l'entreprise est donc minoré du facteur (1 − IS)."},
+        {"texte": "Parce que la dette n'est jamais remboursée", "correcte": false, "justif": "La dette est bien remboursable ; le facteur (1 − IS) traduit l'économie d'impôt sur les intérêts, pas une absence de remboursement."},
+        {"texte": "Parce que les actionnaires exigent une prime de risque", "correcte": false, "justif": "La prime de risque concerne le coût des fonds propres (MEDAF), pas l'ajustement fiscal du coût de la dette."}
+      ]
+    },
+    {
+      "enonce": "Selon le MEDAF, comment se calcule le coût des fonds propres Kcp utilisé dans le CMPC ?",
+      "ancre": "m9-s3",
+      "options": [
+        {"texte": "Kcp = Rf + β × (Rm − Rf)", "correcte": true, "justif": "Le MEDAF ajoute au taux sans risque une prime de risque de marché (Rm − Rf) pondérée par le bêta, qui mesure la sensibilité de l'action au marché."},
+        {"texte": "Kcp = Rf × β + Rm", "correcte": false, "justif": "Cette combinaison ne correspond pas au MEDAF : le bêta pondère la PRIME (Rm − Rf), pas le taux sans risque seul, et Rm ne s'ajoute pas brut."},
+        {"texte": "Kcp = D1 / (i − g)", "correcte": false, "justif": "C'est la formule de Gordon-Shapiro pour la valeur d'un titre, pas le calcul du coût des fonds propres par le MEDAF."}
+      ]
+    },
+    {
+      "enonce": "Dans le calcul de l'ANCC, que fait-on des actifs fictifs (frais d'établissement, charges à répartir) ?",
+      "ancre": "m9-s5",
+      "options": [
+        {"texte": "On les retranche car ils n'ont aucune valeur de revente", "correcte": true, "justif": "Les actifs fictifs sont des non-valeurs économiques : ils gonflent le bilan comptable mais ne valent rien à la revente, donc on les élimine de l'ANCC."},
+        {"texte": "On les réévalue à la hausse", "correcte": false, "justif": "On réévalue les actifs RÉELS (immobilier, titres) ; les actifs fictifs n'ont pas de valeur de marché à réévaluer, on les supprime."},
+        {"texte": "On les conserve à leur valeur comptable", "correcte": false, "justif": "Les conserver fausserait l'ANCC à la hausse ; l'objectif est précisément de passer d'une valeur comptable à une valeur économique."}
+      ]
+    },
+    {
+      "enonce": "Qu'est-ce que le goodwill (survaleur) dans la méthode mixte ?",
+      "ancre": "m9-s5",
+      "options": [
+        {"texte": "L'actualisation du superprofit, c'est-à-dire le bénéfice dépassant la rémunération normale des actifs au taux sans risque", "correcte": true, "justif": "Le goodwill capte la valeur immatérielle (clientèle, savoir-faire) : il actualise le surplus de bénéfice récurrent au-delà de ce que rapporteraient les seuls actifs au taux sans risque."},
+        {"texte": "La somme des actifs fictifs du bilan", "correcte": false, "justif": "Les actifs fictifs sont des non-valeurs retranchées de l'ANCC ; ils n'ont rien à voir avec la survaleur économique."},
+        {"texte": "La dette nette de l'entreprise", "correcte": false, "justif": "La dette nette intervient pour passer de la valeur d'entreprise aux capitaux propres en DCF/multiples ; ce n'est pas le goodwill."}
+      ]
+    },
+    {
+      "enonce": "Pourquoi dit-on que la valeur d'une entreprise est une fourchette et non un chiffre unique ?",
+      "ancre": "m9-s1",
+      "options": [
+        {"texte": "Parce que chaque méthode donne une estimation différente et que le prix final résulte d'une négociation", "correcte": true, "justif": "Le croisement DCF / multiples / patrimoniale borne une plage de valeur ; le prix payé dépend ensuite du rapport de force et des synergies, donc de la négociation."},
+        {"texte": "Parce que les méthodes donnent toujours exactement le même résultat", "correcte": false, "justif": "Au contraire, les méthodes divergent : c'est précisément cette divergence qui crée la fourchette."},
+        {"texte": "Parce qu'une seule méthode (le DCF) suffit toujours", "correcte": false, "justif": "Aucune méthode n'est suffisante seule ; le jury attend un croisement de méthodes pour borner la valeur."}
+      ]
+    },
+    {
+      "enonce": "Le PER s'écrit Cours / BPA ou Capitalisation / Résultat net. À quelle valeur conduit-il directement ?",
+      "ancre": "m9-s4",
+      "options": [
+        {"texte": "À la valeur des capitaux propres, car c'est un multiple après frais financiers", "correcte": true, "justif": "Le résultat net est calculé après les intérêts ; le PER intègre déjà la dette et donne donc directement la valeur revenant aux actionnaires."},
+        {"texte": "À la valeur d'entreprise, dont il faut retrancher la dette nette", "correcte": false, "justif": "C'est le cas des multiples AVANT frais financiers (EV/EBITDA...) ; le PER, lui, donne directement les CP sans retraitement de dette."},
+        {"texte": "À la valeur de l'actif net comptable corrigé", "correcte": false, "justif": "L'ANCC relève de l'approche patrimoniale ; le PER est une méthode comparative par les multiples."}
+      ]
+    },
+    {
+      "enonce": "Dans le diagnostic financier d'un groupe, quel ratio mesure la rentabilité FINANCIÈRE ?",
+      "ancre": "m9-s6",
+      "options": [
+        {"texte": "ROE = Résultat net / Capitaux propres", "correcte": true, "justif": "Le ROE rapporte le résultat revenant aux actionnaires à leurs capitaux investis : c'est la rentabilité financière, la rémunération de l'actionnaire."},
+        {"texte": "REX / CA", "correcte": false, "justif": "REX/CA est le taux de marge opérationnelle, un indicateur de profitabilité, pas de rentabilité financière."},
+        {"texte": "Résultat éco × (1−IS) / Capitaux employés", "correcte": false, "justif": "C'est la rentabilité ÉCONOMIQUE (rentabilité de l'outil), à distinguer de la rentabilité financière mesurée par le ROE."}
+      ]
+    },
+    {
+      "enonce": "L'action Dassault Systèmes a chuté d'environ 20 % le jour des résultats puis a perdu ~27 % sur 2025 alors que le CAC 40 gagnait plus de +10 %. Quelle lecture financière en faire ?",
+      "ancre": "m9-s6",
+      "options": [
+        {"texte": "Le marché est passé d'une prime de croissance à des doutes sur la trajectoire, ce qui dégonfle la valorisation", "correcte": true, "justif": "Un PER élevé suppose une forte croissance future ; quand la croissance déçoit (~+1 % vs attentes), le marché ne paie plus cette prime et la valorisation se contracte."},
+        {"texte": "L'entreprise est en faillite imminente", "correcte": false, "justif": "Rien dans le cas n'indique une faillite : la marge opérationnelle reste solide (~30 %) et le modèle récurrent ; c'est la VALORISATION qui se dégonfle, pas la solvabilité."},
+        {"texte": "La baisse prouve que le modèle par abonnements ne génère plus de revenus", "correcte": false, "justif": "Le modèle récurrent reste en place ; la chute traduit une déception sur la CROISSANCE attendue, pas une disparition des revenus."}
+      ]
+    },
+    {
+      "enonce": "Pour concevoir le reporting d'un éditeur de logiciel comme Dassault Systèmes, quel indicateur financier est le plus pertinent au regard de son modèle économique ?",
+      "ancre": "m9-s6",
+      "options": [
+        {"texte": "Le taux de récurrence des revenus (souscriptions / abonnements)", "correcte": true, "justif": "Le modèle SaaS repose sur des revenus récurrents : la récurrence (ARR) est un KPI directement relié à la stratégie de l'éditeur, gage de visibilité."},
+        {"texte": "Le délai de paiement fournisseurs (DPO) uniquement", "correcte": false, "justif": "Le DPO est un indicateur de trésorerie générique, peu révélateur du modèle récurrent d'un éditeur ; ce n'est pas le KPI structurant ici."},
+        {"texte": "Le tonnage de matières premières consommées", "correcte": false, "justif": "Aucun sens pour un éditeur de logiciel sans production physique : un KPI doit être relié au modèle économique réel."}
+      ]
+    },
+    {
+      "enonce": "Pour valoriser une jeune société en perte (résultat net négatif), quel multiple comparatif est le plus exploitable ?",
+      "ancre": "m9-s4",
+      "options": [
+        {"texte": "EV/CA, car le chiffre d'affaires reste significatif même quand le résultat ne l'est pas", "correcte": true, "justif": "Avec un résultat négatif, le PER et même les multiples d'EBIT/EBITDA peuvent être inexploitables ; le CA reste positif et permet un multiple de valeur d'entreprise."},
+        {"texte": "Le PER, car il fonctionne avec un résultat net négatif", "correcte": false, "justif": "Un PER calculé sur un résultat négatif n'a pas de sens : le multiple devient négatif et ininterprétable."},
+        {"texte": "Le goodwill seul", "correcte": false, "justif": "Le goodwill est une composante de l'approche patrimoniale mixte, pas un multiple comparatif ; il suppose en outre un superprofit positif."}
+      ]
+    },
+    {
+      "enonce": "Quel est le rôle de la valeur terminale (VT = FCF(n+1)/(CMPC − g)) dans un DCF ?",
+      "ancre": "m9-s3",
+      "options": [
+        {"texte": "Capter la valeur de tous les flux au-delà de l'horizon de prévision explicite", "correcte": true, "justif": "On ne peut prévoir les FCF qu'un nombre limité d'années ; la VT, une rente croissante actualisée au CMPC, résume la valeur de tous les flux ultérieurs."},
+        {"texte": "Calculer la dette nette à soustraire", "correcte": false, "justif": "La dette nette est une donnée du bilan utilisée dans le pont VE → CP ; elle ne se déduit pas de la valeur terminale."},
+        {"texte": "Remplacer le calcul du CMPC", "correcte": false, "justif": "Le CMPC est le taux d'actualisation utilisé À LA FOIS pour les FCF et pour actualiser la VT ; la VT ne le remplace pas."}
+      ]
+    },
+    {
+      "enonce": "Dans le diagnostic d'un groupe, quel est l'ordre de rédaction attendu par le cours pour chaque axe d'analyse ?",
+      "ancre": "m9-s6",
+      "options": [
+        {"texte": "Calculs séparés, PUIS commentaire, PUIS conclusion", "correcte": true, "justif": "La méthode du cours impose de poser d'abord les calculs, de les commenter ensuite, puis de conclure : c'est l'interprétation qui fait la valeur au niveau 7."},
+        {"texte": "Conclusion d'abord, puis les calculs", "correcte": false, "justif": "Annoncer la conclusion avant tout calcul retire toute démonstration ; le jury attend que le chiffre précède et fonde l'interprétation."},
+        {"texte": "Uniquement les calculs, sans commentaire", "correcte": false, "justif": "Un calcul sans interprétation ne rapporte presque rien dans un examen open-book : c'est l'analyse qui est notée."}
+      ]
+    }
+  ]
+}

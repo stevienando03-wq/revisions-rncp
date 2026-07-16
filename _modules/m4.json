@@ -1,0 +1,380 @@
+{
+  "id": "m4",
+  "num": 4,
+  "nom": "Politique de financement",
+  "essentiel": {
+    "a_retenir": [
+      "Deux grandes sources de financement long terme : les fonds propres (pas d'échéance, rémunération aléatoire selon le résultat) et les dettes (échéance contractuelle, rémunération fixée d'avance).",
+      "Le coût des capitaux propres se calcule par le MEDAF (Kcp = Rf + bêta x prime de risque) ou par Gordon-Shapiro si l'on raisonne par les dividendes (Kcp = D1/P0 + g).",
+      "La dette est déductible fiscalement : son coût net est Kd x (1 - IS), donc toujours plus faible que son taux nominal.",
+      "Le CMPC (WACC) est la moyenne pondérée du coût des CP et du coût net de la dette par leur poids dans le financement : c'est le taux d'actualisation de référence des projets.",
+      "Le coût des capitaux propres est TOUJOURS plus élevé que celui de la dette : les CP ne sont pas gratuits.",
+      "Trois modalités de remboursement d'emprunt : amortissement constant (capital fixe, annuité décroissante), annuités constantes (annuité fixe), in fine (intérêts seuls puis capital en bloc à la fin).",
+      "L'effet de levier financier : ROE = ROA + (ROA - i) x D/CP ; il est positif seulement si ROA > i, sinon il devient un effet massue.",
+      "Le plan de financement oppose les EMPLOIS (investissements, BFR, remboursements, distributions) aux RESSOURCES (CAF, augmentation de capital, emprunts, subventions, cessions).",
+      "Le plan de financement se construit en trois versions successives : ébauché (draft) -> équilibré -> équilibré rationnel (à présenter aux financeurs).",
+      "Règle d'or : un financement LONG terme pour un besoin LONG terme, jamais du court terme pour du long terme.",
+      "L'équilibre financier repose sur la trinité FR (Fonds de roulement), BFR (Besoin en fonds de roulement) et TN (Trésorerie nette) avec TN = FR - BFR.",
+      "Une hausse du BFR consomme de la trésorerie ; le BFR finance le cycle d'exploitation (stocks + créances clients - dettes fournisseurs).",
+      "Le LBO repose sur l'effet de levier financier via une holding qui s'endette pour racheter une cible, avec déductibilité des intérêts et management engagé.",
+      "L'augmentation de capital renforce les fonds propres sans créer de dette, mais elle DILUE l'actionnaire principal et peut faire MONTER le CMPC car les CP coûtent plus cher que la dette."
+    ],
+    "chiffres": [
+      "Kcp (MEDAF) = Rf + bêta x (Rm - Rf) ; Rf = taux sans risque, Rm - Rf = prime de risque de marché, bêta = sensibilité au marché.",
+      "Kcp (Gordon-Shapiro) = D1 / P0 + g ; D1 = prochain dividende, P0 = cours, g = croissance perpétuelle (avec i > g).",
+      "Coût net de la dette = Kd x (1 - IS).",
+      "CMPC = Kcp x CP/(CP+D) + Kd(1-IS) x D/(CP+D).",
+      "Annuité constante = Emprunt x i / [1 - (1+i)^-n].",
+      "Amortissement constant : capital remboursé chaque année = Emprunt / n.",
+      "Effet de levier financier : ROE = ROA + (ROA - i) x D/CP.",
+      "TN = FR - BFR ; BFR = stocks + créances clients - dettes fournisseurs.",
+      "Autofinancement = CAF - dividendes distribués.",
+      "Exemple du cours : emprunt 2 000 000 EUR sur 5 ans à 10 % -> annuité constante = 527 595 EUR.",
+      "Exemple CMPC du cas : Kcp (MEDAF) = 3 % + 1,1 x 5 % = 8,5 % ; CMPC = 8,5 % x 0,4 + 5 % x 0,75 x 0,6 = 3,40 % + 2,25 % = 5,65 %."
+    ],
+    "pieges": [
+      "Croire que les capitaux propres sont gratuits : leur coût (Kcp) est plus élevé que celui de la dette.",
+      "Oublier de mettre la dette en coût NET d'impôt [Kd x (1 - IS)] avant de la comparer aux CP ou de l'intégrer au CMPC.",
+      "Conclure que l'effet de levier est toujours favorable : il n'est positif que si ROA > i ; sinon il détruit le ROE (effet massue).",
+      "Financer un besoin long terme avec des ressources court terme (rupture de la règle d'or de l'équilibre financier).",
+      "Confondre amortissement constant (capital fixe) et annuités constantes (annuité fixe) dans le tableau d'emprunt.",
+      "Présenter un plan de financement déséquilibré ou s'arrêter à la version ébauchée sans aller jusqu'à l'équilibré rationnel.",
+      "Oublier que l'augmentation de capital, en baissant l'endettement, peut faire MONTER le CMPC et qu'elle dilue le pouvoir de l'actionnaire."
+    ]
+  },
+  "sections": [
+    {
+      "id": "m4-s1",
+      "titre": "Sources de financement : fonds propres et dettes",
+      "points": [
+        "Une entreprise finance ses besoins long terme par deux grandes familles de ressources. Les FONDS PROPRES n'ont pas d'échéance de remboursement et leur rémunération est aléatoire : l'actionnaire n'est payé (dividende) que si le résultat le permet. Les DETTES, à l'inverse, ont une échéance de remboursement et une rémunération contractuelle (l'intérêt) fixée d'avance, due quel que soit le résultat.",
+        "Côté fonds propres, on distingue l'autofinancement (la CAF moins les dividendes distribués), l'augmentation de capital (en numéraire, en nature ou par incorporation de réserves), l'introduction en Bourse (IPO), le capital-risque et le crowdfunding-apports. On y rattache aussi les quasi-fonds propres comme les titres participatifs, les prêts participatifs ou un compte courant d'associé bloqué.",
+        "Côté endettement, on trouve l'emprunt bancaire indivis, l'emprunt obligataire, le crédit-bail (leasing), le compte courant d'associé et le crowdfunding-dette. À très court terme, pour financer le BFR, on dispose de la facilité de caisse, de l'autorisation de découvert, de l'escompte, de l'affacturage (avance de 80 à 95 % des factures), de la cession Dailly ou du MCNE pour les créances export.",
+        "L'autofinancement se mesure à partir de la CAF (capacité d'autofinancement), calculable par deux méthodes : la méthode additive (à partir du résultat net : RN + DAP - RAP - subventions + VNC des actifs cédés - produits de cession) et la méthode soustractive (à partir de l'EBE)."
+      ],
+      "chiffres": [
+        "Autofinancement = CAF - dividendes distribués.",
+        "CAF (méthode additive) = RN + DAP - RAP - subventions + VNC actifs cédés - produits de cession."
+      ],
+      "pieges": [
+        "Confondre fonds propres (pas d'échéance, rémunération aléatoire) et dettes (échéance et rémunération contractuelles).",
+        "Utiliser un financement court terme (découvert, escompte) pour un emploi durable : il faut adosser la durée de la ressource à celle du besoin."
+      ]
+    },
+    {
+      "id": "m4-s2",
+      "titre": "Coût des capitaux propres : MEDAF et Gordon-Shapiro",
+      "points": [
+        "Le coût des capitaux propres (Kcp) est le rendement exigé par les actionnaires compte tenu du risque qu'ils prennent. La méthode de référence est le MEDAF (modèle d'évaluation des actifs financiers) : Kcp = Rf + bêta x (Rm - Rf). Rf est le taux sans risque, (Rm - Rf) est la prime de risque du marché et le bêta mesure la sensibilité du titre aux variations du marché (plus le bêta est élevé, plus l'actionnaire exige de rendement).",
+        "Lorsque l'on raisonne à partir des dividendes, on peut utiliser le modèle de Gordon-Shapiro (dividendes croissants) : Kcp = D1 / P0 + g, où D1 est le prochain dividende, P0 le cours actuel de l'action et g le taux de croissance perpétuel des dividendes. La même logique inversée donne d'ailleurs la valeur d'une action : V = D1 / (i - g) avec i > g.",
+        "Exemple du cas EDC1 : avec Rf = 3 %, un bêta de 1,1 et une prime de risque de marché de 5 %, on obtient Kcp = 3 % + 1,1 x 5 % = 3 % + 5,5 % = 8,5 %. Ce taux nourrit ensuite le calcul du CMPC.",
+        "Point fondamental : les capitaux propres ne sont jamais gratuits. Leur coût est structurellement plus élevé que celui de la dette, car l'actionnaire, mal protégé (rémunération aléatoire, dernier servi en cas de liquidation), exige une prime de risque supérieure à celle du créancier."
+      ],
+      "chiffres": [
+        "Kcp (MEDAF) = Rf + bêta x (Rm - Rf).",
+        "Kcp (Gordon-Shapiro) = D1 / P0 + g.",
+        "Valeur de l'action (Gordon-Shapiro) : V = D1 / (i - g), avec i > g.",
+        "Exemple : Kcp = 3 % + 1,1 x 5 % = 8,5 %."
+      ],
+      "pieges": [
+        "Penser que les capitaux propres ne coûtent rien : le Kcp est supérieur au coût de la dette.",
+        "Appliquer Gordon-Shapiro sans vérifier la condition i > g (sinon la formule perd son sens)."
+      ]
+    },
+    {
+      "id": "m4-s3",
+      "titre": "Coût de la dette et CMPC (WACC)",
+      "points": [
+        "Le coût de la dette se prend toujours NET d'impôt. Comme les intérêts sont déductibles du résultat imposable, l'État finance une partie du coût via une économie d'impôt : coût net de la dette = Kd x (1 - IS). Par exemple, une dette à 5 % avec un IS de 25 % coûte réellement 5 % x 0,75 = 3,75 %.",
+        "Le CMPC (coût moyen pondéré du capital, ou WACC en anglais) agrège le coût des deux ressources en les pondérant par leur poids dans le financement total : CMPC = Kcp x CP/(CP+D) + Kd(1-IS) x D/(CP+D). C'est le taux d'actualisation de référence pour évaluer les projets d'investissement et la valeur de l'actif économique (DCF).",
+        "Exemple du cas EDC1 : CP = 800 k EUR, D = 1 200 k EUR, Kcp = 8,5 %, Kd = 5 %, IS = 25 %. CMPC = 8,5 % x 800/2000 + 5 % x 0,75 x 1200/2000 = 8,5 % x 0,4 + 3,75 % x 0,6 = 3,40 % + 2,25 % = 5,65 %.",
+        "La structure de financement influe sur le CMPC. Comme la dette nette coûte moins cher que les CP, s'endetter (dans une certaine limite) tend à baisser le CMPC ; à l'inverse, une augmentation de capital qui réduit l'endettement peut faire REMONTER le CMPC. Mais au-delà d'un certain seuil d'endettement, le risque financier augmente, ce qui renchérit à la fois Kcp et Kd."
+      ],
+      "chiffres": [
+        "Coût net de la dette = Kd x (1 - IS).",
+        "CMPC = Kcp x CP/(CP+D) + Kd(1-IS) x D/(CP+D).",
+        "Exemple : CMPC = 8,5 % x 0,4 + 3,75 % x 0,6 = 5,65 %."
+      ],
+      "pieges": [
+        "Intégrer la dette à son taux brut au lieu du taux net d'impôt dans le CMPC.",
+        "Croire qu'une augmentation de capital baisse forcément le CMPC : en réduisant la part de dette (moins chère), elle peut au contraire le faire monter."
+      ]
+    },
+    {
+      "id": "m4-s4",
+      "titre": "Modalités de remboursement d'un emprunt",
+      "points": [
+        "Le tableau d'amortissement d'un emprunt peut être construit selon trois modalités, à maîtriser. AMORTISSEMENT CONSTANT : on rembourse chaque année la même fraction de capital (Emprunt / n). Comme les intérêts portent sur un capital restant dû qui diminue, l'annuité totale (capital + intérêts) DÉCROÎT d'année en année.",
+        "ANNUITÉS CONSTANTES : on verse exactement la même annuité chaque année. La part de capital augmente progressivement tandis que la part d'intérêts diminue. L'annuité se calcule par la formule : Annuité = Emprunt x i / [1 - (1+i)^-n]. Exemple du cours : 2 000 000 EUR sur 5 ans à 10 % donnent une annuité constante de 527 595 EUR.",
+        "IN FINE : pendant toute la durée de l'emprunt on ne paie QUE les intérêts (calculés sur le capital total, constant), puis on rembourse l'intégralité du capital en une seule fois à la dernière échéance. C'est la modalité la plus fréquente pour les emprunts obligataires.",
+        "Le choix entre ces modalités a un impact sur la trésorerie : l'in fine préserve la trésorerie pendant la vie de l'emprunt mais concentre l'effort final ; les annuités constantes lissent la charge ; l'amortissement constant allège progressivement la charge mais pèse lourd au début."
+      ],
+      "chiffres": [
+        "Amortissement constant : capital remboursé par an = Emprunt / n.",
+        "Annuité constante = Emprunt x i / [1 - (1+i)^-n].",
+        "Exemple : 2 000 000 EUR sur 5 ans à 10 % -> annuité constante = 527 595 EUR.",
+        "In fine : on ne paie que les intérêts chaque année, le capital est remboursé en totalité à l'échéance finale."
+      ],
+      "pieges": [
+        "Confondre amortissement constant (le CAPITAL remboursé est fixe, l'annuité décroît) et annuités constantes (l'ANNUITÉ est fixe).",
+        "Oublier que dans l'in fine les intérêts restent calculés sur le capital total constant jusqu'à la fin (donc charge d'intérêts maximale chaque année)."
+      ]
+    },
+    {
+      "id": "m4-s5",
+      "titre": "Instruments de financement : obligations, augmentation de capital, OBSA",
+      "points": [
+        "L'emprunt bancaire indivis est simple à mettre en place et ne dilue pas l'actionnaire, mais il alourdit l'endettement et s'accompagne de garanties et de covenants. L'emprunt OBLIGATAIRE permet de lever de gros montants à taux fixe en s'adressant directement au marché : l'obligation est un titre de créance versant un coupon (l'intérêt), généralement remboursé in fine. Sa valeur est la somme actualisée des coupons et du remboursement ; quand les taux montent, le prix de l'obligation baisse (sensibilité au taux). L'émission obligataire suppose des conditions (deux ans d'existence, deux bilans approuvés, capital libéré, notice AMF en cas d'appel public).",
+        "L'AUGMENTATION DE CAPITAL renforce les fonds propres sans créer de dette, ce qui améliore la structure financière et la capacité d'endettement future. Sa contrepartie majeure est la DILUTION : l'entrée de nouveaux apporteurs réduit la part et le pouvoir de l'actionnaire principal, et modifie la gouvernance. Elle peut aussi faire monter le CMPC puisque les CP coûtent plus cher que la dette.",
+        "L'OBSA (obligation à bon de souscription d'action) est un instrument hybride : une obligation classique assortie d'un bon permettant de souscrire ultérieurement des actions. L'avantage du bon est d'obtenir un taux d'intérêt plus bas qu'une obligation sèche ; la limite est une dilution potentielle différée, qui ne se matérialise que si les bons sont exercés.",
+        "La bonne décision ne se prend pas sur le seul coût : il faut comparer le coût de chaque option, son impact sur le CMPC ET sur la gouvernance (qui garde le contrôle ?), puis conclure par une recommandation justifiée pour CETTE entreprise."
+      ],
+      "chiffres": [
+        "Valeur d'une obligation = somme actualisée des coupons + remboursement.",
+        "Relation taux/prix : quand le taux monte, le prix de l'obligation baisse.",
+        "Conditions d'émission obligataire : 2 ans d'existence, 2 bilans approuvés, capital libéré, notice AMF si appel public."
+      ],
+      "pieges": [
+        "Choisir un financement uniquement sur son coût, en oubliant l'impact sur la gouvernance (dilution, perte de contrôle).",
+        "Croire que l'OBSA dilue immédiatement : la dilution n'intervient que si et quand les bons de souscription sont exercés."
+      ]
+    },
+    {
+      "id": "m4-s6",
+      "titre": "Plan de financement et équilibre FR / BFR / TN",
+      "points": [
+        "Le plan de financement prévisionnel confronte les EMPLOIS (les besoins de financement) aux RESSOURCES. Les emplois regroupent les investissements, la variation du BFR, le remboursement des emprunts et les distributions de dividendes. Les ressources comprennent la CAF, l'augmentation de capital, les nouveaux emprunts, les subventions et les cessions d'actifs.",
+        "On présente trois versions successives : la version ÉBAUCHÉE (un premier jet, le draft), qui révèle généralement un déséquilibre ; la version ÉQUILIBRÉE, où l'on ajuste les ressources (par exemple un emprunt ou une augmentation de capital complémentaire) pour couvrir les besoins ; et la version ÉQUILIBRÉE RATIONNELLE, propre et argumentée, celle que l'on présente aux financeurs. La règle d'or qui guide tout l'exercice : un financement LONG terme pour un besoin LONG terme, jamais du court terme pour du long terme.",
+        "L'équilibre financier de court terme s'analyse avec trois grandeurs liées. Le FONDS DE ROULEMENT (FR) est l'excédent des ressources stables sur les actifs immobilisés. Le BESOIN EN FONDS DE ROULEMENT (BFR), composante d'exploitation et hors exploitation, finance le cycle d'exploitation : BFR = stocks + créances clients - dettes fournisseurs. La TRÉSORERIE NETTE (TN) en découle : TN = FR - BFR.",
+        "Une hausse du BFR CONSOMME de la trésorerie : si le cycle d'exploitation s'allonge (stocks qui gonflent, clients qui paient plus tard, fournisseurs payés plus tôt), le besoin de financement augmente et la trésorerie se tend. C'est pourquoi piloter le BFR (délais clients/fournisseurs, niveau de stocks) est un levier majeur de la trésorerie."
+      ],
+      "chiffres": [
+        "TN = FR - BFR.",
+        "BFR = stocks + créances clients - dettes fournisseurs.",
+        "EMPLOIS du plan : investissements, variation du BFR, remboursements d'emprunts, distributions.",
+        "RESSOURCES du plan : CAF, augmentation de capital, emprunts, subventions, cessions."
+      ],
+      "pieges": [
+        "S'arrêter à la version ébauchée ou présenter un plan déséquilibré au financeur.",
+        "Oublier que la hausse du BFR consomme de la trésorerie (et inversement un BFR négatif en dégage)."
+      ]
+    },
+    {
+      "id": "m4-s7",
+      "titre": "Effet de levier financier et LBO",
+      "points": [
+        "L'effet de levier financier explique comment l'endettement amplifie (à la hausse comme à la baisse) la rentabilité des capitaux propres. La relation clé est : ROE = ROA + (ROA - i) x D/CP, où ROA est la rentabilité économique nette d'impôt, i le coût net de la dette et D/CP le ratio d'endettement. L'effet de levier est POSITIF seulement si ROA > i.",
+        "Exemple chiffré du cours : ROA = REX x (1-IS) / Actif = 120 x 0,75 / 1000 = 9 % ; coût net de la dette i = 4 % x 0,75 = 3 % ; effet de levier = (9 % - 3 %) x 600/400 = 6 % x 1,5 = +9 % ; donc ROE = 9 % + 9 % = 18 %. L'endettement double la rentabilité de l'actionnaire.",
+        "Attention à l'effet massue : si la rentabilité économique tombe SOUS le coût net de la dette (ROA < i), le levier joue en sens inverse et détruit le ROE, qui passe alors sous le ROA. L'endettement n'est donc créateur de valeur que tant que l'entreprise dégage une rentabilité économique supérieure au coût de sa dette.",
+        "Le LBO (Leverage Buy-Out) est l'application la plus poussée de l'effet de levier. Une HOLDING de reprise s'endette pour racheter une société cible ; les remboursements sont assurés par les remontées de dividendes de la cible. Trois ressorts : le levier FINANCIER (la dette amplifie la rentabilité des fonds propres apportés), le levier FISCAL (déductibilité des intérêts d'emprunt) et le levier MANAGÉRIAL (un management associé au capital, donc engagé et motivé)."
+      ],
+      "chiffres": [
+        "ROE = ROA + (ROA - i) x D/CP.",
+        "Effet de levier positif seulement si ROA > i (sinon effet massue).",
+        "Exemple : ROA 9 %, i net 3 %, D/CP = 1,5 -> levier = (9 % - 3 %) x 1,5 = +9 % -> ROE = 18 %.",
+        "Coût net de la dette i = taux d'intérêt x (1 - IS)."
+      ],
+      "pieges": [
+        "Comparer le ROA brut au coût brut de la dette : il faut raisonner net d'IS des deux côtés.",
+        "Présenter le levier comme toujours favorable : il devient un effet massue dès que ROA passe sous i."
+      ]
+    }
+  ],
+  "visuals": [
+    {
+      "type": "compare",
+      "titre": "Les trois modalités de remboursement d'un emprunt",
+      "intro": "Pour un même emprunt, le profil des annuités diffère radicalement selon la modalité retenue.",
+      "ancre": "m4-s4",
+      "headers": ["Critère", "Amortissement constant", "Annuités constantes", "In fine"],
+      "rows": [
+        {"cells": ["Capital remboursé chaque an", "Constant (= Emprunt / n)", "Croissant", "0 jusqu'à la fin, puis la totalité"]},
+        {"cells": ["Annuité totale (capital + intérêts)", "Décroissante", "Constante", "= intérêts seuls, puis capital + intérêts la dernière année"]},
+        {"cells": ["Charge d'intérêts", "Décroît vite (capital baisse)", "Décroît progressivement", "Maximale et constante (capital total)"]},
+        {"cells": ["Formule / repère", "Capital/an = Emprunt / n", "Annuité = Emprunt x i / [1 - (1+i)^-n]", "Intérêts = capital x i chaque année"]},
+        {"cells": ["Effet sur la trésorerie", "Lourd au début, s'allège", "Charge lissée et régulière", "Préserve la trésorerie, effort final concentré"]}
+      ]
+    },
+    {
+      "type": "compare",
+      "titre": "Fonds propres contre dette : coût et gouvernance",
+      "intro": "Choisir un financement, ce n'est pas seulement comparer des coûts, mais aussi arbitrer le contrôle et le risque.",
+      "ancre": "m4-s5",
+      "headers": ["Critère", "Augmentation de capital (fonds propres)", "Emprunt (dette)"],
+      "rows": [
+        {"cells": ["Coût", "Kcp (MEDAF ou Gordon-Shapiro), le plus élevé", "Kd x (1 - IS), réduit par la déductibilité"]},
+        {"cells": ["Échéance", "Aucune, rémunération aléatoire (dividende)", "Remboursement à échéance, intérêt contractuel"]},
+        {"cells": ["Effet sur le CMPC", "Peut le faire monter (part de dette réduite)", "Tend à le baisser (jusqu'à un seuil de risque)"]},
+        {"cells": ["Gouvernance", "Dilution de l'actionnaire, contrôle modifié", "Pas de dilution, mais garanties et covenants"]},
+        {"cells": ["Risque", "Renforce les fonds propres, baisse le risque", "Augmente l'endettement et le risque financier"]}
+      ]
+    },
+    {
+      "type": "flow",
+      "titre": "Construire un plan de financement",
+      "intro": "Le plan se bâtit en trois passes successives jusqu'à la version présentable aux financeurs.",
+      "ancre": "m4-s6",
+      "steps": [
+        {"t": "Recenser emplois et ressources", "d": "Emplois : investissements, variation du BFR, remboursements, distributions. Ressources : CAF, augmentation de capital, emprunts, subventions, cessions."},
+        {"t": "Version ébauchée (draft)", "d": "Premier jet qui révèle généralement un déséquilibre entre besoins et ressources."},
+        {"t": "Version équilibrée", "d": "On ajuste les ressources (emprunt ou augmentation de capital complémentaire) pour couvrir les besoins, en respectant la règle : du long terme pour du long terme."},
+        {"t": "Version équilibrée rationnelle", "d": "Plan propre, argumenté et soutenable, celui que l'on présente aux financeurs."}
+      ]
+    }
+  ],
+  "qcm": [
+    {
+      "enonce": "Quelle est la différence fondamentale entre fonds propres et dettes comme sources de financement ?",
+      "ancre": "m4-s1",
+      "options": [
+        {"texte": "Les fonds propres n'ont pas d'échéance et leur rémunération est aléatoire ; les dettes ont une échéance et une rémunération contractuelle.", "correcte": true, "justif": "C'est exactement la distinction du cours : les CP ne sont jamais remboursés à date fixe et le dividende dépend du résultat, alors que la dette impose échéance et intérêt fixés d'avance."},
+        {"texte": "Les fonds propres ont une échéance de remboursement, contrairement aux dettes.", "correcte": false, "justif": "C'est l'inverse : ce sont les dettes qui ont une échéance de remboursement ; les fonds propres n'en ont pas."},
+        {"texte": "Les deux ont une rémunération contractuelle fixée d'avance.", "correcte": false, "justif": "Faux pour les fonds propres, dont la rémunération (dividende) est aléatoire et dépend du résultat."}
+      ]
+    },
+    {
+      "enonce": "Selon le MEDAF, comment se calcule le coût des capitaux propres Kcp ?",
+      "ancre": "m4-s2",
+      "options": [
+        {"texte": "Kcp = Rf + bêta x (Rm - Rf), avec Rf le taux sans risque, (Rm - Rf) la prime de risque de marché et bêta la sensibilité au marché.", "correcte": true, "justif": "C'est la formule exacte du MEDAF telle qu'elle figure dans la fiche de formules de l'EDC1."},
+        {"texte": "Kcp = D1 / P0 + g.", "correcte": false, "justif": "C'est la formule de Gordon-Shapiro (par les dividendes), pas celle du MEDAF."},
+        {"texte": "Kcp = Kd x (1 - IS).", "correcte": false, "justif": "C'est la formule du coût NET de la dette, pas du coût des capitaux propres."}
+      ]
+    },
+    {
+      "enonce": "Une dette est contractée à un taux de 5 % avec un IS de 25 %. Quel est son coût NET pris en compte dans le CMPC ?",
+      "ancre": "m4-s3",
+      "options": [
+        {"texte": "3,75 %, car coût net = Kd x (1 - IS) = 5 % x 0,75.", "correcte": true, "justif": "Les intérêts étant déductibles, l'économie d'impôt ramène le coût réel à 5 % x 0,75 = 3,75 %, comme dans le cas corrigé."},
+        {"texte": "5 %, car on retient le taux nominal de la dette.", "correcte": false, "justif": "On ne retient jamais le taux brut dans le CMPC : il faut tenir compte de la déductibilité fiscale des intérêts."},
+        {"texte": "6,25 %, car on majore le taux de l'IS.", "correcte": false, "justif": "L'impôt RÉDUIT le coût de la dette (économie d'impôt), il ne le majore pas."}
+      ]
+    },
+    {
+      "enonce": "Avec CP = 800 k EUR, D = 1 200 k EUR, Kcp = 8,5 %, Kd = 5 % et IS = 25 %, quel est le CMPC ?",
+      "ancre": "m4-s3",
+      "options": [
+        {"texte": "5,65 % : 8,5 % x 0,4 + 5 % x 0,75 x 0,6 = 3,40 % + 2,25 %.", "correcte": true, "justif": "On pondère Kcp par CP/(CP+D) = 0,4 et le coût net de la dette (3,75 %) par D/(CP+D) = 0,6 : c'est le résultat du cas corrigé."},
+        {"texte": "6,75 %, en pondérant Kcp et le taux brut de la dette de 5 %.", "correcte": false, "justif": "Erreur : il faut utiliser le coût NET de la dette (3,75 %), pas le taux brut de 5 %."},
+        {"texte": "7,00 %, soit la moyenne arithmétique simple de 8,5 % et 5 %.", "correcte": false, "justif": "Le CMPC est une moyenne PONDÉRÉE par les poids CP et D, pas une moyenne arithmétique simple, et la dette se prend nette d'impôt."}
+      ]
+    },
+    {
+      "enonce": "Dans un emprunt remboursé par AMORTISSEMENT CONSTANT, que se passe-t-il ?",
+      "ancre": "m4-s4",
+      "options": [
+        {"texte": "On rembourse chaque année la même fraction de capital (Emprunt / n), et l'annuité totale décroît dans le temps.", "correcte": true, "justif": "Le capital remboursé est fixe ; comme les intérêts portent sur un capital restant dû qui diminue, l'annuité totale décroît."},
+        {"texte": "On verse exactement la même annuité chaque année.", "correcte": false, "justif": "C'est la définition des annuités CONSTANTES, pas de l'amortissement constant."},
+        {"texte": "On ne paie que les intérêts puis tout le capital à la fin.", "correcte": false, "justif": "C'est la modalité IN FINE, différente de l'amortissement constant."}
+      ]
+    },
+    {
+      "enonce": "Quelle formule donne l'annuité d'un emprunt remboursé par annuités constantes ?",
+      "ancre": "m4-s4",
+      "options": [
+        {"texte": "Annuité = Emprunt x i / [1 - (1+i)^-n].", "correcte": true, "justif": "C'est la formule exacte du cours ; appliquée à 2 000 000 EUR sur 5 ans à 10 %, elle donne 527 595 EUR."},
+        {"texte": "Annuité = Emprunt / n.", "correcte": false, "justif": "C'est la part de capital remboursée chaque année dans l'amortissement CONSTANT, pas l'annuité constante."},
+        {"texte": "Annuité = Emprunt x i.", "correcte": false, "justif": "Cela correspond aux intérêts annuels d'un emprunt in fine, pas à une annuité constante (qui inclut aussi du capital)."}
+      ]
+    },
+    {
+      "enonce": "Dans un emprunt remboursé IN FINE, quelle est la charge d'intérêts annuelle ?",
+      "ancre": "m4-s4",
+      "options": [
+        {"texte": "Elle est maximale et constante, car les intérêts sont calculés sur le capital total qui reste dû jusqu'à la fin.", "correcte": true, "justif": "Le capital n'étant remboursé qu'à l'échéance finale, il reste entier chaque année, d'où des intérêts maximaux et constants."},
+        {"texte": "Elle décroît chaque année car le capital diminue progressivement.", "correcte": false, "justif": "Dans l'in fine le capital ne diminue pas en cours de route : il est remboursé en totalité à la fin seulement."},
+        {"texte": "Elle est nulle pendant toute la durée de l'emprunt.", "correcte": false, "justif": "Au contraire, on ne paie QUE les intérêts pendant la durée de l'emprunt ; seul le capital attend la fin."}
+      ]
+    },
+    {
+      "enonce": "Pourquoi le coût des capitaux propres est-il toujours supérieur à celui de la dette ?",
+      "ancre": "m4-s2",
+      "options": [
+        {"texte": "Parce que l'actionnaire, moins protégé (rémunération aléatoire, dernier servi), exige une prime de risque plus élevée que le créancier.", "correcte": true, "justif": "Le risque supporté par l'actionnaire est plus grand, donc le rendement exigé (Kcp) dépasse le coût de la dette ; les CP ne sont pas gratuits."},
+        {"texte": "Parce que les dividendes sont déductibles de l'impôt alors que les intérêts ne le sont pas.", "correcte": false, "justif": "C'est l'inverse : les intérêts de la dette sont déductibles, pas les dividendes, ce qui rend justement la dette moins chère."},
+        {"texte": "Parce que les capitaux propres doivent être remboursés avant la dette.", "correcte": false, "justif": "Les capitaux propres ne sont pas remboursés à échéance, et en liquidation l'actionnaire passe APRÈS les créanciers."}
+      ]
+    },
+    {
+      "enonce": "Quel est l'effet d'une augmentation de capital sur le CMPC et la gouvernance ?",
+      "ancre": "m4-s5",
+      "options": [
+        {"texte": "Elle peut faire MONTER le CMPC (la part de dette, moins chère, diminue) et DILUE l'actionnaire principal.", "correcte": true, "justif": "Remplacer de la dette bon marché par des CP coûteux peut renchérir le CMPC, et l'entrée de nouveaux apporteurs réduit le pouvoir de l'actionnaire."},
+        {"texte": "Elle baisse mécaniquement le CMPC car les fonds propres coûtent moins cher que la dette.", "correcte": false, "justif": "Faux : les CP coûtent PLUS cher que la dette, donc augmenter leur poids tend à faire monter le CMPC."},
+        {"texte": "Elle n'a aucun effet sur la gouvernance puisque ce ne sont pas des dettes.", "correcte": false, "justif": "Au contraire, l'augmentation de capital modifie la répartition du pouvoir et dilue l'actionnaire principal."}
+      ]
+    },
+    {
+      "enonce": "Quel est l'intérêt principal d'une OBSA par rapport à une obligation classique ?",
+      "ancre": "m4-s5",
+      "options": [
+        {"texte": "Le bon de souscription permet d'obtenir un taux d'intérêt plus bas, au prix d'une dilution potentielle différée si les bons sont exercés.", "correcte": true, "justif": "C'est l'avantage/limite du cours : le bon attire l'investisseur et abaisse le taux, mais crée une dilution future conditionnelle à l'exercice."},
+        {"texte": "Elle ne crée jamais de dilution, quel que soit le comportement des porteurs.", "correcte": false, "justif": "Faux : si les bons sont exercés, de nouvelles actions sont émises, d'où une dilution différée."},
+        {"texte": "Elle dispense l'entreprise de verser des intérêts.", "correcte": false, "justif": "L'OBSA reste une obligation : elle verse un coupon ; le bon abaisse seulement le taux, il ne le supprime pas."}
+      ]
+    },
+    {
+      "enonce": "Que regroupent les EMPLOIS dans un plan de financement prévisionnel ?",
+      "ancre": "m4-s6",
+      "options": [
+        {"texte": "Les investissements, la variation du BFR, les remboursements d'emprunts et les distributions de dividendes.", "correcte": true, "justif": "Ce sont les besoins de financement listés côté emplois dans la méthode du cours."},
+        {"texte": "La CAF, les augmentations de capital, les emprunts et les subventions.", "correcte": false, "justif": "Ce sont au contraire les RESSOURCES du plan, pas les emplois."},
+        {"texte": "Uniquement les charges d'exploitation de l'exercice.", "correcte": false, "justif": "Le plan de financement raisonne en emplois/ressources de financement, pas en charges et produits d'exploitation."}
+      ]
+    },
+    {
+      "enonce": "Dans quel ordre se construisent les versions d'un plan de financement ?",
+      "ancre": "m4-s6",
+      "options": [
+        {"texte": "Ébauché (draft) -> équilibré -> équilibré rationnel (présenté aux financeurs).", "correcte": true, "justif": "C'est exactement la progression en trois versions de la méthode du prof."},
+        {"texte": "Équilibré rationnel -> équilibré -> ébauché.", "correcte": false, "justif": "L'ordre est inversé : on part du draft déséquilibré pour aboutir à la version rationnelle finale."},
+        {"texte": "Ébauché -> rationnel, sans étape d'équilibrage.", "correcte": false, "justif": "L'étape d'équilibrage est indispensable : on ajuste les ressources avant de produire la version rationnelle."}
+      ]
+    },
+    {
+      "enonce": "Comment se calcule la trésorerie nette (TN) dans l'analyse de l'équilibre financier ?",
+      "ancre": "m4-s6",
+      "options": [
+        {"texte": "TN = FR - BFR.", "correcte": true, "justif": "C'est la relation fondamentale de l'équilibre financier : la trésorerie est le solde entre le fonds de roulement et le besoin en fonds de roulement."},
+        {"texte": "TN = BFR - FR.", "correcte": false, "justif": "Le signe est inversé : un BFR supérieur au FR donne une trésorerie NÉGATIVE, ce que cette formule ne traduit pas correctement."},
+        {"texte": "TN = FR + BFR.", "correcte": false, "justif": "On soustrait le BFR du FR, on ne l'additionne pas : le BFR est un besoin à financer."}
+      ]
+    },
+    {
+      "enonce": "Une entreprise voit son BFR augmenter fortement (stocks et créances clients en hausse). Quel est l'effet sur la trésorerie ?",
+      "ancre": "m4-s6",
+      "options": [
+        {"texte": "La trésorerie se tend : une hausse du BFR CONSOMME de la trésorerie.", "correcte": true, "justif": "Allonger le cycle (plus de stocks, clients qui paient plus tard) augmente le besoin de financement, donc TN baisse à FR donné."},
+        {"texte": "La trésorerie s'améliore car un BFR élevé dégage du cash.", "correcte": false, "justif": "Faux : c'est un BFR qui DIMINUE (ou négatif) qui dégage de la trésorerie ; une hausse la consomme."},
+        {"texte": "Le BFR n'a aucun impact sur la trésorerie.", "correcte": false, "justif": "Le BFR est au coeur de la trésorerie : TN = FR - BFR, donc toute variation du BFR se répercute sur la trésorerie."}
+      ]
+    },
+    {
+      "enonce": "Avec un ROA net de 9 %, un coût net de la dette i de 3 % et un ratio D/CP de 1,5, quel est le ROE par l'effet de levier ?",
+      "ancre": "m4-s7",
+      "options": [
+        {"texte": "18 % : ROE = ROA + (ROA - i) x D/CP = 9 % + (9 % - 3 %) x 1,5 = 9 % + 9 %.", "correcte": true, "justif": "L'effet de levier de +9 % s'ajoute au ROA de 9 %, ce qui double la rentabilité de l'actionnaire, conformément à l'exemple du cours."},
+        {"texte": "9 %, car l'endettement n'a aucun effet sur la rentabilité des capitaux propres.", "correcte": false, "justif": "Faux : tant que ROA > i, l'effet de levier amplifie le ROE au-dessus du ROA."},
+        {"texte": "6 %, soit la seule différence (ROA - i).", "correcte": false, "justif": "(ROA - i) = 6 % n'est qu'une étape ; il faut la multiplier par D/CP puis l'ajouter au ROA pour obtenir le ROE."}
+      ]
+    },
+    {
+      "enonce": "Quand l'effet de levier financier se transforme-t-il en effet massue ?",
+      "ancre": "m4-s7",
+      "options": [
+        {"texte": "Quand la rentabilité économique tombe sous le coût net de la dette (ROA < i) : le ROE passe alors sous le ROA.", "correcte": true, "justif": "Le levier joue dans les deux sens : si ROA < i, le terme (ROA - i) devient négatif et l'endettement détruit la rentabilité des CP."},
+        {"texte": "Quand le ratio d'endettement D/CP est inférieur à 1.", "correcte": false, "justif": "Le niveau du ratio amplifie l'effet mais n'en change pas le signe : c'est le rapport entre ROA et i qui détermine s'il est favorable ou destructeur."},
+        {"texte": "Quand le ROA est supérieur au coût de la dette.", "correcte": false, "justif": "C'est précisément le cas FAVORABLE (levier positif), pas l'effet massue."}
+      ]
+    },
+    {
+      "enonce": "Sur quels leviers repose un montage LBO ?",
+      "ancre": "m4-s7",
+      "options": [
+        {"texte": "Un levier financier (dette de la holding), un levier fiscal (déductibilité des intérêts) et un levier managérial (management associé au capital).", "correcte": true, "justif": "Ce sont les trois ressorts du LBO décrits dans le cours : une holding s'endette, déduit ses intérêts et engage un management motivé."},
+        {"texte": "Uniquement l'apport en capital des dirigeants, sans recours à la dette.", "correcte": false, "justif": "Faux : le LBO repose justement sur l'endettement de la holding ; sans dette, pas d'effet de levier."},
+        {"texte": "La suppression de tout impôt sur les sociétés pour la cible rachetée.", "correcte": false, "justif": "Le levier fiscal vient de la DÉDUCTIBILITÉ des intérêts d'emprunt, pas d'une exonération d'IS de la cible."}
+      ]
+    }
+  ]
+}

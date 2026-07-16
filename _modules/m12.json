@@ -1,0 +1,340 @@
+{
+  "id": "m12",
+  "num": 12,
+  "nom": "Contrôle de gestion & management",
+  "essentiel": {
+    "a_retenir": [
+      "La méthode OVAR (M. Franck Guérin) est le cœur de l'EDC6 : elle décline la stratégie en pilotage opérationnel en 5 étapes enchaînées.",
+      "Schéma à mémoriser : Stratégie → Objectifs → Variables d'Action (FCS) → Indicateurs (KPI) → Seuils + Responsables.",
+      "Un objectif n'est valide que s'il est SMART : Spécifique, Mesurable, Atteignable, Réaliste, Temporel.",
+      "Une Variable d'Action (Facteur Clé de Succès) est un levier d'action qui doit être à la fois CONTRÔLABLE et MESURABLE ; au moins 1 par objectif.",
+      "Un bon KPI ne nécessite AUCUNE interprétation : s'il vire au rouge, le décideur sait ce qu'il doit faire lundi matin.",
+      "Chaque indicateur reçoit un seuil (cible + seuil d'alerte) avec code couleur vert / orange / rouge, et UN responsable qui a les moyens d'agir.",
+      "Pour CHAQUE KPI on rédige une Fiche Signalétique d'Indicateur (FSI) : nom, finalité, formule, sources, unité, fréquence, cible, seuils, responsable, représentation.",
+      "Le Tableau de Bord Opérationnel (TBO) est AU PROGRAMME : 1 décideur = 1 responsable, il tient sur 1 SEULE page, avec 2-3 KPI par FCS.",
+      "Un bon TBO mixe les natures d'indicateurs : financiers + opérationnels + qualité + RH (ne jamais mettre QUE du financier).",
+      "Le tableau de bord sert à DÉCIDER, pas à surveiller : en point d'équipe hebdo (15-20 min) on revoit les couleurs, on identifie les blocages, on réaffecte.",
+      "L'EDC6 = à partir d'une situation sur un service, élaborer un plan de charge + un tableau de bord de suivi de l'équipe (3h) ; le correcteur note la DÉMARCHE.",
+      "L'EDC7 (management d'équipe) = accompagner la montée en compétences (logique GPEC) + manager en hybride et garantir l'inclusion.",
+      "Plan de charge : décomposer en tâches → estimer en jours/homme → affecter selon les compétences → planifier (Gantt) ; clarifier les rôles via une matrice RACI.",
+      "La roue de Deming (PDCA : Plan-Do-Check-Act) structure l'amélioration continue du pilotage."
+    ],
+    "chiffres": [
+      "Schéma OVAR : Objectifs → Variables d'Action (FCS) → Indicateurs → Seuils → Responsables",
+      "SMART = Spécifique · Mesurable · Atteignable · Réaliste · Temporel",
+      "5 règles d'or d'un bon KPI : Quantifiable · Actionnable · Simple · Fiable · Contrôlable (bonus : Facile à obtenir, Dynamique)",
+      "TBO = 1 décideur = 1 responsable, 1 seule page, 2-3 KPI par FCS",
+      "3 types de tableaux de bord : TBS (stratégique, hors programme) · TBO (opérationnel, AU PROGRAMME) · TBB (budgétaire)",
+      "Taux de profitabilité = ((CA − coût de revient) / CA) × 100",
+      "Résultat = CA − CV − CF",
+      "Seuil de rentabilité (point mort) = Charges fixes / Taux de MCV, avec MCV = CA − charges variables",
+      "ROCE = EBIT × (1 − IS) / Capitaux engagés ; ROE = RN / CP ; ROI = Résultat / Investissement",
+      "DSO = Créances clients / CA TTC × 365 ; DPO = Dettes fournisseurs / Achats TTC × 360",
+      "PDCA = Plan-Do-Check-Act (roue de Deming)",
+      "RACI = Responsable · Approbateur · Consulté · Informé"
+    ],
+    "pieges": [
+      "Un objectif vague (« améliorer le reporting ») n'est PAS SMART : il manque le mesurable et le temporel.",
+      "Un indicateur NON contrôlable (taux de change, météo, prix des matières) n'est PAS un bon KPI : on ne pilote pas ce qu'on ne maîtrise pas.",
+      "Un KPI sans cible ni fréquence de suivi est inutile.",
+      "Ne pas mettre QUE des indicateurs financiers dans le TBO : il faut aussi de l'opérationnel, de la qualité et du RH.",
+      "Confondre les 3 types de tableaux de bord : seul le TBO (opérationnel) est au programme, pas le TBS ni le TBB.",
+      "Rester trop théorique en management : il faut toujours illustrer par un exemple concret d'équipe.",
+      "Oublier la dimension humaine (accompagnement, inclusion) au profit du seul process."
+    ]
+  },
+  "sections": [
+    {
+      "id": "m12-s1",
+      "titre": "La démarche OVAR : décliner la stratégie en pilotage",
+      "points": [
+        "OVAR est la méthode centrale du contrôle de gestion enseignée par M. Franck Guérin et le cœur de l'EDC6. Elle répond à une question simple : comment traduire une stratégie ou un objectif de direction en un pilotage concret et mesurable au niveau d'un service ? Le sigle décrit l'enchaînement de cinq étapes : Objectifs, Variables d'Action (les Facteurs Clés de Succès), Indicateurs, et — sous-jacents au modèle attendu — Seuils et Responsables.",
+        "Le schéma complet à mémoriser et à reproduire le jour de l'épreuve est : Stratégie → Objectifs → Variables d'Action (FCS) → Indicateurs (KPI) → Seuils + Responsables. Chaque flèche est une déclinaison : on part de ce que l'on veut atteindre (objectif), on identifie les leviers sur lesquels on peut agir (variables d'action), on les rend mesurables (indicateurs), on fixe les niveaux d'alerte (seuils) et on désigne qui agit (responsables).",
+        "La force de la méthode est sa logique descendante et cohérente : aucun indicateur ne doit exister sans être rattaché à une variable d'action, et aucune variable d'action sans être rattachée à un objectif. C'est cette traçabilité que le correcteur note. Appliquer OVAR dans l'ordre, sans sauter d'étape, est la démarche exacte attendue à l'EDC6."
+      ],
+      "chiffres": [
+        "Schéma OVAR : Stratégie → Objectifs → Variables d'Action (FCS) → Indicateurs (KPI) → Seuils + Responsables",
+        "Au moins 1 variable d'action par objectif ; 2-3 indicateurs par variable d'action ; 1 seuil et 1 responsable par indicateur"
+      ],
+      "pieges": [
+        "Produire des indicateurs « hors-sol » non reliés à un objectif : OVAR exige la traçabilité Objectif → FCS → Indicateur.",
+        "Sauter une étape (par exemple passer directement de l'objectif aux KPI sans identifier les variables d'action)."
+      ]
+    },
+    {
+      "id": "m12-s2",
+      "titre": "Objectifs SMART et Variables d'Action (FCS)",
+      "points": [
+        "La première étape d'OVAR fixe les objectifs du service : ce qu'il veut atteindre. Un objectif n'est recevable que s'il est SMART : Spécifique (précis, sans ambiguïté), Mesurable (un chiffre, un seuil), Atteignable (à la portée de l'équipe), Réaliste (cohérent avec les moyens), Temporel (avec une échéance). Exemples issus du corrigé EDC6 : « Livrer le nouveau reporting pour le 30/09 », « Réduire le délai de clôture de 8 à 5 jours d'ici décembre », « Former les 5 membres de l'équipe à l'outil avant le déploiement ». À l'inverse, « améliorer le reporting » n'est pas SMART : ni mesurable, ni temporel.",
+        "La deuxième étape identifie les Variables d'Action, aussi appelées Facteurs Clés de Succès (FCS) : ce sont les leviers concrets sur lesquels le manager peut agir pour atteindre l'objectif. La règle est qu'il faut au moins une variable d'action par objectif. Deux conditions sont impératives : une variable d'action doit être CONTRÔLABLE (le service a la main dessus) ET MESURABLE (on peut en suivre l'évolution). Un facteur que l'on subit sans pouvoir l'influencer n'est pas une variable d'action.",
+        "Cette distinction objectif / variable d'action est essentielle : l'objectif est le résultat visé (le « quoi »), la variable d'action est le moyen d'y parvenir (le « comment »). Par exemple, pour l'objectif « réduire le délai de clôture », les variables d'action peuvent être l'automatisation des écritures récurrentes ou la fiabilisation des données en amont."
+      ],
+      "chiffres": [
+        "SMART = Spécifique · Mesurable · Atteignable · Réaliste · Temporel",
+        "Au moins 1 variable d'action (FCS) par objectif ; condition : contrôlable ET mesurable"
+      ],
+      "pieges": [
+        "Formuler un objectif sans échéance ni mesure : « améliorer le reporting » est rejeté faute d'être SMART.",
+        "Confondre l'objectif (le résultat) et la variable d'action (le levier pour l'atteindre)."
+      ]
+    },
+    {
+      "id": "m12-s3",
+      "titre": "Indicateurs (KPI) : les 5 règles d'or",
+      "points": [
+        "La troisième étape transforme chaque variable d'action en indicateurs chiffrés (KPI), à raison de 2 à 3 par variable d'action. L'indicateur traduit le levier en une mesure suivie dans le temps : c'est ce qui rend le pilotage objectif et partageable.",
+        "Un bon KPI respecte cinq règles d'or : il doit être Quantifiable, Actionnable, Simple, Fiable et Contrôlable (en bonus : facile à obtenir et dynamique). La règle la plus discriminante est la contrôlabilité : un indicateur non contrôlable — taux de change, météo, prix des matières premières — n'est pas un bon KPI, car personne dans l'équipe ne peut agir dessus. Piloter suppose de pouvoir corriger.",
+        "Le test ultime d'un bon KPI tient en une phrase : un bon indicateur ne nécessite AUCUNE interprétation. La question à se poser est « s'il vire au rouge, que fait le décideur lundi matin ? ». Si la réponse n'est pas évidente et immédiate, l'indicateur est mal choisi. Un KPI doit déclencher une décision, pas un débat."
+      ],
+      "chiffres": [
+        "2-3 indicateurs (KPI) par variable d'action",
+        "5 règles d'or : Quantifiable · Actionnable · Simple · Fiable · Contrôlable (+ Facile à obtenir, Dynamique)"
+      ],
+      "pieges": [
+        "Choisir un indicateur non contrôlable (taux de change, météo, cours des matières) : l'équipe ne peut pas agir dessus.",
+        "Retenir un KPI ambigu qui demande une interprétation au lieu de déclencher une action claire."
+      ]
+    },
+    {
+      "id": "m12-s4",
+      "titre": "Seuils, responsables et Fiche Signalétique d'Indicateur (FSI)",
+      "points": [
+        "La quatrième étape fixe les seuils critiques : pour chaque indicateur, on définit une valeur cible et un seuil d'alerte, matérialisés par un code couleur vert / orange / rouge. Un seul jeu de seuils par indicateur. C'est ce qui permet la lecture instantanée : le vert rassure, l'orange alerte, le rouge impose une action. Sans seuil, un chiffre brut ne dit pas s'il est bon ou mauvais.",
+        "La cinquième étape désigne les responsables : un responsable par indicateur, et pas n'importe lequel — celui qui a réellement les moyens d'agir sur la grandeur mesurée. Désigner comme responsable quelqu'un qui ne peut pas influencer l'indicateur viderait le pilotage de son sens.",
+        "Pour chaque KPI, on rédige une Fiche Signalétique d'Indicateur (FSI), véritable carte d'identité de l'indicateur. Elle comporte : le nom, l'objectif / la finalité, la formule de calcul et ses sources de données, l'unité, la fréquence de mesure, la valeur cible, les seuils d'alerte, le responsable et le mode de représentation. La FSI garantit que tout le monde calcule et lit l'indicateur de la même façon, et qu'il reste traçable et auditable."
+      ],
+      "chiffres": [
+        "Seuils = valeur cible + seuil d'alerte, code couleur vert / orange / rouge, 1 jeu par indicateur",
+        "1 responsable par indicateur (celui qui a les moyens d'agir)",
+        "FSI = Nom · Finalité · Formule + sources · Unité · Fréquence · Cible · Seuils d'alerte · Responsable · Mode de représentation"
+      ],
+      "pieges": [
+        "Présenter un indicateur sans valeur cible ni seuil d'alerte : impossible de savoir si le chiffre est bon ou mauvais.",
+        "Nommer un responsable qui n'a pas les leviers pour agir sur l'indicateur."
+      ]
+    },
+    {
+      "id": "m12-s5",
+      "titre": "Le Tableau de Bord Opérationnel (TBO) : 1 page pour décider",
+      "points": [
+        "On distingue trois types de tableaux de bord : le TBS (stratégique, hors programme), le TBO (opérationnel, AU PROGRAMME) et le TBB (budgétaire). C'est le TBO qui est attendu à l'EDC6. Sa logique fondamentale : 1 décideur = 1 responsable. Chaque TBO est conçu pour une personne qui pilote son périmètre.",
+        "Le TBO tient sur UNE SEULE page : c'est une contrainte de conception, pas un détail. Il comporte 2 à 3 KPI par Facteur Clé de Succès. Il doit toujours afficher, en plus de la valeur, une colonne valeur cible et écart, un code couleur, et une place pour les commentaires. La règle de composition la plus importante : mixer les natures d'indicateurs — financiers, opérationnels, qualité et RH — pour ne pas piloter qu'avec du financier, qui arrive toujours trop tard.",
+        "Le TBO sert à DÉCIDER, pas à surveiller. Concrètement, il s'utilise lors d'un point d'équipe hebdomadaire court (15 à 20 minutes) : on passe en revue les couleurs (vert / ambre / rouge), on identifie les blocages, et on réaffecte les ressources en cas de surcharge. Le tableau de bord est un outil de management partagé, pas un instrument de contrôle policier de l'équipe."
+      ],
+      "chiffres": [
+        "3 types : TBS (stratégique, hors programme) · TBO (opérationnel, au programme) · TBB (budgétaire)",
+        "TBO = 1 décideur = 1 responsable, 1 seule page, 2-3 KPI par FCS",
+        "Toujours : colonne valeur cible + écart, code couleur, place pour commentaires",
+        "Point d'équipe hebdo de 15-20 min pour exploiter le TBO"
+      ],
+      "pieges": [
+        "Faire un TBO uniquement financier : il faut mixer financier + opérationnel + qualité + RH.",
+        "Utiliser le tableau de bord pour surveiller au lieu de décider et débloquer."
+      ]
+    },
+    {
+      "id": "m12-s6",
+      "titre": "Plan de charge et management d'équipe (EDC6 / EDC7)",
+      "points": [
+        "Avant le tableau de bord, l'EDC6 demande d'établir un plan de charge. La démarche : décomposer le projet en tâches (cadrage, collecte des besoins, conception, développement, tests, déploiement, formation), estimer chaque tâche en jours/homme, affecter les ressources selon les compétences, puis planifier (diagramme de Gantt) en gardant une marge pour l'activité courante. Pour clarifier les rôles, on utilise une matrice RACI : qui est Responsable, qui est Approbateur, qui est Consulté, qui est Informé.",
+        "L'EDC7 porte sur le management d'équipe : accompagnement de la montée en compétences et management hybride. La démarche d'accompagnement suit cinq temps : (1) entretien individuel pour identifier les écarts de compétences et les attentes, (2) co-construction d'un plan de développement avec objectifs et échéances, (3) mobilisation des dispositifs (formation interne/externe, tutorat/mentorat par un senior, mises en situation de difficulté croissante, feedback régulier), (4) suivi par points réguliers et feedback continu, (5) évaluation de la progression. Le cadre de référence est la GPEC (gestion prévisionnelle des emplois et des compétences).",
+        "Le management hybride (présentiel/distanciel) impose des règles d'équité : des rituels d'équipe fixes (daily/weekly) accessibles à distance, des comptes-rendus écrits partagés, l'équité d'accès à l'information (pas d'« effet couloir » réservé aux présents), des plages de disponibilité communes et des outils collaboratifs. L'inclusion exige une équité de traitement présentiel/distanciel (mêmes opportunités de projets et de visibilité), de l'attention aux situations individuelles (handicap, parentalité), la prévention de l'isolement des télétravailleurs, et une mesure régulière du climat (enquêtes courtes). La roue de Deming (PDCA : Plan-Do-Check-Act) structure l'amélioration continue de ces pratiques."
+      ],
+      "chiffres": [
+        "Plan de charge : tâches → estimation (jours/homme) → affectation par compétences → planning (Gantt)",
+        "RACI = Responsable · Approbateur · Consulté · Informé",
+        "Démarche d'accompagnement en 5 temps ; cadre GPEC",
+        "PDCA = Plan-Do-Check-Act (roue de Deming)"
+      ],
+      "pieges": [
+        "Oublier de garder une marge pour l'activité courante quand on affecte les ressources au projet.",
+        "Créer un « effet couloir » qui réserve l'information aux présents et exclut les télétravailleurs."
+      ]
+    }
+  ],
+  "visuals": [
+    {
+      "type": "flow",
+      "titre": "La démarche OVAR en 5 étapes",
+      "intro": "L'enchaînement exact attendu à l'EDC6 : chaque étape découle de la précédente.",
+      "ancre": "m12-s1",
+      "steps": [
+        { "t": "Objectifs", "d": "Ce que le service veut atteindre, validés SMART (Spécifique, Mesurable, Atteignable, Réaliste, Temporel)." },
+        { "t": "Variables d'Action (FCS)", "d": "Les leviers pour atteindre l'objectif : au moins 1 par objectif, contrôlables ET mesurables." },
+        { "t": "Indicateurs (KPI)", "d": "2-3 par variable d'action, chiffrés ; quantifiable, actionnable, simple, fiable, contrôlable." },
+        { "t": "Seuils", "d": "Cible + seuil d'alerte par indicateur, code couleur vert / orange / rouge." },
+        { "t": "Responsables", "d": "1 par indicateur : celui qui a réellement les moyens d'agir." }
+      ]
+    },
+    {
+      "type": "compare",
+      "titre": "Les trois types de tableaux de bord",
+      "intro": "Seul le TBO (opérationnel) est au programme de l'EDC6.",
+      "ancre": "m12-s5",
+      "headers": ["Type", "Nature", "Au programme ?"],
+      "rows": [
+        { "cells": ["TBS", "Stratégique (direction générale, vision long terme)", "Non, hors programme"] },
+        { "cells": ["TBO", "Opérationnel : 1 décideur = 1 responsable, 1 page, 2-3 KPI/FCS", "OUI, au programme"] },
+        { "cells": ["TBB", "Budgétaire (suivi du budget)", "Non, hors programme"] }
+      ]
+    },
+    {
+      "type": "compare",
+      "titre": "Objectif vs Variable d'Action",
+      "intro": "Distinction clé d'OVAR : ne pas confondre le résultat visé et le levier.",
+      "ancre": "m12-s2",
+      "headers": ["Critère", "Objectif", "Variable d'Action (FCS)"],
+      "rows": [
+        { "cells": ["Rôle", "Le résultat visé (le « quoi »)", "Le levier pour y parvenir (le « comment »)"] },
+        { "cells": ["Validation", "Doit être SMART", "Doit être contrôlable ET mesurable"] },
+        { "cells": ["Exemple", "Réduire le délai de clôture de 8 à 5 jours d'ici décembre", "Automatiser les écritures récurrentes"] }
+      ]
+    }
+  ],
+  "qcm": [
+    {
+      "enonce": "Dans la méthode OVAR, quel est l'enchaînement correct des étapes ?",
+      "ancre": "m12-s1",
+      "options": [
+        { "texte": "Objectifs → Variables d'Action (FCS) → Indicateurs → Seuils → Responsables", "correcte": true, "justif": "C'est exactement le schéma attendu : on décline la stratégie en partant de l'objectif jusqu'au responsable." },
+        { "texte": "Indicateurs → Objectifs → Responsables → Seuils → Variables d'Action", "correcte": false, "justif": "Les indicateurs ne peuvent pas précéder les objectifs : ils en découlent via les variables d'action." },
+        { "texte": "Responsables → Seuils → Objectifs → Indicateurs → Variables d'Action", "correcte": false, "justif": "On ne désigne pas les responsables avant d'avoir défini ce qui est piloté ; l'ordre est inversé." }
+      ]
+    },
+    {
+      "enonce": "Un objectif formulé « améliorer le reporting » pose problème. Pourquoi n'est-il pas recevable ?",
+      "ancre": "m12-s2",
+      "options": [
+        { "texte": "Il n'est pas SMART : il manque le caractère mesurable et temporel (pas de chiffre, pas d'échéance)", "correcte": true, "justif": "Un objectif valide est Spécifique, Mesurable, Atteignable, Réaliste, Temporel ; ici il est vague et sans échéance." },
+        { "texte": "Il est trop ambitieux et donc non atteignable", "correcte": false, "justif": "Le problème n'est pas l'ambition mais l'absence de mesure et d'horizon : on ne saurait dire s'il est atteint." },
+        { "texte": "Il relève de la stratégie et non de l'opérationnel", "correcte": false, "justif": "Le niveau n'est pas en cause ; le défaut est l'absence des critères SMART, mesurable et temporel notamment." }
+      ]
+    },
+    {
+      "enonce": "Quelles sont les deux conditions impératives qu'une Variable d'Action (FCS) doit satisfaire ?",
+      "ancre": "m12-s2",
+      "options": [
+        { "texte": "Être contrôlable ET mesurable", "correcte": true, "justif": "Une variable d'action est un levier sur lequel l'équipe peut agir (contrôlable) et dont elle peut suivre l'évolution (mesurable)." },
+        { "texte": "Être financière ET annuelle", "correcte": false, "justif": "Une variable d'action n'a pas à être financière ni annuelle : on mixe les natures et les fréquences." },
+        { "texte": "Être stratégique ET validée par la direction générale", "correcte": false, "justif": "Les variables d'action sont opérationnelles ; les conditions requises sont la contrôlabilité et la mesurabilité." }
+      ]
+    },
+    {
+      "enonce": "Pourquoi le taux de change ne constitue-t-il pas un bon KPI pour piloter une équipe ?",
+      "ancre": "m12-s3",
+      "options": [
+        { "texte": "Il n'est pas contrôlable : l'équipe ne peut pas agir dessus, donc il ne déclenche aucune action corrective utile", "correcte": true, "justif": "La contrôlabilité est une règle d'or du KPI ; on ne pilote pas une grandeur qu'on subit sans pouvoir l'influencer." },
+        { "texte": "Il n'est pas chiffrable", "correcte": false, "justif": "Le taux de change est parfaitement chiffrable ; son défaut est qu'il n'est pas contrôlable par l'équipe." },
+        { "texte": "Il change trop souvent pour être suivi", "correcte": false, "justif": "La fréquence de variation n'est pas le problème ; le problème est l'absence de prise de l'équipe sur cette grandeur." }
+      ]
+    },
+    {
+      "enonce": "Selon le critère ultime d'un bon KPI, quelle question doit-on se poser ?",
+      "ancre": "m12-s3",
+      "options": [
+        { "texte": "« S'il vire au rouge, que fait le décideur lundi matin ? » — un bon KPI ne nécessite aucune interprétation", "correcte": true, "justif": "Un KPI doit déclencher une décision claire et immédiate, pas un débat d'interprétation." },
+        { "texte": "« Ce chiffre fera-t-il bonne impression en réunion de direction ? »", "correcte": false, "justif": "Un KPI sert à décider et corriger, pas à soigner une présentation ; ce critère est hors sujet." },
+        { "texte": "« Combien d'indicateurs puis-je accumuler pour être exhaustif ? »", "correcte": false, "justif": "L'accumulation nuit à la lisibilité ; un bon KPI est simple et actionnable, pas une question de quantité." }
+      ]
+    },
+    {
+      "enonce": "À quoi sert le code couleur vert / orange / rouge dans un tableau de bord ?",
+      "ancre": "m12-s4",
+      "options": [
+        { "texte": "À matérialiser les seuils (cible et seuil d'alerte) pour une lecture instantanée de chaque indicateur", "correcte": true, "justif": "Le code couleur traduit les seuils critiques : vert rassure, orange alerte, rouge impose une action." },
+        { "texte": "À indiquer la fréquence de mise à jour de chaque indicateur", "correcte": false, "justif": "La fréquence figure dans la fiche signalétique (FSI), pas dans le code couleur qui exprime l'écart aux seuils." },
+        { "texte": "À distinguer les indicateurs financiers des indicateurs RH", "correcte": false, "justif": "La nature des indicateurs n'est pas codée par les couleurs ; celles-ci expriment l'atteinte ou non des seuils." }
+      ]
+    },
+    {
+      "enonce": "Que doit contenir une Fiche Signalétique d'Indicateur (FSI) ?",
+      "ancre": "m12-s4",
+      "options": [
+        { "texte": "Nom, finalité, formule + sources, unité, fréquence, cible, seuils, responsable et mode de représentation", "correcte": true, "justif": "La FSI est la carte d'identité complète de l'indicateur, garantissant un calcul et une lecture homogènes." },
+        { "texte": "Uniquement le nom de l'indicateur et sa valeur du mois", "correcte": false, "justif": "C'est très insuffisant : sans formule, sources, seuils et responsable, l'indicateur n'est ni traçable ni pilotable." },
+        { "texte": "Le budget alloué au service et la liste des collaborateurs", "correcte": false, "justif": "La FSI décrit l'indicateur lui-même, pas le budget ni l'effectif du service." }
+      ]
+    },
+    {
+      "enonce": "Quelle est la règle fondamentale de responsabilité d'un Tableau de Bord Opérationnel (TBO) ?",
+      "ancre": "m12-s5",
+      "options": [
+        { "texte": "1 décideur = 1 responsable : chaque TBO est conçu pour une personne qui pilote son périmètre", "correcte": true, "justif": "Le TBO est nominatif : un seul décideur en est responsable, ce qui rend le pilotage clair et engageant." },
+        { "texte": "Un TBO doit être partagé par tous les services de l'entreprise", "correcte": false, "justif": "Un TBO est opérationnel et nominatif ; il n'est pas un tableau global multi-services." },
+        { "texte": "Le TBO n'a pas de responsable, c'est un document de la direction générale", "correcte": false, "justif": "C'est le TBS qui relève de la direction ; le TBO a toujours un responsable unique identifié." }
+      ]
+    },
+    {
+      "enonce": "Pourquoi un TBO ne doit-il pas se composer uniquement d'indicateurs financiers ?",
+      "ancre": "m12-s5",
+      "options": [
+        { "texte": "Parce qu'il faut mixer les natures — financiers, opérationnels, qualité, RH — pour piloter à temps et pas seulement constater", "correcte": true, "justif": "Le financier arrive souvent trop tard ; les indicateurs opérationnels et qualité permettent d'anticiper et de corriger." },
+        { "texte": "Parce que les indicateurs financiers sont interdits dans un TBO opérationnel", "correcte": false, "justif": "Les indicateurs financiers ont toute leur place ; ils doivent simplement être complétés par d'autres natures." },
+        { "texte": "Parce qu'un TBO ne peut contenir que des indicateurs RH", "correcte": false, "justif": "Aucune nature n'est exclusive ; au contraire, la règle est précisément de les mixer." }
+      ]
+    },
+    {
+      "enonce": "Comment doit-on utiliser le tableau de bord lors des points d'équipe ?",
+      "ancre": "m12-s5",
+      "options": [
+        { "texte": "En point hebdo court (15-20 min) : revue des couleurs, identification des blocages, réaffectation des ressources — le TdB sert à DÉCIDER", "correcte": true, "justif": "Le tableau de bord est un outil de décision et de déblocage partagé, exploité en réunion brève et régulière." },
+        { "texte": "Comme un outil de surveillance pour contrôler individuellement chaque collaborateur", "correcte": false, "justif": "Le TdB sert à décider, pas à surveiller ; le détourner en outil de contrôle policier casse la dynamique d'équipe." },
+        { "texte": "En réunion trimestrielle de deux heures pour faire le bilan a posteriori", "correcte": false, "justif": "Un rythme trop espacé empêche de corriger à temps ; le pilotage opérationnel se fait à fréquence courte." }
+      ]
+    },
+    {
+      "enonce": "Dans l'établissement d'un plan de charge (EDC6), quelle est la bonne démarche ?",
+      "ancre": "m12-s6",
+      "options": [
+        { "texte": "Décomposer en tâches → estimer en jours/homme → affecter selon les compétences → planifier (Gantt), en gardant une marge pour l'activité courante", "correcte": true, "justif": "C'est la démarche du corrigé : on découpe, on chiffre la charge, on affecte puis on planifie sans saturer l'équipe." },
+        { "texte": "Affecter d'abord toutes les ressources au projet, puis lister les tâches restantes", "correcte": false, "justif": "On ne peut affecter sans avoir d'abord identifié et estimé les tâches ; l'ordre est inversé et oublie l'activité courante." },
+        { "texte": "Fixer le planning final avant d'estimer la charge de chaque tâche", "correcte": false, "justif": "Un planning crédible suppose d'avoir d'abord estimé la charge en jours/homme de chaque tâche." }
+      ]
+    },
+    {
+      "enonce": "Que signifie l'acronyme RACI, utilisé pour clarifier les rôles dans un projet ?",
+      "ancre": "m12-s6",
+      "options": [
+        { "texte": "Responsable · Approbateur · Consulté · Informé", "correcte": true, "justif": "La matrice RACI répartit clairement, pour chaque tâche, qui fait, qui valide, qui est consulté et qui est tenu informé." },
+        { "texte": "Rentabilité · Activité · Coûts · Investissement", "correcte": false, "justif": "Ce sont des notions financières ; RACI est un cadre de répartition des rôles, pas un indicateur financier." },
+        { "texte": "Risque · Alerte · Contrôle · Indicateur", "correcte": false, "justif": "Ces termes relèvent du pilotage des risques ; ils ne correspondent pas à la matrice des rôles RACI." }
+      ]
+    },
+    {
+      "enonce": "Dans la démarche d'accompagnement de la montée en compétences (EDC7), par quoi commence-t-on ?",
+      "ancre": "m12-s6",
+      "options": [
+        { "texte": "Un entretien individuel pour identifier les écarts de compétences et les attentes du collaborateur", "correcte": true, "justif": "Le corrigé EDC7 part de l'identification du besoin en entretien avant de co-construire un plan et de mobiliser les dispositifs." },
+        { "texte": "L'inscription immédiate à une formation externe avant tout diagnostic", "correcte": false, "justif": "Mobiliser un dispositif avant d'avoir identifié les écarts est prématuré ; le diagnostic individuel vient d'abord." },
+        { "texte": "La sanction des écarts de performance constatés", "correcte": false, "justif": "L'accompagnement est une démarche de développement, pas de sanction ; il débute par un entretien d'identification." }
+      ]
+    },
+    {
+      "enonce": "Qu'est-ce que l'« effet couloir » qu'un management hybride équitable doit éviter ?",
+      "ancre": "m12-s6",
+      "options": [
+        { "texte": "Réserver l'information aux personnes présentes sur site, au détriment des télétravailleurs", "correcte": true, "justif": "L'équité d'accès à l'information impose des comptes-rendus écrits partagés pour ne pas exclure les collaborateurs à distance." },
+        { "texte": "Imposer trop de réunions quotidiennes à toute l'équipe", "correcte": false, "justif": "L'effet couloir ne concerne pas la fréquence des réunions mais l'inégalité d'accès à l'information entre présents et distants." },
+        { "texte": "Laisser les télétravailleurs choisir librement leurs horaires", "correcte": false, "justif": "La flexibilité horaire n'est pas l'effet couloir ; celui-ci désigne l'information informelle réservée aux présents." }
+      ]
+    },
+    {
+      "enonce": "Que désigne la méthode PDCA (roue de Deming) en pilotage de la performance ?",
+      "ancre": "m12-s6",
+      "options": [
+        { "texte": "Plan-Do-Check-Act : un cycle d'amélioration continue (planifier, réaliser, vérifier, agir/corriger)", "correcte": true, "justif": "Le PDCA structure l'amélioration continue : on planifie, on exécute, on contrôle les écarts, puis on corrige." },
+        { "texte": "Prévoir-Décaisser-Comptabiliser-Auditer : un cycle comptable", "correcte": false, "justif": "Ce n'est pas un cycle comptable ; PDCA est une boucle qualité d'amélioration continue." },
+        { "texte": "Produire-Distribuer-Contrôler-Archiver : un cycle logistique", "correcte": false, "justif": "PDCA n'est pas un processus logistique mais la roue de Deming d'amélioration continue (Plan-Do-Check-Act)." }
+      ]
+    },
+    {
+      "enonce": "Pour l'objectif « réduire le délai de clôture de 8 à 5 jours d'ici décembre », quel élément en fait un objectif SMART ?",
+      "ancre": "m12-s2",
+      "options": [
+        { "texte": "Il est mesurable (de 8 à 5 jours) et temporel (d'ici décembre), en plus d'être spécifique et atteignable", "correcte": true, "justif": "Il réunit les critères SMART : une cible chiffrée précise et une échéance datée rendent le suivi possible." },
+        { "texte": "Il est SMART uniquement parce qu'il concerne la comptabilité", "correcte": false, "justif": "Le domaine n'a rien à voir : ce sont la mesure chiffrée et l'échéance qui fondent le caractère SMART." },
+        { "texte": "Il est SMART parce qu'il ne fixe aucune contrainte de temps, laissant de la souplesse", "correcte": false, "justif": "C'est l'inverse : l'absence de contrainte de temps disqualifierait un objectif ; ici l'échéance « décembre » est essentielle." }
+      ]
+    }
+  ]
+}

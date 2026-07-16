@@ -1,0 +1,340 @@
+{
+  "id": "m5",
+  "num": 5,
+  "nom": "Trésorerie & prévisionnel pluriannuel",
+  "essentiel": {
+    "a_retenir": [
+      "Un flux de trésorerie est un mouvement RÉEL d'argent (encaissement ou décaissement) à une DATE précise ; une charge ou un produit est un événement COMPTABLE (engagement) qui peut être décalé du flux, voire sans flux du tout.",
+      "Le tableau de flux de trésorerie (TFT) classe les flux en 3 catégories : flux d'exploitation, flux d'investissement, flux de financement. La variation de trésorerie de la période = somme des trois.",
+      "Le plan de financement pluriannuel (C1) sert à évaluer la SOLVABILITÉ à long terme : il confronte sur plusieurs années les ressources durables (CAF, augmentations de capital, emprunts) aux emplois durables (investissements, remboursements, variation du BFR, dividendes).",
+      "Le budget de trésorerie (C2) est mensuel : solde initial + encaissements − décaissements = solde final, qui est reporté en solde initial du mois suivant.",
+      "Le BFR = stocks + créances clients − dettes fournisseurs. Une HAUSSE du BFR CONSOMME de la trésorerie ; une BAISSE du BFR en LIBÈRE.",
+      "Allonger le délai fournisseurs (ex. de 30 à 60 jours) augmente les dettes fournisseurs, donc DIMINUE le BFR et AMÉLIORE la trésorerie — mais au prix de la relation fournisseurs.",
+      "Le bilan prévisionnel doit s'ÉQUILIBRER (actif = passif) et le lien entre flux de trésorerie calculés et postes comptables doit être établi : un bilan déséquilibré coûte beaucoup de points.",
+      "Une dotation aux amortissements est une charge SANS décaissement : elle n'apparaît pas dans le budget de trésorerie mais réduit le résultat comptable.",
+      "La TVA à décaisser = TVA collectée − TVA déductible, et elle est payée le mois SUIVANT : oublier ce décalage rend le budget faux.",
+      "Les délais de paiement (clients à 30 j, fournisseurs à 30 j) DÉCALENT les flux d'un mois par rapport à la facturation : la vente de janvier n'est encaissée qu'en février.",
+      "Le plan de trésorerie (C3) choisit les financements ou placements court terme (horizon 6 à 12 mois) les plus avantageux pour combler les mois en tension.",
+      "Pour un investissement, on privilégie un financement à MOYEN/LONG terme plutôt que le découvert (le découvert est cher et destiné aux décalages courts).",
+      "Une prévision de niveau 7 intègre une vision 360° (aléas, évolutions de marché) et se termine TOUJOURS par des recommandations chiffrées et argumentées pour améliorer la trésorerie.",
+      "En examen open-book, la note se joue sur la MÉTHODE (décalages, équilibre du bilan), l'interprétation des soldes et la reco finale, pas sur des montants par cœur."
+    ],
+    "chiffres": [
+      "Variation de trésorerie (TFT) = Flux d'exploitation + Flux d'investissement + Flux de financement",
+      "BFR = Stocks + Créances clients − Dettes fournisseurs",
+      "Solde final du mois = Solde initial + Encaissements − Décaissements (reporté au mois suivant)",
+      "TVA à décaisser = TVA collectée − TVA déductible (payée le mois suivant)",
+      "Variation du BFR : hausse du BFR = emploi (consomme de la trésorerie) ; baisse du BFR = ressource (libère de la trésorerie)",
+      "Bilan prévisionnel : Total Actif = Total Passif (condition d'équilibre)",
+      "Coût d'un crédit court terme = taux proportionnel au nombre de jours d'utilisation",
+      "Cas BETA — TVA sur janvier = 20 % × (ventes 100 − achats 60) = 8 k€, payée en février",
+      "Cas BETA — encaissement février = ventes janvier 100 × 1,2 (TTC) = 120 k€",
+      "Cas BETA — solde cumulé : Jan = 20 − 25 = −5 ; Fév = −5 +120 −72 −25 −50 −8 = −40 ; Mars = −40 +144 −84 −25 −10 = −15 (k€)"
+    ],
+    "pieges": [
+      "Confondre flux de trésorerie et résultat comptable : un produit n'est pas un encaissement, une charge n'est pas un décaissement.",
+      "Oublier les décalages (TVA payée le mois suivant, délais clients/fournisseurs) — le budget devient faux.",
+      "Rendre un bilan prévisionnel déséquilibré (actif ≠ passif) : grosse perte de points.",
+      "Intégrer une dotation aux amortissements dans le budget de trésorerie alors qu'elle n'entraîne aucun décaissement.",
+      "Financer un investissement par un découvert (cher) au lieu d'un financement à moyen terme adapté.",
+      "Donner les soldes mensuels sans repérer les mois en tension ni proposer de financement CT.",
+      "Terminer sans aucune recommandation d'amélioration de la trésorerie."
+    ]
+  },
+  "sections": [
+    {
+      "id": "m5-s1",
+      "titre": "Flux de trésorerie vs charges et produits",
+      "points": [
+        "La distinction fondatrice du bloc BC02 est celle entre le FLUX et l'ENGAGEMENT comptable. Un flux de trésorerie est un mouvement réel d'argent — un encaissement ou un décaissement — qui se produit à une date précise sur le compte bancaire de l'entreprise. Une charge ou un produit est, à l'inverse, un événement purement comptable (un engagement) qui peut être décalé du flux dans le temps, voire ne donner lieu à aucun flux.",
+        "Trois cas illustrent l'écart. Une vente à crédit est un produit comptabilisé en N, mais l'encaissement n'intervient qu'en N+1 : le produit précède le flux. À l'inverse, un encaissement d'acompte précède le produit. Enfin, une dotation aux amortissements est une charge totalement dépourvue de décaissement : elle pèse sur le résultat sans jamais toucher la trésorerie. Cette dernière est précisément la raison pour laquelle la CAF (qui réintègre les charges non décaissables) est un meilleur indicateur de génération de trésorerie que le résultat net.",
+        "Conséquence pratique : on ne construit jamais un budget de trésorerie à partir du compte de résultat brut. On part des opérations puis on les TRANSPOSE en flux datés, en appliquant les délais de paiement et les décalages de TVA. Maîtriser cette transposition est le cœur de la compétence C2 et la première chose que le correcteur vérifie."
+      ],
+      "chiffres": [
+        "Flux = mouvement réel d'argent à une date ; charge/produit = engagement comptable",
+        "Dotation aux amortissements = charge SANS décaissement (n'entre pas au budget de trésorerie)"
+      ],
+      "pieges": [
+        "Traiter un produit comme un encaissement immédiat alors que la vente est à crédit.",
+        "Faire figurer une charge non décaissable (amortissement, provision) dans le budget de trésorerie."
+      ]
+    },
+    {
+      "id": "m5-s2",
+      "titre": "Le budget de trésorerie mensuel (C2)",
+      "points": [
+        "Le budget de trésorerie est un tableau MENSUEL qui suit une mécanique simple et reportée : pour chaque mois, Solde initial + Encaissements − Décaissements = Solde final, et ce solde final devient le solde initial du mois suivant. C'est ce chaînage qui produit le solde CUMULÉ, indicateur clé pour repérer les tensions.",
+        "Les encaissements regroupent essentiellement les ventes encaissées (TTC, donc TVA comprise), décalées du délai client. Les décaissements regroupent les achats payés (TTC), les salaires (souvent payés le mois même), les charges sociales et patronales, la TVA à décaisser (le mois suivant), et les sorties exceptionnelles comme un investissement payé comptant. Tout doit être exprimé en flux RÉELS et datés.",
+        "Sur le cas BETA : la société démarre à 20 k€. Les ventes étant encaissées à 30 jours, la vente de janvier (100 k€ HT) n'est encaissée qu'en février, soit 100 × 1,2 = 120 k€ TTC ; celle de février (120) est encaissée en mars (144 TTC). Côté décaissements, les achats suivent le même décalage (février = 60 × 1,2 = 72 ; mars = 70 × 1,2 = 84), les salaires sont de 25 k€/mois, l'investissement de 50 k€ tombe en février, et la TVA de janvier (8 k€) est payée en février, celle de février (10 k€) en mars. Le solde cumulé s'établit à −5 en janvier, −40 en février, −15 en mars.",
+        "Il faut écrire chaque ligne avec ses données, sa formule et son résultat, puis interpréter le solde. L'objectif n'est pas un montant unique « vrai » — il dépend des hypothèses de départ (ventes de décembre non fournies, par exemple) — mais une méthode cohérente : décalages corrects et chaînage juste du solde cumulé."
+      ],
+      "chiffres": [
+        "Solde final = Solde initial + Encaissements − Décaissements (reporté au mois suivant)",
+        "BETA — encaissement février = 100 × 1,2 = 120 k€ ; mars = 120 × 1,2 = 144 k€",
+        "BETA — TVA janvier = 20 % × (100 − 60) = 8 k€, payée en février",
+        "BETA — solde cumulé : Jan −5 ; Fév −40 ; Mars −15 (k€)"
+      ],
+      "pieges": [
+        "Encaisser ou décaisser au mois de la facturation au lieu d'appliquer le délai de 30 jours.",
+        "Travailler en HT alors que les flux réels sont en TTC (TVA comprise)."
+      ]
+    },
+    {
+      "id": "m5-s3",
+      "titre": "TVA, charges sociales et techniques de calcul",
+      "points": [
+        "La TVA est la première source d'erreur du budget. La TVA à décaisser d'un mois = TVA collectée (sur les ventes) − TVA déductible (sur les achats), et elle n'est versée à l'État que le mois SUIVANT. Sur BETA, la TVA de janvier vaut 20 % × (100 − 60) = 8 k€ mais ne sort de la trésorerie qu'en février. Oublier ce décalage d'un mois fausse mécaniquement tous les soldes cumulés.",
+        "Au-delà de la TVA, la compétence C2 exige la maîtrise d'un ensemble de techniques : le traitement des charges sociales et patronales (les cotisations patronales s'ajoutent au salaire brut et ont souvent leur propre échéance de décaissement), les modalités de remboursement d'emprunt (distinguer la part de capital remboursé — un décaissement — des intérêts — une charge décaissée), et les mathématiques financières usuelles.",
+        "Le réflexe de méthode est toujours le même : pour chaque opération, se demander (1) à quelle date l'argent bouge réellement, (2) pour quel montant TTC, et (3) si l'opération a une contrepartie comptable au bilan (une dette de TVA, une dette sociale, une dette fournisseur) qui devra apparaître au bilan prévisionnel."
+      ],
+      "chiffres": [
+        "TVA à décaisser = TVA collectée − TVA déductible, payée le mois suivant",
+        "BETA — TVA février = 20 % × (120 − 70) = 10 k€, payée en mars",
+        "Remboursement d'emprunt : capital remboursé = décaissement ; intérêts = charge décaissée"
+      ],
+      "pieges": [
+        "Verser la TVA le mois où elle est collectée au lieu du mois suivant.",
+        "Confondre, dans une échéance d'emprunt, la part de capital (qui ne passe pas par le résultat) et les intérêts (qui sont une charge)."
+      ]
+    },
+    {
+      "id": "m5-s4",
+      "titre": "BFR et son impact sur la trésorerie",
+      "points": [
+        "Le besoin en fonds de roulement traduit le décalage de trésorerie né du cycle d'exploitation. Sa formule de référence est : BFR = stocks + créances clients − dettes fournisseurs. Il représente l'argent immobilisé dans le cycle : on a déjà acheté et stocké, on a livré sans être payé (créances), mais on bénéficie en sens inverse du crédit fournisseurs.",
+        "La règle d'or à retenir : une HAUSSE du BFR CONSOMME de la trésorerie (c'est un emploi), une BAISSE du BFR en LIBÈRE (c'est une ressource). Si l'activité croît, les stocks et les créances gonflent : le BFR augmente et ponctionne la trésorerie, alors même que l'entreprise est rentable. C'est le paradoxe classique de la croissance.",
+        "Levier d'action illustré par BETA : allonger le délai de paiement fournisseurs de 30 à 60 jours augmente les dettes fournisseurs, donc DIMINUE le BFR et AMÉLIORE la trésorerie — on paie plus tard, l'argent reste plus longtemps. L'effet est positif mais à manier avec prudence : il dégrade la relation fournisseurs et peut coûter en escomptes perdus. Symétriquement, réduire les délais clients ou les stocks abaisse aussi le BFR. Dans le plan de financement pluriannuel, c'est la VARIATION du BFR d'une année sur l'autre qui figure en emploi (si elle augmente) ou en ressource (si elle diminue)."
+      ],
+      "chiffres": [
+        "BFR = Stocks + Créances clients − Dettes fournisseurs",
+        "Hausse du BFR = emploi (consomme la trésorerie) ; baisse du BFR = ressource (libère la trésorerie)",
+        "Allonger fournisseurs 30 j → 60 j : dettes fournisseurs ↑ → BFR ↓ → trésorerie ↑"
+      ],
+      "pieges": [
+        "Croire qu'une entreprise rentable ne peut pas manquer de trésorerie : une forte hausse du BFR peut l'assécher.",
+        "Inverser le sens : penser qu'une hausse du BFR améliore la trésorerie."
+      ]
+    },
+    {
+      "id": "m5-s5",
+      "titre": "TFT, plan de financement pluriannuel et bilan prévisionnel équilibré (C1)",
+      "points": [
+        "Le tableau de flux de trésorerie (TFT) explique la variation de trésorerie de la période en la décomposant en trois catégories : les flux d'EXPLOITATION (générés par l'activité courante, à partir de la CAF corrigée de la variation du BFR), les flux d'INVESTISSEMENT (acquisitions et cessions d'immobilisations) et les flux de FINANCEMENT (augmentations de capital, emprunts nouveaux, remboursements, dividendes). La variation de trésorerie = somme des trois flux ; elle doit réconcilier la trésorerie d'ouverture et de clôture.",
+        "Le plan de financement pluriannuel est l'outil de la compétence C1 : il projette sur plusieurs années (vision pluriannuelle) la confrontation entre les EMPLOIS durables (investissements, remboursements d'emprunt, variation positive du BFR, dividendes) et les RESSOURCES durables (CAF, augmentations de capital, emprunts nouveaux, cessions). Il intègre les grandes décisions stratégiques — projets d'investissement et financements prévus — afin d'évaluer la SOLVABILITÉ à long terme. Une bonne copie y intègre aussi les aléas et évolutions de marché (vision 360°).",
+        "Le bilan prévisionnel est l'aboutissement et le contrôle de cohérence : reconstruit à partir du bilan de départ et des flux calculés, il doit s'ÉQUILIBRER (Total Actif = Total Passif). Le correcteur attend que le lien entre les flux de trésorerie et les postes comptables soit explicite : la trésorerie finale du budget se retrouve à l'actif (disponibilités ou découvert au passif si négative), les dettes de TVA et sociales non encore payées figurent au passif, les créances et dettes fournisseurs en cours alimentent le BFR. Un bilan déséquilibré est l'une des pertes de points les plus lourdes de l'épreuve."
+      ],
+      "chiffres": [
+        "Variation de trésorerie = Flux d'exploitation + Flux d'investissement + Flux de financement",
+        "Plan de financement : Ressources durables (CAF, AK, emprunts, cessions) vs Emplois durables (investissements, remboursements, Δ BFR, dividendes)",
+        "Bilan prévisionnel : Total Actif = Total Passif (équilibre obligatoire)"
+      ],
+      "pieges": [
+        "Présenter un bilan prévisionnel déséquilibré (actif ≠ passif).",
+        "Oublier de reporter au passif les dettes en cours (TVA, social, fournisseurs) issues des décalages du budget."
+      ]
+    },
+    {
+      "id": "m5-s6",
+      "titre": "Plan de trésorerie : financements et placements court terme (C3)",
+      "points": [
+        "Une fois les soldes mensuels établis, on identifie les mois en TENSION (solde cumulé négatif) puis on conçoit le plan de trésorerie : choisir les mécanismes de financement court terme les plus avantageux pour combler ces creux, sur un horizon de 6 à 12 mois. Sur BETA, février (−40 k€) est le mois critique, à cause de l'investissement comptant cumulé au démarrage tardif des encaissements ; mars reste tendu (−15 k€).",
+        "Les principales options court terme sont : le découvert bancaire autorisé (souple mais cher, pour les décalages brefs), l'escompte des créances clients (mobiliser des effets de commerce avant échéance), l'affacturage (céder le poste clients à un factor) et le crédit court terme. Le choix se justifie par le profil de l'entreprise, l'état de ses dettes et créances et son besoin réel de liquidités. Un point clé de méthode : pour FINANCER UN INVESTISSEMENT, on préfère un financement à moyen terme — moins coûteux que le découvert, qui n'est pas fait pour cela.",
+        "Le coût réel d'un crédit court terme se calcule au prorata du nombre de jours d'utilisation (taux proportionnel à la durée) ; comparer les options sur cette base permet de retenir la moins chère. La compétence C3 exige des recommandations CHIFFRÉES et justifiées : on n'écrit pas seulement « prendre un découvert », on en estime le coût et on le compare aux alternatives. Symétriquement, en cas d'excédent de trésorerie, on raisonne en placements court terme."
+      ],
+      "chiffres": [
+        "Horizon du plan de trésorerie : 6 à 12 mois",
+        "Coût d'un crédit court terme = taux proportionnel au nombre de jours d'utilisation",
+        "BETA — mois en tension : février −40 k€ (le plus critique), mars −15 k€",
+        "Investissement → financement moyen terme (moins cher que le découvert)"
+      ],
+      "pieges": [
+        "Financer un investissement par découvert plutôt que par un crédit à moyen terme.",
+        "Recommander un financement sans en chiffrer le coût ni le comparer aux autres options."
+      ]
+    }
+  ],
+  "visuals": [
+    {
+      "type": "compare",
+      "titre": "Flux de trésorerie vs charge / produit",
+      "intro": "La distinction fondatrice du bloc : ce qui touche la banque vs ce qui touche le résultat comptable.",
+      "ancre": "m5-s1",
+      "headers": ["Critère", "Flux de trésorerie", "Charge / Produit"],
+      "rows": [
+        {"cells": ["Nature", "Mouvement réel d'argent", "Événement comptable (engagement)"]},
+        {"cells": ["Impact banque", "Oui (encaissement/décaissement)", "Pas forcément"]},
+        {"cells": ["Exemple décalé", "Encaissement en N+1", "Vente à crédit = produit en N"]},
+        {"cells": ["Exemple sans flux", "—", "Dotation aux amortissements"]},
+        {"cells": ["Outil concerné", "Budget de trésorerie, TFT", "Compte de résultat"]}
+      ]
+    },
+    {
+      "type": "flow",
+      "titre": "De l'opération au bilan prévisionnel équilibré",
+      "intro": "La chaîne logique de l'épreuve EDC2, de la donnée brute au contrôle d'équilibre.",
+      "ancre": "m5-s5",
+      "steps": [
+        {"t": "1. Opérations", "d": "Ventes, achats, salaires, investissement, emprunt (données HT/brutes)."},
+        {"t": "2. Transposition en flux", "d": "Appliquer délais clients/fournisseurs, passer en TTC, décaler la TVA d'un mois."},
+        {"t": "3. Budget mensuel", "d": "Solde initial + encaissements − décaissements = solde cumulé reporté."},
+        {"t": "4. TFT / plan de financement", "d": "Classer en exploitation, investissement, financement ; intégrer la variation du BFR."},
+        {"t": "5. Bilan prévisionnel", "d": "Reporter trésorerie, dettes (TVA, social, fournisseurs), créances : Actif = Passif."},
+        {"t": "6. Reco CT chiffrée", "d": "Repérer les mois tendus, choisir et chiffrer le financement court terme."}
+      ]
+    },
+    {
+      "type": "bignum",
+      "titre": "Solde cumulé BETA en février",
+      "intro": "Le mois critique du cas BETA : l'investissement comptant cumulé au démarrage tardif des encaissements.",
+      "ancre": "m5-s2",
+      "value": "−40 k€",
+      "note": "−5 (Jan) + 120 − 72 − 25 − 50 − 8 = −40 k€. Mois en tension le plus fort → financement CT à prévoir."
+    }
+  ],
+  "qcm": [
+    {
+      "enonce": "Quelle affirmation distingue correctement un flux de trésorerie d'une charge ?",
+      "ancre": "m5-s1",
+      "options": [
+        {"texte": "Un flux de trésorerie est un mouvement réel d'argent à une date donnée, alors qu'une charge est un événement comptable qui peut être décalé du flux, voire sans flux.", "correcte": true, "justif": "C'est exactement la définition du corrigé : le flux touche la banque, la charge est un engagement comptable."},
+        {"texte": "Une charge et un flux de trésorerie sont toujours simultanés et de même montant.", "correcte": false, "justif": "Faux : une vente à crédit (produit en N, encaissement en N+1) ou une dotation aux amortissements (charge sans décaissement) montrent le décalage."},
+        {"texte": "Un flux de trésorerie n'existe que pour les opérations d'investissement, jamais pour l'exploitation.", "correcte": false, "justif": "Faux : les flux existent dans les trois catégories du TFT, dont l'exploitation (ventes encaissées, achats payés)."}
+      ]
+    },
+    {
+      "enonce": "Pourquoi une dotation aux amortissements n'apparaît-elle pas dans le budget de trésorerie ?",
+      "ancre": "m5-s1",
+      "options": [
+        {"texte": "Parce que c'est une charge sans décaissement : elle pèse sur le résultat mais n'entraîne aucun mouvement d'argent.", "correcte": true, "justif": "Le budget de trésorerie ne retient que les flux réels ; l'amortissement est l'exemple type de charge non décaissable."},
+        {"texte": "Parce qu'elle est encaissée et non décaissée, donc elle annule les autres lignes.", "correcte": false, "justif": "Faux : une dotation n'est ni un encaissement ni un décaissement, c'est une écriture purement comptable."},
+        {"texte": "Parce qu'elle est toujours payée le mois suivant, comme la TVA.", "correcte": false, "justif": "Faux : c'est la TVA qui est décalée d'un mois ; l'amortissement, lui, n'est jamais payé."}
+      ]
+    },
+    {
+      "enonce": "Dans un budget de trésorerie, comment se calcule le solde d'un mois donné ?",
+      "ancre": "m5-s2",
+      "options": [
+        {"texte": "Solde initial + encaissements − décaissements, le solde final étant reporté en solde initial du mois suivant.", "correcte": true, "justif": "C'est la mécanique de chaînage du budget mensuel, qui produit le solde cumulé."},
+        {"texte": "Produits − charges du mois, exactement comme un compte de résultat mensuel.", "correcte": false, "justif": "Faux : le budget raisonne en flux encaissés/décaissés, pas en produits/charges comptables."},
+        {"texte": "Encaissements − décaissements, sans tenir compte du solde du mois précédent.", "correcte": false, "justif": "Faux : ignorer le report du solde précédent empêche de calculer le solde cumulé et de repérer les tensions."}
+      ]
+    },
+    {
+      "enonce": "Sur le cas BETA (ventes encaissées à 30 jours), quand la vente de janvier de 100 k€ HT est-elle encaissée, et pour quel montant ?",
+      "ancre": "m5-s2",
+      "options": [
+        {"texte": "En février, pour 120 k€ (100 × 1,2 TTC).", "correcte": true, "justif": "Le délai de 30 jours décale l'encaissement à février, et le flux réel est TTC : 100 × 1,2 = 120 k€."},
+        {"texte": "En janvier, pour 100 k€ HT.", "correcte": false, "justif": "Faux sur deux points : le délai reporte l'encaissement à février, et le flux est TTC, pas HT."},
+        {"texte": "En février, pour 100 k€ HT.", "correcte": false, "justif": "Le décalage est correct, mais le flux encaissé est TTC (TVA comprise) : 120 k€, pas 100."}
+      ]
+    },
+    {
+      "enonce": "Comment se calcule la TVA à décaisser et quand est-elle payée dans le cas BETA ?",
+      "ancre": "m5-s3",
+      "options": [
+        {"texte": "TVA collectée − TVA déductible, payée le mois suivant (ex. janvier : 20 % × (100 − 60) = 8 k€, versés en février).", "correcte": true, "justif": "Formule et décalage conformes au corrigé : la TVA d'un mois est décaissée le mois suivant."},
+        {"texte": "TVA collectée seule, payée le mois même de la collecte.", "correcte": false, "justif": "Faux : on déduit la TVA déductible sur achats, et le versement est décalé d'un mois."},
+        {"texte": "20 % du chiffre d'affaires TTC, payés à la clôture annuelle.", "correcte": false, "justif": "Faux : la base est la marge de TVA (collectée − déductible), pas le CA TTC, et le rythme est mensuel."}
+      ]
+    },
+    {
+      "enonce": "Dans une échéance d'emprunt, comment traiter capital et intérêts dans le budget de trésorerie ?",
+      "ancre": "m5-s3",
+      "options": [
+        {"texte": "Le capital remboursé est un décaissement qui ne passe pas par le résultat ; les intérêts sont une charge décaissée.", "correcte": true, "justif": "Distinction exacte : seul l'intérêt est une charge ; le remboursement du capital réduit la dette au bilan."},
+        {"texte": "L'intégralité de l'échéance (capital + intérêts) est une charge du compte de résultat.", "correcte": false, "justif": "Faux : le remboursement du capital n'est pas une charge, c'est une diminution de dette."},
+        {"texte": "Ni le capital ni les intérêts ne sont des décaissements car l'emprunt est déjà au bilan.", "correcte": false, "justif": "Faux : l'échéance entraîne bien une sortie de trésorerie (capital + intérêts)."}
+      ]
+    },
+    {
+      "enonce": "Quelle est la formule de référence du BFR ?",
+      "ancre": "m5-s4",
+      "options": [
+        {"texte": "BFR = stocks + créances clients − dettes fournisseurs.", "correcte": true, "justif": "C'est la formule donnée par le guide ; le crédit fournisseurs vient en déduction du besoin."},
+        {"texte": "BFR = dettes fournisseurs − créances clients − stocks.", "correcte": false, "justif": "Faux : les signes sont inversés ; les stocks et créances créent le besoin, les dettes fournisseurs le réduisent."},
+        {"texte": "BFR = capitaux propres − immobilisations.", "correcte": false, "justif": "Faux : cette expression s'approche du fonds de roulement, pas du BFR."}
+      ]
+    },
+    {
+      "enonce": "Quel est l'effet d'une HAUSSE du BFR sur la trésorerie ?",
+      "ancre": "m5-s4",
+      "options": [
+        {"texte": "Elle CONSOMME de la trésorerie (c'est un emploi).", "correcte": true, "justif": "Plus de stocks et de créances immobilisent l'argent : la hausse du BFR ponctionne la trésorerie."},
+        {"texte": "Elle libère de la trésorerie (c'est une ressource).", "correcte": false, "justif": "Faux : c'est la BAISSE du BFR qui libère de la trésorerie, pas la hausse."},
+        {"texte": "Elle n'a aucun effet sur la trésorerie, seulement sur le résultat.", "correcte": false, "justif": "Faux : la variation du BFR a un impact direct sur la trésorerie, indépendamment du résultat."}
+      ]
+    },
+    {
+      "enonce": "BETA envisage d'allonger le délai de paiement fournisseurs de 30 à 60 jours. Quel est l'effet ?",
+      "ancre": "m5-s4",
+      "options": [
+        {"texte": "On paie plus tard : les dettes fournisseurs augmentent, le BFR diminue et la trésorerie s'améliore.", "correcte": true, "justif": "C'est la conclusion du corrigé : effet positif sur la trésorerie, à nuancer par le risque sur la relation fournisseurs."},
+        {"texte": "Le BFR augmente et la trésorerie se dégrade.", "correcte": false, "justif": "Faux : payer plus tard réduit le BFR (dettes fournisseurs plus élevées), ce qui améliore la trésorerie."},
+        {"texte": "L'effet est nul car les achats restent inchangés.", "correcte": false, "justif": "Faux : ce n'est pas le montant des achats mais le délai de paiement qui modifie le BFR et la trésorerie."}
+      ]
+    },
+    {
+      "enonce": "De quoi se compose la variation de trésorerie dans un tableau de flux de trésorerie (TFT) ?",
+      "ancre": "m5-s5",
+      "options": [
+        {"texte": "De la somme des flux d'exploitation, d'investissement et de financement.", "correcte": true, "justif": "Le TFT classe les flux en ces trois catégories ; leur somme égale la variation de trésorerie de la période."},
+        {"texte": "Uniquement des flux d'exploitation, les deux autres étant hors trésorerie.", "correcte": false, "justif": "Faux : investissement et financement génèrent eux aussi des flux de trésorerie bien réels."},
+        {"texte": "De la différence entre produits et charges du compte de résultat.", "correcte": false, "justif": "Faux : c'est le résultat comptable, pas la variation de trésorerie."}
+      ]
+    },
+    {
+      "enonce": "À quoi sert principalement le plan de financement pluriannuel (compétence C1) ?",
+      "ancre": "m5-s5",
+      "options": [
+        {"texte": "À évaluer la solvabilité à long terme en confrontant ressources durables et emplois durables, en intégrant les grandes décisions stratégiques.", "correcte": true, "justif": "C'est l'objet même de la C1 : un prévisionnel pluriannuel qui intègre investissements et financements prévus."},
+        {"texte": "À calculer la TVA à décaisser chaque mois.", "correcte": false, "justif": "Faux : la TVA mensuelle relève du budget de trésorerie (C2), pas du plan pluriannuel."},
+        {"texte": "À fixer le prix de vente des produits pour l'année à venir.", "correcte": false, "justif": "Faux : le plan de financement traite des équilibres financiers, pas de la politique de prix."}
+      ]
+    },
+    {
+      "enonce": "Quelle condition le bilan prévisionnel doit-il impérativement respecter ?",
+      "ancre": "m5-s5",
+      "options": [
+        {"texte": "Total Actif = Total Passif, avec un lien explicite entre les flux de trésorerie calculés et les postes comptables.", "correcte": true, "justif": "L'équilibre du bilan est exigé par la C2 ; un bilan déséquilibré est une lourde perte de points."},
+        {"texte": "Un total d'actif supérieur au total du passif, signe de bonne santé.", "correcte": false, "justif": "Faux : par construction comptable, l'actif égale toujours le passif ; un écart traduit une erreur."},
+        {"texte": "Une trésorerie nécessairement positive à l'actif.", "correcte": false, "justif": "Faux : si la trésorerie est négative, elle apparaît en découvert au passif ; l'important reste l'équilibre."}
+      ]
+    },
+    {
+      "enonce": "Sur le cas BETA, quel mois est en tension la plus forte et pourquoi ?",
+      "ancre": "m5-s6",
+      "options": [
+        {"texte": "Février (−40 k€), à cause de l'investissement de 50 k€ payé comptant cumulé au démarrage tardif des encaissements.", "correcte": true, "justif": "Le corrigé identifie février comme le creux le plus profond ; mars reste négatif (−15)."},
+        {"texte": "Janvier, car aucun encaissement n'a encore eu lieu.", "correcte": false, "justif": "Janvier est négatif (−5) mais bien moins tendu que février ; le creux maximal est en février."},
+        {"texte": "Mars, qui est le mois le plus déficitaire.", "correcte": false, "justif": "Faux : mars (−15) est moins déficitaire que février (−40) grâce à l'encaissement de 144 k€."}
+      ]
+    },
+    {
+      "enonce": "Pour financer un investissement, quelle solution privilégier selon le corrigé ?",
+      "ancre": "m5-s6",
+      "options": [
+        {"texte": "Un financement à moyen terme, moins cher que le découvert.", "correcte": true, "justif": "Le découvert est cher et destiné aux décalages courts ; un investissement appelle un financement moyen terme adapté."},
+        {"texte": "Le découvert bancaire, le plus souple et le moins coûteux.", "correcte": false, "justif": "Faux : le découvert est coûteux et n'est pas fait pour financer durablement un investissement."},
+        {"texte": "L'affacturage de l'investissement lui-même.", "correcte": false, "justif": "Faux : l'affacturage porte sur le poste clients, pas sur le financement d'une immobilisation."}
+      ]
+    },
+    {
+      "enonce": "Quelles options de financement court terme conviennent pour combler un mois en tension ?",
+      "ancre": "m5-s6",
+      "options": [
+        {"texte": "Le découvert autorisé, l'escompte des créances clients ou l'affacturage.", "correcte": true, "justif": "Ce sont les solutions CT citées par le corrigé pour mobiliser des liquidités sur 6 à 12 mois."},
+        {"texte": "Une augmentation de capital décidée le mois même.", "correcte": false, "justif": "Faux : l'augmentation de capital est un financement long, lent à mettre en œuvre, pas une réponse à un creux mensuel."},
+        {"texte": "Le versement anticipé de dividendes aux actionnaires.", "correcte": false, "justif": "Faux : verser des dividendes aggrave la tension de trésorerie au lieu de la combler."}
+      ]
+    },
+    {
+      "enonce": "Comment s'apprécie le coût réel d'un crédit court terme pour comparer les options ?",
+      "ancre": "m5-s6",
+      "options": [
+        {"texte": "Au prorata du nombre de jours d'utilisation (taux proportionnel à la durée), pour retenir l'option la moins chère.", "correcte": true, "justif": "Le guide indique un coût proportionnel aux jours ; comparer sur cette base permet une reco chiffrée."},
+        {"texte": "En appliquant le taux annuel complet quelle que soit la durée d'utilisation.", "correcte": false, "justif": "Faux : un crédit utilisé quelques jours ne coûte pas une année entière d'intérêts."},
+        {"texte": "Le coût n'a pas à être calculé, seul le confort de la solution compte.", "correcte": false, "justif": "Faux : la C3 exige des recommandations CHIFFRÉES et justifiées, donc un coût calculé."}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,343 @@
+{
+  "id": "m3",
+  "num": 3,
+  "nom": "Choix d'investissement",
+  "essentiel": {
+    "a_retenir": [
+      "Le choix d'investissement (compétence BC01-C4) consiste à décider si un projet crée de la valeur en comparant l'argent qu'il décaisse aujourd'hui à l'argent qu'il rapportera demain, ramené à sa valeur d'aujourd'hui.",
+      "On raisonne en FLUX DE TRÉSORERIE (encaissements − décaissements), pas en résultat comptable : on réintègre les dotations aux amortissements car elles ne sont pas une sortie de cash.",
+      "Un euro demain vaut moins qu'un euro aujourd'hui : on actualise chaque flux à sa propre année avec le facteur 1/(1+t)^t.",
+      "La VAN (Valeur Actuelle Nette) est le critère roi : VAN > 0 signifie que le projet rapporte plus que le coût du capital, donc on l'accepte.",
+      "Le TIR (Taux de Rentabilité Interne) est le taux qui annule la VAN ; on le compare au coût du capital (pas à 0) : TIR > coût du capital → on accepte.",
+      "L'indice de profitabilité IP = somme des flux actualisés / I0 indique combien rapporte 1 euro investi : IP > 1 → rentable.",
+      "Le délai de récupération actualisé (DRC) est l'année où le cumul des flux actualisés rembourse l'investissement initial : plus il est court, moins le projet est risqué.",
+      "Le taux d'actualisation de référence d'un projet est le CMPC (coût moyen pondéré du capital) de l'entreprise.",
+      "VAN, TIR, IP et DRC sont convergents sur un projet isolé classique : si la VAN est positive, le TIR dépasse le coût du capital et l'IP dépasse 1.",
+      "Ne pas oublier la valeur résiduelle de l'investissement et la récupération du BFR en dernière année lorsque l'énoncé les fournit : ce sont des encaissements qui augmentent la VAN.",
+      "Au niveau 7 (Master), un chiffre seul ne vaut rien : chaque critère doit être suivi d'une INTERPRÉTATION et d'une RECOMMANDATION adaptée à l'entreprise du cas.",
+      "Le critère RSE / extra-financier (impact carbone, social, baisse de consommation d'énergie) s'intègre à la décision : un projet à VAN un peu plus faible mais aligné RSE peut être préféré, à condition de le justifier.",
+      "L'examen RNCP est OPEN-BOOK : la note se joue sur la méthode, l'interprétation et la reco, pas sur le par-cœur des formules."
+    ],
+    "chiffres": [
+      "VAN = −I0 + Σ [ CFt / (1+t)^t ]",
+      "TIR = taux qui annule la VAN (VAN = 0)",
+      "Indice de profitabilité : IP = Σ CF actualisés / I0",
+      "Délai de récupération actualisé = année où le cumul des CF actualisés = I0",
+      "Facteur d'actualisation = 1 / (1+t)^t",
+      "Taux d'actualisation de référence = CMPC = Kcp × CP/(CP+D) + Kd(1−IS) × D/(CP+D)",
+      "Facteurs d'actualisation à 10 % : an1 0,909 · an2 0,826 · an3 0,751 · an4 0,683 · an5 0,621",
+      "Facteur d'annuité 3 ans à 10 % = 2,487 ; facteur d'annuité 4 ans à 8 % = 3,3121",
+      "CF = encaissements − décaissements = résultat net + dotations aux amortissements (le cash, pas le comptable)",
+      "Exemple fiche : I0 = 100 k€, flux 45 k€/an pendant 3 ans, t = 10 % → flux actualisés 111,9 k€, VAN = +11,9 k€, IP = 1,12, TIR ≈ 16,6 %"
+    ],
+    "pieges": [
+      "Confondre flux de trésorerie et résultat comptable : un CF = encaissements − décaissements, on rajoute les dotations aux amortissements au résultat.",
+      "Comparer le TIR à 0 au lieu de le comparer au coût du capital.",
+      "Oublier d'actualiser CHAQUE flux à sa propre année (un flux d'année 4 ne s'actualise pas avec le facteur de l'année 1).",
+      "Oublier la valeur résiduelle actualisée et la récupération du BFR en dernière année quand l'énoncé les donne.",
+      "Donner un résultat brut sans phrase d'interprétation ni recommandation adaptée à l'entreprise.",
+      "Négliger l'angle RSE alors que l'énoncé demande explicitement d'intégrer un critère extra-financier."
+    ]
+  },
+  "sections": [
+    {
+      "id": "m3-s1",
+      "titre": "Les flux de trésorerie d'un projet (FTD)",
+      "points": [
+        "Évaluer un investissement, c'est d'abord modéliser les flux de trésorerie qu'il génère, année par année. La règle d'or, martelée dans la fiche EDC1, est qu'il ne faut surtout pas confondre flux de trésorerie (CF) et résultat comptable. Un flux de trésorerie est la différence entre les encaissements réels et les décaissements réels d'une période : c'est du cash qui rentre ou qui sort de la caisse, pas un solde comptable.",
+        "Concrètement, on part souvent du résultat d'exploitation puis on réintègre les dotations aux amortissements : celles-ci ont été déduites pour calculer le résultat, mais elles ne correspondent à AUCUNE sortie d'argent (l'argent a été décaissé une seule fois, au moment de l'achat de l'immobilisation). On les rajoute donc au résultat pour retrouver le flux de trésorerie réel. C'est le sens de la consigne : « on rajoute les dotations aux amortissements au résultat ».",
+        "Le flux de l'année 0 est l'investissement initial I0, compté négativement (une grosse sortie de cash). Les années suivantes portent les flux d'exploitation. La dernière année du projet est particulière : il faut y ajouter, si l'énoncé les fournit, la valeur résiduelle de l'investissement (revente du matériel) et la récupération du BFR (le besoin en fonds de roulement immobilisé par le projet est restitué à la fin). Ces deux éléments sont des encaissements qui gonflent le flux terminal et donc la VAN.",
+        "Bien poser le tableau des flux (année par année) est la première étape de tout cas d'investissement : c'est sur cette base que viendront se greffer l'actualisation puis les critères VAN, TIR, IP et DRC."
+      ],
+      "chiffres": [
+        "CF = encaissements − décaissements",
+        "CF = résultat net + dotations aux amortissements",
+        "Flux de l'année 0 = −I0 ; flux terminal = flux d'exploitation + valeur résiduelle + récupération du BFR"
+      ],
+      "pieges": [
+        "Confondre le résultat comptable et le flux de trésorerie : il faut réintégrer les dotations aux amortissements.",
+        "Oublier la valeur résiduelle et la récupération du BFR sur le dernier flux."
+      ]
+    },
+    {
+      "id": "m3-s2",
+      "titre": "Actualisation et taux d'actualisation",
+      "points": [
+        "L'actualisation traduit un principe simple : un euro disponible dans un an vaut moins qu'un euro disponible aujourd'hui, parce qu'on pourrait placer l'euro d'aujourd'hui et qu'il existe un risque sur l'euro futur. Pour comparer des flux qui tombent à des années différentes, on les ramène tous à leur valeur d'aujourd'hui (valeur actuelle) en les divisant par (1+t)^t, où t est le taux d'actualisation et l'exposant est le numéro de l'année.",
+        "Le facteur d'actualisation 1/(1+t)^t décroît avec le temps : plus un flux est lointain, plus on le « décote ». La fiche EDC1 fournit les facteurs à 10 % : 0,909 à l'année 1, 0,826 à l'année 2, 0,751 à l'année 3, 0,683 à l'année 4, 0,621 à l'année 5. Lorsque les flux annuels sont identiques (annuité constante), on peut utiliser directement le facteur d'annuité : 2,487 pour 3 ans à 10 %, ou 3,3121 pour 4 ans à 8 %.",
+        "Le choix du taux d'actualisation n'est pas arbitraire : le taux de référence d'un projet est le CMPC (coût moyen pondéré du capital) de l'entreprise. Il représente le coût des ressources (capitaux propres et dettes) qui financent le projet ; un projet doit donc rapporter au moins ce taux pour créer de la valeur. C'est exactement la logique de la VAN, qui mesure ce que le projet rapporte AU-DELÀ du coût du capital.",
+        "Point de méthode crucial souligné par la fiche : on actualise CHAQUE flux à SA propre année. Un flux qui tombe à l'année 4 se multiplie par 0,683 (à 10 %), pas par le facteur d'une autre année. Mélanger les facteurs fausse tout le calcul."
+      ],
+      "chiffres": [
+        "Facteur d'actualisation = 1 / (1+t)^t",
+        "Facteurs à 10 % : 0,909 (an1), 0,826 (an2), 0,751 (an3), 0,683 (an4), 0,621 (an5)",
+        "Facteur d'annuité 3 ans à 10 % = 2,487 ; facteur d'annuité 4 ans à 8 % = 3,3121",
+        "Taux d'actualisation de référence = CMPC = Kcp × CP/(CP+D) + Kd(1−IS) × D/(CP+D)"
+      ],
+      "pieges": [
+        "Actualiser tous les flux avec le facteur d'une seule année au lieu d'utiliser le facteur propre à chaque année.",
+        "Prendre un taux d'actualisation au hasard : le taux de référence est le CMPC de l'entreprise."
+      ]
+    },
+    {
+      "id": "m3-s3",
+      "titre": "VAN et critère de décision",
+      "points": [
+        "La VAN (Valeur Actuelle Nette) est le critère central du choix d'investissement. Sa formule est VAN = −I0 + Σ [ CFt / (1+t)^t ] : on additionne tous les flux de trésorerie actualisés du projet, puis on soustrait l'investissement initial. La VAN mesure la richesse nette créée aujourd'hui par le projet, une fois rémunéré le coût du capital.",
+        "Le critère de décision est sans ambiguïté : si VAN > 0, le projet rapporte plus que le coût du capital, il crée de la valeur, on l'accepte. Si VAN < 0, on le rejette. Si VAN = 0, le projet rembourse exactement le coût du capital sans créer de richesse supplémentaire (point d'indifférence). Lorsqu'on doit départager plusieurs projets concurrents, on retient en principe celui dont la VAN est la plus élevée.",
+        "Illustration tirée de la fiche : pour un investissement I0 = 100 k€ générant 45 k€ par an pendant 3 ans, actualisés à 10 %, la somme des flux actualisés vaut 111,9 k€ (40,9 + 37,2 + 33,8). La VAN = −100 + 111,9 = +11,9 k€ : positive, donc on accepte le projet. Dans le cas corrigé, un investissement de 500 k€ générant 160 k€/an sur 4 ans (annuité 3,3121) plus une valeur résiduelle de 40 k€ actualisée à l'année 4 (×0,7350 = 29,4 k€) donne des flux actualisés de 559,3 k€ et une VAN = −500 + 559,3 = +59,3 k€.",
+        "Au niveau Master, la VAN ne se livre jamais nue : on l'interprète (« VAN positive de 11,9 k€ → le projet crée de la valeur ») et on conclut par une recommandation argumentée adaptée à l'entreprise du cas."
+      ],
+      "chiffres": [
+        "VAN = −I0 + Σ [ CFt / (1+t)^t ]",
+        "Décision : VAN > 0 → on accepte ; VAN < 0 → on rejette ; entre projets, VAN la plus élevée",
+        "Exemple fiche : −100 + 111,9 = +11,9 k€",
+        "Exemple corrigé : flux 160×3,3121 = 529,9 + VR 40×0,7350 = 29,4 → 559,3 ; VAN = −500 + 559,3 = +59,3 k€"
+      ],
+      "pieges": [
+        "Donner la VAN sans interprétation ni recommandation.",
+        "Oublier de soustraire l'investissement initial I0 ou de l'inclure non actualisé en année 0."
+      ]
+    },
+    {
+      "id": "m3-s4",
+      "titre": "TIR : taux de rentabilité interne",
+      "points": [
+        "Le TIR (Taux de Rentabilité Interne) est le taux d'actualisation qui annule la VAN, c'est-à-dire le taux pour lequel la somme des flux actualisés est exactement égale à l'investissement initial. Économiquement, c'est le taux de rentabilité « intrinsèque » du projet : le rendement que le projet sert réellement sur les capitaux investis.",
+        "Le critère de décision repose sur une comparaison : on accepte le projet si son TIR est SUPÉRIEUR au coût du capital. Attention, la fiche insiste lourdement sur ce point — on compare le TIR au coût du capital, PAS à zéro. Un TIR de 12 % n'est intéressant que si le capital coûte moins de 12 % ; il devient insuffisant si le capital coûte 15 %.",
+        "Il existe un lien logique avec la VAN : si la VAN calculée au coût du capital est positive, alors le TIR est forcément supérieur à ce coût du capital (puisqu'il faudrait un taux plus élevé pour ramener la VAN à zéro). Dans l'exemple de la fiche, la VAN à 10 % vaut +11,9 k€ et le TIR est estimé à environ 16,6 %, bien au-dessus de 10 % : les deux critères confirment l'acceptation. Dans le cas corrigé, la VAN à 8 % étant positive, on estime le TIR autour de 12-13 %.",
+        "Le TIR est un excellent complément de la VAN pour communiquer (un pourcentage parle plus qu'un montant), mais il doit toujours être confronté au coût du capital pour conclure."
+      ],
+      "chiffres": [
+        "TIR = taux qui annule la VAN",
+        "Décision : TIR > coût du capital → on accepte",
+        "Exemple fiche : TIR ≈ 16,6 % > 10 % → confirme l'acceptation",
+        "Exemple corrigé : VAN positive à 8 % → TIR estimé ≈ 12-13 %"
+      ],
+      "pieges": [
+        "Comparer le TIR à 0 % au lieu du coût du capital.",
+        "Oublier que VAN positive au coût du capital implique mécaniquement TIR > coût du capital."
+      ]
+    },
+    {
+      "id": "m3-s5",
+      "titre": "IP et délai de récupération (DRC)",
+      "points": [
+        "L'indice de profitabilité (IP) rapporte la somme des flux de trésorerie actualisés à l'investissement initial : IP = Σ CF actualisés / I0. Il se lit immédiatement : pour 1 euro investi, le projet rapporte IP euros en valeur actuelle. Le critère de décision est IP > 1 → projet rentable. Dans l'exemple de la fiche, IP = 111,9 / 100 = 1,12 : chaque euro investi en rapporte 1,12, soit 12 centimes de richesse créée. Dans le cas corrigé, IP = 559,3 / 500 = 1,12 également. L'IP est particulièrement utile pour comparer des projets de tailles différentes, car il raisonne en rendement relatif et non en montant absolu comme la VAN.",
+        "Le délai de récupération actualisé (DRC) est l'année à laquelle le cumul des flux de trésorerie actualisés atteint le montant de l'investissement initial : c'est le moment où le projet « se rembourse » en valeur actuelle. La règle est intuitive : plus le délai est court, moins le projet est risqué, car l'argent est récupéré rapidement et l'entreprise est moins exposée aux aléas des années lointaines.",
+        "Attention à la nuance : le délai de récupération ACTUALISÉ utilise les flux actualisés (et non les flux bruts), ce qui le rend cohérent avec la logique de la VAN et plus prudent que le délai simple. C'est un critère de RISQUE (vitesse de récupération) qui complète les critères de RENTABILITÉ (VAN, TIR, IP), mais il ne mesure pas la valeur créée après la date de récupération : à lui seul il ne suffit pas à décider.",
+        "Sur un projet isolé classique, ces critères convergent : si la VAN est positive, le TIR dépasse le coût du capital et l'IP dépasse 1. Le DRC ajoute l'angle temps/risque que les trois autres n'expriment pas directement."
+      ],
+      "chiffres": [
+        "IP = Σ CF actualisés / I0 ; décision : IP > 1 → rentable",
+        "Exemple fiche : IP = 111,9 / 100 = 1,12 ; exemple corrigé : 559,3 / 500 = 1,12",
+        "DRC = année où le cumul des CF actualisés = I0 ; plus c'est court, moins c'est risqué"
+      ],
+      "pieges": [
+        "Calculer le délai de récupération sur les flux bruts au lieu des flux actualisés.",
+        "Décider sur le seul DRC : il ignore la valeur créée après la date de récupération."
+      ]
+    },
+    {
+      "id": "m3-s6",
+      "titre": "Intégration du critère RSE / extra-financier",
+      "points": [
+        "La compétence C4 du RNCP demande explicitement d'intégrer la dimension RSE dans le choix d'investissement. L'énoncé peut exiger de prendre en compte un critère extra-financier : impact carbone, impact social, baisse de la consommation d'énergie. Au niveau Master, on ne peut donc pas se contenter de la seule VAN financière : il faut croiser le critère financier et le critère extra-financier.",
+        "Le raisonnement attendu est nuancé : un projet dont la VAN est un peu plus faible mais qui est aligné avec la stratégie RSE peut être préféré à un projet à VAN supérieure mais polluant — à condition de JUSTIFIER ce choix. C'est précisément ce que valorise un correcteur de niveau 7 : la capacité à arbitrer entre rentabilité et responsabilité, pas à appliquer mécaniquement une formule.",
+        "Mieux encore, la RSE n'est pas toujours opposée à la VAN : elle peut la renforcer. Dans le cas corrigé, une baisse de 20 % de la consommation d'énergie réduit les coûts futurs — donc augmente les flux de trésorerie et la VAN — TOUT EN diminuant l'empreinte carbone. C'est un argument supplémentaire fort en faveur du projet, à valoriser même si la VAN était limite. L'enjeu RSE devient ici un levier de création de valeur financière, pas seulement une contrainte.",
+        "En synthèse : mentionner l'angle RSE quand l'énoncé le demande, le chiffrer quand c'est possible (économies d'énergie répercutées sur les flux), et conclure par une recommandation qui assume l'arbitrage entre la valeur financière et l'impact extra-financier pour l'entreprise du cas."
+      ],
+      "chiffres": [
+        "Critère RSE / extra-financier : impact carbone, impact social, baisse de consommation d'énergie",
+        "Exemple corrigé : −20 % de consommation d'énergie → coûts en baisse → flux et VAN en hausse + empreinte carbone réduite"
+      ],
+      "pieges": [
+        "Ignorer l'angle RSE alors que l'énoncé demande d'intégrer un critère extra-financier.",
+        "Opposer systématiquement RSE et rentabilité : une économie d'énergie peut AUGMENTER la VAN."
+      ]
+    }
+  ],
+  "visuals": [
+    {
+      "type": "flow",
+      "titre": "La méthode pas-à-pas d'un cas d'investissement",
+      "intro": "L'enchaînement à dérouler pour traiter une question de choix d'investissement, des flux à la reco.",
+      "ancre": "m3-s1",
+      "steps": [
+        { "t": "1. Poser les flux (FTD)", "d": "Tableau année par année : −I0 en année 0, flux d'exploitation = résultat + dotations aux amortissements ; ajouter valeur résiduelle + récupération BFR sur le dernier flux." },
+        { "t": "2. Choisir le taux", "d": "Taux d'actualisation = CMPC de l'entreprise. C'est le seuil de rentabilité minimal du projet." },
+        { "t": "3. Actualiser", "d": "Multiplier chaque flux par son facteur 1/(1+t)^t propre à son année (à 10 % : 0,909 ; 0,826 ; 0,751 ...)." },
+        { "t": "4. Calculer les critères", "d": "VAN = −I0 + Σ flux actualisés ; TIR (annule la VAN) ; IP = Σ flux actualisés / I0 ; DRC = année où le cumul actualisé = I0." },
+        { "t": "5. Décider", "d": "VAN > 0 ET TIR > coût du capital ET IP > 1 → on accepte. DRC court = moins risqué." },
+        { "t": "6. Interpréter + RSE", "d": "Phrase d'interprétation par critère, intégration de l'angle extra-financier, puis recommandation argumentée pour l'entreprise du cas." }
+      ]
+    },
+    {
+      "type": "compare",
+      "titre": "Les quatre critères de décision face à face",
+      "intro": "Ce que chaque critère mesure, sa formule et sa règle de décision.",
+      "ancre": "m3-s3",
+      "headers": ["Critère", "Formule", "Règle de décision", "Ce qu'il mesure"],
+      "rows": [
+        { "cells": ["VAN", "−I0 + Σ CFt/(1+t)^t", "VAN > 0 → on accepte", "Richesse nette créée aujourd'hui (montant absolu)"] },
+        { "cells": ["TIR", "Taux qui annule la VAN", "TIR > coût du capital → on accepte", "Rendement intrinsèque du projet (%)"] },
+        { "cells": ["IP", "Σ CF actualisés / I0", "IP > 1 → rentable", "Rendement par euro investi (relatif)"] },
+        { "cells": ["DRC actualisé", "Année où cumul CF actualisés = I0", "Plus c'est court, moins c'est risqué", "Vitesse de récupération / risque temps"] }
+      ]
+    },
+    {
+      "type": "bignum",
+      "titre": "Exemple de référence (fiche EDC1)",
+      "intro": "Investissement 100 k€, flux 45 k€/an sur 3 ans, taux 10 %.",
+      "ancre": "m3-s3",
+      "value": "VAN = +11,9 k€",
+      "note": "Flux actualisés 111,9 k€ (40,9 + 37,2 + 33,8) − 100 = +11,9 k€. IP = 1,12 et TIR ≈ 16,6 % > 10 % : les trois critères confirment l'acceptation."
+    }
+  ],
+  "qcm": [
+    {
+      "enonce": "Dans le calcul de la VAN, pourquoi réintègre-t-on les dotations aux amortissements au résultat pour obtenir le flux de trésorerie ?",
+      "ancre": "m3-s1",
+      "options": [
+        { "texte": "Parce que les amortissements sont une charge comptable mais ne correspondent à aucune sortie de trésorerie de la période.", "correcte": true, "justif": "Exact : l'amortissement est une charge calculée, sans décaissement ; le cash n'est sorti qu'une fois, à l'achat de l'immobilisation. On le rajoute donc au résultat pour retrouver le flux réel." },
+        { "texte": "Parce que les amortissements sont déductibles fiscalement et augmentent l'impôt à payer.", "correcte": false, "justif": "Faux : les amortissements RÉDUISENT l'impôt (charge déductible). Surtout, la raison de leur réintégration tient au fait qu'ils ne sont pas un décaissement, pas à un effet d'impôt." },
+        { "texte": "Parce que les amortissements doivent être actualisés séparément des autres flux.", "correcte": false, "justif": "Faux : on ne les actualise pas à part ; on les réintègre pour passer du résultat comptable au flux de trésorerie, qui sera ensuite actualisé globalement." }
+      ]
+    },
+    {
+      "enonce": "Un projet sur 4 ans prévoit la revente du matériel et la restitution du BFR en fin de vie. Que doit-on faire de ces deux éléments ?",
+      "ancre": "m3-s1",
+      "options": [
+        { "texte": "Les ajouter au flux de la dernière année (année 4) puis actualiser ce flux terminal.", "correcte": true, "justif": "Exact : la valeur résiduelle et la récupération du BFR sont des encaissements de fin de projet ; ils gonflent le flux terminal et, une fois actualisés, augmentent la VAN." },
+        { "texte": "Les déduire de l'investissement initial I0 en année 0.", "correcte": false, "justif": "Faux : ils n'interviennent pas en année 0 mais à la fin du projet, quand le matériel est revendu et le BFR libéré." },
+        { "texte": "Les ignorer car ils ne sont pas des flux d'exploitation.", "correcte": false, "justif": "Faux : les oublier est précisément le piège signalé par la fiche ; ce sont de vrais encaissements qui modifient la VAN." }
+      ]
+    },
+    {
+      "enonce": "Pourquoi actualise-t-on les flux de trésorerie d'un projet ?",
+      "ancre": "m3-s2",
+      "options": [
+        { "texte": "Parce qu'un euro futur vaut moins qu'un euro aujourd'hui ; l'actualisation ramène tous les flux à une valeur comparable d'aujourd'hui.", "correcte": true, "justif": "Exact : valeur temps de l'argent. On divise chaque flux par (1+t)^t pour comparer des montants qui tombent à des dates différentes." },
+        { "texte": "Pour corriger les flux de l'inflation prévue sur la durée du projet.", "correcte": false, "justif": "Faux : l'actualisation n'est pas une simple correction d'inflation ; elle intègre le coût du capital et le risque, pas seulement la hausse des prix." },
+        { "texte": "Pour transformer le résultat comptable en flux de trésorerie.", "correcte": false, "justif": "Faux : ce passage se fait par la réintégration des amortissements, en amont. L'actualisation porte sur des flux déjà déterminés." }
+      ]
+    },
+    {
+      "enonce": "Quel taux faut-il en principe utiliser comme taux d'actualisation d'un projet d'investissement ?",
+      "ancre": "m3-s2",
+      "options": [
+        { "texte": "Le CMPC (coût moyen pondéré du capital) de l'entreprise.", "correcte": true, "justif": "Exact : la fiche le désigne comme « le taux d'actualisation de référence des projets » ; il reflète le coût des ressources qui financent le projet." },
+        { "texte": "Le taux du livret d'épargne sans risque.", "correcte": false, "justif": "Faux : le taux sans risque (Rf) sert au MEDAF pour calculer le coût des CP, mais le taux d'actualisation d'un projet est le CMPC, qui intègre le risque de l'entreprise." },
+        { "texte": "Le taux d'intérêt de l'emprunt bancaire le moins cher.", "correcte": false, "justif": "Faux : ne retenir que le coût de la dette ignore le coût des capitaux propres ; le bon taux pondère les deux, c'est le CMPC." }
+      ]
+    },
+    {
+      "enonce": "À 10 %, un flux de 100 k€ qui tombe à l'année 4 doit être multiplié par quel facteur d'actualisation ?",
+      "ancre": "m3-s2",
+      "options": [
+        { "texte": "0,683 (le facteur de l'année 4).", "correcte": true, "justif": "Exact : la fiche donne 0,683 pour l'année 4 à 10 %. Chaque flux s'actualise avec le facteur de SA propre année." },
+        { "texte": "0,909 (le facteur de l'année 1).", "correcte": false, "justif": "Faux : 0,909 est le facteur de l'année 1. Appliquer le facteur d'une année à un flux d'une autre année est le piège dénoncé par la fiche." },
+        { "texte": "2,487 (le facteur d'annuité 3 ans).", "correcte": false, "justif": "Faux : 2,487 est un facteur d'annuité, utilisé pour une série de flux égaux, pas pour actualiser un flux unique de l'année 4." }
+      ]
+    },
+    {
+      "enonce": "Une entreprise calcule une VAN de +11,9 k€ pour un projet au taux de 10 %. Quelle est la bonne lecture ?",
+      "ancre": "m3-s3",
+      "options": [
+        { "texte": "Le projet crée de la valeur : il rapporte 11,9 k€ de plus, en valeur d'aujourd'hui, que ce qu'exige le coût du capital. On l'accepte.", "correcte": true, "justif": "Exact : VAN > 0 signifie que le projet rémunère le coût du capital ET dégage 11,9 k€ de richesse supplémentaire. Critère de décision : on accepte." },
+        { "texte": "Le projet rapporte un rendement de 11,9 % par an.", "correcte": false, "justif": "Faux : 11,9 k€ est un MONTANT (valeur créée), pas un taux. Le rendement intrinsèque est mesuré par le TIR, ici environ 16,6 %." },
+        { "texte": "Le projet est à l'équilibre : il rembourse juste le coût du capital.", "correcte": false, "justif": "Faux : l'équilibre correspondrait à VAN = 0. Ici la VAN est positive, donc il crée de la valeur au-delà du coût du capital." }
+      ]
+    },
+    {
+      "enonce": "Pour départager deux projets concurrents et mutuellement exclusifs, quel critère retient-on prioritairement selon la logique de la fiche ?",
+      "ancre": "m3-s3",
+      "options": [
+        { "texte": "Celui dont la VAN est la plus élevée, car elle mesure la richesse nette créée.", "correcte": true, "justif": "Exact : la VAN est le critère roi ; entre projets, on retient en principe la VAN la plus élevée, qui maximise la valeur créée pour l'entreprise." },
+        { "texte": "Celui dont le délai de récupération est le plus long.", "correcte": false, "justif": "Faux : un délai LONG est plus risqué. De plus le DRC est un critère de risque, pas de création de valeur ; il ne suffit pas à décider seul." },
+        { "texte": "Celui dont l'investissement initial est le plus faible.", "correcte": false, "justif": "Faux : un petit investissement n'est pas synonyme de valeur créée. C'est la VAN qui mesure la richesse, pas le montant investi." }
+      ]
+    },
+    {
+      "enonce": "Comment définit-on le TIR (taux de rentabilité interne) d'un projet ?",
+      "ancre": "m3-s4",
+      "options": [
+        { "texte": "Le taux d'actualisation qui rend la VAN nulle.", "correcte": true, "justif": "Exact : par définition, le TIR est le taux pour lequel VAN = 0, c'est-à-dire le rendement intrinsèque qui équilibre flux actualisés et investissement." },
+        { "texte": "Le taux d'intérêt de l'emprunt qui finance le projet.", "correcte": false, "justif": "Faux : c'est une caractéristique du financement (coût de la dette), pas du projet. Le TIR est interne au projet et indépendant du mode de financement." },
+        { "texte": "Le rapport entre la VAN et l'investissement initial.", "correcte": false, "justif": "Faux : ce rapport s'apparente plutôt à l'indice de profitabilité (flux actualisés / I0), pas au TIR." }
+      ]
+    },
+    {
+      "enonce": "Un projet a un TIR de 12 %. Peut-on conclure qu'il faut l'accepter ?",
+      "ancre": "m3-s4",
+      "options": [
+        { "texte": "Cela dépend du coût du capital : on accepte seulement si 12 % dépasse le coût du capital de l'entreprise.", "correcte": true, "justif": "Exact : la fiche insiste — on compare le TIR au coût du capital, pas à 0. Un TIR de 12 % est insuffisant si le capital coûte 15 %." },
+        { "texte": "Oui, car un TIR positif suffit toujours à accepter un projet.", "correcte": false, "justif": "Faux : comparer le TIR à 0 est précisément le piège dénoncé. Un TIR positif mais inférieur au coût du capital détruit de la valeur." },
+        { "texte": "Non, car un TIR doit toujours dépasser 20 % pour être acceptable.", "correcte": false, "justif": "Faux : il n'existe aucun seuil universel de 20 %. Le seuil pertinent est le coût du capital, propre à chaque entreprise." }
+      ]
+    },
+    {
+      "enonce": "Si la VAN d'un projet est positive lorsqu'on l'actualise au coût du capital (8 %), que peut-on dire de son TIR ?",
+      "ancre": "m3-s4",
+      "options": [
+        { "texte": "Il est supérieur à 8 %, puisqu'il faudrait un taux plus élevé pour ramener la VAN à zéro.", "correcte": true, "justif": "Exact : la VAN décroît quand le taux monte ; si elle est encore positive à 8 %, le taux qui l'annule (le TIR) est forcément au-dessus de 8 %. Le corrigé l'estime à 12-13 %." },
+        { "texte": "Il est égal à 8 %, le taux d'actualisation utilisé.", "correcte": false, "justif": "Faux : à 8 % la VAN est positive, pas nulle. Le TIR (taux qui annule la VAN) est donc différent de 8 %, en l'occurrence plus élevé." },
+        { "texte": "Il est inférieur à 8 %, car la VAN est positive.", "correcte": false, "justif": "Faux : une VAN positive à 8 % implique un TIR AU-DESSUS de 8 %, pas en dessous ; en dessous la VAN serait négative." }
+      ]
+    },
+    {
+      "enonce": "Un indice de profitabilité IP = 1,12 signifie quoi ?",
+      "ancre": "m3-s5",
+      "options": [
+        { "texte": "Chaque euro investi rapporte 1,12 euro en valeur actuelle, soit 12 centimes de richesse créée par euro.", "correcte": true, "justif": "Exact : IP = Σ flux actualisés / I0. Un IP > 1 signale un projet rentable ; ici 1 € investi en rapporte 1,12 en valeur d'aujourd'hui." },
+        { "texte": "Le projet rapporte 1,12 % par an.", "correcte": false, "justif": "Faux : l'IP est un ratio (rendement par euro investi), pas un taux annuel. 1,12 ne se lit pas en pourcentage annuel." },
+        { "texte": "Le projet sera remboursé en 1,12 année.", "correcte": false, "justif": "Faux : le délai de récupération est un autre critère (année où le cumul actualisé = I0). L'IP ne mesure pas une durée." }
+      ]
+    },
+    {
+      "enonce": "Pourquoi l'indice de profitabilité est-il particulièrement utile pour comparer des projets de tailles différentes ?",
+      "ancre": "m3-s5",
+      "options": [
+        { "texte": "Parce qu'il raisonne en rendement relatif (par euro investi), alors que la VAN s'exprime en montant absolu.", "correcte": true, "justif": "Exact : l'IP rapporte les flux à l'investissement, ce qui neutralise l'effet de taille et permet de comparer l'efficacité du capital entre projets de montants différents." },
+        { "texte": "Parce qu'il ne nécessite pas d'actualiser les flux.", "correcte": false, "justif": "Faux : l'IP utilise bien les flux ACTUALISÉS au numérateur. Il intègre la valeur temps de l'argent comme la VAN." },
+        { "texte": "Parce qu'il est toujours supérieur à la VAN.", "correcte": false, "justif": "Faux : l'IP est un ratio sans unité et la VAN un montant ; on ne les compare pas en grandeur. L'argument est l'absence de biais de taille." }
+      ]
+    },
+    {
+      "enonce": "Qu'est-ce que le délai de récupération actualisé (DRC) et que privilégie-t-on ?",
+      "ancre": "m3-s5",
+      "options": [
+        { "texte": "L'année où le cumul des flux ACTUALISÉS atteint l'investissement initial ; plus il est court, moins le projet est risqué.", "correcte": true, "justif": "Exact : c'est la date de « remboursement » en valeur actuelle. Un délai court réduit l'exposition aux aléas des années lointaines." },
+        { "texte": "L'année où le cumul des flux BRUTS atteint l'investissement ; on privilégie le plus long.", "correcte": false, "justif": "Faux sur deux points : le DRC utilise les flux actualisés (pas bruts), et on privilégie un délai COURT, pas long." },
+        { "texte": "La durée totale de vie du projet, fixée par l'énoncé.", "correcte": false, "justif": "Faux : le DRC n'est pas la durée de vie mais le moment où l'investissement est récupéré en valeur actuelle, souvent bien avant la fin du projet." }
+      ]
+    },
+    {
+      "enonce": "Pour un projet isolé classique, quelle affirmation décrit le mieux la cohérence entre les critères ?",
+      "ancre": "m3-s5",
+      "options": [
+        { "texte": "Si la VAN est positive, alors le TIR dépasse le coût du capital et l'IP dépasse 1 : les critères convergent.", "correcte": true, "justif": "Exact : sur un projet classique, ces trois critères de rentabilité pointent dans le même sens. Le DRC ajoute seulement l'angle temps/risque." },
+        { "texte": "Une VAN positive peut s'accompagner d'un IP inférieur à 1.", "correcte": false, "justif": "Faux : VAN > 0 signifie Σ flux actualisés > I0, donc IP = Σ flux actualisés / I0 > 1 mécaniquement." },
+        { "texte": "Le DRC suffit à lui seul pour décider d'accepter un projet.", "correcte": false, "justif": "Faux : le DRC ignore la valeur créée APRÈS la date de récupération ; il complète mais ne remplace pas la VAN, le TIR et l'IP." }
+      ]
+    },
+    {
+      "enonce": "L'énoncé demande d'intégrer le critère RSE. Un projet « vert » a une VAN légèrement plus faible qu'un projet polluant concurrent. Quelle attitude correspond au niveau 7 attendu ?",
+      "ancre": "m3-s6",
+      "options": [
+        { "texte": "Envisager de préférer le projet aligné RSE malgré une VAN un peu plus faible, en justifiant l'arbitrage entre rentabilité et impact.", "correcte": true, "justif": "Exact : la fiche indique qu'un projet à VAN un peu plus faible mais aligné RSE peut être préféré, à condition de le justifier. C'est l'arbitrage attendu d'un niveau 7." },
+        { "texte": "Choisir mécaniquement le projet à la VAN la plus élevée, le critère RSE n'ayant aucune valeur de décision.", "correcte": false, "justif": "Faux : ignorer la RSE quand l'énoncé la demande est un piège. La C4 exige précisément d'intégrer le critère extra-financier à la décision." },
+        { "texte": "Rejeter les deux projets car aucun n'est parfait.", "correcte": false, "justif": "Faux : rejeter par défaut n'est pas un arbitrage. On doit recommander, en pondérant valeur financière et impact extra-financier." }
+      ]
+    },
+    {
+      "enonce": "Dans le cas corrigé, une baisse de 20 % de la consommation d'énergie est mise en avant. En quoi est-ce un argument financier ET extra-financier ?",
+      "ancre": "m3-s6",
+      "options": [
+        { "texte": "Elle réduit les coûts futurs (donc augmente les flux et la VAN) tout en diminuant l'empreinte carbone.", "correcte": true, "justif": "Exact : le corrigé le souligne — l'économie d'énergie améliore les flux de trésorerie (effet financier) ET réduit l'impact carbone (effet RSE). La RSE devient un levier de valeur." },
+        { "texte": "Elle n'a qu'un effet d'image, sans impact sur la VAN.", "correcte": false, "justif": "Faux : une baisse de coûts énergétiques se répercute directement sur les flux de trésorerie et donc sur la VAN ; ce n'est pas qu'une question d'image." },
+        { "texte": "Elle augmente l'investissement initial sans contrepartie.", "correcte": false, "justif": "Faux : l'argument du corrigé est positif (coûts en baisse, flux en hausse) ; rien n'indique un surcoût d'investissement sans contrepartie." }
+      ]
+    }
+  ]
+}

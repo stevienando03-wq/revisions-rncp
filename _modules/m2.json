@@ -1,0 +1,353 @@
+{
+  "id": "m2",
+  "num": 2,
+  "nom": "Stratégie & rentabilité financière",
+  "essentiel": {
+    "a_retenir": [
+      "La rentabilité économique (ROA) mesure la performance de l'outil de production, indépendamment de la façon dont il est financé : c'est le résultat d'exploitation net d'impôt rapporté à l'actif économique.",
+      "La rentabilité financière (ROE) mesure ce que gagne réellement l'actionnaire sur les capitaux qu'il a investis : c'est le résultat net rapporté aux capitaux propres.",
+      "L'effet de levier explique l'écart entre ROE et ROA : il vient de l'endettement. La relation clé est ROE = ROA + (ROA − i) × D/CP.",
+      "L'effet de levier est POSITIF si et seulement si le ROA est supérieur au coût net de la dette (ROA > i) : on emprunte à un coût inférieur à ce que l'actif rapporte, donc le surplus revient à l'actionnaire.",
+      "Si le ROA tombe sous le coût de la dette, le levier se retourne en « effet massue » : l'endettement détruit alors le ROE au lieu de l'amplifier.",
+      "Pour comparer la rentabilité de l'actif et le coût de la dette, il faut TOUJOURS raisonner NET d'impôt : ROA net d'IS et coût de la dette net d'IS.",
+      "Le coût net de la dette est inférieur au taux d'intérêt facial car les intérêts sont déductibles : la dette bénéficie d'une économie d'impôt (i = taux × (1 − IS)).",
+      "Le taux de marge nette (Résultat net / CA) indique quelle part du chiffre d'affaires reste finalement en bénéfice : c'est un premier levier de la rentabilité.",
+      "Les Soldes Intermédiaires de Gestion (SIG) décomposent la formation du résultat étage par étage (marge, valeur ajoutée, EBE, résultat d'exploitation, résultat net) pour localiser d'où vient — ou se perd — la performance.",
+      "La Capacité d'Autofinancement (CAF) mesure les ressources internes dégagées par l'activité, avant toute décision d'affectation : c'est le potentiel d'autofinancement de l'entreprise.",
+      "La CAF se calcule de deux façons équivalentes : par addition (à partir de l'EBE) ou par soustraction (à partir du résultat net), en neutralisant les charges et produits calculés (amortissements, provisions).",
+      "La capacité de remboursement se juge en rapportant la dette financière à la CAF : on regarde combien d'années de CAF seraient nécessaires pour rembourser les emprunts.",
+      "Un diagnostic de rentabilité ne se résume jamais à un chiffre : on calcule, on compare (ROE vs coût des CP, ROA vs coût de la dette), puis on interprète et on conclut par une reco adaptée à l'entreprise.",
+      "Création de valeur pour l'actionnaire : elle existe quand le ROE dépasse le coût des capitaux propres exigé par l'actionnaire — c'est l'aboutissement du diagnostic de rentabilité."
+    ],
+    "chiffres": [
+      "ROE = Résultat net / Capitaux propres",
+      "ROA (rentabilité économique) = Résultat d'exploitation net d'IS / Actif économique = REX × (1 − IS) / Actif",
+      "Relation clé de l'effet de levier : ROE = ROA + (ROA − i) × D/CP",
+      "Effet de levier = (ROA − i) × Dettes / Capitaux propres",
+      "Coût net de la dette : i = Taux d'intérêt × (1 − taux d'IS)",
+      "Taux de marge nette = Résultat net / CA",
+      "Vérification du ROE : RN = (REX − i_brut × D) × (1 − IS), puis ROE = RN / CP",
+      "Capacité de remboursement = Dettes financières / CAF (en années)",
+      "Effet de levier positif SSI ROA > i ; effet massue si ROA < i"
+    ],
+    "pieges": [
+      "Comparer un ROA net d'impôt à un coût de dette BRUT (ou l'inverse) : il faut mettre les deux au même standard, NET d'IS, avant de conclure sur l'effet de levier.",
+      "Croire que l'endettement améliore toujours le ROE : il ne l'améliore que tant que ROA > i. Au-delà, c'est un effet massue.",
+      "Confondre rentabilité économique (ROA, liée à l'actif, hors financement) et rentabilité financière (ROE, liée aux capitaux propres, après financement).",
+      "Oublier d'ajouter l'économie d'impôt sur la dette : utiliser le taux facial au lieu du coût net surestime le coût de la dette.",
+      "Donner un chiffre de rentabilité sans interprétation ni recommandation : à un niveau Master, le diagnostic et la reco font la note, pas le seul résultat.",
+      "Dans la CAF, oublier de neutraliser les charges et produits calculés (dotations, reprises) : la CAF est une notion de trésorerie potentielle, pas le résultat comptable.",
+      "Confondre CAF et trésorerie réelle : la CAF est un potentiel, la trésorerie dépend ensuite des décalages de BFR."
+    ]
+  },
+  "sections": [
+    {
+      "id": "m2-s1",
+      "titre": "Rentabilité économique (ROA / ROCE) vs rentabilité financière (ROE)",
+      "points": [
+        "La rentabilité économique mesure la performance de l'outil de production indépendamment de son mode de financement. On l'écrit ROA = Résultat d'exploitation net d'IS / Actif économique, soit REX × (1 − IS) / Actif. Elle répond à la question : « combien l'actif engagé rapporte-t-il, avant de savoir s'il est financé par dette ou par capitaux propres ? ». C'est pour cela qu'on part du résultat d'EXPLOITATION (avant charges financières) et qu'on le met net d'impôt : on isole la performance de l'activité, sans le bruit du financement. La notion de ROCE (Return On Capital Employed) répond à la même logique : rentabilité des capitaux employés (CP + dettes financières), c'est-à-dire de l'actif économique.",
+        "La rentabilité financière, ou ROE (Return On Equity), mesure ce que gagne l'actionnaire sur ce qu'il a apporté : ROE = Résultat net / Capitaux propres. On part cette fois du résultat NET, c'est-à-dire après charges financières et après impôt, car c'est le résultat qui revient effectivement aux actionnaires. La différence d'optique est fondamentale : le ROA regarde l'entreprise du point de vue de l'outil productif, le ROE la regarde du point de vue du seul actionnaire.",
+        "Pourquoi les deux diffèrent-ils ? Parce qu'entre l'actif et les capitaux propres, il y a la dette. Si l'entreprise n'avait aucune dette, ROA et ROE seraient quasiment confondus. Dès qu'il y a de la dette, l'écart entre les deux s'appelle l'effet de levier (section 2). Sur le cas ALPHA, par exemple, le ROA ressort à 11,25 % alors que le ROE atteint 22,5 % : l'écart de 11,25 points est entièrement dû à l'endettement."
+      ],
+      "chiffres": [
+        "ROA = REX × (1 − IS) / Actif économique",
+        "ROE = Résultat net / Capitaux propres",
+        "Actif économique = Capitaux propres + Dettes financières (capitaux employés, ROCE)"
+      ],
+      "pieges": [
+        "Prendre le résultat NET au numérateur du ROA : il faut le résultat d'EXPLOITATION net d'IS, pour rester indépendant du financement.",
+        "Confondre ROA (performance de l'outil) et ROE (gain de l'actionnaire) : ce ne sont pas les mêmes numérateurs ni les mêmes dénominateurs."
+      ]
+    },
+    {
+      "id": "m2-s2",
+      "titre": "L'effet de levier financier",
+      "points": [
+        "L'effet de levier est le mécanisme par lequel l'endettement amplifie (ou détruit) la rentabilité des actionnaires. La relation clé, à connaître par cœur, est : ROE = ROA + (ROA − i) × D/CP, où i est le coût NET de la dette et D/CP le ratio d'endettement (bras de levier). Le terme (ROA − i) × D/CP est précisément l'effet de levier : c'est le supplément (ou le déficit) de rentabilité que l'endettement apporte à l'actionnaire par rapport au seul ROA.",
+        "L'intuition est simple : si l'actif rapporte 11,25 % (ROA) et que la dette ne coûte que 3,75 % net (i), alors chaque euro emprunté rapporte 7,5 % de plus qu'il ne coûte ; et tout ce surplus revient à l'actionnaire, puisque le prêteur n'est rémunéré qu'à hauteur de i. Plus on emprunte (D/CP élevé), plus on multiplie ce surplus : c'est l'effet de LEVIER. Sur ALPHA : (11,25 % − 3,75 %) × 1 200/800 = 7,5 % × 1,5 = +11,25 %, qui s'ajoute au ROA de 11,25 % pour donner un ROE de 22,5 %.",
+        "Le levier a deux faces. Il est POSITIF si et seulement si ROA > i : l'entreprise emprunte moins cher que ce que son actif rapporte, donc l'endettement crée de la valeur pour l'actionnaire. Mais si la rentabilité économique tombe SOUS le coût de la dette (ROA < i), le signe de (ROA − i) s'inverse : l'effet de levier devient un « effet massue » qui fait chuter le ROE en dessous du ROA. L'endettement, dans ce cas, détruit de la valeur. C'est tout l'enjeu du diagnostic : le levier est une arme à double tranchant, d'autant plus puissante (dans un sens comme dans l'autre) que le ratio D/CP est élevé.",
+        "Méthode de vérification : on peut toujours recalculer le ROE « par le bas » pour valider l'effet de levier. RN = (REX − i_brut × D) × (1 − IS), puis ROE = RN / CP. Sur ALPHA : RN = (300 − 5 % × 1 200) × 0,75 = (300 − 60) × 0,75 = 180 k€, d'où ROE = 180/800 = 22,5 %, ce qui confirme le résultat obtenu par la formule du levier."
+      ],
+      "chiffres": [
+        "ROE = ROA + (ROA − i) × D/CP",
+        "Effet de levier = (ROA − i) × D/CP",
+        "Exemple ALPHA : ROA 11,25 % ; i = 5 % × 0,75 = 3,75 % ; levier = (11,25 − 3,75) × 1 200/800 = +11,25 % ; ROE = 22,5 %",
+        "Effet positif SSI ROA > i ; effet massue si ROA < i"
+      ],
+      "pieges": [
+        "Comparer ROA et coût de la dette à des standards d'impôt différents : les deux doivent être NET d'IS.",
+        "Penser que plus d'endettement est toujours mieux : un D/CP élevé amplifie aussi les pertes si ROA passe sous i.",
+        "Utiliser le taux d'intérêt brut comme « i » dans la formule du levier : c'est le coût NET de la dette qu'on compare au ROA."
+      ]
+    },
+    {
+      "id": "m2-s3",
+      "titre": "Coût net de la dette et taux de marge",
+      "points": [
+        "Le coût réel de la dette n'est pas son taux d'intérêt affiché. Les intérêts d'emprunt étant déductibles du résultat imposable, ils génèrent une économie d'impôt : chaque euro d'intérêt réduit l'impôt à payer. Le coût NET de la dette s'écrit donc i = Taux d'intérêt × (1 − taux d'IS). Sur ALPHA, un emprunt à 5 % avec un IS à 25 % coûte en réalité 5 % × 0,75 = 3,75 %. C'est ce coût net qu'il faut systématiquement comparer au ROA dans l'analyse du levier.",
+        "Cette déductibilité est la raison profonde pour laquelle la dette est « moins chère » que les capitaux propres : les dividendes versés aux actionnaires, eux, ne sont pas déductibles. C'est aussi pourquoi un recours raisonnable à la dette peut abaisser le coût moyen des financements de l'entreprise.",
+        "Le taux de marge nette, défini comme Résultat net / CA, mesure quelle part du chiffre d'affaires se transforme finalement en bénéfice. C'est un des leviers de la rentabilité : à actif et endettement donnés, améliorer la marge nette améliore mécaniquement le résultat net, donc le ROE. On peut lire la rentabilité financière comme la combinaison de trois leviers : la marge (rentabilité commerciale), la rotation de l'actif (efficacité de l'outil) et le levier financier (structure de financement). Identifier lequel de ces leviers est faible permet de cibler l'action."
+      ],
+      "chiffres": [
+        "Coût net de la dette : i = Taux d'intérêt × (1 − IS)",
+        "Exemple ALPHA : 5 % × (1 − 0,25) = 3,75 %",
+        "Taux de marge nette = Résultat net / CA"
+      ],
+      "pieges": [
+        "Utiliser le taux d'intérêt facial au lieu du coût net : on surestime alors le coût de la dette et on fausse le diagnostic du levier.",
+        "Oublier que les capitaux propres ne sont PAS gratuits ni déductibles : leur coût (exigé par l'actionnaire) est plus élevé que celui de la dette."
+      ]
+    },
+    {
+      "id": "m2-s4",
+      "titre": "Les Soldes Intermédiaires de Gestion (SIG)",
+      "points": [
+        "Les Soldes Intermédiaires de Gestion décomposent la formation du résultat de l'entreprise en plusieurs étages successifs. Plutôt que de regarder le seul résultat net, on suit la « cascade » qui mène du chiffre d'affaires au bénéfice final, ce qui permet de localiser précisément l'origine de la performance ou de sa dégradation. Chaque solde répond à une question de gestion différente.",
+        "Les principaux soldes, dans l'ordre : la marge commerciale (pour les activités de négoce : ventes de marchandises − coût d'achat des marchandises vendues) ; la valeur ajoutée (richesse créée par l'entreprise, qui se répartit ensuite entre les parties prenantes : personnel, État, prêteurs, actionnaires) ; l'excédent brut d'exploitation (EBE), qui est la VA diminuée des charges de personnel et augmentée/diminuée des impôts et subventions d'exploitation — c'est la performance d'exploitation AVANT politique d'amortissement et de financement ; le résultat d'exploitation (REX), qui est l'EBE après dotations aux amortissements et provisions d'exploitation ; puis le résultat courant avant impôt, le résultat exceptionnel, et enfin le résultat net.",
+        "L'intérêt des SIG pour le diagnostic de rentabilité est de répondre à « d'où vient la performance ? ». Une entreprise peut avoir une bonne valeur ajoutée mais un EBE faible (charges de personnel trop lourdes), ou un EBE correct mais un résultat d'exploitation médiocre (politique d'amortissement très lourde). L'EBE est particulièrement scruté car il est proche d'un flux de trésorerie d'exploitation et sert de point de départ au calcul de la CAF."
+      ],
+      "chiffres": [
+        "Cascade des SIG : Marge commerciale → Valeur ajoutée → EBE → Résultat d'exploitation → Résultat courant → Résultat net",
+        "Valeur ajoutée = richesse créée, répartie entre personnel, État, prêteurs, actionnaires",
+        "EBE = performance d'exploitation avant amortissements et avant financement"
+      ],
+      "pieges": [
+        "Sauter directement au résultat net sans passer par les soldes intermédiaires : on perd l'information sur l'étage où la performance se dégrade.",
+        "Confondre EBE (avant amortissements et financement) et résultat d'exploitation (après dotations d'exploitation)."
+      ]
+    },
+    {
+      "id": "m2-s5",
+      "titre": "La Capacité d'Autofinancement (CAF) — deux méthodes",
+      "points": [
+        "La capacité d'autofinancement (CAF) mesure les ressources internes dégagées par l'activité au cours de l'exercice, avant toute décision sur leur affectation (distribution de dividendes ou mise en réserve). C'est le potentiel de l'entreprise à se financer elle-même : rembourser ses emprunts, investir, ou rémunérer ses actionnaires sans recourir à des ressources externes. La CAF n'est pas un flux de trésorerie réel — elle ignore les décalages de BFR — mais un potentiel de trésorerie généré par l'exploitation.",
+        "La CAF se calcule de deux manières équivalentes. Méthode SOUSTRACTIVE (à partir de l'EBE) : on part de l'EBE, on ajoute les autres produits encaissables et on retranche les autres charges décaissables (produits et charges financiers réels, exceptionnels encaissables/décaissables, participation, impôt). On reste ainsi dans la logique « encaissable/décaissable » et l'on ne fait jamais intervenir les charges et produits calculés.",
+        "Méthode ADDITIVE (à partir du résultat net) : on part du résultat net de l'exercice et l'on RAJOUTE les charges calculées (dotations aux amortissements et provisions) puis l'on RETRANCHE les produits calculés (reprises sur provisions) et les plus/moins-values de cession (produits de cession et valeur comptable des éléments cédés). L'idée commune aux deux méthodes : neutraliser tout ce qui est « calculé » (non encaissable / non décaissable) pour ne garder que le flux potentiel de trésorerie. Le résultat est rigoureusement identique par les deux voies, ce qui sert d'auto-contrôle.",
+        "La logique à retenir : la dotation aux amortissements est une charge qui réduit le résultat net mais ne correspond à AUCUNE sortie de trésorerie. C'est pourquoi, pour passer du résultat net (notion comptable) à la CAF (notion de trésorerie potentielle), on réintègre les dotations. C'est exactement la même réintégration que celle qu'on opère pour reconstituer les flux de trésorerie d'un projet d'investissement dans un calcul de VAN."
+      ],
+      "chiffres": [
+        "CAF (additive) = Résultat net + Dotations aux amortissements et provisions − Reprises − Produits de cession + Valeur comptable des éléments cédés",
+        "CAF (soustractive) = EBE + autres produits encaissables − autres charges décaissables (− charges financières, − impôt, etc.)",
+        "Les deux méthodes donnent un résultat identique (auto-contrôle)"
+      ],
+      "pieges": [
+        "Oublier de réintégrer les dotations aux amortissements dans la méthode additive : on retombe alors sur le résultat net, pas sur la CAF.",
+        "Inclure les plus-values de cession dans la CAF : les opérations de cession relèvent de l'investissement, pas de la capacité d'autofinancement courante.",
+        "Confondre CAF (potentiel de trésorerie) et variation de trésorerie réelle (qui dépend en plus des décalages de BFR)."
+      ]
+    },
+    {
+      "id": "m2-s6",
+      "titre": "Capacité de remboursement et diagnostic de rentabilité",
+      "points": [
+        "La CAF permet de juger la capacité de remboursement de l'entreprise : peut-elle faire face à ses dettes financières avec les ressources qu'elle génère ? L'indicateur usuel rapporte les dettes financières à la CAF : Capacité de remboursement = Dettes financières / CAF. Le résultat s'exprime en années — c'est le nombre d'années de CAF qu'il faudrait pour rembourser intégralement l'endettement, à activité constante. Plus ce ratio est faible, plus l'entreprise est solide ; au-delà d'un certain seuil (souvent considéré autour de 3 à 4 ans selon le secteur), les prêteurs jugent la structure tendue.",
+        "Le diagnostic de rentabilité articule l'ensemble de ces outils en un raisonnement cohérent. On calcule d'abord la rentabilité économique (ROA) pour juger la performance de l'outil, puis la rentabilité financière (ROE) pour juger le gain de l'actionnaire, puis on explique l'écart entre les deux par l'effet de levier. On vérifie ensuite que le levier est bien favorable (ROA > i) et que l'endettement reste soutenable (capacité de remboursement, ratio D/CP). Enfin, on conclut sur la création de valeur : il y a création de valeur pour l'actionnaire quand le ROE dépasse le coût des capitaux propres exigé.",
+        "La règle d'or, au niveau Master, est qu'un chiffre seul ne vaut rien : il doit être comparé et interprété. « ROE 22,5 % > coût des CP » signifie que l'entreprise crée de la valeur pour l'actionnaire ; « ROA 11,25 % > coût net de la dette 3,75 % » signifie que l'endettement est créateur de valeur. Le diagnostic se termine toujours par une recommandation argumentée et adaptée à l'entreprise : maintenir ou ajuster le niveau d'endettement, agir sur la marge ou sur la rotation de l'actif si le ROA est faible, surveiller la soutenabilité de la dette."
+      ],
+      "chiffres": [
+        "Capacité de remboursement = Dettes financières / CAF (en années ; seuil d'alerte souvent autour de 3-4 ans)",
+        "Création de valeur actionnaire : ROE > coût des capitaux propres",
+        "Levier créateur de valeur : ROA > coût net de la dette",
+        "Démarche : calculer → comparer → interpréter → recommander"
+      ],
+      "pieges": [
+        "Conclure « l'entreprise est rentable » sur le seul ROE sans le confronter au coût des capitaux propres exigé.",
+        "Oublier de vérifier la soutenabilité : un ROE élevé obtenu par un endettement excessif est fragile (risque d'effet massue si le ROA baisse).",
+        "Livrer des chiffres sans recommandation finale adaptée à l'entreprise du cas."
+      ]
+    }
+  ],
+  "visuals": [
+    {
+      "type": "compare",
+      "titre": "Rentabilité économique (ROA) vs rentabilité financière (ROE)",
+      "intro": "Les deux indicateurs ne mesurent pas la même chose : le ROA juge l'outil, le ROE juge l'actionnaire. L'écart entre eux est l'effet de levier.",
+      "ancre": "m2-s1",
+      "headers": ["Critère", "ROA (rentabilité économique)", "ROE (rentabilité financière)"],
+      "rows": [
+        {"cells": ["Question posée", "Combien rapporte l'actif engagé ?", "Combien gagne l'actionnaire ?"]},
+        {"cells": ["Numérateur", "Résultat d'exploitation net d'IS (REX × (1−IS))", "Résultat net"]},
+        {"cells": ["Dénominateur", "Actif économique (CP + dettes financières)", "Capitaux propres"]},
+        {"cells": ["Sensible au financement ?", "Non — indépendant du mode de financement", "Oui — intègre l'effet de la dette"]},
+        {"cells": ["Valeur sur le cas ALPHA", "11,25 %", "22,5 %"]},
+        {"cells": ["Lien entre les deux", "Point de départ", "ROE = ROA + effet de levier"]}
+      ]
+    },
+    {
+      "type": "flow",
+      "titre": "Diagnostic de rentabilité — la démarche en 5 étapes",
+      "intro": "Un diagnostic ne s'arrête pas au calcul : il compare, interprète et débouche sur une recommandation.",
+      "ancre": "m2-s6",
+      "steps": [
+        {"t": "1. ROA", "d": "Calculer la rentabilité économique nette d'IS pour juger la performance de l'outil."},
+        {"t": "2. ROE", "d": "Calculer la rentabilité financière pour juger le gain réel de l'actionnaire."},
+        {"t": "3. Levier", "d": "Expliquer l'écart ROE−ROA par l'effet de levier : (ROA − i) × D/CP."},
+        {"t": "4. Soutenabilité", "d": "Vérifier ROA > i et la capacité de remboursement (Dettes / CAF)."},
+        {"t": "5. Reco", "d": "Conclure sur la création de valeur (ROE > coût des CP) et recommander."}
+      ]
+    },
+    {
+      "type": "bignum",
+      "titre": "L'effet de levier sur ALPHA",
+      "intro": "Avec un ROA de 11,25 % et une dette nette à 3,75 %, l'endettement double quasiment la rentabilité de l'actionnaire.",
+      "ancre": "m2-s2",
+      "value": "+11,25 %",
+      "note": "Effet de levier = (11,25 % − 3,75 %) × 1 200/800 = 7,5 % × 1,5. Le ROE (22,5 %) est le double du ROA (11,25 %)."
+    }
+  ],
+  "qcm": [
+    {
+      "enonce": "Pourquoi part-on du résultat d'EXPLOITATION (et non du résultat net) pour calculer la rentabilité économique (ROA) ?",
+      "ancre": "m2-s1",
+      "options": [
+        {"texte": "Pour mesurer la performance de l'outil de production indépendamment du mode de financement", "correcte": true, "justif": "Le résultat d'exploitation est avant charges financières : il isole la performance de l'activité, sans le bruit de la structure dette/capitaux propres."},
+        {"texte": "Parce que le résultat net n'est jamais disponible dans les états financiers", "correcte": false, "justif": "Le résultat net est bien disponible ; ce n'est pas une question de disponibilité mais de ce qu'on veut mesurer."},
+        {"texte": "Parce que le résultat d'exploitation est toujours supérieur au résultat net", "correcte": false, "justif": "Ce n'est pas systématique, et même si c'était le cas, ce ne serait pas la raison du choix : on cherche à neutraliser le financement."}
+      ]
+    },
+    {
+      "enonce": "Sur le cas ALPHA (REX = 300 k€, IS = 25 %, actif économique = 2 000 k€), que vaut le ROA net d'impôt ?",
+      "ancre": "m2-s1",
+      "options": [
+        {"texte": "11,25 %", "correcte": true, "justif": "ROA = 300 × 0,75 / 2 000 = 225 / 2 000 = 11,25 %."},
+        {"texte": "15 %", "correcte": false, "justif": "15 % correspond à 300/2 000 sans appliquer l'impôt : on a oublié le net d'IS."},
+        {"texte": "9 %", "correcte": false, "justif": "9 % est le ROA de l'exemple de la fiche (REX 120, actif 1 000), pas celui d'ALPHA."}
+      ]
+    },
+    {
+      "enonce": "Dans la relation ROE = ROA + (ROA − i) × D/CP, à quelle condition l'effet de levier est-il positif ?",
+      "ancre": "m2-s2",
+      "options": [
+        {"texte": "Si et seulement si le ROA est supérieur au coût net de la dette (ROA > i)", "correcte": true, "justif": "Quand ROA > i, le terme (ROA − i) est positif, donc l'endettement ajoute de la rentabilité à l'actionnaire."},
+        {"texte": "Dès que l'entreprise est endettée, quel que soit le coût de la dette", "correcte": false, "justif": "Faux : si i dépasse le ROA, le levier devient négatif (effet massue), l'endettement détruit alors du ROE."},
+        {"texte": "Si le ratio D/CP est inférieur à 1", "correcte": false, "justif": "Le ratio D/CP amplifie l'effet (dans un sens ou l'autre) mais ne détermine pas son signe : c'est le signe de (ROA − i) qui compte."}
+      ]
+    },
+    {
+      "enonce": "Sur ALPHA, le ROA est de 11,25 % et le coût net de la dette de 3,75 %, avec D/CP = 1 200/800. Que vaut l'effet de levier ?",
+      "ancre": "m2-s2",
+      "options": [
+        {"texte": "+11,25 %", "correcte": true, "justif": "(11,25 % − 3,75 %) × 1 200/800 = 7,5 % × 1,5 = +11,25 %."},
+        {"texte": "+7,5 %", "correcte": false, "justif": "7,5 % est seulement l'écart (ROA − i) : il faut encore le multiplier par le bras de levier D/CP = 1,5."},
+        {"texte": "+22,5 %", "correcte": false, "justif": "22,5 % est le ROE total (ROA + levier), pas l'effet de levier seul."}
+      ]
+    },
+    {
+      "enonce": "Une entreprise voit sa rentabilité économique chuter sous le coût net de sa dette (ROA < i). Que se passe-t-il sur son ROE ?",
+      "ancre": "m2-s2",
+      "options": [
+        {"texte": "Le levier devient un « effet massue » : le ROE chute sous le ROA", "correcte": true, "justif": "Quand (ROA − i) devient négatif, l'endettement détruit de la valeur ; plus le D/CP est élevé, plus la chute du ROE est forte."},
+        {"texte": "Rien : l'effet de levier protège toujours le ROE", "correcte": false, "justif": "Faux : le levier n'est pas une protection, c'est une amplification qui joue aussi à la baisse."},
+        {"texte": "Le ROE devient égal au coût de la dette", "correcte": false, "justif": "Il n'y a aucune raison mathématique pour que le ROE s'aligne sur i ; il passe simplement sous le ROA."}
+      ]
+    },
+    {
+      "enonce": "Pourquoi faut-il calculer le coût de la dette NET d'impôt avant de le comparer au ROA ?",
+      "ancre": "m2-s3",
+      "options": [
+        {"texte": "Parce que les intérêts d'emprunt sont déductibles : ils génèrent une économie d'impôt qui réduit le coût réel de la dette", "correcte": true, "justif": "i = taux × (1 − IS) : la déductibilité abaisse le coût effectif ; on compare alors deux grandeurs nettes d'IS, cohérentes entre elles."},
+        {"texte": "Parce que le ROA est toujours exprimé avant impôt", "correcte": false, "justif": "Au contraire, le ROA est ici net d'IS ; c'est justement pour rester homogène qu'on met la dette net d'IS aussi."},
+        {"texte": "Parce que le taux d'intérêt brut est inconnu de l'entreprise", "correcte": false, "justif": "Le taux brut est parfaitement connu ; le passage au net répond à la déductibilité fiscale, pas à un manque d'information."}
+      ]
+    },
+    {
+      "enonce": "Un emprunt est contracté à 5 % et le taux d'IS est de 25 %. Quel est le coût net de cette dette ?",
+      "ancre": "m2-s3",
+      "options": [
+        {"texte": "3,75 %", "correcte": true, "justif": "i = 5 % × (1 − 0,25) = 5 % × 0,75 = 3,75 %."},
+        {"texte": "5 %", "correcte": false, "justif": "5 % est le taux brut ; on n'a pas tenu compte de l'économie d'impôt sur les intérêts."},
+        {"texte": "1,25 %", "correcte": false, "justif": "1,25 % correspond à 5 % × 0,25, soit l'économie d'impôt elle-même, pas le coût net qui reste à la charge de l'entreprise."}
+      ]
+    },
+    {
+      "enonce": "Pourquoi dit-on que la dette est « moins chère » que les capitaux propres ?",
+      "ancre": "m2-s3",
+      "options": [
+        {"texte": "Parce que les intérêts sont déductibles alors que les dividendes ne le sont pas, et que le coût exigé par l'actionnaire est plus élevé", "correcte": true, "justif": "La déductibilité fiscale abaisse le coût de la dette, et le rendement exigé sur les capitaux propres est structurellement supérieur (rémunération du risque)."},
+        {"texte": "Parce que les capitaux propres ne rapportent rien à l'entreprise", "correcte": false, "justif": "Les capitaux propres financent l'actif comme la dette ; ils ont bien un coût (celui exigé par l'actionnaire), ils ne sont pas gratuits."},
+        {"texte": "Parce que la dette ne doit jamais être remboursée", "correcte": false, "justif": "La dette doit au contraire être remboursée (capital + intérêts) ; c'est faux et sans rapport avec le coût relatif."}
+      ]
+    },
+    {
+      "enonce": "Quel est le principal intérêt des Soldes Intermédiaires de Gestion (SIG) pour un diagnostic de rentabilité ?",
+      "ancre": "m2-s4",
+      "options": [
+        {"texte": "Localiser, étage par étage, d'où vient la performance ou sa dégradation", "correcte": true, "justif": "La cascade marge → VA → EBE → REX → résultat net permet d'identifier le solde où la rentabilité se forme ou se détériore."},
+        {"texte": "Calculer directement le ROE de l'entreprise", "correcte": false, "justif": "Le ROE se calcule à partir du résultat net et des capitaux propres ; les SIG décomposent la formation du résultat, ils ne donnent pas le ROE."},
+        {"texte": "Remplacer le bilan dans l'analyse financière", "correcte": false, "justif": "Les SIG analysent le compte de résultat (formation du résultat), pas la structure du bilan ; ils ne le remplacent pas."}
+      ]
+    },
+    {
+      "enonce": "Qu'est-ce que l'Excédent Brut d'Exploitation (EBE) mesure dans la cascade des SIG ?",
+      "ancre": "m2-s4",
+      "options": [
+        {"texte": "La performance d'exploitation AVANT amortissements et AVANT financement", "correcte": true, "justif": "L'EBE se situe avant les dotations aux amortissements et avant les charges financières : il est proche d'un flux de trésorerie d'exploitation."},
+        {"texte": "Le résultat net après impôt distribuable aux actionnaires", "correcte": false, "justif": "Le résultat net est le dernier solde de la cascade, bien après l'EBE ; l'EBE est très en amont."},
+        {"texte": "La valeur ajoutée brute créée par l'entreprise", "correcte": false, "justif": "La valeur ajoutée précède l'EBE dans la cascade ; l'EBE est la VA diminuée notamment des charges de personnel."}
+      ]
+    },
+    {
+      "enonce": "Que mesure la Capacité d'Autofinancement (CAF) ?",
+      "ancre": "m2-s5",
+      "options": [
+        {"texte": "Les ressources internes de trésorerie potentielle dégagées par l'activité, avant affectation", "correcte": true, "justif": "La CAF est le potentiel d'autofinancement (rembourser, investir, distribuer), calculé avant la décision d'affectation du résultat."},
+        {"texte": "La trésorerie réellement disponible en banque à la clôture", "correcte": false, "justif": "La CAF est un potentiel : la trésorerie réelle dépend en plus des décalages de BFR (créances, stocks, dettes)."},
+        {"texte": "Le montant des dividendes à verser obligatoirement", "correcte": false, "justif": "La CAF se calcule justement AVANT toute décision d'affectation, dont la distribution de dividendes ; ce n'est pas une obligation de versement."}
+      ]
+    },
+    {
+      "enonce": "Dans la méthode ADDITIVE (à partir du résultat net), comment passe-t-on au calcul de la CAF ?",
+      "ancre": "m2-s5",
+      "options": [
+        {"texte": "On réintègre les dotations aux amortissements et provisions (charges calculées non décaissables)", "correcte": true, "justif": "Les dotations réduisent le résultat net sans sortie de trésorerie : on les rajoute pour reconstituer le flux potentiel ; on retire aussi les reprises et plus-values de cession."},
+        {"texte": "On retranche les dotations aux amortissements du résultat net", "correcte": false, "justif": "C'est l'inverse : les dotations doivent être RAJOUTÉES, puisqu'elles ne correspondent à aucune sortie de trésorerie."},
+        {"texte": "On ajoute le chiffre d'affaires de l'exercice au résultat net", "correcte": false, "justif": "Le CA n'intervient pas dans la méthode additive ; la CAF part du résultat net et neutralise les seules charges/produits calculés."}
+      ]
+    },
+    {
+      "enonce": "Pourquoi les méthodes additive et soustractive donnent-elles la même CAF ?",
+      "ancre": "m2-s5",
+      "options": [
+        {"texte": "Parce que les deux neutralisent les mêmes éléments calculés (amortissements, provisions, cessions) pour ne garder que le flux encaissable/décaissable", "correcte": true, "justif": "Elles partent d'un point différent (EBE ou résultat net) mais aboutissent au même flux potentiel de trésorerie : l'égalité sert d'auto-contrôle."},
+        {"texte": "Par pure coïncidence comptable, sans raison logique", "correcte": false, "justif": "Ce n'est pas une coïncidence : les deux chemins isolent la même notion (le flux potentiel de trésorerie de l'activité)."},
+        {"texte": "Parce que l'EBE est toujours égal au résultat net", "correcte": false, "justif": "L'EBE et le résultat net sont des soldes différents de la cascade ; ils ne sont pas égaux, ce sont les retraitements qui réconcilient les deux méthodes."}
+      ]
+    },
+    {
+      "enonce": "Comment juge-t-on la capacité de remboursement d'une entreprise à partir de la CAF ?",
+      "ancre": "m2-s6",
+      "options": [
+        {"texte": "En rapportant les dettes financières à la CAF, ce qui donne un nombre d'années de remboursement", "correcte": true, "justif": "Dettes financières / CAF exprime combien d'années de CAF seraient nécessaires pour rembourser l'endettement ; plus c'est faible, plus c'est solide."},
+        {"texte": "En rapportant la CAF au chiffre d'affaires", "correcte": false, "justif": "CAF/CA mesure une marge d'autofinancement, pas la capacité à rembourser la dette ; ce n'est pas le bon ratio."},
+        {"texte": "En comparant la CAF aux capitaux propres uniquement", "correcte": false, "justif": "La capacité de remboursement met en regard la CAF et la DETTE financière, pas les capitaux propres."}
+      ]
+    },
+    {
+      "enonce": "À quel moment peut-on conclure qu'une entreprise crée de la valeur pour ses actionnaires ?",
+      "ancre": "m2-s6",
+      "options": [
+        {"texte": "Quand le ROE dépasse le coût des capitaux propres exigé par l'actionnaire", "correcte": true, "justif": "La création de valeur actionnariale suppose que la rentabilité financière obtenue (ROE) excède la rémunération exigée pour le risque (coût des CP)."},
+        {"texte": "Dès que le ROE est positif", "correcte": false, "justif": "Un ROE positif mais inférieur au coût des CP exigé signifie que l'actionnaire est moins bien rémunéré que ce qu'il exige : pas de création de valeur."},
+        {"texte": "Dès que le résultat net est supérieur à l'EBE", "correcte": false, "justif": "Le résultat net est structurellement inférieur à l'EBE (qui est très en amont) ; ce critère n'a aucun sens pour la création de valeur."}
+      ]
+    },
+    {
+      "enonce": "Un dirigeant affiche un ROE de 22,5 % obtenu grâce à un fort endettement (D/CP = 1,5). Quelle réserve un analyste niveau 7 doit-il systématiquement soulever ?",
+      "ancre": "m2-s6",
+      "options": [
+        {"texte": "Vérifier la soutenabilité : un ROE élevé tiré par la dette est fragile si le ROA baisse et passe sous le coût de la dette (risque d'effet massue)", "correcte": true, "justif": "Le levier amplifie aussi à la baisse ; il faut contrôler la capacité de remboursement et la marge de sécurité entre ROA et coût de la dette."},
+        {"texte": "Aucune : un ROE élevé est toujours une bonne nouvelle sans condition", "correcte": false, "justif": "Un ROE élevé obtenu par un levier excessif est risqué ; le confort apparent peut se retourner si la rentabilité économique fléchit."},
+        {"texte": "Que le ROE devrait être égal au ROA pour être fiable", "correcte": false, "justif": "L'écart entre ROE et ROA est normal et attendu (c'est l'effet de levier) ; le problème n'est pas l'écart mais sa soutenabilité."}
+      ]
+    },
+    {
+      "enonce": "Sur le cas ALPHA, on vérifie le ROE « par le bas » : RN = (300 − 5 % × 1 200) × 0,75. Que vaut le résultat net, et donc le ROE (CP = 800) ?",
+      "ancre": "m2-s2",
+      "options": [
+        {"texte": "RN = 180 k€, donc ROE = 22,5 %", "correcte": true, "justif": "RN = (300 − 60) × 0,75 = 240 × 0,75 = 180 k€ ; ROE = 180/800 = 22,5 %, ce qui confirme la formule du levier."},
+        {"texte": "RN = 225 k€, donc ROE = 28,1 %", "correcte": false, "justif": "225 k€ correspond au REX net d'IS (300 × 0,75) sans déduire les intérêts de la dette : on a oublié les 60 k€ de charges financières."},
+        {"texte": "RN = 240 k€, donc ROE = 30 %", "correcte": false, "justif": "240 k€ est le résultat AVANT impôt (300 − 60) ; il faut encore appliquer le net d'IS (× 0,75)."}
+      ]
+    }
+  ]
+}

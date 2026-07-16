@@ -1,0 +1,334 @@
+{
+  "id": "m1",
+  "num": 1,
+  "nom": "Méthode & jour J (open-book)",
+  "essentiel": {
+    "a_retenir": [
+      "Les épreuves sont en présentiel, sur TON ordinateur (+ chargeur), du 20 au 24 juillet 2026, au campus de la Défense (Courbevoie).",
+      "Examen OPEN-BOOK : toutes tes ressources, Internet et l'IA sont AUTORISÉS. Le par-cœur ne rapporte presque rien — la note se joue sur la méthode, la structure du livrable, l'interprétation des chiffres et la reco finale.",
+      "INTERDITS pendant l'épreuve : téléphone, montre connectée, messageries (et réseaux sociaux pour la connexion Internet).",
+      "L'IA n'est autorisée QUE si tu la justifies par 3 éléments : (1) prompts rédigés, (2) liste des éléments générés par l'IA et repris, (3) analyse réflexive de ce qui a été utilisé/exclu. Sans ces 3 justificatifs = sanctions du règlement pédagogique.",
+      "Ne copie JAMAIS une analyse IA telle quelle : l'évaluateur cherche TON expertise. L'IA fait gagner du temps sur les rappels et la mise en forme ; le raisonnement et la reco doivent être les tiens, vérifiés.",
+      "Méthode universelle d'attaque d'un cas en 6 étapes : lire+surligner, coller le plan imposé dans un Word, traiter dans l'ordre (données→formule→calcul→résultat→interprétation), utiliser Internet/Excel, finir par une reco argumentée, rédiger la déclaration IA + relire + export PDF + dépôt.",
+      "Tu ne pars jamais de la page blanche : tu colles d'abord le PLAN (les parties imposées par le sujet) puis tu remplis.",
+      "Chaque calcul suit la chaîne : données posées → formule écrite → calcul → résultat → UNE phrase d'interprétation. Un chiffre sans interprétation ne vaut rien.",
+      "Déroulé de la semaine : MATINS = révision + ORAUX (oral EDC1 mardi, EDC2 mercredi, EDC3 jeudi) ; APRÈS-MIDIS = études de cas écrites d'environ 3h (~14h30-17h30).",
+      "Les livrables se déposent en PDF (ou Excel si le sujet l'exige) dans le « coffre-fort » = la plateforme procertif / plateforme certification.",
+      "Nomenclature de dépôt : NOM_PRENOM_EFE37 (pour le dossier C4/C5 : NOM_PRENOM_EFE37_DOSSIER).",
+      "Un livrable de niveau 7 se distingue par la RECOMMANDATION finale argumentée et adaptée à l'entreprise du cas (+ angle RSE si pertinent).",
+      "À préparer AVANT le 20/07 : guide + fiches ouverts et organisés, un Word « modèle de livrable » vierge (plan-type + trame de déclaration IA), cours classés par bloc, et 1 cas refait par EDC à calculs (1, 2, 5) en conditions réelles.",
+      "Format de travail = fiches et modèles prêts à OUVRIR (pas du par-cœur) : tu remplis des templates avec des données actualisées que tu cites."
+    ],
+    "chiffres": [
+      "Dates de la semaine des compétences : 20 → 24 juillet 2026 (5 jours).",
+      "Études de cas écrites : ~3h chacune, l'après-midi (~14h30-17h30).",
+      "Protocole IA = 3 justificatifs obligatoires : prompts + éléments repris + analyse réflexive.",
+      "Méthode d'attaque d'un cas = 6 étapes.",
+      "Nomenclature : NOM_PRENOM_EFE37 (dossier : NOM_PRENOM_EFE37_DOSSIER).",
+      "Correction du dossier basée sur 3 niveaux d'évaluation."
+    ],
+    "pieges": [
+      "Donner un chiffre sans interprétation ni reco : c'est exactement ce qui fait perdre des points en open-book.",
+      "Copier une analyse IA telle quelle : l'évaluateur cherche TON expertise, pas celle de la machine.",
+      "Utiliser l'IA sans les 3 justificatifs (prompts + éléments repris + analyse réflexive) = sanctions.",
+      "Partir de la page blanche au lieu de coller d'abord le plan imposé par le sujet.",
+      "Oublier de citer et dater les sources de données actualisées prises sur Internet.",
+      "Mal nommer ou oublier de déposer le livrable PDF/Excel dans le coffre-fort (plateforme procertif)."
+    ]
+  },
+  "sections": [
+    {
+      "id": "m1-s1",
+      "titre": "Le cadre open-book : ce qui est autorisé, interdit et ce qui compte",
+      "points": [
+        "Les épreuves certifiantes du titre RNCP37421 « Expert en finance d'entreprise » se déroulent en présentiel, sur TON propre ordinateur (avec son chargeur), au campus de la Défense à Courbevoie, du 20 au 24 juillet 2026. Tu disposes de Word (avec export PDF), d'Excel et d'un accès Internet. Les livrables sont déposés en PDF (ou Excel si le sujet l'impose) dans le « coffre-fort », c'est-à-dire la plateforme de certification procertif.",
+        "Le cadre est explicitement OPEN-BOOK : toutes tes ressources, Internet et l'intelligence artificielle sont autorisés (l'IA sous conditions, voir section dédiée). Sont en revanche strictement INTERDITS : le téléphone, la montre connectée et les messageries ; la connexion Internet exclut les réseaux sociaux. Concrètement, tes fiches sont sous tes yeux pendant toute l'épreuve.",
+        "La conséquence majeure de l'open-book : le par-cœur ne rapporte presque rien. Puisque tu peux relire n'importe quelle formule à tout moment, la note ne récompense pas la mémoire mais la MÉTHODE, la STRUCTURE du livrable, la qualité de l'INTERPRÉTATION des chiffres et la pertinence de la RECOMMANDATION finale. Ton entraînement doit donc viser à PRODUIRE vite et clair, pas à mémoriser. C'est un changement de logique complet par rapport à un examen fermé."
+      ],
+      "chiffres": [
+        "Lieu : campus de la Défense (Courbevoie). Dates : 20→24 juillet 2026.",
+        "Dépôt des livrables : PDF (ou Excel si exigé) dans le coffre-fort = plateforme procertif."
+      ],
+      "pieges": [
+        "Croire qu'open-book signifie « facile » : au contraire, l'évaluation se durcit sur la méthode et l'interprétation puisque les formules sont accessibles.",
+        "Compter sur la connexion pour les réseaux sociaux ou les messageries : ils sont interdits."
+      ]
+    },
+    {
+      "id": "m1-s2",
+      "titre": "La méthode universelle d'attaque d'un cas (6 étapes)",
+      "points": [
+        "Étape 1 — Lis tout l'énoncé une fois et surligne CE QU'ON TE DEMANDE (le « travail à faire ») ainsi que les chiffres clés. Si les points sont indiqués par question, compte-les pour calibrer ton temps. Étape 2 — Ouvre un Word vierge et colle d'abord le PLAN, c'est-à-dire les parties imposées par le sujet (mêmes intitulés, même ordre) : tu ne pars jamais de la page blanche, tu remplis ensuite.",
+        "Étape 3 — Traite chaque question dans l'ordre demandé. Pour chaque calcul, applique systématiquement la chaîne : pose les données, écris la formule, fais le calcul, donne le résultat, PUIS rédige une phrase d'interprétation. Étape 4 — Utilise Internet pour les données actualisées (cours, indicateurs, actualité) en CITANT ta source (nom + date + lien), et Excel pour tout tableau ou calcul répétitif.",
+        "Étape 5 — Termine par une RECOMMANDATION argumentée et adaptée à l'entreprise du cas, avec un angle RSE si pertinent : c'est ce qui distingue un niveau 7. Étape 6 — Rédige la déclaration d'usage de l'IA, puis relis : titres, numérotation, unités (k€/M€), source des chiffres ; enfin exporte en PDF et dépose dans le coffre-fort. Cette méthode s'applique à CHAQUE épreuve, quel que soit le bloc."
+      ],
+      "chiffres": [
+        "Chaîne de tout calcul : données → formule → calcul → résultat → interprétation.",
+        "Citation d'une source de marché : nom + date + lien."
+      ],
+      "pieges": [
+        "Sauter l'étape « interprétation » après un calcul : un résultat brut sans phrase d'analyse perd des points.",
+        "Changer l'ordre ou les intitulés des parties par rapport au « travail à faire » du sujet."
+      ]
+    },
+    {
+      "id": "m1-s3",
+      "titre": "Le protocole IA : 3 justificatifs obligatoires sinon sanctions",
+      "points": [
+        "L'usage de l'IA n'est pas interdit, mais il est strictement conditionné. Sauf mention contraire en début de sujet, tu peux recourir à l'IA À CONDITION d'indiquer dans ta production trois éléments : (1) les prompts rédigés (les requêtes envoyées, mot pour mot), (2) la liste précise des éléments générés par l'IA et repris dans le travail, (3) une analyse réflexive de ce qui a été utilisé et de ce qui a été exclu. En l'absence de ces 3 justificatifs — ou en cas d'usage de l'IA sur un sujet où elle est prohibée — tu t'exposes aux sanctions prévues dans le règlement pédagogique de l'école.",
+        "Le cœur du protocole est l'analyse réflexive (le 3e point). C'est ce paragraphe qui prouve TON expertise : explique ce que tu as VÉRIFIÉ, CORRIGÉ ou ÉCARTÉ de la réponse de l'IA, et POURQUOI. Une formulation type : « j'ai écarté la suggestion X car elle ne correspond pas au profil de risque de l'entreprise ». L'institution rappelle que l'IA n'est profitable qu'utilisée de façon raisonnée et par des experts du domaine — des professionnels capables de générer eux-mêmes le contenu proposé par l'IA.",
+        "La règle d'or : ne copie jamais une analyse IA telle quelle. L'évaluateur considère ces 3 éléments précisément pour déterminer ton niveau d'expertise au regard des critères de la compétence évaluée. L'IA te fait gagner du temps sur les rappels de formules et la mise en forme ; mais le raisonnement, l'interprétation et la recommandation doivent rester les tiens, vérifiés. Garde la trame des 3 points OUVERTE pendant l'épreuve et remplis-la au fil de l'eau, sinon tu oublieras les prompts utilisés."
+      ],
+      "chiffres": [
+        "Protocole IA = 3 justificatifs : (1) prompts, (2) éléments repris, (3) analyse réflexive.",
+        "Manquement = sanctions du règlement pédagogique."
+      ],
+      "pieges": [
+        "Oublier de noter les prompts au fil de l'épreuve et ne plus pouvoir les reconstituer à la fin.",
+        "Bâcler l'analyse réflexive : c'est pourtant elle qui démontre l'expertise et fait la différence.",
+        "Coller une analyse IA brute : l'évaluateur le repère et cela dessert ta note."
+      ]
+    },
+    {
+      "id": "m1-s4",
+      "titre": "Le plan-type d'un livrable (réutilisable partout)",
+      "points": [
+        "Tous les livrables suivent la même ossature, à dupliquer pour chaque épreuve. (1) Page de garde : NOM_PRENOM_EFE37 + intitulé de l'épreuve / bloc + date. (2) Rappel du contexte et de la mission en 2-3 lignes : l'entreprise, les chiffres clés, et ce qu'on te demande. (3) Les parties EXACTEMENT comme demandées dans le « travail à faire », avec les mêmes intitulés et le même ordre.",
+        "(4) Conclusion / recommandation : une reco claire, argumentée et adaptée à l'entreprise du cas, avec un angle RSE si pertinent — c'est le marqueur du niveau 7. (5) Annexes : tableaux Excel, calculs détaillés, captures, et SOURCES des données de marché (nom + date + lien). (6) Déclaration d'usage de l'IA : les 3 points (prompts, éléments repris, analyse réflexive), si tu as utilisé l'IA.",
+        "Le modèle de livrable EFE37 est un fichier à DUPLIQUER le jour J : tu le renommes NOM_PRENOM_EFE37_[épreuve], tu remplis les [crochets], tu supprimes les consignes en italique, tu exportes en PDF et tu déposes dans le coffre-fort. Chaque calcul y suit la logique : données posées → formule → calcul → résultat → interprétation en une phrase, les calculs lourds étant renvoyés vers Excel. Avoir ce squelette prêt à ouvrir t'évite de structurer sous la pression."
+      ],
+      "chiffres": [
+        "Squelette du livrable = 6 blocs : garde, contexte/mission, parties du sujet, reco, annexes, déclaration IA.",
+        "Page de garde : NOM_PRENOM_EFE37 + intitulé épreuve + date."
+      ],
+      "pieges": [
+        "Oublier de supprimer les consignes en italique du modèle avant l'export.",
+        "Laisser les calculs lourds dans le corps du texte au lieu de les renvoyer en annexe Excel.",
+        "Omettre les sources datées dans les annexes pour les données prises sur Internet."
+      ]
+    },
+    {
+      "id": "m1-s5",
+      "titre": "Déroulé du 20→24 juillet : oraux EDC + études de cas écrites",
+      "points": [
+        "La semaine combine deux formats. Les MATINS sont consacrés à la révision et aux ORAUX des études de cas (EDC) : oral EDC1 le mardi, oral EDC2 le mercredi, oral EDC3 le jeudi. Les APRÈS-MIDIS sont consacrés aux études de cas écrites, d'une durée d'environ 3 heures (créneau type ~14h30-17h30). Tu dois donc gérer en parallèle ta préparation orale et ta production écrite sur ordinateur.",
+        "Les EDC ne se révisent pas tous de la même manière. Les EDC à CALCULS sont prioritaires à l'entraînement : EDC2 (trésorerie : budget, TFT, BFR, TVA) et EDC5 (gestion des risques : seuil de rentabilité, leviers, couverture), auxquels s'ajoute EDC1 (stratégie financière : rentabilité, VAN/TIR, CMPC). Les EDC3, 4, 6 et 7 reposent davantage sur des réponses-modèles à adapter au cas — on y travaille la structure et l'interprétation plutôt que le calcul.",
+        "Le dossier officiel C4/C5 (référence EFE37) est une épreuve à part, sous forme de DOSSIER : une entreprise du secteur Défense doit placer 300 M€ en actions françaises (CAC40). Il se compose de deux parties imposées — stratégie de gestion d'actif financier, puis processus de collecte de données / reporting (diagnostic de Dassault Systèmes) — et se dépose sous la nomenclature NOM_PRENOM_EFE37_DOSSIER. Sa correction repose sur 3 niveaux d'évaluation."
+      ],
+      "chiffres": [
+        "Oraux : EDC1 mardi, EDC2 mercredi, EDC3 jeudi (matins).",
+        "Études de cas écrites : ~3h l'après-midi (~14h30-17h30).",
+        "Dossier C4/C5 : entreprise Défense, 300 M€ en actions CAC40, dépôt NOM_PRENOM_EFE37_DOSSIER, correction sur 3 niveaux."
+      ],
+      "pieges": [
+        "Négliger l'entraînement des EDC à calculs (1, 2, 5), les plus exigeants en production.",
+        "Mélanger les deux parties imposées du dossier C4/C5 (stratégie d'actif vs collecte/reporting)."
+      ]
+    },
+    {
+      "id": "m1-s6",
+      "titre": "Méthode de travail : fiches et modèles prêts à ouvrir, pas du par-cœur",
+      "points": [
+        "Puisque tout est ouvert pendant l'épreuve, la bonne stratégie de révision n'est pas d'apprendre par cœur mais de PRÉPARER des outils prêts à ouvrir et à remplir. Avant le 20/07, prépare quatre choses : (1) ce guide et tes fiches ouverts et organisés sur ton ordinateur, (2) un Word « modèle de livrable » vierge contenant le plan-type et la trame de déclaration IA, (3) tes cours classés par bloc pour les retrouver vite, (4) refaire au moins 1 cas par EDC à calculs (1, 2, 5) en conditions réelles (3h, sur ordinateur).",
+        "La logique des cas d'entraînement : pour chaque EDC tu disposes d'un énoncé et d'un corrigé. La consigne est de chercher D'ABORD par toi-même, PUIS de te corriger — jamais l'inverse. Cela t'entraîne à produire sous contrainte de temps, à mobiliser les bonnes formules au bon moment et à repérer tes erreurs récurrentes, qui sont ce que l'open-book sanctionne le plus (un calcul mal interprété, une reco absente).",
+        "Le jour J, ta valeur ajoutée vient de la vitesse de production et de la qualité d'interprétation : tu ouvres tes templates, tu y injectes des données actualisées que tu CITES, tu enchaînes données→formule→calcul→résultat→interprétation, et tu n'oublies jamais la recommandation finale ni la déclaration IA. Des fiches calées sur un module précis (par exemple sur un prof donné) peuvent être préparées en amont pour gagner encore du temps. La clé tient en une phrase : open-book = la note se joue sur la méthode, la structure, l'interprétation et la reco — pas le par-cœur."
+      ],
+      "chiffres": [
+        "À préparer avant le 20/07 : 4 chantiers (guide+fiches ouverts, Word modèle vierge, cours classés par bloc, 1 cas refait par EDC 1/2/5 en 3h).",
+        "Cas d'entraînement : 1 énoncé + 1 corrigé par EDC (1 à 7)."
+      ],
+      "pieges": [
+        "Réviser comme pour un examen fermé (mémorisation) au lieu de fabriquer des modèles à ouvrir.",
+        "Regarder le corrigé avant d'avoir cherché : on perd tout le bénéfice de l'entraînement.",
+        "Arriver le jour J sans Word modèle prêt ni cours classés : on perd un temps précieux à se structurer."
+      ]
+    }
+  ],
+  "visuals": [
+    {
+      "type": "flow",
+      "titre": "Les 6 étapes pour attaquer n'importe quel cas",
+      "intro": "À appliquer à chaque épreuve, dans cet ordre. Tu ne pars jamais de la page blanche.",
+      "ancre": "m1-s2",
+      "steps": [
+        { "t": "1. Lire & surligner", "d": "Lis tout l'énoncé une fois, surligne le « travail à faire » et les chiffres clés, compte les points par question." },
+        { "t": "2. Coller le plan", "d": "Ouvre un Word vierge et colle d'abord les parties imposées par le sujet (mêmes intitulés, même ordre)." },
+        { "t": "3. Traiter dans l'ordre", "d": "Pour chaque calcul : données → formule → calcul → résultat → une phrase d'interprétation." },
+        { "t": "4. Internet & Excel", "d": "Données actualisées citées (nom+date+lien) ; tableaux et calculs répétitifs dans Excel." },
+        { "t": "5. Recommandation", "d": "Reco argumentée et adaptée à l'entreprise (+ angle RSE si pertinent). C'est le niveau 7." },
+        { "t": "6. Déclaration IA & dépôt", "d": "Rédige les 3 justificatifs IA, relis (titres, unités, sources), exporte en PDF, dépose au coffre-fort." }
+      ]
+    },
+    {
+      "type": "compare",
+      "titre": "Examen fermé vs open-book : ce qui change vraiment",
+      "intro": "L'open-book déplace la note du par-cœur vers la production et l'analyse.",
+      "ancre": "m1-s1",
+      "headers": ["Critère", "Examen fermé (réflexe)", "Open-book EFE37 (réalité)"],
+      "rows": [
+        { "cells": ["Ce qui est noté", "Mémorisation des formules", "Méthode, structure, interprétation, reco"] },
+        { "cells": ["Ressources", "Aucune", "Toutes tes fiches + Internet + IA (sous conditions)"] },
+        { "cells": ["IA", "Interdite", "Autorisée si 3 justificatifs (prompts, repris, réflexive)"] },
+        { "cells": ["Préparation gagnante", "Apprendre par cœur", "Templates prêts à ouvrir + cas refaits en conditions"] },
+        { "cells": ["Risque principal", "Trou de mémoire", "Chiffre sans interprétation, reco absente, IA non déclarée"] }
+      ]
+    },
+    {
+      "type": "pyramid",
+      "titre": "Protocole IA : les 3 justificatifs obligatoires",
+      "intro": "Sans ces 3 éléments dans la production = sanctions du règlement pédagogique.",
+      "ancre": "m1-s3",
+      "levels": [
+        { "t": "1. Prompts rédigés", "d": "Les requêtes envoyées à l'IA, mot pour mot." },
+        { "t": "2. Éléments repris", "d": "Liste précise et honnête de ce que l'IA a généré et que tu as gardé." },
+        { "t": "3. Analyse réflexive", "d": "Ce que tu as vérifié, corrigé ou ÉCARTÉ et POURQUOI — c'est ce qui prouve TON expertise." }
+      ]
+    }
+  ],
+  "qcm": [
+    {
+      "enonce": "En contexte open-book pour l'EFE37, sur quoi se joue principalement la note ?",
+      "ancre": "m1-s1",
+      "options": [
+        { "texte": "Sur la méthode, la structure du livrable, l'interprétation des chiffres et la recommandation finale", "correcte": true, "justif": "Comme les fiches sont sous les yeux, le par-cœur ne rapporte presque rien ; l'évaluation porte sur la production et l'analyse." },
+        { "texte": "Sur la capacité à restituer de mémoire le maximum de formules", "correcte": false, "justif": "Justement, en open-book toutes les formules sont accessibles : les mémoriser n'apporte pas de points." },
+        { "texte": "Sur le nombre de pages produites", "correcte": false, "justif": "Le sujet recommande un style synthétique et professionnel sans limitation de pages ; la longueur n'est pas un critère." }
+      ]
+    },
+    {
+      "enonce": "Quels outils/ressources sont autorisés pendant les épreuves ?",
+      "ancre": "m1-s1",
+      "options": [
+        { "texte": "Toutes tes ressources, Internet et l'IA (l'IA sous conditions)", "correcte": true, "justif": "L'examen est open-book : ressources, Internet et IA sont autorisés, l'IA devant être justifiée par 3 éléments." },
+        { "texte": "Tes fiches uniquement, sans connexion Internet", "correcte": false, "justif": "Internet est autorisé (sauf réseaux sociaux), tout comme l'IA sous conditions." },
+        { "texte": "Le téléphone et la montre connectée pour vérifier des données", "correcte": false, "justif": "Téléphone, montre connectée et messageries sont explicitement INTERDITS." }
+      ]
+    },
+    {
+      "enonce": "Pourquoi colle-t-on d'abord le plan imposé par le sujet dans un Word avant de rédiger ?",
+      "ancre": "m1-s2",
+      "options": [
+        { "texte": "Pour ne jamais partir de la page blanche et traiter les parties dans l'ordre et avec les intitulés demandés", "correcte": true, "justif": "L'étape 2 de la méthode consiste à coller le plan (parties imposées) puis à remplir, ce qui garantit l'ordre et la conformité au « travail à faire »." },
+        { "texte": "Pour pouvoir supprimer ensuite les questions qui ne nous plaisent pas", "correcte": false, "justif": "Toutes les questions du « travail à faire » doivent être traitées, dans l'ordre ; on n'en supprime aucune." },
+        { "texte": "Parce que le correcteur impose un nombre de mots par partie", "correcte": false, "justif": "Aucun nombre de mots n'est imposé ; on privilégie un style synthétique. La raison est méthodologique, pas quantitative." }
+      ]
+    },
+    {
+      "enonce": "Quelle est la chaîne correcte à suivre pour présenter chaque calcul ?",
+      "ancre": "m1-s2",
+      "options": [
+        { "texte": "Données posées → formule → calcul → résultat → phrase d'interprétation", "correcte": true, "justif": "C'est exactement la chaîne imposée par la méthode : un résultat doit toujours être suivi d'une interprétation." },
+        { "texte": "Résultat → formule → données, pour aller plus vite", "correcte": false, "justif": "L'ordre logique part des données et finit par l'interprétation ; inverser nuit à la lisibilité et à la note." },
+        { "texte": "Formule → résultat, sans interpréter pour gagner du temps", "correcte": false, "justif": "Un chiffre sans interprétation est un piège classique qui fait perdre des points." }
+      ]
+    },
+    {
+      "enonce": "Que doit obligatoirement contenir la déclaration d'usage de l'IA ?",
+      "ancre": "m1-s3",
+      "options": [
+        { "texte": "Les prompts rédigés, la liste des éléments générés par l'IA et repris, et une analyse réflexive de ce qui a été utilisé/exclu", "correcte": true, "justif": "Ce sont les 3 justificatifs exigés ; leur absence expose aux sanctions du règlement pédagogique." },
+        { "texte": "Uniquement le nom de l'outil d'IA utilisé", "correcte": false, "justif": "Citer l'outil ne suffit pas : il faut les prompts, les éléments repris ET l'analyse réflexive." },
+        { "texte": "Une attestation que l'IA n'a servi qu'à corriger l'orthographe", "correcte": false, "justif": "Le protocole exige une déclaration détaillée des 3 éléments, quel que soit l'usage, pas une simple attestation." }
+      ]
+    },
+    {
+      "enonce": "Quel est le rôle central de l'analyse réflexive dans le protocole IA ?",
+      "ancre": "m1-s3",
+      "options": [
+        { "texte": "Montrer ce que tu as vérifié, corrigé ou écarté de la réponse de l'IA et pourquoi, pour prouver TON expertise", "correcte": true, "justif": "C'est ce paragraphe qui démontre que tu maîtrises le domaine et que tu n'as pas copié l'IA aveuglément." },
+        { "texte": "Recopier fidèlement la réponse de l'IA pour montrer qu'on l'a bien lue", "correcte": false, "justif": "Copier une analyse IA telle quelle est interdit ; l'évaluateur cherche ton raisonnement, pas celui de la machine." },
+        { "texte": "Indiquer le temps gagné grâce à l'IA", "correcte": false, "justif": "Le gain de temps n'est pas l'objet : l'analyse réflexive porte sur ce qui a été vérifié, corrigé ou exclu et pourquoi." }
+      ]
+    },
+    {
+      "enonce": "Que risque le candidat qui utilise l'IA sans fournir les 3 justificatifs ?",
+      "ancre": "m1-s3",
+      "options": [
+        { "texte": "Les sanctions prévues dans le règlement pédagogique de l'école", "correcte": true, "justif": "L'usage de l'IA sans les 3 justificatifs (ou sur un sujet où elle est prohibée) expose explicitement aux sanctions du règlement." },
+        { "texte": "Rien, l'IA étant de toute façon autorisée", "correcte": false, "justif": "L'IA n'est autorisée QUE si elle est justifiée ; sans cela, des sanctions s'appliquent." },
+        { "texte": "Une simple perte de 2 points sur la copie", "correcte": false, "justif": "Le texte parle de sanctions du règlement pédagogique, pas d'un barème fixe de pénalité." }
+      ]
+    },
+    {
+      "enonce": "Quel élément distingue, selon le guide, un livrable de niveau 7 ?",
+      "ancre": "m1-s4",
+      "options": [
+        { "texte": "Une recommandation finale argumentée et adaptée à l'entreprise du cas (avec angle RSE si pertinent)", "correcte": true, "justif": "La reco contextualisée est présentée comme le marqueur du niveau 7, au-delà des seuls calculs." },
+        { "texte": "Le plus grand nombre de formules citées", "correcte": false, "justif": "Citer des formules ne suffit pas : c'est l'interprétation et la reco adaptée qui font la différence." },
+        { "texte": "Une mise en page colorée et originale", "correcte": false, "justif": "On attend un style synthétique et professionnel ; l'esthétique n'est pas le critère de niveau." }
+      ]
+    },
+    {
+      "enonce": "Dans le modèle de livrable EFE37, où doivent figurer les calculs lourds et les sources de données de marché ?",
+      "ancre": "m1-s4",
+      "options": [
+        { "texte": "En annexes (tableaux Excel, calculs détaillés, sources avec nom + date + lien)", "correcte": true, "justif": "Le plan-type renvoie les calculs lourds vers Excel/annexes et y place les sources datées des données de marché." },
+        { "texte": "Sur la page de garde, pour les mettre en avant", "correcte": false, "justif": "La page de garde porte le nom, l'épreuve et la date, pas les calculs ni les sources." },
+        { "texte": "Nulle part : on ne cite pas les sources en open-book", "correcte": false, "justif": "Au contraire, les données prises sur Internet doivent être citées et datées, c'est un critère explicite." }
+      ]
+    },
+    {
+      "enonce": "Comment s'organise concrètement la semaine du 20 au 24 juillet ?",
+      "ancre": "m1-s5",
+      "options": [
+        { "texte": "Matins = révision + oraux des EDC ; après-midis = études de cas écrites d'environ 3h", "correcte": true, "justif": "Le guide précise oral EDC1 mardi, EDC2 mercredi, EDC3 jeudi le matin, et les cas écrits (~3h) l'après-midi." },
+        { "texte": "Uniquement des oraux, sans aucune épreuve écrite", "correcte": false, "justif": "Les après-midis sont consacrés à des études de cas écrites d'environ 3 heures." },
+        { "texte": "Tout en distanciel, depuis chez soi", "correcte": false, "justif": "Les épreuves sont en présentiel au campus de la Défense, sur ordinateur." }
+      ]
+    },
+    {
+      "enonce": "Quels EDC sont prioritaires à l'entraînement parce qu'ils reposent sur des calculs ?",
+      "ancre": "m1-s5",
+      "options": [
+        { "texte": "Les EDC 1, 2 et 5 (stratégie financière, trésorerie, gestion des risques)", "correcte": true, "justif": "Le guide cible EDC2 et EDC5 comme cas à calculs, avec EDC1, et présente 3/4/6/7 comme des réponses-modèles à adapter." },
+        { "texte": "Les EDC 3, 4, 6 et 7, plus techniques en calcul", "correcte": false, "justif": "Ces EDC reposent surtout sur des réponses-modèles à adapter, pas sur des calculs lourds." },
+        { "texte": "Aucun, puisqu'en open-book on n'a pas à s'entraîner aux calculs", "correcte": false, "justif": "Au contraire, refaire les cas à calculs en conditions réelles fait partie de la préparation recommandée." }
+      ]
+    },
+    {
+      "enonce": "Quelle est la bonne façon de travailler les cas d'entraînement avant l'examen ?",
+      "ancre": "m1-s6",
+      "options": [
+        { "texte": "Chercher d'abord par soi-même, PUIS se corriger avec le corrigé fourni", "correcte": true, "justif": "Chaque EDC a un énoncé et un corrigé ; la consigne est de chercher avant de corriger pour s'entraîner réellement." },
+        { "texte": "Lire le corrigé d'abord pour gagner du temps", "correcte": false, "justif": "Regarder le corrigé avant d'avoir cherché supprime tout le bénéfice de l'entraînement en conditions." },
+        { "texte": "Mémoriser les corrigés mot pour mot", "correcte": false, "justif": "L'open-book ne récompense pas le par-cœur : on s'entraîne à produire et à interpréter, pas à réciter." }
+      ]
+    },
+    {
+      "enonce": "Que faut-il avoir préparé sur son ordinateur AVANT le 20/07 ?",
+      "ancre": "m1-s6",
+      "options": [
+        { "texte": "Le guide et les fiches organisés, un Word « modèle de livrable » vierge, les cours classés par bloc, et 1 cas refait par EDC à calculs", "correcte": true, "justif": "Ce sont les 4 chantiers de préparation listés, qui permettent d'ouvrir des templates plutôt que de partir de zéro." },
+        { "texte": "Rien : tout se télécharge le jour J sur la plateforme", "correcte": false, "justif": "La préparation en amont (templates, cours classés, cas refaits) est explicitement recommandée pour gagner du temps." },
+        { "texte": "Seulement le téléphone pour accéder à ses notes", "correcte": false, "justif": "Le téléphone est interdit en épreuve ; la préparation se fait sur l'ordinateur autorisé." }
+      ]
+    },
+    {
+      "enonce": "Où et sous quelle nomenclature dépose-t-on le livrable du dossier C4/C5 ?",
+      "ancre": "m1-s5",
+      "options": [
+        { "texte": "Dans le coffre-fort (plateforme certification/procertif), nommé NOM_PRENOM_EFE37_DOSSIER", "correcte": true, "justif": "Le sujet impose le dépôt sur la plateforme de certification avec la nomenclature NOM_PRENOM_EFE37_DOSSIER, en PDF." },
+        { "texte": "Par e-mail au correcteur, sans nomenclature particulière", "correcte": false, "justif": "Le dépôt se fait sur la plateforme dédiée (coffre-fort), avec une nomenclature précise imposée." },
+        { "texte": "Sur un réseau social de l'école", "correcte": false, "justif": "Les réseaux sociaux sont exclus de la connexion ; le dépôt se fait dans le coffre-fort de la plateforme." }
+      ]
+    },
+    {
+      "enonce": "Quelle attitude adopter face à une analyse produite par l'IA ?",
+      "ancre": "m1-s3",
+      "options": [
+        { "texte": "S'en servir pour les rappels et la mise en forme, mais vérifier et garder un raisonnement et une reco personnels", "correcte": true, "justif": "L'IA fait gagner du temps sur les rappels/mise en forme ; le raisonnement et la reco doivent rester les tiens, vérifiés." },
+        { "texte": "La copier telle quelle car elle est déjà bien rédigée", "correcte": false, "justif": "Copier une analyse IA brute est interdit et dessert la note : l'évaluateur cherche ton expertise." },
+        { "texte": "L'utiliser sans rien déclarer pour ne pas alourdir le livrable", "correcte": false, "justif": "Ne pas déclarer l'usage de l'IA expose aux sanctions ; les 3 justificatifs sont obligatoires." }
+      ]
+    },
+    {
+      "enonce": "Pourquoi le format des livrables (PDF/Excel) et leur dépôt au coffre-fort comptent-ils ?",
+      "ancre": "m1-s4",
+      "options": [
+        { "texte": "Le rendu doit être exporté en PDF (ou Excel si le sujet l'exige) et déposé dans le coffre-fort selon la bonne nomenclature pour être pris en compte", "correcte": true, "justif": "Le sujet impose le format PDF/Excel, le dépôt sur la plateforme et une nomenclature précise ; c'est une étape finale obligatoire de la méthode." },
+        { "texte": "Le format est libre et le dépôt facultatif", "correcte": false, "justif": "Le format de rendu et le dépôt nominatif sont imposés ; un livrable mal nommé ou non déposé n'est pas valablement rendu." },
+        { "texte": "On rend uniquement le fichier Word source, sans export", "correcte": false, "justif": "Le rendu attendu est en PDF (ou Excel selon le sujet), exporté depuis Word, pas le .docx source." }
+      ]
+    }
+  ]
+}

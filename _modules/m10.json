@@ -1,0 +1,334 @@
+{
+  "id": "m10",
+  "num": 10,
+  "nom": "Normes IFRS",
+  "essentiel": {
+    "a_retenir": [
+      "L'IASB (organisme privé basé à Londres) édicte les IFRS. Depuis 2005, toutes les sociétés COTÉES de l'UE publient leurs comptes CONSOLIDÉS en IFRS.",
+      "Les IFRS sont des normes par PRINCIPES (vs US GAAP par règles) : approche bilancielle, primauté de la substance sur la forme, juste valeur, vision de l'investisseur, prudence.",
+      "Qualités de l'information financière : pertinence et fidélité (essentielles) ; comparabilité, vérifiabilité, rapidité, compréhensibilité (auxiliaires).",
+      "IAS 1 impose 5 états financiers, dont le bilan (« situation financière ») avec distinction courant / non-courant obligatoire, et le résultat global (résultat net + OCI).",
+      "L'OCI (Other Comprehensive Income) regroupe les produits/charges comptabilisés DIRECTEMENT en capitaux propres, hors du résultat net.",
+      "IAS 7 classe les flux de trésorerie en 3 catégories : opérationnels, investissement, financement ; la variation de trésorerie est leur somme.",
+      "IFRS 13 définit la juste valeur comme un prix de marché et impose une hiérarchie à 3 niveaux (N1 prix cotés, N2 données observables, N3 modèle).",
+      "IFRS 3 (méthode de l'acquisition) : le goodwill = contrepartie transférée − actif net identifiable évalué à la JUSTE VALEUR (et non à la valeur comptable).",
+      "IFRS 9 classe les instruments financiers en 3 catégories selon le test SPPI et le business model : coût amorti, juste valeur par résultat, juste valeur par OCI.",
+      "Les actions échouent au test SPPI : elles sont par défaut à la juste valeur par résultat (option irrévocable possible en JV par OCI sans recyclage pour les titres de participation).",
+      "IFRS 9 déprécie selon le modèle des PERTES ATTENDUES en 3 phases (12 mois → durée de vie si le risque augmente → actif déprécié).",
+      "IFRS 16 met les contrats de location AU BILAN du preneur : un actif (droit d'usage) et une dette, mettant fin au hors-bilan de l'ancien crédit-bail.",
+      "Différence majeure IFRS vs PCG : priorité au bilan et à la juste valeur (IFRS) vs priorité au compte de résultat et au coût historique avec prudence (PCG)."
+    ],
+    "chiffres": [
+      "Goodwill = Contrepartie transférée − Actif net identifiable évalué à la juste valeur",
+      "Écart de 1ère consolidation = Écart d'acquisition (goodwill) + Écart d'évaluation (réévaluation des actifs)",
+      "Variation de trésorerie (IAS 7) = Flux opérationnels + Flux d'investissement + Flux de financement",
+      "Résultat global (IAS 1) = Résultat net + Autres éléments du résultat global (OCI)",
+      "Exemple cours IFRS 3 : actif net comptable 1 800 ; +430 (fonds de commerce) +100 (plus-value terrain) → actif net à JV = 2 330",
+      "Exemple cours IFRS 3 : Goodwill = 2 500 − 2 330 = 170 ; Écart d'évaluation = 2 330 − 1 800 = 530 ; Écart de 1ère conso = 700"
+    ],
+    "pieges": [
+      "Confondre résultat net et résultat global : l'OCI passe par les capitaux propres, jamais par le résultat net.",
+      "Calculer le goodwill sur la valeur COMPTABLE de l'actif net : c'est la contrepartie moins l'actif net à la JUSTE VALEUR.",
+      "Oublier qu'en IFRS le crédit-bail / la location est AU BILAN (IFRS 16), contrairement à l'ancienne vision juridique hors-bilan.",
+      "Croire que les actions vont au coût amorti : elles échouent au test SPPI et vont en juste valeur (par résultat par défaut).",
+      "Parler d'« éléments extraordinaires » : ils n'existent pas en IFRS."
+    ]
+  },
+  "sections": [
+    {
+      "id": "m10-s1",
+      "titre": "Cadre conceptuel et logique IFRS",
+      "points": [
+        "Les IFRS sont édictées par l'IASB, un organisme privé basé à Londres. Depuis 2005, toute société COTÉE de l'Union européenne doit publier ses comptes CONSOLIDÉS selon ce référentiel. Cela harmonise l'information financière des grands groupes pour les investisseurs internationaux.",
+        "La grande opposition à comprendre est celle des normes par PRINCIPES (IFRS) face aux normes par règles (US GAAP). En IFRS, on raisonne à partir de quelques principes structurants plutôt qu'à partir d'un catalogue de règles détaillées. Les principes clés sont : l'approche BILANCIELLE (le bilan prime sur le compte de résultat), la primauté de la SUBSTANCE économique sur la forme juridique, le recours à la JUSTE VALEUR, la vision de l'INVESTISSEUR (à qui l'information est destinée) et la prudence.",
+        "L'information financière doit posséder des qualités. Deux sont essentielles : la pertinence (l'info aide à la décision) et la fidélité (elle représente fidèlement la réalité économique). Quatre sont auxiliaires et viennent renforcer les deux premières : la comparabilité, la vérifiabilité, la rapidité (disponibilité en temps utile) et la compréhensibilité."
+      ],
+      "chiffres": [
+        "Depuis 2005 : comptes consolidés des sociétés cotées de l'UE en IFRS"
+      ],
+      "pieges": [
+        "Ne pas confondre IFRS (par principes, approche bilancielle, juste valeur) et US GAAP (par règles)."
+      ]
+    },
+    {
+      "id": "m10-s2",
+      "titre": "IAS 1 (états financiers) et IAS 7 (flux de trésorerie)",
+      "points": [
+        "IAS 1 impose la présentation de 5 états financiers : (1) la situation financière, c'est-à-dire le BILAN, avec une distinction courant / non-courant obligatoire ; (2) le résultat net augmenté des autres éléments du résultat global (OCI), formant le résultat global ; (3) la variation des capitaux propres ; (4) le tableau des flux de trésorerie, régi par IAS 7 ; (5) les notes annexes.",
+        "L'OCI (Other Comprehensive Income), ou autres éléments du résultat global, regroupe des produits et charges comptabilisés DIRECTEMENT en capitaux propres sans passer par le résultat net. On y trouve typiquement les variations de juste valeur d'actifs disponibles à la vente, les écarts actuariels sur les engagements de retraite, les couvertures de flux de trésorerie et les écarts de conversion. On distingue toujours la part du groupe de celle des intérêts minoritaires.",
+        "Deux points complémentaires : il n'y a PAS d'« éléments extraordinaires » en IFRS, et la norme IAS 33 impose la publication du résultat par action, de base et dilué.",
+        "IAS 7 organise le tableau des flux de trésorerie en 3 catégories : les flux OPÉRATIONNELS (liés à l'activité courante), les flux d'INVESTISSEMENT (acquisition et cession d'actifs à long terme) et les flux de FINANCEMENT (capital, emprunts, dividendes). Deux méthodes de présentation existent : la méthode directe (encaissements et décaissements bruts) et la méthode INDIRECTE (le résultat net est ajusté des éléments sans incidence de trésorerie : dotations aux amortissements et provisions, variation du BFR, etc.). La variation de trésorerie de la période est la somme des trois catégories de flux."
+      ],
+      "chiffres": [
+        "Variation de trésorerie = Flux opérationnels + Flux d'investissement + Flux de financement",
+        "Résultat global = Résultat net + OCI"
+      ],
+      "pieges": [
+        "L'OCI passe par les capitaux propres, pas par le résultat net : ne pas additionner OCI et résultat net dans le bénéfice distribuable."
+      ]
+    },
+    {
+      "id": "m10-s3",
+      "titre": "IFRS 13 — Évaluation à la juste valeur",
+      "points": [
+        "IFRS 13 définit la juste valeur comme le prix qui serait reçu pour vendre un actif (ou payé pour transférer un passif) lors d'une transaction normale entre intervenants de marché à la date d'évaluation. C'est une valeur de SORTIE, orientée marché, et non un coût d'entrée.",
+        "Trois approches permettent de l'estimer : l'approche par le MARCHÉ (utiliser des prix cotés observés), l'approche par le RÉSULTAT (actualiser les flux futurs attendus) et l'approche par les COÛTS (coût de remplacement de l'actif).",
+        "IFRS 13 impose surtout une HIÉRARCHIE à 3 niveaux qui hiérarchise la fiabilité des données utilisées. Niveau 1 : prix cotés d'actifs ou passifs IDENTIQUES sur un marché actif (la donnée la plus fiable). Niveau 2 : données OBSERVABLES pour des éléments similaires (prix d'actifs comparables, courbes de taux). Niveau 3 : données NON observables, reposant sur un modèle interne intégrant un risque estimé (la donnée la moins fiable, à privilégier en dernier).",
+        "À distinguer de la juste valeur : la valeur d'utilité est la valeur actuelle des flux générés par l'UTILISATION d'un actif ; la valeur de remboursement est la valeur actuelle des flux nécessaires pour éteindre un passif."
+      ],
+      "chiffres": [
+        "Hiérarchie IFRS 13 : N1 prix cotés identiques > N2 données observables similaires > N3 modèle (risque estimé)"
+      ],
+      "pieges": [
+        "Ne pas inverser la hiérarchie : le niveau 1 (prix cotés) est le plus fiable, le niveau 3 (modèle) le moins fiable."
+      ]
+    },
+    {
+      "id": "m10-s4",
+      "titre": "IFRS 3 — Regroupements d'entreprises et goodwill",
+      "points": [
+        "IFRS 3 régit les regroupements d'entreprises selon la méthode de l'ACQUISITION. Les étapes sont : identifier l'acquéreur, déterminer la date d'acquisition, évaluer les actifs et passifs identifiables acquis à leur JUSTE VALEUR, puis comptabiliser le goodwill (écart d'acquisition).",
+        "Le goodwill est le cœur de la norme : GOODWILL = Contrepartie transférée − Actif net identifiable évalué à la juste valeur. Le piège classique consiste à soustraire l'actif net en valeur COMPTABLE : il faut d'abord réévaluer les actifs et passifs à la juste valeur avant de calculer l'écart.",
+        "On décompose l'écart de première consolidation en deux blocs : Écart de 1ère consolidation = Écart d'acquisition (goodwill) + Écart d'évaluation (les plus ou moins-values dégagées en réévaluant les actifs à la juste valeur).",
+        "Exemple du cours : la société M achète 100 % de la filiale F pour 2 500. L'actif net comptable de F est de 1 800. On identifie un fonds de commerce de +430 et une plus-value latente sur un terrain de +100, ce qui porte l'actif net à la juste valeur à 2 330. Le goodwill vaut donc 2 500 − 2 330 = 170. L'écart d'évaluation vaut 2 330 − 1 800 = 530, et l'écart de première consolidation total 170 + 530 = 700."
+      ],
+      "chiffres": [
+        "Goodwill = Contrepartie transférée − Actif net identifiable à la juste valeur",
+        "Écart de 1ère consolidation = Goodwill + Écart d'évaluation",
+        "Exemple : Goodwill = 2 500 − 2 330 = 170 ; Écart d'évaluation = 2 330 − 1 800 = 530 ; Écart de 1ère conso = 700"
+      ],
+      "pieges": [
+        "Calculer le goodwill avec l'actif net comptable (1 800 dans l'exemple) au lieu de l'actif net à la juste valeur (2 330)."
+      ]
+    },
+    {
+      "id": "m10-s5",
+      "titre": "IFRS 9 — Instruments financiers (SPPI, business model, dépréciation)",
+      "points": [
+        "IFRS 9 classe les instruments financiers en 3 catégories d'évaluation : le COÛT AMORTI, la JUSTE VALEUR PAR RÉSULTAT, et la JUSTE VALEUR PAR OCI (recyclable pour les instruments de dette). Le classement résulte du croisement de deux critères.",
+        "Le premier critère est le test SPPI : les flux contractuels de l'instrument correspondent-ils uniquement à du remboursement de PRINCIPAL et au paiement d'INTÉRÊTS (Solely Payments of Principal and Interest) ? Le second critère est le BUSINESS MODEL de détention : HTC (held to collect, conserver pour encaisser les flux) oriente vers le coût amorti ; HTCS (held to collect and sell, encaisser et vendre) oriente vers la juste valeur par OCI ; les autres modèles, notamment le trading, vont en juste valeur par résultat.",
+        "Cas des actions : elles ÉCHOUENT au test SPPI (un dividende n'est ni principal ni intérêt), elles sont donc par défaut classées en juste valeur par RÉSULTAT. Une OPTION irrévocable existe pour les titres de participation non consolidés : les comptabiliser en juste valeur par OCI SANS recyclage, auquel cas seuls les dividendes transitent par le résultat.",
+        "Le coût amorti se calcule via le TAUX D'INTÉRÊT EFFECTIF, c'est-à-dire le taux qui égalise la valeur actuelle des flux futurs au montant net initialement reçu. La dépréciation suit le modèle des PERTES ATTENDUES en 3 phases : on provisionne d'abord les pertes attendues à 12 mois, puis les pertes attendues sur toute la durée de vie si le risque de crédit augmente significativement, et enfin on déprécie l'actif lorsqu'il est avéré. Enfin, IFRS 9 traite la comptabilité de COUVERTURE (hedge) : couverture de juste valeur, couverture de flux de trésorerie, couverture d'un investissement net à l'étranger, en associant un instrument couvrant à un élément couvert."
+      ],
+      "chiffres": [
+        "3 catégories IFRS 9 : Coût amorti · Juste valeur par résultat · Juste valeur par OCI",
+        "2 critères de classement : test SPPI (principal + intérêts ?) ET business model (HTC / HTCS / autres)",
+        "Coût amorti : valorisation via le Taux d'Intérêt Effectif (égalise flux futurs et montant net reçu)",
+        "Dépréciation : pertes attendues en 3 phases (12 mois → durée de vie → actif déprécié)"
+      ],
+      "pieges": [
+        "Croire que les actions vont au coût amorti : elles échouent au test SPPI et vont en juste valeur par résultat par défaut.",
+        "Oublier que l'option JV par OCI sur titres de participation est SANS recyclage (seuls les dividendes en résultat)."
+      ]
+    },
+    {
+      "id": "m10-s6",
+      "titre": "IFRS 16, autres normes et différences IFRS vs PCG",
+      "points": [
+        "IFRS 16, applicable depuis 2019, a transformé le traitement des contrats de location. Désormais le PRENEUR inscrit à son BILAN un actif (le droit d'usage du bien loué) ET une dette de location, mettant fin au hors-bilan de l'ancien crédit-bail. C'est une application directe du principe de primauté de la substance sur la forme : l'entreprise contrôle un actif et doit une dette, peu importe la qualification juridique du contrat.",
+        "Plusieurs autres normes sont à connaître en survol. IAS 2 : les stocks sont évalués au plus bas du coût et de la valeur nette de réalisation. IAS 16 : immobilisations corporelles, au coût ou par réévaluation, avec amortissement. IAS 36 : dépréciation d'actifs via un test de valeur recouvrable. IAS 37 : provisions, passifs et actifs éventuels. IAS 38 : immobilisations incorporelles, avec la règle clé que les frais de recherche sont en charge mais les frais de développement sont activables sous conditions. IFRS 10 : états financiers consolidés fondés sur la notion de CONTRÔLE. IFRS 15 : produits des contrats clients, reconnus selon 5 étapes (identifier le contrat, les obligations de performance, déterminer le prix, l'allouer, puis reconnaître le produit).",
+        "Les différences avec le PCG français sont structurantes. Le PCG privilégie le compte de résultat, le coût historique et la prudence, dans une logique souvent fiscale et juridique. Les IFRS privilégient le bilan, la juste valeur, la substance économique et la vision de l'investisseur. Concrètement : le crédit-bail est hors-bilan en PCG mais au bilan en IFRS ; les frais de R&D et les écarts d'évaluation sont traités différemment ; et l'OCI, qui loge les variations de juste valeur en capitaux propres, n'a pas d'équivalent direct en PCG."
+      ],
+      "chiffres": [
+        "IFRS 16 (depuis 2019) : preneur inscrit au bilan un actif (droit d'usage) ET une dette",
+        "IFRS 15 : reconnaissance du revenu en 5 étapes (contrat → obligations → prix → allocation → reconnaissance)"
+      ],
+      "pieges": [
+        "Oublier qu'en IFRS la location est au bilan (IFRS 16) alors qu'elle pouvait être hors-bilan en PCG.",
+        "Confondre frais de recherche (en charge) et frais de développement (activables sous conditions) en IAS 38."
+      ]
+    }
+  ],
+  "visuals": [
+    {
+      "type": "pyramid",
+      "titre": "Hiérarchie de la juste valeur (IFRS 13)",
+      "intro": "Du plus fiable (sommet) au moins fiable (base) : on privilégie toujours le niveau le plus haut disponible.",
+      "ancre": "m10-s3",
+      "levels": [
+        { "t": "Niveau 1 — le plus fiable", "d": "Prix cotés d'actifs ou passifs IDENTIQUES sur un marché actif." },
+        { "t": "Niveau 2 — observable", "d": "Données observables pour des éléments SIMILAIRES (prix comparables, courbes de taux)." },
+        { "t": "Niveau 3 — le moins fiable", "d": "Données non observables : modèle interne avec risque estimé, à utiliser en dernier recours." }
+      ]
+    },
+    {
+      "type": "compare",
+      "titre": "Classement IFRS 9 selon SPPI et business model",
+      "intro": "Le croisement du test SPPI et du business model détermine la catégorie d'évaluation de l'instrument.",
+      "ancre": "m10-s5",
+      "headers": ["Business model / instrument", "Test SPPI réussi (dette)", "Test SPPI échoué (actions)"],
+      "rows": [
+        { "cells": ["HTC — encaisser les flux", "Coût amorti (taux d'intérêt effectif)", "Juste valeur par résultat (défaut)"] },
+        { "cells": ["HTCS — encaisser et vendre", "Juste valeur par OCI (recyclable)", "Option JV par OCI sans recyclage (titres de participation)"] },
+        { "cells": ["Autres / trading", "Juste valeur par résultat", "Juste valeur par résultat"] }
+      ]
+    },
+    {
+      "type": "flow",
+      "titre": "Calcul du goodwill (IFRS 3) — exemple du cours",
+      "intro": "M achète 100 % de F pour 2 500. On réévalue d'abord l'actif net à la juste valeur, puis on en déduit le goodwill.",
+      "ancre": "m10-s4",
+      "steps": [
+        { "t": "Actif net comptable", "d": "Point de départ : 1 800." },
+        { "t": "Réévaluation à la juste valeur", "d": "+430 fonds de commerce +100 plus-value terrain → actif net à JV = 2 330 (écart d'évaluation = 530)." },
+        { "t": "Goodwill", "d": "Contrepartie 2 500 − actif net à JV 2 330 = 170." },
+        { "t": "Écart de 1ère consolidation", "d": "Goodwill 170 + écart d'évaluation 530 = 700." }
+      ]
+    }
+  ],
+  "qcm": [
+    {
+      "enonce": "Une entreprise est cotée à Paris. Selon quel référentiel doit-elle publier ses comptes CONSOLIDÉS depuis 2005 ?",
+      "ancre": "m10-s1",
+      "options": [
+        { "texte": "Les normes IFRS édictées par l'IASB.", "correcte": true, "justif": "Depuis 2005, les sociétés cotées de l'UE publient leurs comptes consolidés en IFRS, normes édictées par l'IASB (Londres)." },
+        { "texte": "Le PCG français exclusivement.", "correcte": false, "justif": "Le PCG s'applique aux comptes sociaux, mais les comptes consolidés des cotées de l'UE sont en IFRS depuis 2005." },
+        { "texte": "Les US GAAP, par convergence internationale.", "correcte": false, "justif": "Les US GAAP sont le référentiel américain par règles ; l'UE impose les IFRS, pas les US GAAP." }
+      ]
+    },
+    {
+      "enonce": "On dit que les IFRS reposent sur une « approche bilancielle ». Qu'est-ce que cela traduit ?",
+      "ancre": "m10-s1",
+      "options": [
+        { "texte": "Le bilan prime sur le compte de résultat dans la logique de comptabilisation.", "correcte": true, "justif": "L'approche bilancielle donne priorité au bilan (et à la juste valeur des actifs/passifs) sur le compte de résultat, à la différence du PCG." },
+        { "texte": "Seul le bilan est publié, le compte de résultat est facultatif.", "correcte": false, "justif": "IAS 1 impose 5 états, dont le résultat global : le compte de résultat n'est pas supprimé, il est juste second dans la logique." },
+        { "texte": "Le bilan doit toujours être présenté avant le compte de résultat dans le rapport.", "correcte": false, "justif": "Il s'agit d'une priorité de raisonnement comptable, pas d'une règle de mise en page des états." }
+      ]
+    },
+    {
+      "enonce": "Parmi les qualités de l'information financière en IFRS, lesquelles sont qualifiées d'ESSENTIELLES ?",
+      "ancre": "m10-s1",
+      "options": [
+        { "texte": "La pertinence et la fidélité.", "correcte": true, "justif": "Pertinence et fidélité sont les deux qualités essentielles ; comparabilité, vérifiabilité, rapidité et compréhensibilité sont auxiliaires." },
+        { "texte": "La comparabilité et la vérifiabilité.", "correcte": false, "justif": "Ce sont des qualités auxiliaires qui renforcent les essentielles, pas les essentielles elles-mêmes." },
+        { "texte": "La rapidité et la compréhensibilité.", "correcte": false, "justif": "Ce sont aussi des qualités auxiliaires, pas les deux qualités essentielles." }
+      ]
+    },
+    {
+      "enonce": "Une variation de juste valeur d'un actif disponible à la vente est comptabilisée en OCI. Quelle conséquence en termes d'états financiers ?",
+      "ancre": "m10-s2",
+      "options": [
+        { "texte": "Elle affecte les capitaux propres sans passer par le résultat net.", "correcte": true, "justif": "L'OCI regroupe des produits/charges comptabilisés directement en capitaux propres, hors résultat net." },
+        { "texte": "Elle augmente directement le résultat net de la période.", "correcte": false, "justif": "Justement non : si elle était en résultat net, ce ne serait pas de l'OCI. L'OCI contourne le résultat net." },
+        { "texte": "Elle est inscrite en élément extraordinaire du compte de résultat.", "correcte": false, "justif": "Les éléments extraordinaires n'existent pas en IFRS, et l'OCI ne transite pas par le compte de résultat net." }
+      ]
+    },
+    {
+      "enonce": "Dans un tableau des flux de trésorerie IAS 7 par méthode INDIRECTE, comment démarre la section des flux opérationnels ?",
+      "ancre": "m10-s2",
+      "options": [
+        { "texte": "Du résultat net, ajusté des éléments sans flux (DAP) et de la variation du BFR.", "correcte": true, "justif": "La méthode indirecte part du résultat net et le retraite des charges/produits sans incidence de trésorerie et des variations de BFR." },
+        { "texte": "De la somme des encaissements et décaissements bruts clients/fournisseurs.", "correcte": false, "justif": "Cela décrit la méthode DIRECTE, qui liste les flux bruts, pas la méthode indirecte." },
+        { "texte": "Du chiffre d'affaires encaissé diminué des seuls investissements.", "correcte": false, "justif": "Les investissements relèvent d'une autre catégorie de flux (investissement), pas du calcul du flux opérationnel indirect." }
+      ]
+    },
+    {
+      "enonce": "Une banque doit évaluer à la juste valeur un actif pour lequel il existe un prix coté sur un marché actif pour un actif strictement identique. Quel niveau de la hiérarchie IFRS 13 utilise-t-elle ?",
+      "ancre": "m10-s3",
+      "options": [
+        { "texte": "Le niveau 1, le plus fiable.", "correcte": true, "justif": "Le niveau 1 correspond aux prix cotés d'actifs identiques sur un marché actif : la donnée la plus fiable, à privilégier." },
+        { "texte": "Le niveau 3, car toute juste valeur repose sur un modèle.", "correcte": false, "justif": "Le niveau 3 (modèle, risque estimé) est le moins fiable et n'est utilisé qu'en l'absence de données observables." },
+        { "texte": "Le niveau 2, car un prix de marché est toujours une donnée similaire.", "correcte": false, "justif": "Le niveau 2 concerne des données observables pour des éléments SIMILAIRES ; ici l'actif est identique, donc niveau 1." }
+      ]
+    },
+    {
+      "enonce": "Pourquoi le niveau 3 de la hiérarchie IFRS 13 est-il considéré comme le moins fiable ?",
+      "ancre": "m10-s3",
+      "options": [
+        { "texte": "Parce qu'il repose sur des données non observables et un modèle interne intégrant un risque estimé.", "correcte": true, "justif": "Le niveau 3 utilise des données non observables et un modèle de valorisation : plus subjectif, donc moins fiable que des prix de marché." },
+        { "texte": "Parce qu'il n'est autorisé que pour les passifs, jamais pour les actifs.", "correcte": false, "justif": "Le niveau 3 s'applique aux actifs comme aux passifs ; ce n'est pas une question de nature de l'élément." },
+        { "texte": "Parce qu'il utilise uniquement des prix cotés anciens.", "correcte": false, "justif": "Les prix cotés relèvent du niveau 1 ; le niveau 3 n'utilise précisément pas de prix observables." }
+      ]
+    },
+    {
+      "enonce": "M acquiert 100 % de F pour 2 500. L'actif net comptable de F est de 1 800. On identifie +430 de fonds de commerce et +100 de plus-value sur un terrain. Quel est le GOODWILL ?",
+      "ancre": "m10-s4",
+      "options": [
+        { "texte": "170 (soit 2 500 − 2 330).", "correcte": true, "justif": "Actif net à JV = 1 800 + 430 + 100 = 2 330 ; goodwill = contrepartie 2 500 − 2 330 = 170." },
+        { "texte": "700 (soit 2 500 − 1 800).", "correcte": false, "justif": "700 est l'écart de 1ère consolidation total ; le goodwill se calcule sur l'actif net à JV (2 330), pas comptable (1 800)." },
+        { "texte": "530 (la somme des réévaluations).", "correcte": false, "justif": "530 est l'écart d'évaluation (430 + 100), pas le goodwill. Le goodwill est la fraction non expliquée par la réévaluation." }
+      ]
+    },
+    {
+      "enonce": "Dans le même dossier, quel est l'ÉCART D'ÉVALUATION et comment se décompose l'écart de 1ère consolidation ?",
+      "ancre": "m10-s4",
+      "options": [
+        { "texte": "Écart d'évaluation = 530 ; écart de 1ère conso = goodwill 170 + écart d'évaluation 530 = 700.", "correcte": true, "justif": "L'écart d'évaluation est la réévaluation des actifs (430+100=530) ; l'écart de 1ère conso = goodwill + écart d'évaluation = 170+530=700." },
+        { "texte": "Écart d'évaluation = 170 ; écart de 1ère conso = 530.", "correcte": false, "justif": "Les deux montants sont inversés : 170 est le goodwill et 530 l'écart d'évaluation, pas l'inverse." },
+        { "texte": "Écart d'évaluation = 700 ; il n'y a pas de goodwill séparé.", "correcte": false, "justif": "700 est l'écart total ; il se décompose bien en goodwill (170) ET écart d'évaluation (530)." }
+      ]
+    },
+    {
+      "enonce": "Quelle est l'erreur la plus fréquente dans le calcul d'un goodwill selon IFRS 3 ?",
+      "ancre": "m10-s4",
+      "options": [
+        { "texte": "Soustraire l'actif net en valeur COMPTABLE au lieu de sa juste valeur.", "correcte": true, "justif": "Le goodwill = contrepartie − actif net à la JUSTE VALEUR ; utiliser la valeur comptable fausse le calcul (530 d'écart dans l'exemple)." },
+        { "texte": "Inclure le chiffre d'affaires de la cible dans la contrepartie.", "correcte": false, "justif": "Le CA n'entre pas dans la formule du goodwill, qui ne compare que contrepartie et actif net identifiable à JV." },
+        { "texte": "Oublier d'actualiser le goodwill sur la durée de vie.", "correcte": false, "justif": "Le goodwill n'est pas un flux à actualiser ; c'est un écart de première consolidation calculé à la date d'acquisition." }
+      ]
+    },
+    {
+      "enonce": "Une entreprise détient une obligation dans le seul but d'encaisser les flux contractuels (intérêts + remboursement), et le test SPPI est réussi. Comment l'évalue-t-elle selon IFRS 9 ?",
+      "ancre": "m10-s5",
+      "options": [
+        { "texte": "Au coût amorti, via le taux d'intérêt effectif.", "correcte": true, "justif": "Business model HTC (encaisser) + test SPPI réussi → coût amorti, calculé avec le taux d'intérêt effectif." },
+        { "texte": "À la juste valeur par résultat obligatoirement.", "correcte": false, "justif": "La JV par résultat vise les modèles de trading ou les instruments échouant au SPPI ; ici les deux critères mènent au coût amorti." },
+        { "texte": "À la juste valeur par OCI, car toute dette y est classée.", "correcte": false, "justif": "La JV par OCI correspond au modèle HTCS (encaisser ET vendre) ; ici le modèle est purement HTC." }
+      ]
+    },
+    {
+      "enonce": "Pourquoi une action ordinaire ne peut-elle pas être classée au coût amorti selon IFRS 9 ?",
+      "ancre": "m10-s5",
+      "options": [
+        { "texte": "Parce qu'elle échoue au test SPPI : ses flux ne sont ni du principal ni des intérêts.", "correcte": true, "justif": "Le coût amorti exige des flux uniquement de principal et d'intérêts ; une action (dividendes, plus-values) échoue au SPPI, donc JV par résultat par défaut." },
+        { "texte": "Parce que les actions sont toujours détenues pour être vendues (trading).", "correcte": false, "justif": "Le business model ne suffit pas : c'est d'abord l'échec au test SPPI qui exclut le coût amorti pour une action." },
+        { "texte": "Parce que le coût amorti est réservé aux passifs financiers.", "correcte": false, "justif": "Le coût amorti s'applique à des actifs de dette (obligations, prêts) ; l'obstacle pour une action est l'échec au SPPI." }
+      ]
+    },
+    {
+      "enonce": "Une société détient des titres de participation non consolidés et exerce l'option irrévocable IFRS 9 de les classer en juste valeur par OCI. Quel élément transite par le RÉSULTAT ?",
+      "ancre": "m10-s5",
+      "options": [
+        { "texte": "Seuls les dividendes ; les variations de juste valeur restent en OCI sans recyclage.", "correcte": true, "justif": "L'option JV par OCI pour titres de participation est SANS recyclage : seuls les dividendes passent en résultat, jamais les variations de JV." },
+        { "texte": "Les variations de juste valeur, qui sont recyclées au résultat à la cession.", "correcte": false, "justif": "Précisément non : cette option est SANS recyclage, les variations de JV ne reviennent jamais au résultat, même à la cession." },
+        { "texte": "Rien : tout reste figé en capitaux propres, y compris les dividendes.", "correcte": false, "justif": "Les dividendes, eux, sont bien comptabilisés en résultat ; seules les variations de JV restent en OCI." }
+      ]
+    },
+    {
+      "enonce": "Le modèle de dépréciation d'IFRS 9 repose sur les « pertes attendues » en 3 phases. Que se passe-t-il lorsque le risque de crédit d'un actif AUGMENTE significativement ?",
+      "ancre": "m10-s5",
+      "options": [
+        { "texte": "On provisionne désormais les pertes attendues sur toute la durée de vie de l'actif.", "correcte": true, "justif": "Phase 2 : si le risque de crédit augmente significativement, on passe des pertes à 12 mois aux pertes attendues sur la durée de vie." },
+        { "texte": "On reste à la provision de 12 mois jusqu'au défaut avéré.", "correcte": false, "justif": "La provision à 12 mois est la phase 1 ; une hausse du risque déclenche la phase 2 (durée de vie), avant même tout défaut avéré." },
+        { "texte": "On bascule immédiatement l'actif en juste valeur par résultat.", "correcte": false, "justif": "La hausse du risque change le niveau de provisionnement, pas la catégorie de classement de l'instrument." }
+      ]
+    },
+    {
+      "enonce": "Sous IFRS 16, comment un preneur (locataire) comptabilise-t-il un contrat de location significatif ?",
+      "ancre": "m10-s6",
+      "options": [
+        { "texte": "Il inscrit à son bilan un actif (droit d'usage) ET une dette de location.", "correcte": true, "justif": "IFRS 16 met la location au bilan du preneur : un droit d'usage à l'actif et une dette au passif, fin du hors-bilan du crédit-bail." },
+        { "texte": "Il comptabilise seulement une charge de loyer, sans rien au bilan.", "correcte": false, "justif": "C'était l'ancienne vision hors-bilan ; IFRS 16 impose justement la reconnaissance d'un actif et d'une dette au bilan." },
+        { "texte": "Il inscrit le bien en immobilisation et une provision pour risques.", "correcte": false, "justif": "Ce n'est pas une provision pour risques mais une dette de location ; et l'actif est un droit d'usage, pas la pleine propriété." }
+      ]
+    },
+    {
+      "enonce": "Selon IAS 38, comment traite-t-on les frais de recherche et les frais de développement ?",
+      "ancre": "m10-s6",
+      "options": [
+        { "texte": "Recherche en charge ; développement activable sous conditions.", "correcte": true, "justif": "IAS 38 distingue la recherche (toujours en charge) du développement (immobilisable si les conditions de faisabilité et de rentabilité sont remplies)." },
+        { "texte": "Recherche et développement toujours activés en immobilisation incorporelle.", "correcte": false, "justif": "Les frais de recherche ne sont jamais activables ; seuls les frais de développement le sont, et seulement sous conditions." },
+        { "texte": "Recherche et développement toujours passés en charge.", "correcte": false, "justif": "Le développement peut au contraire être activé lorsqu'il remplit les critères ; ce n'est pas systématiquement une charge." }
+      ]
+    },
+    {
+      "enonce": "Quelle affirmation illustre le mieux une différence structurante entre IFRS et PCG français ?",
+      "ancre": "m10-s6",
+      "options": [
+        { "texte": "Les IFRS privilégient le bilan et la juste valeur ; le PCG privilégie le compte de résultat, le coût historique et la prudence.", "correcte": true, "justif": "C'est l'opposition de fond : approche bilancielle et juste valeur (IFRS) contre approche résultat, coût historique et prudence (PCG)." },
+        { "texte": "Les IFRS interdisent tout amortissement, contrairement au PCG.", "correcte": false, "justif": "Faux : IAS 16 prévoit bien l'amortissement des immobilisations corporelles ; les IFRS n'interdisent pas l'amortissement." },
+        { "texte": "Le PCG impose l'OCI et les IFRS l'ignorent.", "correcte": false, "justif": "C'est l'inverse : l'OCI est une notion IFRS (variations de JV en capitaux propres) sans équivalent direct dans le PCG." }
+      ]
+    }
+  ]
+}

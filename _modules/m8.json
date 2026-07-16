@@ -1,0 +1,382 @@
+{
+  "id": "m8",
+  "num": 8,
+  "nom": "Gestion obligataire",
+  "essentiel": {
+    "a_retenir": [
+      "La courbe des taux (yield curve) donne le taux d'intérêt en fonction de la maturité ; tout actif vaut la valeur actuelle de ses flux futurs, chacun actualisé au taux zéro-coupon (ZC) de sa maturité.",
+      "Un taux zéro-coupon r_t est le taux actuariel d'un emprunt à deux flux : on paie 1 aujourd'hui, on reçoit (1+r_t)^t à la date t. Toute obligation se valorise comme un portefeuille de ZC.",
+      "La courbe ZC est un INPUT de marché (sert à pricer) ; le TRA est au contraire une CARACTÉRISTIQUE du titre (taux unique propre à l'obligation).",
+      "Le TRA est le taux unique r qui égalise la valeur actualisée des flux et le prix de marché : c'est le rendement d'un porteur qui détient jusqu'à l'échéance et réinvestit les coupons au TRA.",
+      "La duration de Macaulay D mesure la durée de vie moyenne pondérée des flux actualisés (en années) ; pour un ZC D = maturité, pour une obligation à coupon D < maturité.",
+      "La sensibilité S = D/(1+r) mesure la variation relative de prix pour une variation de taux : ΔP/P ≈ −S × Δr (S présentée en valeur positive, convention de la fiche).",
+      "La sensibilité suppose un déplacement PARALLÈLE de la courbe ; si la courbe se déforme (torsion, seuls certains taux bougent), il faut décomposer l'obligation en portefeuille de ZC et sommer les ΔP_i.",
+      "La relation prix-taux P(r) est convexe : la sensibilité (approximation linéaire) sous-estime systématiquement les hausses de prix et surestime les baisses ; l'erreur grandit avec |Δr| (effet convexité).",
+      "Le bootstrap déduit la structure ZC (r₁, r₂, … rₙ) par récursion à partir des prix d'obligations à coupon cotées : on résout r₁ d'abord, puis r₂ en réutilisant r₁, etc.",
+      "Une obligation convertible (OC) = obligation classique + call sur l'action de l'émetteur ; sa valeur = max(plancher actuariel ; valeur d'échange) + valeur temps de l'option.",
+      "Le plancher actuariel (valeur nue) est la valeur de l'obligation sans option ; la valeur d'échange = ratio × cours de l'action (croît linéairement avec l'action).",
+      "Trois primes/prix à ne pas confondre : ratio de conversion (nb d'actions par OC), prix de conversion (nominal/ratio = strike du call), prime de conversion (prix de conversion − cours action, en €).",
+      "La prime d'option de l'OC se calcule par Black-Scholes en ajustant le cours du sous-jacent de la valeur actuelle des dividendes (modèle de Merton) : S* = S − VA(dividendes), car le porteur ne touche pas les dividendes.",
+      "Profil asymétrique de l'OC : pour le porteur, exposition à la hausse de l'action (call) + protection à la baisse (plancher obligataire) ; pour l'émetteur, coupon plus faible (le porteur paie l'option)."
+    ],
+    "chiffres": [
+      "Prix par taux ZC : P = Σ CF_t / (1 + r_t)^t (r_t = taux ZC propre à chaque maturité)",
+      "TRA : P = Σ CF_t / (1 + r)^t → résoudre r (itératif, Excel : TRI / TAUX, pas de formule fermée)",
+      "Duration de Macaulay : D = Σ [ t · CF_t / (1+r)^t ] / P (r = TRA, en années)",
+      "Sensibilité : S = D / (1 + r), avec ΔP/P ≈ − S × Δr",
+      "Sensibilité d'un ZC de maturité t : S_i = t / (1 + r_i), et ΔP_i ≈ − S_i × P_i × Δr_i",
+      "Prix de conversion = Nominal / Ratio (= strike du call)",
+      "Prime de conversion = Prix de conversion − Cours de l'action (en €)",
+      "Prime brute (OC) = (Cours OC − Cours action) / Cours action (en %) ; d'où Cours action = Cours OC / (1 + prime brute)",
+      "Black-Scholes (call européen) : C = S · N(d₁) − E · e^(−rt) · N(d₂)",
+      "d₂ = [ ln(S / (E·e^(−rt))) − ½ σ²t ] / (σ√t) ; d₁ = d₂ + σ√t",
+      "Ajustement dividendes (Merton) : S* = S − VA(div) = S − Σ D_i/(1+r)^i (alternative continue : S × e^(−qt))"
+    ],
+    "pieges": [
+      "Confondre TRA (caractéristique du titre, taux unique) et taux ZC (input de marché, courbe entière).",
+      "Utiliser la sensibilité globale pour estimer une déformation (torsion) de courbe : il faut décomposer en ZC et sommer les ΔP_i.",
+      "Calculer la duration avec les taux ZC au lieu du TRA : la duration est définie AU TRA.",
+      "Oublier la convexité : la sensibilité sous-estime les hausses et surestime les baisses ; l'erreur croît avec |Δr|.",
+      "Pour une OC, appliquer Black-Scholes sans ajuster le cours S de la valeur actuelle des dividendes.",
+      "Confondre prime brute (en %, vs cours action) et prime de conversion (en €, vs prix de conversion).",
+      "Confondre nominal et prix d'exercice : E = nominal / ratio, pas le nominal directement (sauf si ratio = 1)."
+    ]
+  },
+  "sections": [
+    {
+      "id": "m8-s1",
+      "titre": "Courbe des taux et taux zéro-coupon",
+      "points": [
+        "La courbe des taux (yield curve) représente le taux d'intérêt en fonction de la maturité. Elle est l'outil universel de valorisation : un actif financier vaut la valeur actuelle de ses flux futurs, chacun actualisé au taux zéro-coupon correspondant à sa propre maturité. Quatre formes types : plate (taux courts = taux longs), ascendante ou normale (taux longs > taux courts, situation usuelle car la prime de risque de terme est positive), descendante ou inversée (taux courts > taux longs, signalant souvent une anticipation de récession ou une politique monétaire restrictive), et des formes irrégulières en bosse ou en cuvette.",
+        "Le taux zéro-coupon r_t est la brique de base de toute la valorisation obligataire. C'est le taux actuariel d'un emprunt à seulement deux flux : on paie 1 aujourd'hui et on reçoit (1+r_t)^t à la date t, sans aucun coupon intermédiaire. L'intérêt conceptuel est que toute autre obligation, aussi complexe soit-elle, se décompose et se valorise comme un portefeuille de ZC : chaque flux (coupon ou remboursement) est un mini zéro-coupon actualisé à son taux de maturité. La courbe ZC est donc un input externe de marché, pas une caractéristique du titre lui-même.",
+        "Application : une obligation de nominal 100 €, maturité 5 ans, remboursée au pair, taux nominal 4,25 % (coupon 4,25 €), valorisée sur la courbe ZC 4,40 / 3,20 / 3,50 / 3,60 / 3,80 %, vaut P = 4,25/1,044 + 4,25/1,032² + 4,25/1,035³ + 4,25/1,036⁴ + 104,25/1,038⁵ = 4,07 + 3,99 + 3,83 + 3,69 + 86,51 = 102,10 €. Comme le coupon (4,25 %) dépasse le taux long (3,80 %), l'obligation cote au-dessus du pair (above par)."
+      ],
+      "chiffres": [
+        "P = Σ CF_t / (1 + r_t)^t pour t = 1 … T (r_t = taux ZC de maturité t)",
+        "ZC : on paie 1 en 0, on reçoit (1+r_t)^t en t",
+        "Exemple : P = 102,10 € (oblig. 5 ans, coupon 4,25 %, courbe ZC 4,40/3,20/3,50/3,60/3,80 %)"
+      ],
+      "pieges": [
+        "La courbe ZC est un input de marché qui sert à pricer ; ce n'est pas une caractéristique propre au titre.",
+        "Coupon > taux long → cote above par ; coupon < taux long → cote below par."
+      ]
+    },
+    {
+      "id": "m8-s2",
+      "titre": "Taux de rendement actuariel (TRA)",
+      "points": [
+        "Le taux de rendement actuariel (TRA) est le taux UNIQUE r tel que la valeur actualisée de tous les flux égale le prix de marché observé : P = Σ CF_t / (1 + r)^t, où r est l'inconnue à résoudre. Contrairement à la courbe ZC qui est un input de marché, le TRA est une caractéristique du titre : c'est ce qu'un investisseur recevrait s'il portait l'obligation jusqu'à l'échéance en réinvestissant chaque coupon au TRA. En convention française, TRA = taux annuel actuariel.",
+        "Il n'existe pas de formule fermée pour le TRA : on le résout par itération (méthode de Newton-Raphson, ou sous Excel les fonctions TRI / TAUX). Économiquement, le TRA est une moyenne pondérée des taux ZC, dominée par la maturité où se concentre l'essentiel des flux actualisés. Sur l'obligation 5 ans précédente (P = 102,10 €), le TRA vaut 3,7815 % ; cette valeur est tirée vers le taux 5 ans (3,80 %) car le flux de remboursement de t = 5 (86,51 € sur 102,10 €) domine l'actualisation."
+      ],
+      "chiffres": [
+        "TRA : P = Σ CF_t / (1 + r)^t → résoudre r (itératif : Newton-Raphson, Excel TRI/TAUX)",
+        "Exemple : P = 102,10 € → TRA = 3,7815 %",
+        "Le TRA est une moyenne pondérée des taux ZC, dominée par la maturité porteuse des plus gros flux"
+      ],
+      "pieges": [
+        "Ne pas confondre TRA (taux unique, propre au titre) et courbe ZC (input de marché, un taux par maturité).",
+        "Pas de formule fermée : le TRA se résout toujours par itération."
+      ]
+    },
+    {
+      "id": "m8-s3",
+      "titre": "Duration, sensibilité et convexité",
+      "points": [
+        "La duration de Macaulay D mesure la durée de vie moyenne pondérée des flux actualisés : D = Σ [ t · CF_t / (1+r)^t ] / P, exprimée en années, avec r = TRA (et non les taux ZC). Pour un zéro-coupon, D = maturité ; pour une obligation à coupon, D < maturité, car les coupons intermédiaires rapprochent la moyenne. Sur l'obligation 5 ans (TRA = 3,7815 %), le numérateur Σ t·CF_t actualisés = 471,01 € donne D = 471,01 / 102,10 = 4,61 ans.",
+        "La sensibilité S = D / (1 + r) traduit la duration en variation relative de prix face à une variation de taux : ΔP/P ≈ − S × Δr. La fiche présente S en valeur positive (la dérivée dP/dr étant négative, on écrit S = −(dP/dr)/P). Sur l'exemple, S = 4,61 / 1,037815 = 4,45 : pour une baisse de taux de 100 pb, le prix grimpe d'environ 4,45 %.",
+        "Vérification sur une baisse de 1 % du TRA (3,7815 % → 2,7815 %). Approximation par la sensibilité : ΔP ≈ S × Δr × P = 4,45 × 1 % × 102,10 ≈ +4,54 €, soit P' ≈ 106,64 €. Recalcul exact en actualisant les 5 flux au nouveau TRA : P' = 106,77 €. L'écart de 0,13 € illustre la convexité : la relation P(r) est convexe, donc l'approximation linéaire sous-estime la hausse réelle du prix. De façon générale, la sensibilité sous-estime systématiquement les hausses de prix et surestime les baisses, et l'erreur grandit avec l'amplitude |Δr|."
+      ],
+      "chiffres": [
+        "D_Mac = Σ [ t · CF_t / (1+r)^t ] / P (r = TRA, en années)",
+        "S = D / (1 + r) ; ΔP/P ≈ − S × Δr",
+        "Exemple : D = 4,61 ans ; S = 4,45 ; Δr = −1 % → ΔP approx +4,54 € (P'≈106,64) vs exact 106,77 € (écart 0,13 € = convexité)"
+      ],
+      "pieges": [
+        "Calculer la duration avec les taux ZC au lieu du TRA : la duration est définie au TRA.",
+        "Oublier la convexité : l'approximation linéaire sous-estime les hausses et surestime les baisses de prix.",
+        "Pour un ZC D = maturité ; pour une oblig. à coupon D < maturité (jamais l'inverse)."
+      ]
+    },
+    {
+      "id": "m8-s4",
+      "titre": "Déformation de courbe et décomposition en ZC",
+      "points": [
+        "La sensibilité (et la duration) suppose un déplacement PARALLÈLE de la courbe : un même Δr s'applique à toutes les maturités. Si la courbe se déforme (torsion : seuls certains taux bougent), un unique chiffre de sensibilité ne capture rien. La solution est de décomposer l'obligation en un portefeuille de zéro-coupons indépendants, chacun avec son propre taux et sa propre variation Δr_i, puis de calculer ΔP_i flux par flux et de sommer.",
+        "Pour un ZC de maturité t, le prix est P_i = N / (1+r_i)^t et la sensibilité S_i = t / (1+r_i). La variation de prix de chaque ZC s'écrit ΔP_i ≈ − S_i × P_i × Δr_i, et la variation totale du portefeuille = Σ ΔP_i.",
+        "Exemple d'une obligation à 4 ans, flux 100 / 100 / 100 / 1100 €. Courbe avant : 3 % / 3,5 % / 4 % / 4,5 % (P = 1 201,76 €). Courbe après : seuls r₃ et r₄ montent de 50 pb, vers 4,5 % et 5 %. Le recalcul exact avec la nouvelle courbe donne P' = 1 183,04 €, soit ΔP réel = −18,71 €. L'approximation par sensibilités ZC (Σ S_i·P_i·Δr_i) donne −18,94 €. L'écart de 0,22 € reflète la convexité de chacun des ZC à 3 et 4 ans. Ici la duration globale aurait été inutilisable car le choc n'est pas parallèle."
+      ],
+      "chiffres": [
+        "ZC : P_i = N / (1+r_i)^t ; S_i = t / (1+r_i)",
+        "ΔP_i ≈ − S_i × P_i × Δr_i ; ΔP total = Σ ΔP_i",
+        "Exemple : P avant = 1 201,76 € ; r₃ et r₄ +50 pb → P' exact = 1 183,04 € (ΔP = −18,71 €) ; approx ZC = −18,94 € (écart 0,22 € = convexité)"
+      ],
+      "pieges": [
+        "Utiliser la sensibilité/duration globale pour une déformation non parallèle de la courbe : décomposer en ZC.",
+        "Un seul chiffre de sensibilité ne capture qu'un choc parallèle (Δr identique pour toutes les maturités)."
+      ]
+    },
+    {
+      "id": "m8-s5",
+      "titre": "Bootstrap : estimer la structure ZC à partir des prix de marché",
+      "points": [
+        "Le bootstrap est l'opération inverse du pricing : à partir des prix d'obligations à coupon cotées, on déduit la structure des taux zéro-coupon r₁, r₂, … rₙ par récursion. L'hypothèse de travail est une obligation par maturité, coupon détaché (le prochain flux est dans 1 an, 2 ans, …). La logique : l'obligation à 1 an n'a qu'une inconnue r₁ (une équation, une inconnue) ; on résout r₁, puis on l'injecte dans l'équation de l'obligation à 2 ans pour isoler r₂, et ainsi de suite pour 3, 4, … N ans.",
+        "Étape 1 : sur l'obligation 1 an, une seule inconnue r₁ → r₁. Étape 2 : sur l'obligation 2 ans, en réutilisant r₁ déjà calculé → r₂. Étape 3 : itérer pour 3, … N ans. Chaque étape ajoute exactement une inconnue, résolue par substitution des taux déjà connus.",
+        "Exemple : trois obligations d'État à coupon détaché, remboursées au pair in fine, donnent un système qui se résout en posant a = 1/(1+r₁), b = 1/(1+r₂)², c = 1/(1+r₃)³. La résolution livre a = 0,9539 → r₁ = 4,83 %, b = 0,8899 → r₂ = 6,01 %, c = 0,8162 → r₃ = 7,00 %. La structure obtenue (4,83 % / 6,01 % / 7,00 %) est ici ascendante. (Une variante de l'énoncé, avec maturités 1/2/3 ans assumées, aboutit à 6,74 % / 5,91 % / 6,95 %, courbe en cuvette.)"
+      ],
+      "chiffres": [
+        "Bootstrap : oblig. 1 an → r₁ ; oblig. 2 ans avec r₁ connu → r₂ ; itérer jusqu'à N",
+        "Substitution : a = 1/(1+r₁), b = 1/(1+r₂)², c = 1/(1+r₃)³",
+        "Exemple : a = 0,9539 → r₁ = 4,83 % ; b = 0,8899 → r₂ = 6,01 % ; c = 0,8162 → r₃ = 7,00 %"
+      ],
+      "pieges": [
+        "Oublier l'ordre récursif : chaque taux ne se déduit qu'une fois les taux des maturités inférieures connus.",
+        "Coupon détaché : les flux à actualiser commencent à t = 1, jamais à t = 0."
+      ]
+    },
+    {
+      "id": "m8-s6",
+      "titre": "Obligations convertibles : composantes, ratio et primes",
+      "points": [
+        "Une obligation convertible (OC) en actions est une obligation classique qui intègre une option d'achat (call) sur l'action de l'émetteur : le porteur peut, à tout moment ou pendant une fenêtre, échanger son obligation contre un nombre fixé d'actions (le ratio de conversion). Sa valeur théorique est la somme de deux composantes. Le plancher actuariel (ou valeur nue) est la valeur d'une obligation identique sans option : c'est le plancher en dessous duquel l'OC ne descend pas tant que l'émetteur reste solvable. La valeur d'échange = ratio × cours de l'action mesure ce que valent les actions reçues à conversion et croît linéairement avec l'action. Globalement, l'OC vaut max(plancher ; valeur d'échange) + valeur temps de l'option, cette dernière justifiant une prime sur le plancher.",
+        "Trois définitions à ne jamais confondre. Le ratio de conversion = nombre d'actions reçues par OC échangée, fixé au contrat d'émission. Le prix de conversion = nominal de l'OC / ratio de conversion : c'est le strike du call implicite. La prime de conversion = prix de conversion − cours de l'action à l'émission, exprimée en euros (le coût de l'option). Exemple : une OC de nominal 1 000 €, convertible en 50 actions, action à 14 € à l'émission → ratio = 50 ; prix de conversion = 1 000/50 = 20 € ; prime de conversion = 20 − 14 = 6 €.",
+        "La prime brute est une mesure distincte, en pourcentage : prime brute = (cours de la convertible − cours de l'action) / cours de l'action. Elle quantifie le surpaiement immédiat à acheter l'OC plutôt que l'action, et permet surtout de retrouver le cours de l'action à l'émission : cours action = cours OC / (1 + prime brute). Exemple : OC émise à 99,38 €, prime brute 15 % → cours action = 99,38 / 1,15 = 86,42 €. Économiquement, l'OC offre au porteur un profil asymétrique (hausse via le call, protection à la baisse via le plancher) et permet à l'émetteur un coupon plus faible qu'une obligation classique."
+      ],
+      "chiffres": [
+        "OC = obligation classique + call ; valeur = max(plancher ; valeur d'échange) + valeur temps de l'option",
+        "Valeur d'échange = ratio × cours action ; Prix de conversion = Nominal / Ratio",
+        "Prime de conversion = Prix de conversion − Cours action (en €)",
+        "Prime brute = (Cours OC − Cours action) / Cours action (en %) → Cours action = Cours OC / (1 + prime brute)",
+        "Exemple : OC 99,38 €, prime brute 15 % → cours action = 99,38/1,15 = 86,42 €"
+      ],
+      "pieges": [
+        "Confondre prime brute (en %, vs cours action) et prime de conversion (en €, vs prix de conversion).",
+        "Confondre nominal et prix d'exercice : E = nominal / ratio, pas le nominal (sauf si ratio = 1)."
+      ]
+    },
+    {
+      "id": "m8-s7",
+      "titre": "Prime d'option de l'OC : Black-Scholes et ajustement dividendes",
+      "points": [
+        "À l'émission, on vérifie le TRA brut de l'OC : le taux qui égalise le prix d'émission et la valeur actualisée des coupons + remboursement, en ignorant l'option de conversion (rendement d'un porteur qui ne convertit jamais). Exemple : OC durée 7 ans, nominal 100 €, prix d'émission 99,38 €, coupon 4,375 € → la résolution itérative de 99,38 = Σ 4,375/(1+r)^t + 100/(1+r)^7 donne TRA = 4,4801 %, vérifié par VA coupons (25,80 €) + VA remboursement (73,58 €) = 99,38 €. La duration à l'émission vaut D = 613,75 / 99,38 = 6,18 ans, légèrement inférieure à 7 ans car les coupons rapprochent la moyenne.",
+        "La prime d'option se calcule par le modèle de Black-Scholes du call européen : C = S · N(d₁) − E · e^(−rt) · N(d₂), avec d₂ = [ ln(S / (E·e^(−rt))) − ½ σ²t ] / (σ√t) et d₁ = d₂ + σ√t. Ici S = cours du sous-jacent, E = prix d'exercice (= nominal/ratio), r = taux sans risque continu, σ = volatilité, t = maturité, N = fonction de répartition de la loi normale standard.",
+        "Ajustement clé pour une OC : le porteur ne touche pas les dividendes pendant la vie de l'option, on corrige donc le cours du sous-jacent en retirant la valeur actuelle des dividendes attendus (modèle de Merton) : S* = S − Σ D_i/(1+r)^i (dividendes discrets) ; alternative continue S × e^(−qt) avec q = D/S. On applique ensuite Black-Scholes avec S* à la place de S. Exemple : S = 86,42 €, E = 99,38 €, σ = 10 %, r = 3 %, t = 7 ans, D = 2 €/an → VA(div) = 2 × [1 − 1,03^(−7)]/0,03 = 12,46 € ; S* = 86,42 − 12,46 = 73,96 € ; d₂ ≈ −0,455, d₁ ≈ −0,191, N(d₁) ≈ 0,424, N(d₂) ≈ 0,324, d'où C ≈ 5,25 € par action. Oublier cet ajustement surévalue le call."
+      ],
+      "chiffres": [
+        "TRA brut OC : prix d'émission = Σ coupon/(1+r)^t + remb/(1+r)^T (itératif) ; exemple → TRA = 4,4801 %",
+        "Duration OC = Σ t·CF_t/(1+TRA)^t / P ; exemple = 613,75/99,38 = 6,18 ans",
+        "Black-Scholes : C = S·N(d₁) − E·e^(−rt)·N(d₂) ; d₂ = [ln(S/(E·e^(−rt))) − ½σ²t]/(σ√t) ; d₁ = d₂ + σ√t",
+        "Ajustement dividendes : S* = S − VA(div) ; exemple VA(div) = 12,46 € → S* = 73,96 € → C ≈ 5,25 €/action",
+        "E = nominal / ratio (prix de conversion)"
+      ],
+      "pieges": [
+        "Appliquer Black-Scholes sans ajuster S de la VA des dividendes (S* = S − VA(div)) : on surévalue le call.",
+        "Prendre E = nominal au lieu de nominal/ratio (sauf si ratio = 1)."
+      ]
+    }
+  ],
+  "visuals": [
+    {
+      "type": "compare",
+      "titre": "TRA contre courbe des taux zéro-coupon",
+      "intro": "La distinction la plus piégeuse du module : ces deux taux ne mesurent pas la même chose et n'ont pas le même usage.",
+      "ancre": "m8-s2",
+      "headers": ["Critère", "Taux zéro-coupon (courbe)", "TRA"],
+      "rows": [
+        {"cells": ["Nature", "Input de marché (un taux par maturité)", "Caractéristique du titre (taux unique)"]},
+        {"cells": ["Usage", "Pricer : actualiser chaque flux à son taux ZC", "Mesurer le rendement à maturité du titre"]},
+        {"cells": ["Formule", "P = Σ CF_t / (1 + r_t)^t", "P = Σ CF_t / (1 + r)^t → résoudre r"]},
+        {"cells": ["Nombre de taux", "Toute la courbe (r₁, r₂, … rₙ)", "Un seul (r)"]},
+        {"cells": ["Sert à la duration ?", "Non (sauf décomposition en ZC)", "Oui : la duration est définie au TRA"]}
+      ]
+    },
+    {
+      "type": "flow",
+      "titre": "Bootstrap : récursion pour reconstituer la courbe ZC",
+      "intro": "À partir des prix d'obligations à coupon cotées, on isole un taux ZC à chaque étape en réutilisant les taux déjà calculés.",
+      "ancre": "m8-s5",
+      "steps": [
+        {"t": "Obligation 1 an", "d": "Une seule inconnue r₁ : prix = (1 + coupon) / (1+r₁) → r₁"},
+        {"t": "Obligation 2 ans", "d": "On injecte r₁ ; une seule inconnue restante r₂ → r₂"},
+        {"t": "Obligation 3 ans", "d": "On injecte r₁ et r₂ ; on isole r₃ → r₃"},
+        {"t": "Itérer jusqu'à N", "d": "Chaque étape ajoute une inconnue, résolue par substitution → structure ZC complète"}
+      ]
+    },
+    {
+      "type": "flow",
+      "titre": "Valoriser une obligation convertible",
+      "intro": "Une OC se décompose en plancher obligataire + option ; voici la chaîne de calcul à l'émission.",
+      "ancre": "m8-s7",
+      "steps": [
+        {"t": "Cours de l'action", "d": "Cours action = Cours OC / (1 + prime brute)"},
+        {"t": "Plancher actuariel", "d": "Valeur de l'obligation nue : VA des coupons + remboursement (au TRA brut)"},
+        {"t": "Ajuster le sous-jacent", "d": "S* = S − VA(dividendes), car le porteur ne touche pas les dividendes"},
+        {"t": "Prime d'option (BS)", "d": "C = S*·N(d₁) − E·e^(−rt)·N(d₂), avec E = nominal/ratio"},
+        {"t": "Valeur de l'OC", "d": "max(plancher ; valeur d'échange) + valeur temps de l'option"}
+      ]
+    }
+  ],
+  "qcm": [
+    {
+      "enonce": "Pour valoriser une obligation à coupon à partir de la courbe des taux, comment actualise-t-on chaque flux ?",
+      "ancre": "m8-s1",
+      "options": [
+        {"texte": "Chaque flux est actualisé au taux ZC correspondant à sa propre maturité.", "correcte": true, "justif": "P = Σ CF_t/(1+r_t)^t : le flux de t = 1 est actualisé à r₁, celui de t = 2 à r₂, etc."},
+        {"texte": "Tous les flux sont actualisés à un taux unique, le TRA, dès le départ.", "correcte": false, "justif": "Le TRA est le résultat (taux unique qui égalise prix et flux), pas l'input : pour pricer on utilise la courbe ZC."},
+        {"texte": "On actualise chaque flux au taux ZC de la maturité la plus longue.", "correcte": false, "justif": "Chaque flux a son propre taux ZC selon sa date ; utiliser un seul taux fausse le prix."}
+      ]
+    },
+    {
+      "enonce": "Une obligation a un coupon de 4,25 % alors que le taux long de la courbe est de 3,80 %. Comment cote-t-elle ?",
+      "ancre": "m8-s1",
+      "options": [
+        {"texte": "Au-dessus du pair (above par), car le coupon dépasse le taux de marché.", "correcte": true, "justif": "Coupon > taux long → flux plus généreux que le marché → prix > nominal (102,10 € > 100 € dans l'exemple)."},
+        {"texte": "En dessous du pair, car un coupon élevé est pénalisant.", "correcte": false, "justif": "Un coupon supérieur au taux de marché rend le titre plus attractif, donc plus cher, pas moins."},
+        {"texte": "Exactement au pair, car le remboursement se fait au pair.", "correcte": false, "justif": "Le prix au pair n'arrive que si coupon = taux de marché ; ici l'écart pousse le prix au-dessus de 100."}
+      ]
+    },
+    {
+      "enonce": "Qu'est-ce qu'un taux zéro-coupon r_t ?",
+      "ancre": "m8-s1",
+      "options": [
+        {"texte": "Le taux actuariel d'un emprunt à deux flux : on paie 1 aujourd'hui, on reçoit (1+r_t)^t en t.", "correcte": true, "justif": "C'est la définition exacte : aucun coupon intermédiaire, un seul flux entrant à l'échéance."},
+        {"texte": "Le taux moyen des coupons versés par une obligation classique.", "correcte": false, "justif": "Un ZC ne verse aucun coupon intermédiaire : c'est précisément ce qui le caractérise."},
+        {"texte": "Le taux sans risque continu utilisé dans Black-Scholes.", "correcte": false, "justif": "Le taux ZC est un taux actuariel de marché par maturité ; il ne se confond pas avec le taux continu de BS."}
+      ]
+    },
+    {
+      "enonce": "Le TRA d'une obligation est-il un input de marché ou une caractéristique du titre ?",
+      "ancre": "m8-s2",
+      "options": [
+        {"texte": "Une caractéristique du titre : le taux unique qui égalise la VA des flux et le prix.", "correcte": true, "justif": "Le TRA résume le rendement du titre porté à échéance avec réinvestissement des coupons au TRA ; il est propre à l'obligation."},
+        {"texte": "Un input de marché donné par la courbe, distinct pour chaque maturité.", "correcte": false, "justif": "C'est la courbe ZC qui est l'input de marché ; le TRA est un taux unique calculé à partir du prix."},
+        {"texte": "Un taux réglementaire fixé par l'émetteur au contrat.", "correcte": false, "justif": "Le TRA n'est pas fixé au contrat : il se déduit du prix de marché par itération."}
+      ]
+    },
+    {
+      "enonce": "Pourquoi le TRA se résout-il par itération (Newton-Raphson, TRI/TAUX) plutôt que par formule ?",
+      "ancre": "m8-s2",
+      "options": [
+        {"texte": "Parce que r apparaît à des puissances différentes dans P = Σ CF_t/(1+r)^t : il n'existe pas de formule fermée.", "correcte": true, "justif": "L'équation est polynomiale en 1/(1+r) ; on l'inverse numériquement, pas analytiquement."},
+        {"texte": "Parce que les flux futurs sont inconnus à l'avance.", "correcte": false, "justif": "Les flux (coupons, remboursement) sont connus ; c'est le taux r qui est l'inconnue."},
+        {"texte": "Parce que la courbe ZC change tous les jours.", "correcte": false, "justif": "L'itération est due à la forme de l'équation, pas à la variabilité de la courbe."}
+      ]
+    },
+    {
+      "enonce": "La duration de Macaulay doit être calculée avec quel taux d'actualisation ?",
+      "ancre": "m8-s3",
+      "options": [
+        {"texte": "Le TRA de l'obligation.", "correcte": true, "justif": "D = Σ t·CF_t/(1+r)^t / P avec r = TRA : la duration est définie au taux de rendement actuariel."},
+        {"texte": "Les taux ZC, un par maturité.", "correcte": false, "justif": "Piège classique : la duration se calcule au TRA, pas avec la courbe ZC."},
+        {"texte": "Le taux sans risque de Black-Scholes.", "correcte": false, "justif": "Le taux de BS sert à pricer l'option, pas à mesurer la duration de l'obligation."}
+      ]
+    },
+    {
+      "enonce": "Pourquoi la duration d'une obligation à coupon est-elle inférieure à sa maturité ?",
+      "ancre": "m8-s3",
+      "options": [
+        {"texte": "Parce que les coupons intermédiaires rapprochent la moyenne pondérée des dates de flux.", "correcte": true, "justif": "Des flux arrivent avant l'échéance, ce qui réduit la durée de vie moyenne pondérée sous la maturité."},
+        {"texte": "Parce que les coupons sont réinvestis à un taux supérieur au TRA.", "correcte": false, "justif": "La duration ne dépend pas d'un taux de réinvestissement supérieur ; elle vient du calendrier des flux."},
+        {"texte": "Parce que la convexité raccourcit toujours la duration.", "correcte": false, "justif": "La convexité est une mesure de second ordre distincte ; elle ne fixe pas la duration sous la maturité."}
+      ]
+    },
+    {
+      "enonce": "Avec une sensibilité S = 4,45, quel est l'effet approché d'une baisse de taux de 100 pb sur le prix ?",
+      "ancre": "m8-s3",
+      "options": [
+        {"texte": "Le prix augmente d'environ 4,45 %, car ΔP/P ≈ −S × Δr.", "correcte": true, "justif": "ΔP/P ≈ −4,45 × (−0,01) = +4,45 % : taux qui baisse → prix qui monte."},
+        {"texte": "Le prix baisse d'environ 4,45 %, car taux et prix varient dans le même sens.", "correcte": false, "justif": "Prix et taux varient en sens INVERSE : une baisse de taux fait monter le prix."},
+        {"texte": "Le prix ne bouge pas, la sensibilité ne s'applique qu'aux ZC.", "correcte": false, "justif": "La sensibilité s'applique à toute obligation et quantifie justement cette variation."}
+      ]
+    },
+    {
+      "enonce": "L'approximation par la sensibilité donne P' ≈ 106,64 € alors que le recalcul exact donne 106,77 €. Que révèle l'écart ?",
+      "ancre": "m8-s3",
+      "options": [
+        {"texte": "L'effet de convexité : la relation P(r) est convexe, l'approximation linéaire sous-estime la hausse réelle.", "correcte": true, "justif": "La sensibilité est une approximation au premier ordre ; la courbure (convexité) explique l'écart de 0,13 €."},
+        {"texte": "Une erreur de calcul : les deux méthodes doivent donner le même résultat.", "correcte": false, "justif": "L'écart est attendu et systématique : il mesure la convexité, ce n'est pas une erreur."},
+        {"texte": "Le changement de la courbe ZC entre les deux calculs.", "correcte": false, "justif": "Les deux calculs portent sur le même choc de TRA ; l'écart vient de la convexité, pas d'un changement de courbe."}
+      ]
+    },
+    {
+      "enonce": "La courbe se déforme : seuls r₃ et r₄ montent de 50 pb. Pourquoi la sensibilité globale est-elle inadaptée ?",
+      "ancre": "m8-s4",
+      "options": [
+        {"texte": "Parce qu'elle suppose un déplacement parallèle ; il faut décomposer en ZC et sommer les ΔP_i.", "correcte": true, "justif": "Un choc non parallèle (torsion) n'est pas capté par un unique chiffre de sensibilité ; on calcule flux par flux."},
+        {"texte": "Parce que la sensibilité ne marche que pour les obligations sans coupon.", "correcte": false, "justif": "La sensibilité s'applique aux obligations à coupon ; le problème est le caractère non parallèle du choc."},
+        {"texte": "Parce que la duration devient négative en cas de torsion.", "correcte": false, "justif": "La duration ne devient pas négative ; elle est simplement inutilisable pour un choc différencié."}
+      ]
+    },
+    {
+      "enonce": "Quelle est la sensibilité d'un zéro-coupon de maturité t et de taux r_i ?",
+      "ancre": "m8-s4",
+      "options": [
+        {"texte": "S_i = t / (1 + r_i).", "correcte": true, "justif": "Pour un ZC, la duration vaut t (la maturité), donc S_i = D/(1+r) = t/(1+r_i)."},
+        {"texte": "S_i = t × (1 + r_i).", "correcte": false, "justif": "La sensibilité divise par (1+r), elle ne multiplie pas : S_i = t/(1+r_i)."},
+        {"texte": "S_i = 1 / (1 + r_i)^t.", "correcte": false, "justif": "Cela ressemble au facteur d'actualisation, pas à la sensibilité ; il manque le facteur t au numérateur."}
+      ]
+    },
+    {
+      "enonce": "Dans le bootstrap, dans quel ordre déduit-on les taux zéro-coupon ?",
+      "ancre": "m8-s5",
+      "options": [
+        {"texte": "On résout r₁ avec l'obligation 1 an, puis r₂ en réutilisant r₁, etc. : récursion croissante.", "correcte": true, "justif": "Chaque étape n'a qu'une inconnue (le taux de la maturité la plus longue), une fois les précédents connus."},
+        {"texte": "On résout simultanément tous les taux par une seule formule fermée.", "correcte": false, "justif": "Le bootstrap procède par récursion ; il n'existe pas de formule fermée globale."},
+        {"texte": "On part du taux le plus long (rₙ) puis on descend vers r₁.", "correcte": false, "justif": "C'est l'inverse : l'obligation courte donne r₁ d'abord, qui sert ensuite aux maturités plus longues."}
+      ]
+    },
+    {
+      "enonce": "Quelle hypothèse sous-tend le bootstrap tel que présenté ?",
+      "ancre": "m8-s5",
+      "options": [
+        {"texte": "Une obligation par maturité, à coupon détaché (prochain flux dans 1 an, 2 ans, …).", "correcte": true, "justif": "C'est l'hypothèse explicite : un titre par maturité et coupon détaché pour caler les dates de flux."},
+        {"texte": "Toutes les obligations sont des zéro-coupons purs.", "correcte": false, "justif": "Au contraire, le bootstrap reconstitue les ZC à partir d'obligations À COUPON cotées."},
+        {"texte": "Les taux sont identiques pour toutes les maturités (courbe plate).", "correcte": false, "justif": "Le bootstrap sert justement à révéler une courbe non plate (ascendante, en cuvette, …)."}
+      ]
+    },
+    {
+      "enonce": "Une OC de nominal 1 000 € est convertible en 50 actions, l'action cotant 14 € à l'émission. Quelle est la prime de conversion ?",
+      "ancre": "m8-s6",
+      "options": [
+        {"texte": "6 € : prix de conversion (1 000/50 = 20 €) moins cours action (14 €).", "correcte": true, "justif": "Prix de conversion = nominal/ratio = 20 € ; prime de conversion = 20 − 14 = 6 €."},
+        {"texte": "20 € : c'est directement le prix de conversion.", "correcte": false, "justif": "20 € est le prix de conversion, pas la prime ; la prime est l'écart avec le cours de l'action (6 €)."},
+        {"texte": "0,86 % : (1 000 − 14) / 1 000.", "correcte": false, "justif": "Ce calcul mélange nominal et cours action sans passer par le prix de conversion ; il est faux."}
+      ]
+    },
+    {
+      "enonce": "Une OC est émise à 99,38 € avec une prime brute de 15 %. Quel est le cours de l'action à l'émission ?",
+      "ancre": "m8-s6",
+      "options": [
+        {"texte": "86,42 € : cours action = cours OC / (1 + prime brute) = 99,38 / 1,15.", "correcte": true, "justif": "La prime brute = (cours OC − cours action)/cours action, d'où cours action = 99,38/1,15 = 86,42 €."},
+        {"texte": "84,47 € : 99,38 × (1 − 0,15).", "correcte": false, "justif": "On ne multiplie pas par (1 − prime) ; il faut DIVISER par (1 + prime brute)."},
+        {"texte": "114,29 € : 99,38 × 1,15.", "correcte": false, "justif": "Multiplier par (1 + prime) inverse la relation ; le cours action est inférieur, pas supérieur, au cours OC."}
+      ]
+    },
+    {
+      "enonce": "Pour calculer la prime d'option d'une OC par Black-Scholes, pourquoi ajuste-t-on le cours du sous-jacent ?",
+      "ancre": "m8-s7",
+      "options": [
+        {"texte": "Parce que le porteur ne touche pas les dividendes pendant la vie de l'option : on pose S* = S − VA(dividendes).", "correcte": true, "justif": "Modèle de Merton : on retire la valeur actuelle des dividendes attendus avant d'appliquer BS, sinon le call est surévalué."},
+        {"texte": "Pour intégrer le coupon de l'obligation dans le cours de l'action.", "correcte": false, "justif": "L'ajustement porte sur les dividendes de l'action, pas sur le coupon obligataire."},
+        {"texte": "Pour convertir le taux actuariel en taux continu.", "correcte": false, "justif": "L'ajustement S* concerne les dividendes ; la conversion de taux est une étape distincte du modèle."}
+      ]
+    },
+    {
+      "enonce": "Dans Black-Scholes appliqué à une OC, que vaut le prix d'exercice E ?",
+      "ancre": "m8-s7",
+      "options": [
+        {"texte": "E = nominal / ratio (le prix de conversion), strike du call implicite.", "correcte": true, "justif": "Le call porte sur la conversion : son strike est le prix de conversion = nominal/ratio (sauf si ratio = 1, où E = nominal)."},
+        {"texte": "E = nominal de l'obligation, dans tous les cas.", "correcte": false, "justif": "E = nominal seulement si le ratio vaut 1 ; sinon E = nominal/ratio."},
+        {"texte": "E = cours de l'action à l'émission.", "correcte": false, "justif": "Le cours de l'action est le sous-jacent S, pas le prix d'exercice E."}
+      ]
+    },
+    {
+      "enonce": "Pourquoi la duration à l'émission d'une OC 7 ans (D = 6,18 ans) est-elle inférieure à 7 ans ?",
+      "ancre": "m8-s7",
+      "options": [
+        {"texte": "Parce que les coupons annuels rapprochent la durée de vie moyenne pondérée sous la maturité finale.", "correcte": true, "justif": "Des flux (coupons) tombent avant t = 7, abaissant la moyenne pondérée des dates sous l'échéance."},
+        {"texte": "Parce que l'option de conversion raccourcit mécaniquement la duration.", "correcte": false, "justif": "La duration brute se calcule sur les flux obligataires (coupons + remboursement), indépendamment de l'option."},
+        {"texte": "Parce que le TRA brut est supérieur au taux nominal.", "correcte": false, "justif": "La duration < maturité vient du calendrier des coupons, pas du niveau relatif du TRA."}
+      ]
+    }
+  ]
+}

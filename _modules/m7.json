@@ -1,0 +1,346 @@
+{
+  "id": "m7",
+  "num": 7,
+  "nom": "Gestion de portefeuille & marchés",
+  "essentiel": {
+    "a_retenir": [
+      "Trois profils de risque investisseur : PRUDENT (priorité sécurité du capital), ÉQUILIBRÉ (couple rendement/risque mesuré), DYNAMIQUE (recherche de performance, accepte la volatilité). Le profil se justifie par les caractéristiques RÉELLES de l'entreprise : horizon, solvabilité, objectif de rentabilité, liquidités disponibles.",
+      "Une trésorerie STRUCTURELLE (horizon 5-10 ans) autorise un risque mesuré sur la poche actions ; une trésorerie d'exploitation à court terme impose la prudence. L'horizon de placement conditionne le profil retenu.",
+      "L'allocation d'actifs répartit le placement entre poches (produits sans risque vs actifs risqués) puis diversifie la poche risquée sur plusieurs secteurs : on ne met pas tout sur un seul secteur, même porteur (risque de concentration).",
+      "Trois angles obligatoires pour sélectionner et justifier un titre : FONDAMENTAL (comptes, stratégie, croissance), CHARTISTE (tendance, supports/résistances), BOURSIER (liquidité, momentum, consensus). Citer un titre sans les 3 angles fait perdre des points.",
+      "L'analyse MACRO (taux d'intérêt, croissance du PIB, inflation, cycle économique) cadre le marché ; l'analyse SECTORIELLE (croissance, cyclicité, barrières à l'entrée, réglementation) sélectionne les secteurs porteurs.",
+      "Chaque secteur s'analyse avec des indicateurs PRÉCIS et adaptés : ex. immobilier = permis de construire, mises en chantier, prix du m² ; défense = budgets militaires, commandes, book-to-bill, livraisons.",
+      "Le BÊTA mesure la sensibilité d'un titre au marché : bêta > 1 = action offensive qui amplifie le marché (plus risquée) ; bêta < 1 = action défensive qui bouge moins que le marché.",
+      "Le PER (cours / BNPA) est un indicateur de cherté/valorisation : un PER élevé traduit une prime de croissance ; quand la croissance ralentit, la valorisation se dégonfle (cas Dassault Systèmes).",
+      "Le réarmement OTAN (engagement de porter les dépenses militaires à 5 % du PIB d'ici 2035, sous la pression de Trump) est un catalyseur DURABLE pour la défense/aéro française : Thales, Safran, Dassault Aviation, Airbus.",
+      "Raisonnement attendu sur l'angle géopolitique : relier une DÉCLARATION POLITIQUE → un FLUX BUDGÉTAIRE → des COMMANDES → une VALORISATION.",
+      "Indicateurs par titre à retenir : capitalisation, opéabilité, bêta, volatilité, rendement, ANC, PER, consensus des analystes, supports/résistances, objectif de cours, plus la cyclicité du secteur.",
+      "Toujours CITER et DATER les sources de données de marché (Boursorama, Zonebourse, Investing, documents de référence des sociétés). En examen open-book, la note se joue sur la méthode, l'interprétation et la reco, pas sur le par-cœur.",
+      "Risque à mentionner sur un secteur déjà très porté (défense) : valorisations élevées, plus-hauts historiques → une partie de la bonne nouvelle est déjà dans les cours, risque d'exécution / de déception.",
+      "La stratégie d'achat/vente doit être en ADÉQUATION avec le profil de risque, les objectifs de rentabilité, les rendements recherchés et les liquidités disponibles de l'entreprise."
+    ],
+    "chiffres": [
+      "PER = cours / BNPA (bénéfice net par action). Exemple : 80 / 5 = 16.",
+      "Rendement = dividende / cours. Exemple : 2,40 / 80 = 3 %.",
+      "ANC (actif net comptable) = capitaux propres / nombre d'actions.",
+      "Bêta : interprétation. Bêta 1,3 → si le marché monte de 10 %, l'action tend à monter de ~13 % (amplifie). Bêta 0,7 → l'action ne bouge que de ~7 % pour 10 % de marché (défensive).",
+      "Allocation imposée dans le cas Défense : trésorerie 2 Md€, dont 85 % en produits sans risque et 15 % en actifs risqués ; 300 M€ à investir en actions françaises CAC40.",
+      "Réarmement : engagement OTAN de 5 % du PIB d'ici 2035 (contre 2 % il y a dix ans) ; +20 % de dépenses de défense dans l'OTAN en 2025 ; budget militaire US visé à 1 500 Md$ pour 2027.",
+      "Cas Dassault Systèmes : croissance comparable +1 % en 2025, prévisions de CA abaissées (octobre 2025) à +4-6 % (contre +6-8 %), guidance 2026 +3-5 % à change constant, marge opérationnelle ~30 %.",
+      "Parcours boursier Dassault Systèmes : ~−27 % sur 2025 (une des pires du CAC 40 qui gagnait > +10 %) ; chute de ~19-21 % le jour des résultats (11 février 2026), pire séance depuis l'introduction en 1996."
+    ],
+    "pieges": [
+      "Ne pas relier le profil de risque aux caractéristiques réelles de l'entreprise (horizon, solvabilité, liquidités) : un profil affirmé sans justification = perte de points.",
+      "Sélectionner des titres sans les justifier par les 3 angles (fondamental / chartiste / boursier).",
+      "Oublier de citer et de dater les sources des données de marché (cours, PER, consensus changent en permanence).",
+      "Tout concentrer sur le secteur le plus porteur (ex. tout en défense) : c'est un risque de concentration incompatible avec un profil équilibré.",
+      "Confondre PER élevé = bon signe : un PER élevé est une prime de croissance fragile, qui se dégonfle si la croissance déçoit.",
+      "Mal interpréter le bêta : un bêta > 1 n'est pas « meilleur », il est plus RISQUÉ (amplifie les baisses comme les hausses)."
+    ]
+  },
+  "sections": [
+    {
+      "id": "m7-s1",
+      "titre": "Profil de risque investisseur et stratégie d'allocation",
+      "points": [
+        "Le profil de risque de l'entreprise se décline en trois niveaux : PRUDENT (la préservation du capital prime, peu ou pas d'actions), ÉQUILIBRÉ (on accepte un risque mesuré pour rechercher une rentabilité supérieure, poche actions limitée et diversifiée), DYNAMIQUE (recherche de performance, forte exposition actions, tolérance élevée à la volatilité). Le profil ne se choisit jamais par préférence : il se DÉDUIT des caractéristiques de l'entreprise — horizon de placement, impératif de solvabilité, objectif de rentabilité, rendements recherchés et liquidités disponibles.",
+        "La nature de la trésorerie est déterminante. Une trésorerie STRUCTURELLE (excédentaire, immobilisable sur 5 à 10 ans) autorise un risque mesuré : l'horizon long permet d'encaisser la volatilité de marché. À l'inverse, une trésorerie d'exploitation à court terme doit rester liquide et sécurisée. Dans le cas type (entreprise du secteur Défense, CA 5 Md€, RN 600 M€, croissance +10 %/an, trésorerie 2 Md€), le profil retenu est ÉQUILIBRÉ à tendance prudente : l'entreprise est solide et en croissance dans un secteur défensif porteur (capacité à encaisser la volatilité), MAIS la priorité reste la préservation de la trésorerie et la solvabilité, ce qui exclut un profil dynamique pur.",
+        "L'allocation d'actifs s'organise en deux temps. D'abord la répartition entre la poche sans risque et la poche risquée (dans le cas : 85 % produits sans risque, 15 % actifs risqués, décision antérieure). Ensuite, à l'intérieur de la poche risquée, on diversifie : les 300 M€ d'actions françaises sont répartis sur plusieurs secteurs en grandes capitalisations CAC40 liquides, avec une surpondération raisonnée du secteur porteur (défense/aéro) mais SANS sur-concentration. La stratégie d'achat/vente doit rester en adéquation avec le profil, les objectifs de rentabilité et les liquidités."
+      ],
+      "chiffres": [
+        "Cas type : trésorerie 2 Md€ = 85 % sans risque + 15 % actifs risqués ; 300 M€ d'actions françaises CAC40 à placer.",
+        "Caractéristiques de l'entreprise du cas : CA 5 Md€, résultat d'exploitation 1 Md€, résultat net 600 M€, croissance entreprise +10 %/an, croissance secteur +6 %/an."
+      ],
+      "pieges": [
+        "Affirmer un profil sans le relier explicitement à la solvabilité, à l'horizon et à l'objectif de rentabilité de l'entreprise.",
+        "Choisir un profil dynamique pur alors que la priorité est la préservation de la trésorerie."
+      ]
+    },
+    {
+      "id": "m7-s2",
+      "titre": "Analyse macro-économique et sectorielle",
+      "points": [
+        "L'analyse MACRO-ÉCONOMIQUE cadre l'environnement de marché. Les critères clés sont : les taux d'intérêt (une détente des taux favorise les actions et les banques), la croissance du PIB, l'inflation (la désinflation soutient les marchés) et le cycle économique. Sur le cas, le contexte décrit est : désinflation progressive, début de détente des taux, mais incertitudes (géopolitique, croissance européenne molle, secteur automobile en difficulté). À horizon deux ans, on anticipe un marché soutenu mais volatil ; on privilégie la qualité et la visibilité des bénéfices.",
+        "L'analyse SECTORIELLE sélectionne les secteurs porteurs. Les critères sont : la croissance du secteur, sa cyclicité (un secteur cyclique amplifie le cycle économique, un secteur défensif le subit moins), les barrières à l'entrée et l'actualité réglementaire. Chaque secteur doit être analysé avec des indicateurs PRÉCIS et adaptés : pour l'immobilier, le nombre de permis de construire, de mises en chantier de logements, de négociations et le prix du m² ; pour la défense, les budgets militaires, les commandes, le book-to-bill et les livraisons ; pour l'énergie, le prix du baril ; pour le luxe, les ventes en Asie ; pour la santé, le pipeline R&D et le vieillissement.",
+        "Sur le cas Défense, quatre secteurs sont retenus avec leur logique. DÉFENSE / AÉRONAUTIQUE : réarmement OTAN, carnets de commandes record (indicateurs : budgets militaires, commandes, book-to-bill, livraisons). ÉNERGIE : résilience, dividendes élevés, FCF solide (indicateurs : prix du baril/gaz, dividende, FCF, capex transition). BANQUE / ASSURANCE : bénéficie des taux, valorisations basses (indicateurs : marge nette d'intérêt, ratio CET1, ROE, P/B). SANTÉ (défensif) : stabilité, vieillissement, pipeline R&D (indicateurs : pipeline, brevets, croissance organique, marge). Une approche comparative des titres est ensuite menée par secteur."
+      ],
+      "chiffres": [
+        "Critères macro : taux d'intérêt, croissance du PIB, inflation, cycle économique.",
+        "Critères sectoriels : croissance du secteur, cyclicité, barrières à l'entrée, actualité réglementaire.",
+        "Exemple d'indicateurs sectoriels (immobilier) : permis de construire, mises en chantier, négociations, prix du m²."
+      ],
+      "pieges": [
+        "Choisir des indicateurs sectoriels génériques au lieu d'indicateurs précis adaptés à chaque secteur.",
+        "Négliger la cyclicité : privilégier prudemment les valeurs cycliques (auto) en haut de cycle est risqué."
+      ]
+    },
+    {
+      "id": "m7-s3",
+      "titre": "Indicateurs boursiers par titre",
+      "points": [
+        "Chaque titre se caractérise par une batterie d'indicateurs. La CAPITALISATION boursière (cours × nombre d'actions) mesure la taille ; les grandes caps sont plus liquides et plus adaptées à un profil équilibré. L'OPÉABILITÉ désigne la probabilité qu'une société fasse l'objet d'une OPA. Le BÊTA mesure la sensibilité au marché. La VOLATILITÉ mesure l'amplitude des variations de cours (risque). Le RENDEMENT (dividende / cours) mesure le revenu distribué. L'ANC (actif net comptable = capitaux propres / nombre d'actions) donne une valeur patrimoniale par action. Le PER (cours / BNPA) mesure la cherté/valorisation.",
+        "Le BÊTA est central pour le couple rendement/risque. Un bêta > 1 signale une action OFFENSIVE qui amplifie le marché : avec un bêta de 1,3, si le marché monte de 10 %, l'action tend à monter d'environ 13 % (et inversement à la baisse) — donc plus risquée. Un bêta < 1 signale une action DÉFENSIVE : avec un bêta de 0,7, l'action ne bouge que d'environ 7 % pour 10 % de marché. Le choix des bêtas doit être cohérent avec le profil : un profil équilibré combine des titres défensifs et quelques titres plus offensifs.",
+        "Le CONSENSUS DES ANALYSTES (recommandation acheter/conserver/vendre) et l'OBJECTIF DE COURS donnent le momentum boursier et le potentiel d'appréciation. Le PER s'interprète avec prudence : un PER élevé est une prime de croissance — si la croissance déçoit, la valorisation se dégonfle. Tous ces indicateurs se remplissent à partir de sources de marché citées et datées (Boursorama, Zonebourse, Investing, documents de référence des sociétés)."
+      ],
+      "chiffres": [
+        "PER = cours / BNPA. Rendement = dividende / cours. ANC = capitaux propres / nb d'actions.",
+        "Capitalisation = cours × nombre d'actions.",
+        "Bêta 1,3 : ~+13 % pour +10 % de marché (offensive). Bêta 0,7 : ~+7 % pour +10 % (défensive)."
+      ],
+      "pieges": [
+        "Interpréter un PER élevé comme un signal d'achat alors qu'il traduit une valorisation fragile.",
+        "Croire qu'un bêta élevé est meilleur : il amplifie aussi les baisses."
+      ]
+    },
+    {
+      "id": "m7-s4",
+      "titre": "Sélection de titres : fondamental, chartiste, boursier",
+      "points": [
+        "La sélection de titres se justifie obligatoirement par TROIS angles complémentaires. L'angle FONDAMENTAL repose sur les comptes (situation comptable et financière passée, actuelle et prévisionnelle), la stratégie, la croissance, la gouvernance, les statuts, l'historique et le produit. L'angle CHARTISTE (analyse technique) repose sur la tendance du cours et les niveaux de supports et de résistances. L'angle BOURSIER repose sur la liquidité, le momentum et le consensus des analystes. Citer un titre sans les trois angles fait perdre des points.",
+        "Les SUPPORTS et RÉSISTANCES sont les outils centraux de l'analyse chartiste. Un SUPPORT est un niveau de prix sous lequel le cours peine à descendre (la demande l'emporte) ; une RÉSISTANCE est un niveau sous lequel il peine à passer (l'offre l'emporte). Ils servent à fixer des points d'entrée/sortie et à lire la tendance. On les combine avec l'objectif de cours (boursier) et l'analyse des comptes (fondamental) pour construire une thèse d'investissement cohérente.",
+        "Sur le cas, une dizaine de valeurs CAC40 sont retenues en cohérence avec les 4 secteurs et un profil équilibré : Thales, Safran, Dassault Aviation et Airbus (défense/aéro, thèse réarmement et carnets records), TotalEnergies (énergie, dividende et FCF), BNP Paribas et AXA (banque/assurance, taux et valorisations basses), Schneider Electric (électrification, méga-tendance data centers/énergie), Sanofi (santé défensive, pipeline) et LVMH (luxe, qualité, point d'entrée si rebond de la demande chinoise). La règle est de NE PAS tout mettre en défense pour éviter la concentration et de diversifier sur les quatre secteurs."
+      ],
+      "chiffres": [
+        "3 angles : fondamental (comptes, stratégie, croissance, gouvernance) / chartiste (tendance, supports/résistances) / boursier (liquidité, momentum, consensus).",
+        "Support = plancher de prix (la demande l'emporte) ; Résistance = plafond de prix (l'offre l'emporte)."
+      ],
+      "pieges": [
+        "Sélectionner un titre uniquement sur l'angle fondamental sans tendance chartiste ni momentum boursier.",
+        "Confondre support et résistance : le support est en bas (plancher), la résistance en haut (plafond)."
+      ]
+    },
+    {
+      "id": "m7-s5",
+      "titre": "Géopolitique et défense : le raisonnement déclaration → valorisation",
+      "points": [
+        "L'angle géopolitique imposé porte sur les impacts des déclarations de Donald Trump sur le secteur de la défense en Europe. Sous la pression de Trump, les membres de l'OTAN se sont engagés à porter leurs dépenses militaires à 5 % du PIB d'ici 2035 (contre 2 % il y a dix ans). En 2025, les dépenses de défense de l'OTAN ont augmenté d'environ +20 % et tous les alliés ont atteint le seuil de 2 % du PIB. Le message américain est que l'Europe doit assumer la majorité des moyens conventionnels d'ici 2027, le budget militaire US étant visé à 1 500 Md$ pour 2027.",
+        "Le raisonnement attendu, qui distingue un niveau 7, consiste à relier une chaîne causale : une DÉCLARATION POLITIQUE (réarmement exigé) → un FLUX BUDGÉTAIRE (hausse des budgets militaires) → des COMMANDES (carnets en hausse, estimations revues à la hausse) → une VALORISATION (relèvement des objectifs de cours). Les bénéficiaires directs côté français sont Thales, Safran, Dassault Aviation et Airbus : carnets de commandes en hausse et estimations relevées (Morgan Stanley a relevé ses objectifs de cours d'environ +45 % en moyenne sur le secteur européen).",
+        "Il faut systématiquement mentionner le RISQUE : les valorisations sont déjà élevées (Thales à des plus-hauts historiques), donc une partie de la bonne nouvelle est déjà intégrée dans les cours, avec un risque d'exécution ou de déception. C'est ce qui justifie, dans un profil équilibré, une surpondération RAISONNÉE de la défense plutôt qu'une concentration totale."
+      ],
+      "chiffres": [
+        "Engagement OTAN : 5 % du PIB d'ici 2035 (contre 2 % il y a dix ans).",
+        "2025 : +20 % de dépenses de défense dans l'OTAN ; tous les alliés atteignent 2 % du PIB.",
+        "Budget militaire US visé à 1 500 Md$ pour 2027 ; Europe doit assumer la majorité des moyens conventionnels d'ici 2027.",
+        "Morgan Stanley : objectifs de cours relevés d'environ +45 % en moyenne sur le secteur défense européen."
+      ],
+      "pieges": [
+        "Énoncer la hausse des budgets sans la relier à la chaîne commandes → valorisation des titres.",
+        "Oublier le risque de valorisation déjà élevée (la bonne nouvelle est en partie dans les cours)."
+      ]
+    },
+    {
+      "id": "m7-s6",
+      "titre": "Diagnostic financier d'un titre : le cas Dassault Systèmes",
+      "points": [
+        "Le diagnostic d'un titre croise une lecture financière et stratégique avec son parcours boursier. Diagnostic FINANCIER de Dassault Systèmes (données 2025) : croissance comparable de seulement +1 % en 2025, très en deçà des attentes ; prévisions de CA annuel abaissées en octobre 2025 à +4-6 % (contre +6-8 %) ; guidance 2026 attendue à +3-5 % à taux de change constants (décevant pour le marché). La rentabilité reste néanmoins SOLIDE : marge opérationnelle d'environ 30 %, grâce à un modèle récurrent (souscriptions/abonnements). Les causes du ralentissement sont le tassement des Sciences de la Vie (Medidata) et la faiblesse du secteur automobile en Europe.",
+        "Diagnostic STRATÉGIQUE : Dassault Systèmes est le leader mondial du PLM et de la plateforme 3DEXPERIENCE ; la diversification vers les sciences de la vie (Medidata) déçoit. La menace identifiée est l'impact de l'IA sur le modèle (le marché s'en inquiète). Les atouts sont la récurrence des revenus, la base installée, une R&D élevée et des positions de leader industriel.",
+        "Parcours boursier DÉCEVANT : l'action valait environ 17,8-18,1 € début 2026 et a chuté d'environ 19-21 % le jour des résultats (11 février 2026), pire séance depuis l'introduction en 1996. Sur 2025, le titre a perdu environ 27 %, l'une des pires performances du CAC 40 alors que l'indice gagnait plus de +10 %. La lecture est claire : passage d'une prime de croissance (PER élevé) à des doutes sur la trajectoire, d'où le dégonflement de la valorisation. Conclusion type : titre de qualité en bas de cycle de valorisation, opportunité si l'on croit au redressement de la croissance, à surveiller via un reporting."
+      ],
+      "chiffres": [
+        "Croissance comparable 2025 : +1 % (très en deçà des attentes).",
+        "Prévisions CA abaissées (octobre 2025) : +4-6 % (contre +6-8 %) ; guidance 2026 : +3-5 % à change constant.",
+        "Marge opérationnelle ~30 % ; modèle récurrent (souscriptions/abonnements).",
+        "Action ~17,8-18,1 € début 2026 ; −19 à −21 % le 11 février 2026 (pire séance depuis l'IPO 1996) ; ~−27 % sur 2025."
+      ],
+      "pieges": [
+        "Conclure que la baisse du cours signale une mauvaise entreprise : ici la rentabilité reste solide, c'est la valorisation qui se dégonfle.",
+        "Oublier de relier la chute du cours au ralentissement de la croissance et à la prime de PER antérieure."
+      ]
+    }
+  ],
+  "visuals": [
+    {
+      "type": "compare",
+      "titre": "Les trois profils de risque investisseur",
+      "intro": "Le profil se déduit des caractéristiques de l'entreprise : horizon, solvabilité, objectif de rentabilité, liquidités. Sur le cas Défense, le profil retenu est ÉQUILIBRÉ (tendance prudente).",
+      "ancre": "m7-s1",
+      "headers": ["Critère", "Prudent", "Équilibré", "Dynamique"],
+      "rows": [
+        {"cells": ["Priorité", "Préservation du capital", "Couple rendement/risque mesuré", "Recherche de performance"]},
+        {"cells": ["Poche actions", "Faible ou nulle", "Limitée et diversifiée", "Forte exposition"]},
+        {"cells": ["Tolérance à la volatilité", "Très faible", "Modérée", "Élevée"]},
+        {"cells": ["Horizon adapté", "Court terme / liquidités", "Trésorerie structurelle 5-10 ans", "Long terme, capital non immobilisé"]},
+        {"cells": ["Cas Défense", "Trop restrictif (rentabilité recherchée)", "RETENU : solvabilité + horizon long", "Exclu : priorité préservation trésorerie"]}
+      ]
+    },
+    {
+      "type": "flow",
+      "titre": "Le raisonnement géopolitique attendu (défense)",
+      "intro": "Chaîne causale à reproduire pour relier l'actualité Trump/OTAN à la sélection de titres.",
+      "ancre": "m7-s5",
+      "steps": [
+        {"t": "Déclaration politique", "d": "Pression de Trump : OTAN s'engage à 5 % du PIB d'ici 2035 (vs 2 %)."},
+        {"t": "Flux budgétaire", "d": "+20 % de dépenses défense OTAN en 2025 ; budget US visé à 1 500 Md$ en 2027."},
+        {"t": "Commandes", "d": "Carnets en hausse pour Thales, Safran, Dassault Aviation, Airbus ; estimations relevées."},
+        {"t": "Valorisation", "d": "Objectifs de cours relevés (~+45 % en moyenne, Morgan Stanley). Risque : valorisations déjà élevées."}
+      ]
+    },
+    {
+      "type": "compare",
+      "titre": "Les 3 angles de sélection d'un titre",
+      "intro": "Tout titre doit être justifié simultanément par les trois angles. En oublier un fait perdre des points.",
+      "ancre": "m7-s4",
+      "headers": ["Angle", "Sur quoi il repose", "Outils / indicateurs"],
+      "rows": [
+        {"cells": ["Fondamental", "Comptes, stratégie, croissance, gouvernance", "CA, marge, PER, ANC, prévisionnel"]},
+        {"cells": ["Chartiste", "Tendance et niveaux de prix", "Supports, résistances, tendance"]},
+        {"cells": ["Boursier", "Liquidité, momentum, marché", "Capitalisation, consensus, objectif de cours, bêta"]}
+      ]
+    }
+  ],
+  "qcm": [
+    {
+      "enonce": "Pour une trésorerie structurelle de 2 Md€ placée à horizon 5-10 ans par une entreprise solide mais devant préserver sa solvabilité, quel profil de risque retenir pour la poche actions ?",
+      "ancre": "m7-s1",
+      "options": [
+        {"texte": "Équilibré (tendance prudente)", "correcte": true, "justif": "L'horizon long autorise un risque mesuré, mais l'impératif de solvabilité exclut un profil dynamique pur : c'est exactement le cas type."},
+        {"texte": "Dynamique pur", "correcte": false, "justif": "Un profil dynamique pur est incompatible avec la priorité donnée à la préservation de la trésorerie et à la solvabilité."},
+        {"texte": "Prudent strict, aucune action", "correcte": false, "justif": "L'horizon structurel et l'objectif de rentabilité supérieure justifient une poche actions, donc pas un profil prudent strict."}
+      ]
+    },
+    {
+      "enonce": "Sur quoi doit toujours se fonder la justification d'un profil de risque dans le dossier ?",
+      "ancre": "m7-s1",
+      "options": [
+        {"texte": "Les caractéristiques réelles de l'entreprise : horizon, solvabilité, objectif de rentabilité, liquidités", "correcte": true, "justif": "Le profil se déduit des contraintes propres à l'entreprise ; c'est le critère de compétence C4 et un piège récurrent."},
+        {"texte": "La performance passée du CAC 40", "correcte": false, "justif": "La performance de l'indice cadre le marché mais ne justifie pas à elle seule le profil de l'entreprise."},
+        {"texte": "La préférence personnelle du directeur financier", "correcte": false, "justif": "Le profil n'est pas un choix de préférence : il découle des contraintes objectives de l'entreprise."}
+      ]
+    },
+    {
+      "enonce": "Dans le cas Défense, comment répartir les 300 M€ d'actions françaises pour respecter un profil équilibré ?",
+      "ancre": "m7-s1",
+      "options": [
+        {"texte": "En grandes caps liquides diversifiées sur 4 secteurs, avec surpondération raisonnée de la défense", "correcte": true, "justif": "Diversification sectorielle + grandes caps liquides + surpondération mesurée du secteur porteur = cohérent avec l'équilibré."},
+        {"texte": "Tout sur la défense, secteur le plus porteur", "correcte": false, "justif": "Tout concentrer sur un seul secteur crée un risque de concentration incompatible avec un profil équilibré."},
+        {"texte": "Sur des small caps peu liquides à fort potentiel", "correcte": false, "justif": "Les small caps peu liquides relèvent d'un profil dynamique, pas d'un placement de trésorerie structurelle à préserver."}
+      ]
+    },
+    {
+      "enonce": "Quels critères relèvent de l'analyse MACRO-économique (par opposition à sectorielle) ?",
+      "ancre": "m7-s2",
+      "options": [
+        {"texte": "Taux d'intérêt, croissance du PIB, inflation, cycle économique", "correcte": true, "justif": "Ce sont les critères macro qui cadrent l'environnement de marché global."},
+        {"texte": "Book-to-bill, livraisons, carnet de commandes", "correcte": false, "justif": "Ce sont des indicateurs sectoriels (défense/aéro), pas macro-économiques."},
+        {"texte": "Supports, résistances, objectif de cours", "correcte": false, "justif": "Ce sont des indicateurs chartistes et boursiers propres à un titre, pas des critères macro."}
+      ]
+    },
+    {
+      "enonce": "Pour analyser le secteur immobilier, quels indicateurs PRÉCIS faut-il privilégier ?",
+      "ancre": "m7-s2",
+      "options": [
+        {"texte": "Permis de construire, mises en chantier de logements, prix du m²", "correcte": true, "justif": "Ce sont les indicateurs sectoriels précis cités en exemple pour l'immobilier dans le sujet."},
+        {"texte": "Prix du baril et capex de transition énergétique", "correcte": false, "justif": "Ces indicateurs concernent le secteur de l'énergie, pas l'immobilier."},
+        {"texte": "Ratio CET1 et marge nette d'intérêt", "correcte": false, "justif": "Ces indicateurs concernent le secteur banque/assurance, pas l'immobilier."}
+      ]
+    },
+    {
+      "enonce": "Une action a un bêta de 1,3. Si le marché monte de 10 %, que tend-il à se passer ?",
+      "ancre": "m7-s3",
+      "options": [
+        {"texte": "L'action tend à monter d'environ 13 % : elle amplifie le marché (plus risquée)", "correcte": true, "justif": "Bêta > 1 = action offensive : 10 % × 1,3 ≈ 13 %, et symétriquement à la baisse, donc plus risquée."},
+        {"texte": "L'action tend à monter d'environ 7 % : elle amortit le marché", "correcte": false, "justif": "Une réaction de 7 % correspondrait à un bêta de 0,7 (défensif), pas à 1,3."},
+        {"texte": "L'action ne bouge pas car le bêta supérieur à 1 neutralise le marché", "correcte": false, "justif": "Le bêta mesure la sensibilité au marché ; un bêta > 1 amplifie le mouvement, il ne le neutralise pas."}
+      ]
+    },
+    {
+      "enonce": "Une entreprise a un cours de 80 € et un BNPA de 5 €. Quel est son PER ?",
+      "ancre": "m7-s3",
+      "options": [
+        {"texte": "16 (PER = cours / BNPA = 80 / 5)", "correcte": true, "justif": "Le PER est le ratio cours sur bénéfice net par action : 80 / 5 = 16."},
+        {"texte": "0,0625 (BNPA / cours)", "correcte": false, "justif": "C'est l'inverse du PER ; le PER est cours / BNPA, pas BNPA / cours."},
+        {"texte": "400 (cours × BNPA)", "correcte": false, "justif": "Le PER est un rapport, pas un produit : on divise le cours par le BNPA."}
+      ]
+    },
+    {
+      "enonce": "Un titre cote 80 € et verse un dividende de 2,40 €. Quel est son rendement ?",
+      "ancre": "m7-s3",
+      "options": [
+        {"texte": "3 % (rendement = dividende / cours = 2,40 / 80)", "correcte": true, "justif": "Le rendement est le dividende rapporté au cours : 2,40 / 80 = 3 %."},
+        {"texte": "33,3 % (cours / dividende)", "correcte": false, "justif": "C'est l'inverse du rendement ; le rendement est dividende / cours."},
+        {"texte": "16 % (dividende × PER)", "correcte": false, "justif": "Le rendement ne se calcule pas en multipliant le dividende par le PER ; il vaut dividende / cours."}
+      ]
+    },
+    {
+      "enonce": "Comment se calcule l'actif net comptable (ANC) par action ?",
+      "ancre": "m7-s3",
+      "options": [
+        {"texte": "Capitaux propres / nombre d'actions", "correcte": true, "justif": "L'ANC par action rapporte les capitaux propres au nombre d'actions ; c'est la valeur patrimoniale par titre."},
+        {"texte": "Résultat net / nombre d'actions", "correcte": false, "justif": "Résultat net / nombre d'actions donne le BNPA, pas l'ANC."},
+        {"texte": "Cours / bénéfice par action", "correcte": false, "justif": "Cours / BNPA donne le PER, pas l'ANC."}
+      ]
+    },
+    {
+      "enonce": "Quels sont les TROIS angles obligatoires pour justifier la sélection d'un titre ?",
+      "ancre": "m7-s4",
+      "options": [
+        {"texte": "Fondamental, chartiste, boursier", "correcte": true, "justif": "Comptes/stratégie (fondamental), tendance/supports-résistances (chartiste), liquidité/momentum/consensus (boursier) : les 3 angles attendus."},
+        {"texte": "Macro, micro, réglementaire", "correcte": false, "justif": "Ces dimensions cadrent le contexte mais ne sont pas les trois angles de justification d'un titre."},
+        {"texte": "Rentabilité, liquidité, solvabilité", "correcte": false, "justif": "Ce sont des critères d'analyse d'entreprise, pas les trois angles de sélection boursière d'un titre."}
+      ]
+    },
+    {
+      "enonce": "En analyse chartiste, qu'est-ce qu'un support ?",
+      "ancre": "m7-s4",
+      "options": [
+        {"texte": "Un niveau de prix plancher sous lequel le cours peine à descendre (la demande l'emporte)", "correcte": true, "justif": "Le support est un seuil bas où la demande contient la baisse ; la résistance est le plafond inverse."},
+        {"texte": "Un niveau plafond que le cours peine à franchir à la hausse", "correcte": false, "justif": "C'est la définition de la résistance, pas du support."},
+        {"texte": "L'objectif de cours fixé par le consensus des analystes", "correcte": false, "justif": "L'objectif de cours est un indicateur boursier, distinct du support chartiste."}
+      ]
+    },
+    {
+      "enonce": "Quelle est l'erreur à éviter lors de la sélection des ~10 titres CAC40 dans le cas Défense ?",
+      "ancre": "m7-s4",
+      "options": [
+        {"texte": "Tout mettre en valeurs de défense, créant une sur-concentration", "correcte": true, "justif": "La consigne impose de diversifier sur les 4 secteurs ; tout concentrer en défense contredit le profil équilibré."},
+        {"texte": "Diversifier sur défense, énergie, banque/assurance et santé", "correcte": false, "justif": "C'est au contraire la bonne approche, cohérente avec un profil équilibré."},
+        {"texte": "Choisir des grandes caps liquides", "correcte": false, "justif": "Les grandes caps liquides sont précisément adaptées à un placement de trésorerie à préserver."}
+      ]
+    },
+    {
+      "enonce": "Quel raisonnement est attendu pour traiter l'angle Trump/défense ?",
+      "ancre": "m7-s5",
+      "options": [
+        {"texte": "Relier déclaration politique → flux budgétaire → commandes → valorisation des titres", "correcte": true, "justif": "C'est la chaîne causale explicitement attendue, qui démontre le raisonnement de niveau 7."},
+        {"texte": "Affirmer que la défense montera sans expliquer le mécanisme", "correcte": false, "justif": "Une affirmation non démontrée ne relie pas la cause politique à l'effet sur les valorisations."},
+        {"texte": "Se limiter à citer les cours actuels des titres de défense", "correcte": false, "justif": "Citer des cours sans la chaîne budgets → commandes → valorisation ne constitue pas le raisonnement attendu."}
+      ]
+    },
+    {
+      "enonce": "Quel risque faut-il systématiquement mentionner sur le secteur de la défense malgré le vent porteur du réarmement ?",
+      "ancre": "m7-s5",
+      "options": [
+        {"texte": "Des valorisations déjà élevées : une partie de la bonne nouvelle est dans les cours, risque de déception", "correcte": true, "justif": "Thales est à des plus-hauts historiques : la prudence sur la valorisation justifie une surpondération raisonnée, pas totale."},
+        {"texte": "Une baisse durable des budgets militaires européens", "correcte": false, "justif": "Au contraire, l'engagement OTAN porte les budgets à 5 % du PIB d'ici 2035 : la tendance est haussière."},
+        {"texte": "L'absence totale de carnet de commandes", "correcte": false, "justif": "Les carnets de commandes sont au contraire en hausse et au niveau record."}
+      ]
+    },
+    {
+      "enonce": "À combien l'OTAN s'est-elle engagée à porter ses dépenses militaires sous la pression de Trump ?",
+      "ancre": "m7-s5",
+      "options": [
+        {"texte": "5 % du PIB d'ici 2035 (contre 2 % il y a dix ans)", "correcte": true, "justif": "C'est l'engagement chiffré cité dans les sources : objectif 5 % du PIB à horizon 2035."},
+        {"texte": "10 % du PIB dès 2025", "correcte": false, "justif": "Aucune source ne cite 10 % du PIB ; l'objectif est 5 % d'ici 2035, et tous les alliés ont atteint 2 % en 2025."},
+        {"texte": "2 % du PIB d'ici 2035", "correcte": false, "justif": "Le seuil de 2 % était l'ancien objectif, déjà atteint en 2025 ; la cible relevée est 5 %."}
+      ]
+    },
+    {
+      "enonce": "Comment lire le parcours boursier de Dassault Systèmes (~−27 % en 2025, −19 à −21 % le jour des résultats 2026) alors que la marge opérationnelle reste à ~30 % ?",
+      "ancre": "m7-s6",
+      "options": [
+        {"texte": "Passage d'une prime de croissance (PER élevé) à des doutes sur la trajectoire : la valorisation se dégonfle", "correcte": true, "justif": "L'entreprise reste rentable mais la croissance déçoit (+1 % en 2025) ; c'est la prime de PER qui s'efface."},
+        {"texte": "L'entreprise est en perte et risque la faillite", "correcte": false, "justif": "La rentabilité reste solide (marge ~30 %, modèle récurrent) ; il s'agit d'un dégonflement de valorisation, pas d'une faillite."},
+        {"texte": "Le titre a baissé car le CAC 40 entier s'est effondré en 2025", "correcte": false, "justif": "Au contraire, le CAC 40 gagnait plus de +10 % en 2025 ; Dassault Systèmes a sous-performé l'indice."}
+      ]
+    },
+    {
+      "enonce": "Quelles sont les causes du ralentissement de croissance de Dassault Systèmes en 2025 ?",
+      "ancre": "m7-s6",
+      "options": [
+        {"texte": "Ralentissement des Sciences de la Vie (Medidata) et faiblesse de l'automobile en Europe", "correcte": true, "justif": "Ce sont les deux causes citées : tassement de Medidata et secteur auto européen en difficulté."},
+        {"texte": "L'effondrement de la marge opérationnelle sous 10 %", "correcte": false, "justif": "La marge opérationnelle reste élevée, autour de 30 % : ce n'est pas la cause."},
+        {"texte": "L'abandon de la plateforme 3DEXPERIENCE", "correcte": false, "justif": "3DEXPERIENCE reste le cœur de l'offre et la position de leader ; elle n'est pas abandonnée."}
+      ]
+    }
+  ]
+}
