@@ -374,4 +374,43 @@ body.dark .fchip.n{background:#3a3014;border-color:#5a4a1e;color:#e7c869}
 .btn.good-b{background:var(--vert);color:#fff;border:none}
 .fcard-actions{margin-top:12px}
 
+/* ============================================================
+   Blocs — mise en forme (notions, flashcards, questions, exercices)
+   ============================================================ */
+.rev-notions{list-style:none;padding:0;margin:6px 0 4px}
+.rev-notions li{position:relative;padding:9px 4px 9px 26px;border-bottom:1px solid var(--line);line-height:1.55;font-size:.95rem}
+.rev-notions li:last-child{border-bottom:none}
+.rev-notions li:before{content:'▸';position:absolute;left:6px;top:9px;color:var(--or);font-weight:700}
+
+.fdeck{display:flex;flex-direction:column;gap:10px;margin-top:6px}
+.bflash{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--or);border-radius:12px;padding:14px 16px;cursor:pointer;box-shadow:var(--ombre);transition:transform .06s}
+.bflash:active{transform:scale(.99)}
+.bflash .fq{font-family:var(--serif);font-size:1.12rem;font-weight:600;color:var(--ink);display:flex;justify-content:space-between;gap:10px;align-items:flex-start}
+.bflash .fq .flip{font-size:.72rem;color:var(--or);font-weight:700;white-space:nowrap;font-family:var(--sans);border:1px solid var(--line);border-radius:999px;padding:2px 8px}
+.bflash .fa{margin-top:11px;padding-top:10px;border-top:1px dashed var(--line);color:var(--ink);line-height:1.55;font-size:.95rem;display:none}
+.bflash.open{border-left-color:var(--vert)}
+.bflash.open .fa{display:block;animation:fade .2s ease}
+.bflash.open .fq .flip{color:var(--vert);border-color:var(--vert)}
+
+.qitem{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:14px;margin-bottom:10px;box-shadow:var(--ombre)}
+.qitem .qn{display:flex;gap:9px;align-items:flex-start}
+.qitem .qnum{font-family:var(--serif);font-weight:700;color:var(--or);min-width:32px;font-size:1.02rem}
+.qitem .qtxt{font-weight:600;line-height:1.45}
+.qitem .qjury{display:inline-block;font-size:.66rem;font-weight:700;background:var(--nuit);color:var(--ivoire);padding:2px 8px;border-radius:999px;margin-bottom:5px}
+body.dark .qitem .qjury{background:var(--or);color:#1c1407}
+.qitem .qbtn{margin-top:10px}
+.qitem .qans{display:none;margin-top:10px;padding:11px 12px;background:var(--vert-bg);border-radius:10px;line-height:1.55;font-size:.92rem}
+.qitem.open .qans{display:block;animation:fade .2s ease}
+.qitem.open .qbtn{display:none}
+
+.exitem{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:14px;margin-bottom:12px;box-shadow:var(--ombre)}
+.exitem .exhead{display:flex;gap:11px;align-items:center;margin-bottom:8px}
+.exitem .exnum{width:30px;height:30px;border-radius:50%;background:var(--or);color:#1c1407;display:flex;align-items:center;justify-content:center;font-weight:700;flex:none}
+.exitem .extitle{font-family:var(--serif);font-weight:600;font-size:1.06rem;line-height:1.25}
+.exitem .exen p{margin:6px 0;line-height:1.5;font-size:.95rem}
+.exitem .excorr{display:none;margin-top:10px}
+.exitem.open .excorr{display:block;animation:fade .2s ease}
+.exitem .corrlabel{font-weight:700;color:var(--vert);font-size:.78rem;letter-spacing:.5px;margin-bottom:5px}
+.exitem .corrstep{background:var(--vert-bg);border-radius:10px;padding:10px 12px;margin:6px 0;line-height:1.5;font-size:.92rem}
+
 @media (min-width:620px){ main#view{padding-bottom:80px} }
